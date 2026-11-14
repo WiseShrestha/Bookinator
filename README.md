@@ -1,8 +1,12 @@
-# That Book
+# Bookinator
+
+*(project name during the hackathon: "That Book")*
+
+![Folio, the Bookinator mascot](docs/folio.png)
 
 **Remember the story. Forget the title.**
 
-A reader half-remembers a novel. That Book asks short questions (Yes / Probably / Don't know / Probably not / No), narrows down a fixed collection with a local Bayesian engine, proposes a best match with source-linked clues, and links to library catalogs. With an optional proxy, it also checks a library's holdings. Undo, wrong-guess recovery, a top-3 shortlist and an honest "not in this collection" exit are built in.
+A reader half-remembers a novel. Bookinator's mascot **Folio**, an enchanted book, asks short questions (Yes / Probably / Don't know / Probably not / No), narrows down a fixed collection with a local Bayesian engine, proposes a best match with source-linked clues, and links to library catalogs. With an optional proxy, it also checks a library's holdings. Undo, wrong-guess recovery, a top-3 shortlist and an honest "not in this collection" exit are built in.
 
 Theme: **Library + "Because I'm Lazy"**: the system chooses the search questions, so the reader doesn't need an author, title, ISBN or a good search query. There are no LLM calls during play.
 
@@ -181,6 +185,23 @@ guess, 92.7% found by any route (incl. shortlist); half memory 6.9% / 82.9%. Mac
 not accuracy claims. Why so few: most research labels are qualified 0.7/0.3, which the engine cannot turn into a
 confident guess within 18 questions. More playable books need **stronger, distinguishing plot labels reviewed by
 a person**, not lower thresholds. Every book's status and reason is in `data/cmu/coverage_report.json`.
+
+## Front end: Folio and the night library
+
+The interface is an original Akinator-style game: **Folio**, an enchanted open book drawn in SVG
+(`src/components/Folio.tsx`), floats in a candle-lit night library and changes expression with the game
+state: curious on early questions, thinking later on, puzzled after "Don't know" or at the shortlist,
+confident when guessing, triumphant when the book is found, sad on no match. Its mood never reflects the
+posterior. Questions appear in a parchment speech bubble; answers are five glowing buttons (keys 1–5);
+books get generated leather covers (no cover images: their rights are not established) with a flip-in
+reveal. Everything is CSS and inline SVG; animation stops under `prefers-reduced-motion`.
+
+## ChatGPT's research source code
+
+`research/chatgpt_source/` holds the source code used for the 500-book research pass (labelling, source
+parsing, enrichment, validation, the five-book demo) exactly as supplied, with its own README and
+attribution. Its 31 + 8 Python tests and the demo checks run in `npm run verify` (`npm run test:research`).
+Its large data directories are not committed; see the research catalog section above.
 
 ## Limitations
 

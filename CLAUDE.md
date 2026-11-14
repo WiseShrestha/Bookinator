@@ -1,4 +1,4 @@
-# CLAUDE.md — That Book
+# CLAUDE.md — Bookinator (formerly That Book)
 
 Hackathon project (IST-Tech IT Arena, theme "Library + Because I'm Lazy"). Deadline: **Sun 15 Nov 2026, 14:00 KST**.
 An Akinator-style game: the reader answers Yes / Probably / Don't know / Probably not / No, a local Bayesian
@@ -45,9 +45,10 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
   - `model.ts` types + channel + `compileCatalog`; `config.ts` **all thresholds**; `posterior.ts` log-space replay;
     `selectQuestion.ts` expected information gain × recallability; `session.ts` event log, Undo, rejection,
     18-question cap, shortlist, no-match; `explain.ts` clues; `links.ts` catalog links.
-- `src/components/` UI screens; `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
+- `src/components/` UI screens (`Folio.tsx` = SVG mascot, mood from game state only); `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
 - `src/data/index.ts` — the one line choosing the shipped catalog (currently `fixture.catalog.json`).
 - `server/library-proxy.mjs` — stdlib Node proxy keeping the Data4Library key server-side.
+- `research/chatgpt_source/` — ChatGPT's research code, unchanged; tests via `npm run test:research`.
 - `scripts/` — Python data pipeline (stdlib only) + simulator. `data/` — question bank, curation, evidence, truth set.
 
 ## Rules (from the build brief — keep them)
