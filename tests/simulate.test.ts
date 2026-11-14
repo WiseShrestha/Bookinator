@@ -2,7 +2,10 @@ import assert from "node:assert/strict";
 import { it } from "node:test";
 import { makeConfig } from "../src/engine/config.ts";
 import { compileCatalog } from "../src/engine/model.ts";
-import { ACTIVE_CATALOG } from "../src/data/index.ts";
+import { COLLECTIONS } from "../src/data/index.ts";
+
+// These tests exercise the 10-book fixture (Classic shelf) specifically, whatever the app opens on.
+const ACTIVE_CATALOG = COLLECTIONS.classic.catalog;
 import { SCENARIOS, mulberry32, playGame, summarize } from "../scripts/simulate.ts";
 
 const config = makeConfig();

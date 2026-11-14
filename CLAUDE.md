@@ -46,7 +46,7 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
     `selectQuestion.ts` expected information gain × recallability; `session.ts` event log, Undo, rejection,
     18-question cap, shortlist, no-match; `explain.ts` clues; `links.ts` catalog links.
 - `src/components/` UI screens (`Folio.tsx` = SVG mascot, mood from game state only); `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
-- `src/data/index.ts` — chooses the catalog: `?collection=research|classic` in the URL, else `VITE_CATALOG`, else the fixture.
+- `src/data/index.ts` — chooses the catalog: `?collection=classic|research` in the URL, else `VITE_CATALOG`, else the research shelf.
 - `server/library-proxy.mjs` — stdlib Node proxy keeping the Data4Library key server-side.
 - `research/chatgpt_source/` — ChatGPT's research code, unchanged; tests via `npm run test:research`.
 - `scripts/` — Python data pipeline (stdlib only) + simulator. `data/` — question bank, curation, evidence, truth set.
@@ -64,9 +64,9 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
 
 ## Research catalog (500 imported records → 181 targets, 268 titles)
 
-Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/ and
-`?collection=research`). The **10-book fixture** ("Classic shelf") is the default. The **CMU / research catalog**
-("Research shelf") is also selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report imported records as game coverage:
+Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/). The **CMU /
+research catalog** ("Research shelf", 268 titles) is the **default**. The **10-book fixture** ("Classic shelf") is at
+`?collection=classic`, `npm run dev:classic` or `VITE_CATALOG=classic`. Never report imported records as game coverage:
 
 | Measure (14 Nov 2026) | Count |
 | --- | ---: |

@@ -203,7 +203,11 @@ export function StartScreen({ headingRef, onStart }: { headingRef: Heading; onSt
         ✦ Start reading my mind
       </button>
       <details className="collection">
-        <summary>See the {books.length} novels on my shelf</summary>
+        <summary>
+          {CC.catalog.coverage?.titles_reachable && CC.catalog.coverage.titles_reachable !== books.length
+            ? `See the ${CC.catalog.coverage.titles_reachable} novels on my shelf (${books.length} books and series)`
+            : `See the ${books.length} novels on my shelf`}
+        </summary>
         <ul className="shelf">
           {books.map((b) => (
             <li key={b.id} title={`${b.title_en} — ${b.author}`}>

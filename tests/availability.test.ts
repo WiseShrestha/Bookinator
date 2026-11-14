@@ -1,7 +1,10 @@
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { availabilityEnabled, checkAvailability, pickEdition } from "../src/availability.ts";
-import { ACTIVE_CATALOG } from "../src/data/index.ts";
+import { COLLECTIONS } from "../src/data/index.ts";
+
+// These tests exercise the 10-book fixture (Classic shelf) specifically, whatever the app opens on.
+const ACTIVE_CATALOG = COLLECTIONS.classic.catalog;
 
 const veg = ACTIVE_CATALOG.books.find((b) => b.id === "fx-the-vegetarian")!;
 const cfg = { proxyUrl: "https://proxy.example", libCode: "111001", libName: "Test Library" };

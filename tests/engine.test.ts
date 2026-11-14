@@ -15,7 +15,10 @@ import {
   undo,
   type Session,
 } from "../src/engine/session.ts";
-import { ACTIVE_CATALOG } from "../src/data/index.ts";
+import { COLLECTIONS } from "../src/data/index.ts";
+
+// These tests exercise the 10-book fixture (Classic shelf) specifically, whatever the app opens on.
+const ACTIVE_CATALOG = COLLECTIONS.classic.catalog;
 import { binaryMatrix, setup, synthetic } from "./helpers.ts";
 
 const close = (a: number, b: number, eps = 1e-9) => assert.ok(Math.abs(a - b) <= eps, `${a} ≉ ${b}`);
