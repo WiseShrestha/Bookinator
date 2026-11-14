@@ -12,8 +12,8 @@
     "typecheck:engine": "tsc -p tsconfig.engine.json --noEmit",
     "test": "tsx --test \"tests/*.test.ts\"",
     "simulate": "tsx scripts/simulate.ts",
-    "validate": "python3 scripts/validate_catalog.py src/data/fixture.catalog.json --bank data/question_bank.json",
-    "test:py": "python3 -m unittest discover -s tests -p \"test_*.py\"",
+    "validate": "node scripts/py.mjs scripts/validate_catalog.py src/data/fixture.catalog.json --bank data/question_bank.json",
+    "test:py": "node scripts/py.mjs -m unittest discover -s tests -p \"test_*.py\"",
     "simulate:truth": "tsx scripts/simulate.ts --truth data/truth/fixture_supported_truth.json --out reports/simulation_truth.json",
     "proxy": "node server/library-proxy.mjs",
     "verify": "npm run typecheck && npm test && npm run test:py && npm run validate && vite build"
