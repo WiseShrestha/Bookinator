@@ -1,0 +1,33 @@
+@ cmu:enwiki:843 A Clockwork Orange
+q01 .9 1
+q03 .9 1
+q12 .1 1
+q13 .9 1
+q14 .1 1
+q17 .1 1
+q18 .1 1
+q19 .1 1
+q20 .1 1
+q21 .9 1
+@ cmu:enwiki:33314889 The Night Circus
+q02 .7 9
+q13 .7 1
+q17 .7 1
+q31 .7 8
+q32 .9 1
+q38 .9 1
+@ cmu:enwiki:796676 A Feast for Crows
+q02 .9 5
+q15 .7 5
+q29 .7 4
+@ cmu:enwiki:3552124 The Red Tent
+q02 .9 4
+q17 .7 3
+q29 .7 8 Displeased at how the prince treated their sister
+q49 .7 1
+@ cmu:enwiki:23817576 The Last Song
+q02 .9 2
+q14 .9 1
+q15 .1 1
+q26 .9 4
+q29 .9 2

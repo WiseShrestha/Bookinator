@@ -1,0 +1,35 @@
+@ cmu:enwiki:10023921 An Abundance of Katherines
+q01 .9 1 seventeen year old boy
+q03 .9 1 seventeen year old boy
+q06 .3 4
+q11 .9 9
+q14 .9 9
+q26 .7 10
+q27 .7 4
+@ cmu:enwiki:427310 The Voyage of the Dawn Treader
+q01 .9 1 The two youngest Pevensie children, Lucy and Edmund
+q02 .9 1 The two youngest Pevensie children, Lucy and Edmund
+q03 .9 1 The two youngest Pevensie children, Lucy and Edmund
+q15 .9 2
+q16 .9 4
+q27 .9 7
+q32 .7 2
+q36 .9 9
+q53 .7 5
+q54 .1 5
+@ cmu:enwiki:29022842 The Scorch Trials
+q03 .9 3 He wakes up suddenly
+q08 .7 2
+q39 .7 17
+q53 .7 1
+q54 .1 1
+@ cmu:enwiki:10876585 The Graveyard Book
+q01 .7 13
+q03 .9 12
+q35 .9 3
+q43 .7 12
+@ cmu:enwiki:29179339 The Son of Neptune
+q03 .9 1
+q04 .7 10
+q08 .7 5
+q27 .9 10

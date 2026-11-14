@@ -1,0 +1,43 @@
+@ cmu:enwiki:7504806 The Titan's Curse
+q02 .7 7
+q03 .9 10 a pegasus he liberated in The Sea of Monsters
+q04 .7 7
+q14 .7 1
+q27 .9 7
+q28 .7 7
+q53 .7 10 a pegasus he liberated in The Sea of Monsters
+q54 .3 10 a pegasus he liberated in The Sea of Monsters
+@ cmu:enwiki:23404033 The Girl Who Kicked the Hornets' Nest
+q02 .9 3 her lawyer, Annika Giannini
+q37 .7 3 moved to an intensive care ward under guard
+q53 .7 2
+q54 .1 2
+@ cmu:enwiki:472089 Matilda
+q01 .9 1
+q02 .9 1
+q06 .7 3 Matilda begins schooling
+q08 .9 7 her secret telekinetic powers
+q09 .7 3 Matilda begins schooling
+q29 .7 2 Matilda constantly pulls pranks on her family
+@ cmu:enwiki:288153 The Stand
+q04 .9 7 Through the perspectives of the multiple principal characters
+q14 .7 10 Hemingford Home, Nebraska
+q23 ?
+q27 .7 10 Intertwining cross-country odysseys
+q28 .7 8
+q39 .9 6 set off a pandemic that kills an estimated 99.4%
+q47 .7 8
+q50 .9 7 Through the perspectives of the multiple principal characters
+@ cmu:enwiki:34890405 Beautiful Creatures
+q01 .9 3
+q02 .7 9
+q03 .9 2
+q06 .9 3
+q09 .7 5 At school Ethan find out there is a new girl this year
+q12 .1 1
+q13 .1 1
+q14 .9 1
+q15 .1 1
+q26 .7 10
+q32 .9 9
+q49 .9 2

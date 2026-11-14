@@ -1,0 +1,47 @@
+@ cmu:enwiki:159941 Anna Karenina
+q02 .7 6
+q10 .7 3 a Moscow aristocrat and civil servant
+q15 .1 6
+q29 .7 4
+@ cmu:enwiki:1779024 Extremely Loud and Incredibly Close
+q01 .9 1
+q03 .9 1
+q10 .9 4
+q14 .9 4
+q15 .1 4
+q17 .1 2
+q18 .1 2
+q19 .1 2
+q20 .9 2
+q21 .1 2
+q27 .7 4
+q47 .9 2
+q51 .7 5
+@ cmu:enwiki:1697748 Never Let Me Go
+q02 .7 9
+q03 .7 10
+q04 .9 8
+q06 .7 3
+q09 .9 2
+q13 .9 2
+q21 ?
+q45 .9 8
+@ cmu:enwiki:271590 It
+q01 .9 10
+q04 .9 9 The three boys later befriend Richie Tozier
+q14 .9 1
+q15 .1 1
+q17 .1 1
+q18 .1 1
+q19 .9 1
+q20 .1 1
+q21 .1 1
+q41 .9 3
+q45 .7 10
+@ cmu:enwiki:67317 Watership Down
+q04 .7 3
+q05 .9 1
+q11 .7 5
+q27 .9 2 to search for a new home
+q28 .7 4
+q36 .9 3

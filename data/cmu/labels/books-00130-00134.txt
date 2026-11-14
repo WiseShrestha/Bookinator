@@ -1,0 +1,38 @@
+@ cmu:enwiki:23854860 Fight Club
+q03 .9 2
+q39 .7 2
+q49 .7 1
+@ cmu:enwiki:540888 Speak
+q01 .9 1
+q02 .9 1
+q06 .9 6
+q09 .9 6
+q39 .7 7
+q46 .7 6
+@ cmu:enwiki:33230852 Marked
+q01 .9 1
+q02 .9 1
+q05 .7 2 to become a fledgling vampyre
+q06 .9 2 a boarding school where she will be trained to become an adult vampyre
+q09 .9 2 a boarding school where she will be trained to become an adult vampyre
+q14 .7 2 the Tulsa House of Night
+q15 .3 1
+q29 .7 4 blames her for the Mark
+q53 .7 7 throughout the series
+@ cmu:enwiki:19859 Moby-Dick
+q03 .9 3
+q16 .9 5 decide to sail together from Nantucket, Massachusetts on a whaling voyage
+q27 .7 5 decide to sail together from Nantucket, Massachusetts on a whaling voyage
+q45 .7 5 the two quickly become close friends
+q49 .9 3
+@ cmu:enwiki:67003 Carrie
+q01 .9 1 high school student Carietta
+q02 .9 1 high school student Carietta
+q06 .9 1 high school student Carietta
+q08 .9 11
+q09 .7 3 She does not fare much better at Thomas Ewen High School
+q14 .9 1 the town of Chamberlain, Maine
+q15 .1 1 the town of Chamberlain, Maine
+q29 .9 2
+q46 .7 3 she has been a social outcast since first grade
+q51 .7 1 The book uses false documents to frame the story

@@ -1,0 +1,43 @@
+@ cmu:enwiki:26683273 The Art of Racing in the Rain
+q03 .7 1 Denny Swift, a race car driver living in Seattle
+q05 .9 1 his dog Enzo
+q10 .7 1 Denny Swift, a race car driver living in Seattle
+q14 .9 1 Denny Swift, a race car driver living in Seattle
+q15 .1 1 Denny Swift, a race car driver living in Seattle
+q29 .7 4 child-custody battle with his in-laws
+q36 .7 3
+q48 .7 4 distills his observations of the human condition
+@ cmu:enwiki:397398 The Bourne Identity
+q03 .9 2
+q15 .1 4
+q28 .7 6
+q39 .7 2
+@ cmu:enwiki:42645 The Grapes of Wrath
+q03 .9 1
+q11 .7 3
+q12 .1 8 describing the fruitful state of California
+q13 .1 8 describing the fruitful state of California
+q14 .9 2
+q15 .1 2
+q18 .7 7 the crops were destroyed in the Dust Bowl
+q27 .9 9
+q44 .9 5
+@ cmu:enwiki:161446 East of Eden
+q11 .9 4
+q12 .1 1 primarily set in the Salinas Valley, California
+q13 .1 1 primarily set in the Salinas Valley, California
+q14 .9 1 primarily set in the Salinas Valley, California
+q15 .1 1 primarily set in the Salinas Valley, California
+q18 .7 1 between the beginning of the 20th century and the end of World War I
+q19 .1 1 between the beginning of the 20th century and the end of World War I
+q20 .1 1 between the beginning of the 20th century and the end of World War I
+q21 .1 1 between the beginning of the 20th century and the end of World War I
+q22 .7 1 the story goes as far back as the American Civil War
+q29 .7 7
+@ cmu:enwiki:17253525 Flowers for Algernon
+q01 .1 2 Charlie Gordon, a man with an IQ of 68
+q03 .9 2 Charlie Gordon, a man with an IQ of 68
+q26 .7 6
+q38 .7 2 works a menial job as a janitor in a factory
+q49 .9 2 told through a series of journal entries
+q51 .9 2 told through a series of journal entries

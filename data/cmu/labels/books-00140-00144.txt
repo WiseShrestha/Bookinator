@@ -1,0 +1,33 @@
+@ cmu:enwiki:386568 Misery
+q02 .7 5
+q03 .9 1 Paul Sheldon, the author of a best-selling series
+q14 .7 2
+q19 .7 1 since 1974, he has completed the first draft
+q37 .7 6
+@ cmu:enwiki:43206 A Midsummer Night's Dream
+@ cmu:enwiki:1804983 Number the Stars
+q02 .9 2
+q10 .7 1
+q15 .1 1
+q18 .7 1
+q24 .9 1
+q30 .7 4 a man working in the Danish Resistance
+q45 .7 11
+@ cmu:enwiki:30976827 Dark Places
+q02 .9 1
+q07 .9 4
+q11 .7 1
+q14 .9 1
+q15 .1 1
+q25 .9 4
+q44 .7 7
+q49 .9 1
+q50 .9 6
+q52 .9 5
+@ cmu:enwiki:63987 The Gunslinger
+q03 .9 1
+q12 .1 2
+q13 .1 2
+q14 .1 2
+q15 .9 2
+q27 .9 1

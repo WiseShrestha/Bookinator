@@ -1,0 +1,32 @@
+@ cmu:enwiki:29798 The Lord of the Rings
+q03 .7 12
+q05 .9 12
+q15 .7 9
+q27 .7 14
+q32 .9 13
+@ cmu:enwiki:871902 Artemis Fowl
+q01 .9 1
+q02 .7 5
+q03 .9 1
+q05 .7 4
+q32 .9 6
+@ cmu:enwiki:133874 Crime and Punishment
+q03 .9 2
+q06 .3 1
+q10 .9 1
+q15 .1 1
+q25 ?
+@ cmu:enwiki:182128 American Gods
+q03 .9 5
+q14 .9 10
+q27 .7 10
+q35 .7 2
+@ cmu:enwiki:43168 The Color Purple
+q01 .9 1
+q02 .9 1
+q14 ?
+q29 .9 2
+q44 .7 1
+q49 .9 1
+q50 .3 1
+q51 .9 2

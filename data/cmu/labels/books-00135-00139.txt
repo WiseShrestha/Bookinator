@@ -1,0 +1,39 @@
+@ cmu:enwiki:4608346 The Silence of the Lambs
+q02 .9 2
+q07 .9 2
+q14 .9 4
+q15 .1 4
+q17 .1 1
+q18 .1 1
+q19 .9 1
+q20 .1 1
+q21 .1 1
+q25 .9 5 in the hunt for a serial killer dubbed
+@ cmu:enwiki:32903764 Ready Player One
+q15 ?
+q17 .1 1
+q18 .1 1
+q19 .1 1
+q20 .1 1
+q21 .9 1
+q23 .7 2
+q31 .9 5 whoever can collect three keys
+@ cmu:enwiki:1890954 Atonement
+q01 .9 1
+q02 .9 1
+q11 .7 1
+q13 .7 1
+q18 .7 3
+q26 .7 6
+@ cmu:enwiki:27532695 City of Fallen Angels
+q03 .9 3
+q05 .7 1
+q26 .7 1
+q53 .7 4 since he went to Idris (City of Glass)
+q54 .3 4 since he went to Idris (City of Glass)
+@ cmu:enwiki:891623 Ella Enchanted
+q01 .7 3
+q02 .9 2
+q15 .7 4
+q26 .7 13
+q32 .9 1

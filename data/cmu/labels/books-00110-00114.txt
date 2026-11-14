@@ -1,0 +1,24 @@
+@ cmu:enwiki:944096 Digital Fortress
+q02 .9 1 Susan Fletcher, their head cryptographer
+q03 .7 5
+q07 .7 10
+q38 .7 1 United States National Security Agency
+@ cmu:enwiki:21243200 Dead Until Dark
+q02 .9 2
+q05 .7 2
+q08 .9 8
+q25 .7 5
+q26 .9 2
+@ cmu:enwiki:45896 The Stranger
+q03 .9 2
+q49 .7 4
+@ cmu:enwiki:18949410 And Then There Were None
+q04 .9 2 have been invited to a mansion on the fictional Soldier Island
+q13 .7 3
+@ cmu:enwiki:21796996 Something Borrowed
+q01 .1 1
+q02 .9 1
+q26 .7 3
+q45 .7 2
+q49 .9 1
+q50 .3 1
