@@ -5,19 +5,19 @@
   "imported_source_records": 500,
   "labelled_with_validated_matrix": 500,
   "records_with_human_reviewed_cells": 0,
-  "playable_game_targets": 17
+  "playable_game_targets": 27
  },
- "supported_cells_total": 7338,
- "supported_cells_per_labelled_book_mean": 14.68,
- "books_meeting_handoff_heuristic_12_supported": 468,
+ "supported_cells_total": 9484,
+ "supported_cells_per_labelled_book_mean": 18.97,
+ "books_meeting_handoff_heuristic_12_supported": 487,
  "gate": {
   "min_supported": 6,
   "pairwise_likelihood_ratio": 4,
   "engine": "first guess when answering exactly from own labels (scripts/gate_catalog.ts); thresholds unchanged"
  },
  "status_breakdown": {
-  "playable": 17,
-  "not identifiable by the engine from its own labels": 475,
+  "playable": 27,
+  "not identifiable by the engine from its own labels": 465,
   "form hold (not a novel)": 8
  },
  "scope": "Counts of records and labels. Not a measure of factual correctness or of game success.",
@@ -30,7 +30,7 @@
     "Suzanne Collins"
    ],
    "labelled": true,
-   "supported_cells": 26,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -43,7 +43,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 36,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -56,7 +56,7 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 22,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -69,7 +69,7 @@
     "Harper Lee"
    ],
    "labelled": true,
-   "supported_cells": 23,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -82,7 +82,7 @@
     "F. Scott Fitzgerald"
    ],
    "labelled": true,
-   "supported_cells": 25,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -95,7 +95,7 @@
     "John Green"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -108,7 +108,7 @@
     "J. D. Salinger"
    ],
    "labelled": true,
-   "supported_cells": 21,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -121,7 +121,7 @@
     "Jane Austen"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -134,7 +134,7 @@
     "George Orwell"
    ],
    "labelled": true,
-   "supported_cells": 25,
+   "supported_cells": 29,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -147,7 +147,7 @@
     "George Orwell"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -160,7 +160,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 30,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -186,7 +186,7 @@
     "Khaled Hosseini"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -199,7 +199,7 @@
     "Stieg Larsson"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -212,7 +212,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -225,7 +225,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -238,7 +238,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 30,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -251,7 +251,7 @@
     "Suzanne Collins"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -264,7 +264,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -277,7 +277,7 @@
     "William Golding"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -290,7 +290,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -303,10 +303,10 @@
     "Kathryn Stockett"
    ],
    "labelled": true,
-   "supported_cells": 21,
+   "supported_cells": 23,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 22,
@@ -316,7 +316,7 @@
     "John Steinbeck"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -329,7 +329,7 @@
     "Dan Brown"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -342,7 +342,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -355,7 +355,7 @@
     "George R. R. Martin"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 27,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -368,7 +368,7 @@
     "Arthur Golden"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -381,7 +381,7 @@
     "Lois Lowry"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -394,7 +394,7 @@
     "Louisa May Alcott"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -407,7 +407,7 @@
     "Charlotte Brontë"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -420,7 +420,7 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -433,7 +433,7 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -446,7 +446,7 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -459,10 +459,10 @@
     "Christopher Paolini"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 24,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 34,
@@ -472,7 +472,7 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -485,7 +485,7 @@
     "Sara Gruen"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -498,7 +498,7 @@
     "E. B. White"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -511,7 +511,7 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -524,10 +524,10 @@
     "Aldous Huxley"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 22,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 39,
@@ -537,7 +537,7 @@
     "Yann Martel"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -550,7 +550,7 @@
     "Philip Pullman"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -563,7 +563,7 @@
     "Douglas Adams"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -576,10 +576,10 @@
     "Sue Monk Kidd"
    ],
    "labelled": true,
-   "supported_cells": 22,
+   "supported_cells": 31,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 13 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 43,
@@ -589,7 +589,7 @@
     "Emily Brontë"
    ],
    "labelled": true,
-   "supported_cells": 21,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -602,7 +602,7 @@
     "Stephen Chbosky"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -615,7 +615,7 @@
     "Margaret Mitchell"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -628,10 +628,10 @@
     "Mark Haddon"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 47,
@@ -641,7 +641,7 @@
     "Jodi Picoult"
    ],
    "labelled": true,
-   "supported_cells": 22,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -654,7 +654,7 @@
     "Khaled Hosseini"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -667,7 +667,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 23,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -680,7 +680,7 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -693,7 +693,7 @@
     "Louis Sachar"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -706,7 +706,7 @@
     "Audrey Niffenegger"
    ],
    "labelled": true,
-   "supported_cells": 21,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -719,7 +719,7 @@
     "Jane Austen"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -732,7 +732,7 @@
     "James Dashner"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -745,7 +745,7 @@
     "Lauren Weisberger"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -758,7 +758,7 @@
     "S. E. Hinton"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -784,7 +784,7 @@
     "Charles Dickens"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -797,7 +797,7 @@
     "William Goldman"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -810,7 +810,7 @@
     "Bram Stoker"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -823,7 +823,7 @@
     "Madeleine L'Engle"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -836,7 +836,7 @@
     "Ransom Riggs"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -849,10 +849,10 @@
     "Margaret Atwood"
    ],
    "labelled": true,
-   "supported_cells": 21,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 64,
@@ -862,7 +862,7 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -875,7 +875,7 @@
     "Oscar Wilde"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -888,7 +888,7 @@
     "Ray Bradbury"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -901,7 +901,7 @@
     "Stieg Larsson"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -914,7 +914,7 @@
     "Joseph Heller"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -927,7 +927,7 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -953,7 +953,7 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -966,7 +966,7 @@
     "Ann Brashares"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -979,7 +979,7 @@
     "Ernest Hemingway"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -992,7 +992,7 @@
     "Diana Gabaldon"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1005,7 +1005,7 @@
     "Amy Tan"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1018,7 +1018,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1031,10 +1031,10 @@
     "Victor Hugo"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 25,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 16 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 78,
@@ -1044,7 +1044,7 @@
     "Emma Donoghue"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1057,7 +1057,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1070,10 +1070,10 @@
     "Gregory Maguire"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 31,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 81,
@@ -1083,7 +1083,7 @@
     "Cormac McCarthy"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1096,7 +1096,7 @@
     "Gayle Forman"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1109,10 +1109,10 @@
     "Kim Edwards"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 29,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 84,
@@ -1122,7 +1122,7 @@
     "Ken Kesey"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1135,10 +1135,10 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 22,
+   "supported_cells": 32,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: adding it stops the engine finding The Lion, the Witch and the Wardrobe when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 86,
@@ -1148,7 +1148,7 @@
     "Gabriel García Márquez"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1161,7 +1161,7 @@
     "Jeffrey Eugenides"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1174,7 +1174,7 @@
     "Frank Herbert"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1187,7 +1187,7 @@
     "J. R. R. Tolkien"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1200,7 +1200,7 @@
     "George R. R. Martin"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -1213,7 +1213,7 @@
     "Rebecca Wells"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1226,7 +1226,7 @@
     "Jay Asher"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1239,7 +1239,7 @@
     "Ken Follett"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1252,7 +1252,7 @@
     "John Green"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1265,7 +1265,7 @@
     "Dan Brown"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 9,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1291,7 +1291,7 @@
     "Mitch Albom"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1317,7 +1317,7 @@
     "Michael Crichton"
    ],
    "labelled": true,
-   "supported_cells": 22,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -1330,7 +1330,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1343,7 +1343,7 @@
     "Stieg Larsson"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1356,7 +1356,7 @@
     "Roald Dahl"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1369,7 +1369,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1382,7 +1382,7 @@
     "Margaret Stohl"
    ],
    "labelled": true,
-   "supported_cells": 22,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1395,10 +1395,10 @@
     "Anthony Burgess"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 15 questions) when answering from its own labels"
+   "reason": "engine gate: adding it stops the engine finding Wuthering Heights when answering from its own labels"
   },
   {
    "rank": 106,
@@ -1408,7 +1408,7 @@
     "Erin Morgenstern"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1421,10 +1421,10 @@
     "George R. R. Martin"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "reason": "engine gate: adding it stops the engine finding The Curious Incident of the Dog in the Night-time when answering from its own labels"
   },
   {
    "rank": 108,
@@ -1434,7 +1434,7 @@
     "Anita Diamant"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1447,7 +1447,7 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1460,7 +1460,7 @@
     "Dan Brown"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1473,7 +1473,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1486,7 +1486,7 @@
     "Albert Camus"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1499,7 +1499,7 @@
     "Agatha Christie"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1512,7 +1512,7 @@
     "Emily Giffin"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1525,7 +1525,7 @@
     "Patrick Rothfuss"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1538,7 +1538,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1551,7 +1551,7 @@
     "Lauren Kate"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1577,7 +1577,7 @@
     "Janet Evanovich"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1590,7 +1590,7 @@
     "J. R. R. Tolkien"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1603,7 +1603,7 @@
     "Eoin Colfer"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1616,7 +1616,7 @@
     "Fyodor Dostoyevsky"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1629,7 +1629,7 @@
     "Neil Gaiman"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1642,7 +1642,7 @@
     "Alice Walker"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1655,7 +1655,7 @@
     "Anne Rice"
    ],
    "labelled": true,
-   "supported_cells": 21,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1668,7 +1668,7 @@
     "Hermann Hesse"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -1681,7 +1681,7 @@
     "Dan Brown"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1694,7 +1694,7 @@
     "George R. R. Martin"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 27,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1707,7 +1707,7 @@
     "Jane Austen"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1720,7 +1720,7 @@
     "Chuck Palahniuk"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1746,7 +1746,7 @@
     "Kristin Cast"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1759,7 +1759,7 @@
     "Herman Melville"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1772,7 +1772,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1785,10 +1785,10 @@
     "Thomas Harris"
    ],
    "labelled": true,
-   "supported_cells": 22,
+   "supported_cells": 29,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 136,
@@ -1811,10 +1811,10 @@
     "Ian McEwan"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "reason": "engine gate: adding it stops the engine finding The Curious Incident of the Dog in the Night-time when answering from its own labels"
   },
   {
    "rank": 138,
@@ -1824,7 +1824,7 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1837,7 +1837,7 @@
     "Gail Carson Levine"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1850,7 +1850,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1863,7 +1863,7 @@
     "William Shakespeare"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "form hold: Play; excluded from the default novels-only scope."
@@ -1876,7 +1876,7 @@
     "Lois Lowry"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1889,7 +1889,7 @@
     "Gillian Flynn"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1902,10 +1902,10 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 21,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 145,
@@ -1915,7 +1915,7 @@
     "Garth Stein"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1928,7 +1928,7 @@
     "Robert Ludlum"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1941,10 +1941,10 @@
     "John Steinbeck"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 148,
@@ -1954,10 +1954,10 @@
     "John Steinbeck"
    ],
    "labelled": true,
-   "supported_cells": 24,
+   "supported_cells": 29,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
+   "reason": "engine gate: adding it stops the engine finding Of Mice and Men when answering from its own labels"
   },
   {
    "rank": 149,
@@ -1967,7 +1967,7 @@
     "Daniel Keyes"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1980,7 +1980,7 @@
     "John Green"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -1993,7 +1993,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2006,7 +2006,7 @@
     "James Dashner"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2019,7 +2019,7 @@
     "Neil Gaiman"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2032,7 +2032,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2045,7 +2045,7 @@
     "Leo Tolstoy"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2058,7 +2058,7 @@
     "Jonathan Safran Foer"
    ],
    "labelled": true,
-   "supported_cells": 21,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -2071,7 +2071,7 @@
     "Kazuo Ishiguro"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2084,10 +2084,10 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 24,
+   "supported_cells": 32,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "engine gate: engine never became confident (shortlist after 16 questions) when answering from its own labels"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 159,
@@ -2097,7 +2097,7 @@
     "Richard Adams"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2110,7 +2110,7 @@
     "Betty Smith"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2123,7 +2123,7 @@
     "John Grisham"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2136,7 +2136,7 @@
     "John Boyne"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2149,7 +2149,7 @@
     "Ernest Hemingway"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2162,7 +2162,7 @@
     "Gabriel García Márquez"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2175,7 +2175,7 @@
     "Ayn Rand"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2188,7 +2188,7 @@
     "Kristin Cashore"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2214,7 +2214,7 @@
     "Isaac Asimov"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2240,7 +2240,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2253,7 +2253,7 @@
     "Roald Dahl"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2266,7 +2266,7 @@
     "Tom Clancy"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2279,7 +2279,7 @@
     "Wilson Rawls"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2292,7 +2292,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 27,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2305,7 +2305,7 @@
     "Neil Gaiman"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2318,7 +2318,7 @@
     "Robert Louis Stevenson"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2331,7 +2331,7 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2344,7 +2344,7 @@
     "Richelle Mead"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2357,7 +2357,7 @@
     "Carlos Ruiz Zafón"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2370,7 +2370,7 @@
     "Robert Jordan"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2383,7 +2383,7 @@
     "Wally Lamb"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2396,7 +2396,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2409,7 +2409,7 @@
     "Richelle Mead"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2422,7 +2422,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2435,7 +2435,7 @@
     "Colleen McCullough"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2461,7 +2461,7 @@
     "Pittacus Lore"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2474,7 +2474,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2487,7 +2487,7 @@
     "Christopher Paolini"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2500,7 +2500,7 @@
     "Erich Maria Remarque"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2513,7 +2513,7 @@
     "Jennifer Weiner"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2526,7 +2526,7 @@
     "Richelle Mead"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2539,7 +2539,7 @@
     "L. Frank Baum"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2552,7 +2552,7 @@
     "Wally Lamb"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2565,7 +2565,7 @@
     "Jack Kerouac"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2578,7 +2578,7 @@
     "Roald Dahl"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2591,7 +2591,7 @@
     "Patrick Rothfuss"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2604,7 +2604,7 @@
     "Janet Fitch"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2617,7 +2617,7 @@
     "Margaret Wise Brown"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 7,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "form hold: Illustrated bedtime/children's book; excluded pending a broader form-scope decision."
@@ -2630,7 +2630,7 @@
     "Ayn Rand"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2643,7 +2643,7 @@
     "Philip Pullman"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2656,7 +2656,7 @@
     "Neil Gaiman"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2669,7 +2669,7 @@
     "Jerry Spinelli"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2695,7 +2695,7 @@
     "Scott O'Dell"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2708,7 +2708,7 @@
     "Jodi Picoult"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2721,7 +2721,7 @@
     "James Patterson"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2734,7 +2734,7 @@
     "Toni Morrison"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2747,7 +2747,7 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2760,7 +2760,7 @@
     "Hunter S. Thompson"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2773,7 +2773,7 @@
     "Richelle Mead"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2786,7 +2786,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2799,7 +2799,7 @@
     "Charles Dickens"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2825,7 +2825,7 @@
     "John Irving"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2851,7 +2851,7 @@
     "Becca Fitzpatrick"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2864,7 +2864,7 @@
     "Richelle Mead"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2877,7 +2877,7 @@
     "Jack London"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2890,7 +2890,7 @@
     "James Dashner"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2903,7 +2903,7 @@
     "John Grisham"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2916,7 +2916,7 @@
     "Gary Paulsen"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2929,7 +2929,7 @@
     "Roald Dahl"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2942,7 +2942,7 @@
     "Robert A. Heinlein"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2955,7 +2955,7 @@
     "Diane Setterfield"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2968,7 +2968,7 @@
     "Christopher Paolini"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2981,7 +2981,7 @@
     "Brandon Sanderson"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -2994,7 +2994,7 @@
     "Billie Letts"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3007,7 +3007,7 @@
     "Richelle Mead"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3020,7 +3020,7 @@
     "Dean Koontz"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3033,7 +3033,7 @@
     "P. C. Cast"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3046,7 +3046,7 @@
     "Jane Austen"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3059,7 +3059,7 @@
     "Jim Butcher"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3085,7 +3085,7 @@
     "Arthur Conan Doyle"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3098,7 +3098,7 @@
     "Umberto Eco"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3111,7 +3111,7 @@
     "Frances Hodgson Burnett"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3124,7 +3124,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3150,7 +3150,7 @@
     "Alexandre Dumas"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3163,7 +3163,7 @@
     "Ernest Hemingway"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3176,7 +3176,7 @@
     "Thomas Harris"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3189,7 +3189,7 @@
     "Scott Westerfeld"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3202,7 +3202,7 @@
     "Meg Cabot"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3228,7 +3228,7 @@
     "Philip Pullman"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3241,7 +3241,7 @@
     "Kristin Cast"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3254,7 +3254,7 @@
     "Becca Fitzpatrick"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 11,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3267,7 +3267,7 @@
     "Terry Pratchett"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3280,7 +3280,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3293,7 +3293,7 @@
     "Elizabeth Kostova"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3306,7 +3306,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3319,7 +3319,7 @@
     "Tana French"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3332,7 +3332,7 @@
     "Ernest Hemingway"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3345,7 +3345,7 @@
     "Charles Frazier"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3358,7 +3358,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 9,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "form hold: Fictional textbook/guide, rather than a conventional narrative novel."
@@ -3384,7 +3384,7 @@
     "Jhumpa Lahiri"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3397,7 +3397,7 @@
     "William Gibson"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3410,7 +3410,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3423,7 +3423,7 @@
     "Anna Sewell"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3436,7 +3436,7 @@
     "Pearl S. Buck"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3449,7 +3449,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3462,7 +3462,7 @@
     "Kristin Cast"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3475,7 +3475,7 @@
     "S. J. Watson"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3514,7 +3514,7 @@
     "Norton Juster"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3527,7 +3527,7 @@
     "Daniel Defoe"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3540,7 +3540,7 @@
     "Diana Gabaldon"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3553,7 +3553,7 @@
     "Daphne du Maurier"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3566,7 +3566,7 @@
     "Jean M. Auel"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3579,7 +3579,7 @@
     "Terry Goodkind"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3592,7 +3592,7 @@
     "Natalie Babbitt"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3605,7 +3605,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3618,7 +3618,7 @@
     "Libba Bray"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3631,7 +3631,7 @@
     "Michael Crichton"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3644,7 +3644,7 @@
     "Arthur C. Clarke"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3657,7 +3657,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3670,7 +3670,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3683,7 +3683,7 @@
     "Ken Follett"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3696,7 +3696,7 @@
     "Jonathan Swift"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3709,7 +3709,7 @@
     "Donna Tartt"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3722,7 +3722,7 @@
     "Leo Tolstoy"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3735,7 +3735,7 @@
     "Haruki Murakami"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3748,7 +3748,7 @@
     "Jennifer Weiner"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3761,7 +3761,7 @@
     "Patricia Cornwell"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3774,7 +3774,7 @@
     "Bret Easton Ellis"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3787,7 +3787,7 @@
     "Arundhati Roy"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3800,7 +3800,7 @@
     "Laura Ingalls Wilder"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3813,7 +3813,7 @@
     "Orson Scott Card"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3826,7 +3826,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3839,7 +3839,7 @@
     "Lee Child"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3852,7 +3852,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3865,7 +3865,7 @@
     "Robert Jordan"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3878,7 +3878,7 @@
     "Ned Vizzini"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3891,7 +3891,7 @@
     "Sherman Alexie"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3904,7 +3904,7 @@
     "Junot Díaz"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3917,7 +3917,7 @@
     "H. G. Wells"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3943,7 +3943,7 @@
     "Jeffrey Eugenides"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3956,7 +3956,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3969,7 +3969,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3982,7 +3982,7 @@
     "Marion Zimmer Bradley"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -3995,7 +3995,7 @@
     "Francine Rivers"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4008,7 +4008,7 @@
     "John Knowles"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4021,7 +4021,7 @@
     "Fyodor Dostoyevsky"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4034,7 +4034,7 @@
     "Ursula K. Le Guin"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4047,7 +4047,7 @@
     "Chuck Palahniuk"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4060,7 +4060,7 @@
     "Arthur Conan Doyle"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4073,7 +4073,7 @@
     "Kate DiCamillo"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4086,7 +4086,7 @@
     "Douglas Adams"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4099,7 +4099,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4112,7 +4112,7 @@
     "Robert Jordan"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4125,7 +4125,7 @@
     "David Mitchell"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4138,7 +4138,7 @@
     "Sarah Dessen"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 11,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4151,7 +4151,7 @@
     "Judy Blume"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4164,7 +4164,7 @@
     "Sarah Dessen"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4177,7 +4177,7 @@
     "Margaret Atwood"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4190,7 +4190,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4203,7 +4203,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4216,7 +4216,7 @@
     "Charles Dickens"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4229,7 +4229,7 @@
     "Ally Carter"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4242,7 +4242,7 @@
     "Jeff Lindsay"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4255,7 +4255,7 @@
     "Alex Flinn"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4268,7 +4268,7 @@
     "Michael Connelly"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4281,7 +4281,7 @@
     "Michael Crichton"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4294,7 +4294,7 @@
     "Lev Grossman"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4307,7 +4307,7 @@
     "Michael Chabon"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4320,7 +4320,7 @@
     "Christopher Paolini"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4333,7 +4333,7 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4346,7 +4346,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4359,7 +4359,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4372,7 +4372,7 @@
     "Neal Shusterman"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4385,7 +4385,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4398,7 +4398,7 @@
     "Robert Ludlum"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4411,7 +4411,7 @@
     "Jon Scieszka"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 9,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "form hold: Illustrated children's retelling; excluded pending a broader form-scope decision."
@@ -4424,7 +4424,7 @@
     "Tom Clancy"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4437,7 +4437,7 @@
     "Anne Rice"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4450,7 +4450,7 @@
     "Gaston Leroux"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4463,7 +4463,7 @@
     "Richelle Mead"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4476,7 +4476,7 @@
     "Scott Westerfeld"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4489,7 +4489,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4502,7 +4502,7 @@
     "Agatha Christie"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 27,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4515,7 +4515,7 @@
     "P. C. Cast"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4528,7 +4528,7 @@
     "Harriet Beecher Stowe"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4541,7 +4541,7 @@
     "Neil Gaiman"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4554,7 +4554,7 @@
     "John Grisham"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4567,7 +4567,7 @@
     "Garth Nix"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4580,7 +4580,7 @@
     "Robert A. Heinlein"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4593,7 +4593,7 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4606,7 +4606,7 @@
     "Virginia Woolf"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4619,7 +4619,7 @@
     "Robert C. O'Brien"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4632,7 +4632,7 @@
     "Nick Hornby"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4645,7 +4645,7 @@
     "E. L. Konigsburg"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4658,7 +4658,7 @@
     "J. R. R. Tolkien"
    ],
    "labelled": true,
-   "supported_cells": 9,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "form hold: Collection of myths and stories; excluded pending a broader form-scope decision."
@@ -4671,7 +4671,7 @@
     "Susanna Clarke"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4697,7 +4697,7 @@
     "Robin Hobb"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4710,7 +4710,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4723,7 +4723,7 @@
     "David Guterson"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4736,7 +4736,7 @@
     "Franz Kafka"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4749,7 +4749,7 @@
     "Douglas Adams"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4762,7 +4762,7 @@
     "Mikhail Bulgakov"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4775,7 +4775,7 @@
     "Michael Crichton"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4788,7 +4788,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4801,7 +4801,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4814,7 +4814,7 @@
     "Michael Crichton"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4827,7 +4827,7 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4840,7 +4840,7 @@
     "Truman Capote"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4853,7 +4853,7 @@
     "Sharon Creech"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4866,7 +4866,7 @@
     "Ken Follett"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4879,7 +4879,7 @@
     "Terry Pratchett"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4892,7 +4892,7 @@
     "Jodi Picoult"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4918,7 +4918,7 @@
     "Kristin Cast"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4931,7 +4931,7 @@
     "Charlaine Harris"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4944,7 +4944,7 @@
     "Justin Cronin"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4957,7 +4957,7 @@
     "John Irving"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4970,7 +4970,7 @@
     "Philippa Gregory"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4983,7 +4983,7 @@
     "William Faulkner"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -4996,7 +4996,7 @@
     "Kenneth Grahame"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5009,7 +5009,7 @@
     "William Peter Blatty"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5022,7 +5022,7 @@
     "Diana Wynne Jones"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5035,7 +5035,7 @@
     "Ralph Ellison"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5048,7 +5048,7 @@
     "Robert Jordan"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5061,7 +5061,7 @@
     "Dan Simmons"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5074,7 +5074,7 @@
     "P. C. Cast"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5087,7 +5087,7 @@
     "Sarah Dessen"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5100,7 +5100,7 @@
     "Isabel Allende"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5113,7 +5113,7 @@
     "Bernhard Schlink"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5126,7 +5126,7 @@
     "Victor Hugo"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5139,7 +5139,7 @@
     "Scott Lynch"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5152,7 +5152,7 @@
     "Christopher Moore"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5165,7 +5165,7 @@
     "Jonathan Franzen"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5178,7 +5178,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5191,7 +5191,7 @@
     "Ellen Raskin"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5204,7 +5204,7 @@
     "Jules Verne"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 28,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5217,7 +5217,7 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5243,7 +5243,7 @@
     "Sue Grafton"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5256,7 +5256,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5269,7 +5269,7 @@
     "Orson Scott Card"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5282,7 +5282,7 @@
     "Lois Lowry"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5295,7 +5295,7 @@
     "Dennis Lehane"
    ],
    "labelled": true,
-   "supported_cells": 20,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5321,7 +5321,7 @@
     "Kate DiCamillo"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5347,7 +5347,7 @@
     "Larry McMurtry"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5360,7 +5360,7 @@
     "Jim Butcher"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5373,7 +5373,7 @@
     "Jodi Picoult"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5386,7 +5386,7 @@
     "Anne Rice"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 30,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5399,7 +5399,7 @@
     "E. M. Forster"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5412,7 +5412,7 @@
     "Toni Morrison"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5425,7 +5425,7 @@
     "Jostein Gaarder"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5438,7 +5438,7 @@
     "Dean Koontz"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5451,7 +5451,7 @@
     "Brent Weeks"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5464,7 +5464,7 @@
     "Michael Ende"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5477,7 +5477,7 @@
     "V. C. Andrews"
    ],
    "labelled": true,
-   "supported_cells": 23,
+   "supported_cells": 29,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5490,7 +5490,7 @@
     "Terry Pratchett"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5516,7 +5516,7 @@
     "Janet Evanovich"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5529,7 +5529,7 @@
     "Lisa See"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5542,7 +5542,7 @@
     "Judy Blume"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5555,7 +5555,7 @@
     "Seth Grahame-Smith"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5581,7 +5581,7 @@
     "Elizabeth George Speare"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5607,7 +5607,7 @@
     "Tom Clancy"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5620,7 +5620,7 @@
     "Barbara Kingsolver"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5633,7 +5633,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5646,7 +5646,7 @@
     "Orson Scott Card"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5659,7 +5659,7 @@
     "Geraldine Brooks"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5672,7 +5672,7 @@
     "Laurell K. Hamilton"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5685,7 +5685,7 @@
     "Ellen Hopkins"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5698,7 +5698,7 @@
     "Nora Roberts"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5711,7 +5711,7 @@
     "William Faulkner"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5724,7 +5724,7 @@
     "Jacquelyn Mitchard"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5737,7 +5737,7 @@
     "Edith Wharton"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5750,7 +5750,7 @@
     "Peter Benchley"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5776,7 +5776,7 @@
     "Mitch Albom"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5789,7 +5789,7 @@
     "Nick Hornby"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5802,7 +5802,7 @@
     "Muriel Barbery"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5815,7 +5815,7 @@
     "Lionel Shriver"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5828,7 +5828,7 @@
     "Kristin Cast"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5841,7 +5841,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5854,7 +5854,7 @@
     "Cormac McCarthy"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5867,7 +5867,7 @@
     "Kathy Reichs"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5880,7 +5880,7 @@
     "Jack London"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5893,7 +5893,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5906,7 +5906,7 @@
     "Jerry Spinelli"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5919,7 +5919,7 @@
     "Patrick Ness"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5932,7 +5932,7 @@
     "Brandon Mull"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5945,7 +5945,7 @@
     "Janet Evanovich"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5958,7 +5958,7 @@
     "Rohinton Mistry"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5971,7 +5971,7 @@
     "Jodi Picoult"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5984,7 +5984,7 @@
     "José Saramago"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -5997,7 +5997,7 @@
     "Michael Connelly"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6010,7 +6010,7 @@
     "Margaret Atwood"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6023,7 +6023,7 @@
     "Nicole Krauss"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6036,7 +6036,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6049,7 +6049,7 @@
     "Kristin Cashore"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6062,7 +6062,7 @@
     "Pittacus Lore"
    ],
    "labelled": true,
-   "supported_cells": 18,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6075,7 +6075,7 @@
     "Jim Butcher"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 24,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6088,7 +6088,7 @@
     "John Scalzi"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6101,7 +6101,7 @@
     "Michael Cunningham"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6114,7 +6114,7 @@
     "Caleb Carr"
    ],
    "labelled": true,
-   "supported_cells": 19,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6140,7 +6140,7 @@
     "Maria V. Snyder"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6153,7 +6153,7 @@
     "Brandon Sanderson"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6166,7 +6166,7 @@
     "Albert Camus"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6192,7 +6192,7 @@
     "Ayn Rand"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6205,7 +6205,7 @@
     "Anne McCaffrey"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6218,7 +6218,7 @@
     "Elizabeth Gaskell"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6231,7 +6231,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6244,7 +6244,7 @@
     "Janet Evanovich"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6257,7 +6257,7 @@
     "Susan Beth Pfeffer"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6270,7 +6270,7 @@
     "Brandon Sanderson"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6283,7 +6283,7 @@
     "Douglas Adams"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6296,7 +6296,7 @@
     "Ken Follett"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 23,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6309,7 +6309,7 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6322,7 +6322,7 @@
     "Robert Jordan"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6335,7 +6335,7 @@
     "Arthur C. Clarke"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6348,7 +6348,7 @@
     "Wilkie Collins"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6361,7 +6361,7 @@
     "Markus Zusak"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6374,7 +6374,7 @@
     "Shannon Hale"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6400,7 +6400,7 @@
     "Scott Turow"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6413,7 +6413,7 @@
     "Robert Jordan"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6426,7 +6426,7 @@
     "Jim Butcher"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6439,7 +6439,7 @@
     "Carl Sagan"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6452,7 +6452,7 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 8,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "form hold: Fictional companion/reference book, rather than a conventional narrative novel."
@@ -6465,7 +6465,7 @@
     "Richard Russo"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6478,7 +6478,7 @@
     "Isabel Allende"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6491,7 +6491,7 @@
     "Douglas Adams"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6504,7 +6504,7 @@
     "Tess Gerritsen"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
@@ -6517,7 +6517,7 @@
     "Jules Verne"
    ],
    "labelled": true,
-   "supported_cells": 15,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
    "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"

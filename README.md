@@ -154,7 +154,7 @@ The validator checks:
 | QR code | Deploy workflow added; generate the QR from the Pages URL once deployed. |
 | Human playtests, timed rehearsals | **Can't be done by me.** Recruit 10 fresh testers and record outcomes with exact denominators. |
 
-## Research catalog (500 imported records → 17 playable books)
+## Research catalog (500 imported records → 27 playable books)
 
 Two catalogs ship. The **10-book fixture** stays the default (`npm run dev`). The **CMU / research catalog**
 is selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report imported records as game coverage:
@@ -165,7 +165,7 @@ is selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report importe
 | Records with a validated question matrix | 500 (7,348 source-linked cells; 468 have ≥12) |
 | Form holds kept out of the novel pool | 8 |
 | Cells reviewed by a person | **0** |
-| **Playable game targets** | **17** |
+| **Playable game targets** | **27** (17 with the base 64 questions only) |
 
 Pipeline (`npm run catalog:research`; needs the research and Core packs next to the repo, not committed):
 1. `scripts/merge_research.py`: researched matrix (`core500_researched_labels.json`) merged by stable ID with
@@ -180,11 +180,31 @@ Pipeline (`npm run catalog:research`; needs the research and Core packs next to 
    is playable only if answering exactly from its own labels makes it the engine's first guess (backward seed,
    then forward retry in priority order). `tests/cmu_catalog.test.ts` re-checks this on every `npm test`.
 
-Simulation of the 17 (`reports/simulation_research.json`, seed 42, 30 games/book): clear memory 26.3% first
-guess, 92.7% found by any route (incl. shortlist); half memory 6.9% / 82.9%. Machine-labelled data: these are
-not accuracy claims. Why so few: most research labels are qualified 0.7/0.3, which the engine cannot turn into a
+Simulation (`reports/simulation_research.json`, seed 42, 30 games/book): see the motif table below.
+Machine-labelled data: these are not accuracy claims. Why so few: most research labels are qualified 0.7/0.3, which the engine cannot turn into a
 confident guess within 18 questions. More playable books need **stronger, distinguishing plot labels reviewed by
 a person**, not lower thresholds. Every book's status and reason is in `data/cmu/coverage_report.json`.
+
+### Motif questions (52 concrete story elements)
+
+`scripts/motif_labels.py` adds 52 questions about things a reader remembers ("Does a dragon appear?", "Are
+there vampires?", "Is someone kidnapped?", "Is there a courtroom trial?" …; full list in
+`data/motifs/motif_questions.json`). Evidence comes only from story text: the CMU plot synopsis and the premise
+paragraph that opens the Wikipedia article, never reception, background or category lines. Labels are
+**positive only** (an explicit mention gives 0.9 with an exact quote); a summary not mentioning a dragon stays
+unknown, never No. Patterns were tuned against their hits and 52 figurative or off-story hits were rejected by
+an AI assistant (`data/motifs/rejected.json`); random samples of the broad motifs were checked. No person has
+reviewed them. Result: 2,146 motif labels on 467 books.
+
+| | base 64 questions | + 52 motif questions |
+| --- | ---: | ---: |
+| Playable books (engine gate, thresholds unchanged) | 17 | **27** |
+| Clear memory: first guess right / found by any route | 26.3% / 92.7% | 31.9% / 82.7% |
+| Half memory: first guess right / found by any route | 6.9% / 82.9% | 6.7% / 67.0% |
+
+Experiment, **not shipped**: counting "the summary never mentions it" as a weak No (0.3) on motif questions
+makes 178 books pass the gate, but clear-memory play falls to 8.6% first guess / 57.1% found. That breaks the
+brief's "missing evidence is unknown, not No" rule and is a product decision, not a default.
 
 ## Front end: Folio and the night library
 
