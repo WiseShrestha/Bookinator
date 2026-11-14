@@ -49,7 +49,10 @@ export default function App() {
   // Move focus to the new heading whenever the screen or question changes (screen readers + keyboard).
   const screenKey = state ? `${state.action.kind}:${session?.events.length}` : "start";
   useEffect(() => {
-    headingRef.current?.focus();
+    headingRef.current?.focus({ preventScroll: true });
+    // If the reader has scrolled past the top of the stage, bring the new screen into view.
+    const stage = document.querySelector(".stage");
+    if (stage && stage.getBoundingClientRect().top < 0) stage.scrollIntoView({ block: "start" });
   }, [screenKey]);
 
   // Global keyboard shortcuts: 1–5 answers, U undo, Y/N on a guess.
@@ -118,14 +121,15 @@ export default function App() {
 
   return (
     <div className="app">
+      <Backdrop />
       <header className="masthead">
-        <button className="brand" onClick={onRestart} aria-label="That Book — start over">
-          <span className="brand-mark" aria-hidden="true">❦</span> That Book
+        <button className="brand" onClick={onRestart} aria-label="Bookinator — start over">
+          <span className="brand-mark" aria-hidden="true">✦</span> Bookinator
         </button>
         <span className="tagline">Remember the story. Forget the title.</span>
       </header>
       <DataBanner catalog={ACTIVE_CATALOG} />
-      <main className="layout">
+      <main className={`layout ${session && state ? "playing" : "idle"}`}>
         <section className="stage" aria-live="polite">
           {screen}
         </section>
@@ -140,3 +144,35 @@ export default function App() {
     </div>
   );
 }
+
+/** Purely decorative night-library backdrop: stars, drifting motes and a bookshelf silhouette. */
+function Backdrop() {
+  return (
+    <div className="backdrop" aria-hidden="true">
+      <div className="stars" />
+      <div className="stars stars-2" />
+      {Array.from({ length: 14 }, (_, i) => (
+        <span key={i} className="mote" style={{ ["--i" as string]: i, left: `${(i * 53) % 100}%` }} />
+      ))}
+      <svg className="shelves" viewBox="0 0 1200 160" preserveAspectRatio="none">
+        <path d={SHELF_PATH} />
+      </svg>
+    </div>
+  );
+}
+
+// Deterministic row of book spines for the skyline at the bottom of the page.
+const SHELF_PATH = (() => {
+  let d = "M0 160 L0 120 ";
+  let x = 0;
+  let seed = 7;
+  const rnd = () => ((seed = (seed * 9301 + 49297) % 233280) / 233280);
+  while (x < 1200) {
+    const w = 14 + Math.floor(rnd() * 22);
+    const h = 40 + Math.floor(rnd() * 70);
+    const lean = rnd() < 0.12 ? 8 : 0;
+    d += `L${x} ${160 - h} L${x + w - lean} ${160 - h - lean / 2} L${x + w} ${160} `;
+    x += w + 2;
+  }
+  return d + "L1200 160 Z";
+})();
