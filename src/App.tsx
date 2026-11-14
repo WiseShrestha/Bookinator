@@ -4,9 +4,11 @@ import { ANSWERS, type Answer } from "./engine/model.ts";
 import { applyEvent, deriveState, newSession, undo, type Session, type SessionEvent } from "./engine/session.ts";
 import { CC, CONFIG, loadSession, saveSession } from "./game.ts";
 import { STRINGS, useLang } from "./i18n/index.ts";
+import { LIBRARY } from "./i18n/library.ts";
+import { DESIGN_MOCK } from "./mock/design.ts";
 import { AddBookScreen } from "./components/Contribute.tsx";
-import { FoundScreen, GuessScreen, QuestionScreen, ShortlistScreen, StartScreen } from "./components/screens.tsx";
-import { LangToggle, UndoIcon } from "./components/scenery.tsx";
+import { BookScreen, HomeScreen, QuestionScreen, SimilarScreen } from "./components/screens.tsx";
+import { Footer, Header, MobileHeader } from "./components/ui.tsx";
 
 function safeDerive(session: Session) {
   try {
@@ -19,6 +21,8 @@ function safeDerive(session: Session) {
 export default function App() {
   const [lang, setLang] = useLang();
   const t = STRINGS[lang];
+  const L = LIBRARY[lang];
+  const mock = DESIGN_MOCK[lang];
   const [session, setSession] = useState<Session | null>(() => {
     const saved = loadSession();
     return saved && safeDerive(saved) ? saved : null;
@@ -77,17 +81,19 @@ export default function App() {
 
   let screen;
   if (!session || !state) {
-    screen = <StartScreen headingRef={headingRef} onStart={onStart} t={t} lang={lang} />;
+    screen = <HomeScreen headingRef={headingRef} onStart={onStart} t={t} L={L} lang={lang} />;
   } else {
     const a = state.action;
-    const common = { headingRef, state, session, t, lang, onUndo, onRestart, canUndo: session.events.length > 0 };
+    const common = { headingRef, state, session, t, L, lang, onUndo, onRestart, canUndo: session.events.length > 0 };
     switch (a.kind) {
       case "ask":
-        screen = <QuestionScreen {...common} action={a} onAnswer={(answer) => dispatch({ type: "answer", questionId: a.question.id, answer })} />;
+        // Keyed by the question so the picked answer never carries over.
+        screen = <QuestionScreen key={a.question.id} {...common} action={a} onAnswer={(answer) => dispatch({ type: "answer", questionId: a.question.id, answer })} />;
         break;
       case "guess":
         screen = (
-          <GuessScreen
+          <BookScreen
+            key={a.book.id}
             {...common}
             action={a}
             onAccept={() => dispatch({ type: "accept", bookId: a.book.id })}
@@ -97,10 +103,10 @@ export default function App() {
         );
         break;
       case "shortlist":
-        screen = <ShortlistScreen {...common} action={a} onPick={(bookId) => dispatch({ type: "accept", bookId })} onExit={() => dispatch({ type: "exit" })} />;
+        screen = <SimilarScreen {...common} action={a} onPick={(bookId) => dispatch({ type: "accept", bookId })} onExit={() => dispatch({ type: "exit" })} />;
         break;
       case "found":
-        screen = <FoundScreen {...common} action={a} />;
+        screen = <BookScreen key={a.book.id} {...common} action={a} />;
         break;
       case "no_match":
         // Keyed by the event count so the form starts empty after Undo + a new miss.
@@ -111,31 +117,16 @@ export default function App() {
 
   const notice =
     ACTIVE_CATALOG.data_status === "production" ? null : ACTIVE_CATALOG.data_status === "machine_labelled_unreviewed" ? t.unreviewedData : t.devData;
+  const header = { L, lang, setLang, hours: mock.hours, onHome: onRestart, onStart: () => onStart(false) };
 
   return (
     <div className={`app screen-${kind}`}>
-      <header className="topbar">
-        {kind === "start" ? (
-          <span />
-        ) : (
-          <button type="button" className="wordmark" onClick={onRestart} aria-label={`${t.brand} — ${t.startOver}`}>
-            {t.brand}
-          </button>
-        )}
-        {kind === "ask" && session && session.events.length > 0 && (
-          <button type="button" className="pill pill-undo pc-only" onClick={onUndo} aria-keyshortcuts="U">
-            <UndoIcon />
-            {t.prevQuestion}
-          </button>
-        )}
-        <LangToggle lang={lang} setLang={setLang} t={t} />
-      </header>
-      <main className="stage" aria-live="polite">
-        {screen}
-      </main>
-      <footer className="foot">
+      <Header {...header} />
+      <MobileHeader {...header} />
+      <main aria-live="polite">{screen}</main>
+      <Footer L={L} address={mock.address}>
         {notice && (
-          <p className="foot-notice">
+          <p>
             <b>{notice}.</b> <span lang="en">{ACTIVE_CATALOG.notice}</span>
           </p>
         )}
@@ -147,8 +138,8 @@ export default function App() {
             CATALOG_SOURCE === "remote" ? t.sourceRemote : t.sourceBundled,
           )}
         </p>
-        {ACTIVE_CATALOG.credits && <p className="credits" lang="en">{ACTIVE_CATALOG.credits}</p>}
-      </footer>
+        {ACTIVE_CATALOG.credits && <p lang="en">{ACTIVE_CATALOG.credits}</p>}
+      </Footer>
     </div>
   );
 }

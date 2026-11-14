@@ -58,6 +58,7 @@ before(async () => {
   db = await PGlite.create({ extensions: { pg_trgm } });
   await db.exec(read("tests/db/supabase_stub.sql"));
   await db.exec(read("supabase/migrations/20261114000000_community_contributions.sql"));
+  await db.exec(read("supabase/migrations/20261115000000_input_hygiene_and_popular.sql"));
   await db.query("insert into auth.users (id) values ($1), ($2), ($3)", [ADMIN, ALICE, BOB]);
   await db.query("insert into public.app_admins (user_id) values ($1)", [ADMIN]);
   await as(null, "service_role", async () => {

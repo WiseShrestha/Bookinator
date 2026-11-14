@@ -45,7 +45,11 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
   - `model.ts` types + channel + `compileCatalog`; `config.ts` **all thresholds**; `posterior.ts` log-space replay;
     `selectQuestion.ts` expected information gain × recallability; `session.ts` event log, Undo, rejection,
     18-question cap, shortlist, no-match; `explain.ts` clues; `links.ts` catalog links.
-- `src/components/` UI screens (`scenery.tsx` = seagull, cloud buttons, sea; `Contribute.tsx` = add-a-book + opt-in answers); `src/i18n/` Korean/English; `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
+- `src/components/` UI in the "Sea Library" Figma design (file `2y03ZMj6rMWmPFT4GwYa0n`): `ui.tsx` = reusable Header, MobileHeader, Footer,
+  Button, AnswerButton, BookCard, LeaderboardRow, UnsplashImage; `screens.tsx` = Home, Question, Book (guess + found), Similar;
+  `Contribute.tsx` = Not Found / add-a-book + opt-in answers. Colours only as CSS variables in `src/styles.css`; design wording in
+  `src/i18n/library.ts` (ko/en); design sample content only in `src/mock/design.ts`; icons exported from Figma in `src/assets/icons/`.
+  `src/bookInfo.ts` = sourced descriptions (Wikipedia page id / Open Library work id), Unsplash photo and popular lists via Edge Functions; `src/i18n/` Korean/English; `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
 - `src/data/index.ts` — chooses the catalog: `?collection=research|classic` in the URL, else `VITE_CATALOG`, else the fixture.
 - `server/library-proxy.mjs` — stdlib Node proxy keeping the Data4Library key server-side.
 - `research/chatgpt_source/` — ChatGPT's research code, unchanged; tests via `npm run test:research`.
@@ -126,7 +130,9 @@ brief's "missing evidence is unknown, not No" rule and is a product decision, no
 
 New requirement: Akinator-style reader contributions (new books after a miss, corrections, feature answers,
 question and cover proposals) stored in Supabase (project ref `jvfxqusmnfdvslrgbjyv`, MCP server in `.mcp.json`).
-Nothing has been applied to the remote project yet. Decided (14 Nov 2026): D1 Supabase anonymous sign-in + CAPTCHA,
+Applied to the remote project on 15 Nov 2026: both migrations in `supabase/migrations/` and the `book-image` Edge
+Function (Unsplash proxy, `supabase/functions/`). Not done yet: catalog `sync` (needs `SUPABASE_SERVICE_ROLE_KEY`),
+Anonymous sign-ins (off in the dashboard, so contributions fail until enabled), `app_admins` rows. Decided (14 Nov 2026): D1 Supabase anonymous sign-in + CAPTCHA,
 D2 opt-in consent asked at the end of each game (send nothing on decline), D7 no cover uploads (Open Library cover
 links only). D3–D6 and D8–D13 are still open in the design doc — don't hard-code an answer to one of them.
 
@@ -140,7 +146,8 @@ links only). D3–D6 and D8–D13 are still open in the design doc — don't har
   approved books join only if the engine gate finds them). The JSON catalog in git stays the source of truth.
 - Feature status `community_consensus` requires `reviewed: true` and `consensus` provenance (validator enforces).
 - `scripts/py.mjs` runs Python in UTF-8 mode; with that, `npm run verify` is green on Windows (cp949 console).
-- UI follows the design canvas (seagull, cloud buttons, sea; Korean/English; PC ≥ 900px / phone). Korean question
+- UI follows the Sea Library Figma design (Korean/English; desktop 1440 / mobile 390, breakpoint 760px). No match percentages are shown
+  (posterior ≠ accuracy); free-text inputs from the design are visible but disabled (no LLM at runtime). Korean question
   wording lives in `src/i18n/questionsKo.ts` keyed by the English text — add a line when a question is added
   (`tests/contribute.test.ts` fails otherwise). Covers are generated (D7), never images.
 - Browser contributions: `src/community/client.ts` (supabase-js loaded lazily, anonymous sign-in, Turnstile when

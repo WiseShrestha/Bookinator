@@ -11,6 +11,14 @@ export function normalize(s: string | null | undefined): string {
     .trim();
 }
 
+/** Removes control, invisible and bidi-override characters and collapses whitespace (same rule as SQL tb_clean_text). */
+export function cleanText(s: string): string {
+  return s
+    .replace(/[\u0000-\u001F\u007F-\u009F\u200B-\u200F\u2028-\u202E\u2060-\u2069\uFEFF]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function bigrams(s: string): Map<string, number> {
   const t = s.replace(/ /g, "");
   const m = new Map<string, number>();

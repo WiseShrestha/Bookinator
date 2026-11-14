@@ -1,4 +1,4 @@
-// Contribution UI (docs/community/DESIGN.md §2): "which book was it?" after a miss, and the opt-in
+// Contribution UI (docs/community/DESIGN.md §2): the "05 · Result — Not Found" screen after a miss, and the opt-in
 // "send my answers" card after a hit. D1 anonymous sign-in (+ Turnstile when configured),
 // D2 nothing leaves the browser unless the reader asks on this screen.
 import { useEffect, useMemo, useRef, useState, type FormEvent, type RefObject } from "react";
@@ -14,12 +14,13 @@ import {
   type RemoteBookHit,
 } from "../community/client.ts";
 import { sessionPayload } from "../community/payload.ts";
-import { searchLocal } from "../community/search.ts";
+import { cleanText, searchLocal } from "../community/search.ts";
 import type { CatalogBook } from "../engine/model.ts";
 import type { Session, SessionState } from "../engine/session.ts";
 import { CC } from "../game.ts";
 import { bookTitles, type Lang, type Strings } from "../i18n/index.ts";
-import { Bubble, CloudDecor, Seagull, Sea } from "./scenery.tsx";
+import type { LibraryStrings } from "../i18n/library.ts";
+import { Button, Icon, UnsplashImage } from "./ui.tsx";
 
 // ---------------------------------------------------------------- sign-in + CAPTCHA
 
@@ -111,7 +112,7 @@ export function ShareAnswers({ session, state, t, lang }: { session: Session; st
     }
   };
   return (
-    <div className="share-card" aria-live="polite">
+    <div className="card share-card" aria-live="polite">
       {status === "sent" ? (
         <p className="share-done">{t.shared}</p>
       ) : (
@@ -121,10 +122,10 @@ export function ShareAnswers({ session, state, t, lang }: { session: Session; st
           {who.needsCaptcha && <Captcha onToken={who.setToken} lang={lang} />}
           {status === "error" && <p className="form-error">{t.sendFailed}</p>}
           <div className="share-actions">
-            <button type="button" className="pill pill-dark" onClick={send} disabled={!who.ready || status === "sending"}>
+            <button type="button" className="btn btn-primary" onClick={send} disabled={!who.ready || status === "sending"}>
               {status === "sending" ? t.sending : t.shareAnswersYes}
             </button>
-            <button type="button" className="pill" onClick={() => setStatus("declined")}>
+            <button type="button" className="btn btn-secondary" onClick={() => setStatus("declined")}>
               {t.shareAnswersNo}
             </button>
           </div>
@@ -147,6 +148,7 @@ export function AddBookScreen({
   session,
   state,
   t,
+  L,
   lang,
   onPlayAgain,
   onUndo,
@@ -155,12 +157,17 @@ export function AddBookScreen({
   session: Session;
   state: SessionState;
   t: Strings;
+  L: LibraryStrings;
   lang: Lang;
   onPlayAgain: () => void;
   onUndo: () => void;
 }) {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
+  const [memory, setMemory] = useState("");
+  const [kinds, setKinds] = useState<number[]>([]);
+  const [query, setQuery] = useState("");
+  const [searched, setSearched] = useState<string | null>(null);
   const [consent, setConsent] = useState(false);
   const [remote, setRemote] = useState<RemoteBookHit[]>([]);
   const [confirmDup, setConfirmDup] = useState(false);
@@ -228,20 +235,26 @@ export function AddBookScreen({
 
   const add = async (e: FormEvent) => {
     e.preventDefault();
-    if (!title.trim() || !author.trim()) {
+    const cleanTitle = cleanText(title);
+    const cleanAuthor = cleanText(author);
+    if (!cleanTitle || !cleanAuthor) {
       setStatus({ kind: "error", msg: t.needTitleAuthor });
       return;
     }
+    // The reader's own words, plus the kinds they ticked, go into the submission's free-text note.
+    const kindText = kinds.map((i) => L.kinds[i]).join(", ");
+    const reasonText = [memory.trim(), kindText && `[${L.kind}: ${kindText}]`].filter(Boolean).join("\n").slice(0, 2000);
     setStatus({ kind: "sending" });
     try {
       await who.signIn();
       const sid = await sendSession();
       const res = await submitBook({
-        title: title.trim(),
-        author: author.trim(),
-        ...(hangul(title) ? { title_ko: title.trim() } : {}),
+        title: cleanTitle,
+        author: cleanAuthor,
+        ...(hangul(cleanTitle) ? { title_ko: cleanTitle } : {}),
         ...(sid ? { origin_session_id: sid } : {}),
         confirm_not_duplicate: confirmDup,
+        ...(reasonText ? { reason: reasonText } : {}),
       });
       if (res.status === "created") {
         setStatus({ kind: "done", msg: t.thanksNew });
@@ -265,88 +278,128 @@ export function AddBookScreen({
   };
 
   const hasSimilar = local.length > 0 || remote.length > 0;
+  // Option A: look the title or author up in the books this shelf already has.
+  const found = useMemo(() => {
+    if (searched === null) return [];
+    const byTitle = searchLocal(CC.books, searched, "", 5);
+    const byAuthor = searchLocal(CC.books, "", searched, 5).filter((h) => !byTitle.some((x) => x.book.id === h.book.id));
+    return [...byTitle, ...byAuthor].slice(0, 5);
+  }, [searched]);
+  const toggleKind = (i: number) => setKinds((k) => (k.includes(i) ? k.filter((x) => x !== i) : [...k, i]));
 
   return (
-    <div className="frame frame-add">
-      <div className="sky sky-add">
-        <div className="scene scene-add">
-          <Seagull mood="sad" />
-          <Bubble>
-            <h1 ref={headingRef} tabIndex={-1}>
-              {reason === "all_rejected" ? t.allRejectedLine : t.missedLine}
-            </h1>
-          </Bubble>
+    <>
+      <section className="nf-hero">
+        <UnsplashImage caption={L.nfImage} className="nf-photo" />
+        <p className="eyebrow">{L.nfEyebrow}</p>
+        <h1 ref={headingRef} tabIndex={-1}>{L.nfTitle}</h1>
+        <p className="lead-sm">{reason === "all_rejected" ? t.allRejectedLine : L.nfLead}</p>
+      </section>
+
+      <section className="nf-options">
+        <div className="card nf-search">
+          <span className="tile-icon"><Icon name="tileSearch" size={22} /></span>
+          <h2>{L.searchTitle}</h2>
+          <p className="muted">{L.searchLead}</p>
+          <form className="input-row" role="search" onSubmit={(e) => { e.preventDefault(); setSearched(query.trim()); }}>
+            <label className="sr-only" htmlFor="nf-query">{L.searchPlaceholder}</label>
+            <span className="field field-pill">
+              <Icon name="field" />
+              <input id="nf-query" type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder={L.searchPlaceholder} maxLength={200} autoComplete="off" />
+            </span>
+            <button type="submit" className="btn btn-primary">{L.search}</button>
+          </form>
+          {searched !== null && (
+            <div className="nf-results" aria-live="polite">
+              {found.length === 0 ? (
+                <p className="hint">{L.searchNone}</p>
+              ) : (
+                found.map(({ book }) => (
+                  <div key={book.id} className="dup-match">
+                    <span className="lb-cover" aria-hidden="true" />
+                    <span className="lb-info"><b>{bookTitles(book, lang).main}</b><span>{book.author}</span></span>
+                    <Button variant="secondary" arrow={false} onClick={() => pick({ kind: "local", book })} disabled={busy || done}>{L.thisIsIt}</Button>
+                  </div>
+                ))
+              )}
+            </div>
+          )}
+          <hr />
+          <p className="card-label">{L.otherWays}</p>
+          <button type="button" className="link-row" onClick={onPlayAgain}><span>{L.restartQuestions}</span><Icon name="arrowRight" /></button>
+          <button type="button" className="link-row" onClick={onUndo}><span>{L.backOneStep}</span><Icon name="arrowRight" /></button>
         </div>
 
-        <form className="sheet add-form" onSubmit={add} noValidate>
-          <div className="field">
-            <label htmlFor="bk-title">{t.title}</label>
-            <input id="bk-title" type="text" value={title} onChange={(e) => setTitle(e.target.value)} disabled={done} autoComplete="off" maxLength={300} />
+        <form className="card nf-form" onSubmit={add} noValidate>
+          <span className="tile-icon"><Icon name="tileRequest" size={22} /></span>
+          <h2>{L.tellTitle}</h2>
+          <p className="muted">{L.tellLead}</p>
+          <div className="field-row">
+            <div className="form-field">
+              <label htmlFor="bk-title">{t.title} <span aria-hidden="true">*</span></label>
+              <input id="bk-title" type="text" value={title} onChange={(e) => setTitle(e.target.value)} disabled={done} autoComplete="off" maxLength={300} required />
+            </div>
+            <div className="form-field">
+              <label htmlFor="bk-author">{t.author} <span aria-hidden="true">*</span></label>
+              <input id="bk-author" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} disabled={done} autoComplete="off" maxLength={200} placeholder={L.authorPlaceholder} required />
+            </div>
           </div>
 
           {hasSimilar && !done && (
-            <div className="similar" aria-live="polite">
-              <p className="similar-head">{t.similarExists}</p>
+            <div className="dup" aria-live="polite">
+              <p className="dup-head"><Icon name="info" />{L.dupHead}</p>
               {local.map(({ book }) => (
-                <button key={book.id} type="button" className="similar-item" onClick={() => pick({ kind: "local", book })} disabled={busy}>
-                  {bookTitles(book, lang).main} · {book.author}
-                  <span className="similar-tag">{t.inThisShelf}</span>
-                </button>
+                <div key={book.id} className="dup-match">
+                  <span className="lb-cover" aria-hidden="true" />
+                  <span className="lb-info"><b>{bookTitles(book, lang).main}</b><span>{book.author} · {t.inThisShelf}</span></span>
+                  <Button variant="secondary" arrow={false} onClick={() => pick({ kind: "local", book })} disabled={busy}>{L.thisIsIt}</Button>
+                </div>
               ))}
               {remote.map((h) => (
-                <button key={`${h.kind}:${h.id}`} type="button" className="similar-item" onClick={() => pick({ kind: "remote", hit: h })} disabled={busy}>
-                  {(lang === "ko" && h.title_ko) || h.title} · {h.author}
-                  {h.kind === "submission" && <span className="similar-tag">{t.submitted}</span>}
-                </button>
+                <div key={`${h.kind}:${h.id}`} className="dup-match">
+                  <span className="lb-cover" aria-hidden="true" />
+                  <span className="lb-info"><b>{(lang === "ko" && h.title_ko) || h.title}</b><span>{h.author}{h.kind === "submission" ? ` · ${t.submitted}` : ""}</span></span>
+                  <Button variant="secondary" arrow={false} onClick={() => pick({ kind: "remote", hit: h })} disabled={busy}>{L.thisIsIt}</Button>
+                </div>
               ))}
-              <p className="similar-help">{t.tapIfSame}</p>
             </div>
           )}
 
-          <div className="field">
-            <label htmlFor="bk-author">{t.author}</label>
-            <input id="bk-author" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} disabled={done} autoComplete="off" maxLength={200} />
+          <div className="form-field">
+            <label htmlFor="bk-memory">{L.memory}</label>
+            <textarea id="bk-memory" value={memory} onChange={(e) => setMemory(e.target.value)} disabled={done} maxLength={1500} placeholder={L.memoryPlaceholder} />
           </div>
+
+          <fieldset className="form-field kinds" disabled={done}>
+            <legend>{L.kind}</legend>
+            {L.kinds.map((k, i) => (
+              <button key={k} type="button" className="chip chip-toggle" aria-pressed={kinds.includes(i)} onClick={() => toggleKind(i)}>{k}</button>
+            ))}
+          </fieldset>
 
           {contributionsEnabled && !done && (
-            <label className="consent">
+            <label className="check consent">
               <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
-              <span>
-                <b>{t.sendAnswersToo}</b>
-                <small>{t.sendAnswersHelp}</small>
-              </span>
+              <span><b>{t.sendAnswersToo}</b><small>{t.sendAnswersHelp}</small></span>
             </label>
           )}
-          {!contributionsEnabled && <p className="form-note">{t.contributionsOff}</p>}
+          {!contributionsEnabled && <p className="hint">{t.contributionsOff}</p>}
           {who.needsCaptcha && !done && <Captcha onToken={who.setToken} lang={lang} />}
+          {status.msg && <p className={status.kind === "error" ? "form-error" : "form-note"} role="status">{status.msg}</p>}
 
-          {status.msg && (
-            <p className={status.kind === "error" ? "form-error" : "form-note"} role="status">
-              {status.msg}
-            </p>
-          )}
-
-          <div className="form-actions">
-            {!done && (
-              <button type="submit" className="pill pill-dark pill-lg" disabled={!contributionsEnabled || !who.ready || busy}>
-                {busy ? t.sending : t.addBook}
+          <div className="submit-row">
+            <p className="hint">{L.required}</p>
+            {done ? (
+              <Button onClick={onPlayAgain}>{t.playAgain}</Button>
+            ) : (
+              <button type="submit" className="btn btn-primary" disabled={!contributionsEnabled || !who.ready || busy}>
+                <span>{busy ? t.sending : L.submitRequest}</span>
+                <Icon name="arrowRightWhite" />
               </button>
             )}
-            <button type="button" className="pill pill-outline pill-lg" onClick={onPlayAgain}>
-              {t.playAgain}
-            </button>
           </div>
-          {!done && (
-            <button type="button" className="text-link" onClick={onUndo}>
-              {t.undo}
-            </button>
-          )}
         </form>
-      </div>
-      <Sea className="sea-quiet">
-        <CloudDecor shape="tall" className="decor-left" />
-        <CloudDecor shape="wide" className="decor-right" />
-      </Sea>
-    </div>
+      </section>
+    </>
   );
 }

@@ -82,6 +82,8 @@ export interface NewBook {
   title_ko?: string;
   origin_session_id?: string;
   confirm_not_duplicate?: boolean;
+  /** Free text the reader typed about the book (what they remember). */
+  reason?: string;
 }
 
 export type SubmitBookResult =
