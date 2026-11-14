@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T13:07:09.775Z",
+  "generated_at": "2026-11-14T14:03:37.344Z",
   "catalog": "src/data/cmu.catalog.json",
   "catalog_version": "cmu-priority500-v1",
   "data_status": "machine_labelled_unreviewed",
@@ -47,168 +47,780 @@
     {
       "scenario": "clear",
       "description": "5% unknown, no wrong answers",
-      "games": 810,
-      "top1": 258,
-      "firstGuessWrong": 11,
+      "games": 5430,
+      "top1": 1107,
+      "firstGuessWrong": 32,
       "recoveredAfterOneRejection": 1,
-      "foundAnyRoute": 670,
-      "inTop3AtEnd": 670,
-      "failures": 140,
-      "meanQuestionsSuccess": 16.34776119402985,
-      "meanQuestionsAll": 16.633333333333333,
+      "foundAnyRoute": 3979,
+      "inTop3AtEnd": 3979,
+      "failures": 1451,
+      "meanQuestionsSuccess": 17.25207338527268,
+      "meanQuestionsAll": 17.45193370165746,
       "p90Questions": 18,
-      "wrongGuessesTotal": 11,
-      "gamesWithWrongGuess": 11,
+      "wrongGuessesTotal": 32,
+      "gamesWithWrongGuess": 32,
       "subsets": {},
       "topConfusions": [
         [
-          "cmu:enwiki:20128213 → guessed cmu:enwiki:12995",
+          "cmu:enwiki:10433866 → guessed cmu:enwiki:1890954",
           1
         ],
         [
-          "cmu:enwiki:23454753 → guessed cmu:enwiki:186258",
+          "cmu:enwiki:1301931 → guessed cmu:enwiki:2531453",
           1
         ],
         [
-          "cmu:enwiki:2449650 → guessed cmu:enwiki:1779024",
+          "cmu:enwiki:1769858 → guessed cmu:enwiki:843",
           1
         ],
         [
-          "cmu:enwiki:31879966 → guessed cmu:enwiki:14975869",
+          "cmu:enwiki:2152 → guessed cmu:enwiki:986",
           1
         ],
         [
-          "cmu:enwiki:330523 → guessed cmu:enwiki:61489",
+          "cmu:enwiki:217046 → guessed cmu:enwiki:71416",
           1
         ],
         [
-          "cmu:enwiki:36681 → guessed cmu:enwiki:23454753",
+          "cmu:enwiki:29798 → guessed cmu:enwiki:63750",
           1
         ],
         [
-          "cmu:enwiki:606612 → guessed cmu:enwiki:12995",
+          "cmu:enwiki:302997 → guessed cmu:enwiki:1937988",
           1
         ],
         [
-          "cmu:enwiki:61489 → guessed cmu:enwiki:31879966",
+          "cmu:enwiki:32262844 → guessed cmu:enwiki:2162569",
           1
         ],
         [
-          "cmu:enwiki:73408 → guessed cmu:enwiki:62120",
+          "cmu:enwiki:32688947 → guessed cmu:enwiki:13116455",
           1
         ],
         [
-          "cmu:enwiki:73408 → guessed cmu:enwiki:76033",
+          "cmu:enwiki:333987 → guessed series:millennium",
           1
         ]
       ],
       "perBookFailures": [
         {
-          "id": "cmu:enwiki:606612",
-          "fails": 13
-        },
-        {
-          "id": "cmu:enwiki:890626",
-          "fails": 12
-        },
-        {
-          "id": "cmu:enwiki:242130",
-          "fails": 10
-        },
-        {
-          "id": "cmu:enwiki:63987",
-          "fails": 8
-        },
-        {
-          "id": "cmu:enwiki:1240426",
-          "fails": 7
-        },
-        {
-          "id": "cmu:enwiki:4608346",
-          "fails": 7
-        },
-        {
-          "id": "cmu:enwiki:20128213",
-          "fails": 6
-        },
-        {
-          "id": "cmu:enwiki:23454753",
-          "fails": 6
-        },
-        {
-          "id": "cmu:enwiki:14975869",
-          "fails": 6
-        },
-        {
-          "id": "cmu:enwiki:1779024",
-          "fails": 6
-        },
-        {
-          "id": "cmu:enwiki:186258",
-          "fails": 5
-        },
-        {
-          "id": "cmu:enwiki:31584",
-          "fails": 5
-        },
-        {
-          "id": "cmu:enwiki:5326809",
-          "fails": 5
-        },
-        {
-          "id": "cmu:enwiki:55435",
-          "fails": 5
-        },
-        {
-          "id": "cmu:enwiki:76033",
-          "fails": 4
-        },
-        {
-          "id": "cmu:enwiki:62120",
-          "fails": 4
+          "id": "cmu:enwiki:1268726",
+          "fails": 17
         },
         {
           "id": "cmu:enwiki:2224493",
-          "fails": 4
+          "fails": 17
         },
         {
-          "id": "cmu:enwiki:61489",
-          "fails": 4
+          "id": "cmu:enwiki:86351",
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:31879966",
-          "fails": 4
+          "id": "cmu:enwiki:181622",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:1364178",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:23454753",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:891623",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:29834",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:535144",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1544083",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:528860",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:161446",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:944096",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:31058296",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:635510",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:64029",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:15120912",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:133721",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:703539",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:76033",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:13116455",
+          "fails": 13
+        },
+        {
+          "id": "series:foundation",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:61069",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:162189",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:797758",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:375359",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:234527",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:21796996",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:182433",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:163629",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:52803",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:42609",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:8179637",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:986",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:381491",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:714218",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:23817576",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:45896",
+          "fails": 11
+        },
+        {
+          "id": "series:stephanie-plum",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:30976827",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:1022544",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:10392345",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:165026",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 10
+        },
+        {
+          "id": "series:sookie-stackhouse",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:18949410",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:25572395",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:871902",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:10876585",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:5205080",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:340909",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:77652",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:333987",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:1398951",
+          "fails": 9
+        },
+        {
+          "id": "series:chronicles-of-narnia",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:55438",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:3681524",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:55469",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:654705",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:133874",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:182128",
+          "fails": 9
+        },
+        {
+          "id": "series:the-vampire-chronicles",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:540888",
+          "fails": 9
+        },
+        {
+          "id": "series:the-heroes-of-olympus",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:894970",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:54436",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:1769858",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:28426",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:10861",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:302997",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:27979753",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:24756137",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:901398",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:959366",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:7402039",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:28411923",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:1196343",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:34890405",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:33314889",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:347822",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:42645",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:159941",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:3832478",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:186397",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:21725",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:1259759",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:1660387",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:155311",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:2890",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:26476",
+          "fails": 8
+        },
+        {
+          "id": "series:robert-langdon",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:302301",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:10433866",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:10951",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:57766",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:288153",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:73670",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:67003",
+          "fails": 7
+        },
+        {
+          "id": "series:hannibal-lecter",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:1890954",
+          "fails": 7
+        },
+        {
+          "id": "series:the-dark-tower",
+          "fails": 7
         },
         {
           "id": "cmu:enwiki:271590",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:360245",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:18951386",
+          "fails": 7
+        },
+        {
+          "id": "series:jack-ryan-universe",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:167963",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:2152",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:161301",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:224500",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:55483",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:48573",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:220272",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:723638",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:8595912",
+          "fails": 6
+        },
+        {
+          "id": "series:the-mortal-instruments",
+          "fails": 6
+        },
+        {
+          "id": "series:the-inheritance-cycle",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:55435",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:890626",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:1937988",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:562456",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:410873",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:31879966",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:472089",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:43168",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:32903764",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:1164368",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:380143",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:32688947",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:312623",
+          "fails": 6
+        },
+        {
+          "id": "series:the-hunger-games",
+          "fails": 5
+        },
+        {
+          "id": "series:millennium",
+          "fails": 5
+        },
+        {
+          "id": "series:hitchhiker-s-guide-to-the-galaxy",
+          "fails": 5
+        },
+        {
+          "id": "series:maze-runner",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:7923",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:19918431",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:161502",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:2531453",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:63750",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:18451040",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:29798",
+          "fails": 5
+        },
+        {
+          "id": "series:house-of-night",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:67317",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:1301931",
+          "fails": 5
+        },
+        {
+          "id": "series:wheel-of-time",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:11263766",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:231716",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:217046",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:607536",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:162770",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:24162",
           "fails": 4
         },
         {
-          "id": "cmu:enwiki:36681",
+          "id": "series:a-song-of-ice-and-fire",
+          "fails": 4
+        },
+        {
+          "id": "series:the-giver",
+          "fails": 4
+        },
+        {
+          "id": "series:his-dark-materials",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:27490",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:34269647",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:31342",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:71416",
+          "fails": 4
+        },
+        {
+          "id": "series:uglies",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:843",
+          "fails": 4
+        },
+        {
+          "id": "series:the-kingkiller-chronicle",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:876994",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:1225812",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:43023",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:45133",
+          "fails": 4
+        },
+        {
+          "id": "series:harry-potter",
           "fails": 3
         },
         {
-          "id": "cmu:enwiki:12995",
+          "id": "series:twilight",
           "fails": 3
         },
         {
-          "id": "cmu:enwiki:73408",
+          "id": "cmu:enwiki:32262844",
+          "fails": 3
+        },
+        {
+          "id": "series:percy-jackson-and-the-olympians",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:3433040",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:3552124",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:1804983",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:17253525",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:562222",
           "fails": 2
         },
         {
-          "id": "cmu:enwiki:2449650",
+          "id": "cmu:enwiki:28755850",
           "fails": 2
         },
         {
-          "id": "cmu:enwiki:713625",
+          "id": "series:the-kingsbridge-series",
           "fails": 2
         },
         {
-          "id": "cmu:enwiki:330523",
-          "fails": 2
+          "id": "cmu:enwiki:2162569",
+          "fails": 1
         },
         {
-          "id": "cmu:enwiki:7911644",
+          "id": "cmu:enwiki:30280",
           "fails": 1
         }
       ]
@@ -216,401 +828,2202 @@
     {
       "scenario": "half",
       "description": "25% unknown, 5% wrong among known",
-      "games": 810,
-      "top1": 54,
-      "firstGuessWrong": 2,
+      "games": 5430,
+      "top1": 135,
+      "firstGuessWrong": 8,
       "recoveredAfterOneRejection": 0,
-      "foundAnyRoute": 543,
-      "inTop3AtEnd": 543,
-      "failures": 267,
-      "meanQuestionsSuccess": 17.749539594843462,
-      "meanQuestionsAll": 17.8320987654321,
+      "foundAnyRoute": 2517,
+      "inTop3AtEnd": 2517,
+      "failures": 2913,
+      "meanQuestionsSuccess": 17.907032181168056,
+      "meanQuestionsAll": 17.956906077348066,
       "p90Questions": 18,
-      "wrongGuessesTotal": 2,
-      "gamesWithWrongGuess": 2,
+      "wrongGuessesTotal": 8,
+      "gamesWithWrongGuess": 8,
       "subsets": {},
       "topConfusions": [
         [
-          "cmu:enwiki:31584 → guessed cmu:enwiki:330523",
+          "cmu:enwiki:1164368 → guessed cmu:enwiki:45133",
           1
         ],
         [
-          "cmu:enwiki:890626 → guessed cmu:enwiki:713625",
+          "cmu:enwiki:1544083 → guessed cmu:enwiki:231716",
+          1
+        ],
+        [
+          "cmu:enwiki:21796996 → guessed series:outlander",
+          1
+        ],
+        [
+          "cmu:enwiki:23454753 → guessed series:percy-jackson-and-the-olympians",
+          1
+        ],
+        [
+          "cmu:enwiki:27979753 → guessed series:house-of-night",
+          1
+        ],
+        [
+          "cmu:enwiki:34269647 → guessed series:the-mortal-instruments",
+          1
+        ],
+        [
+          "series:foundation → guessed series:millennium",
+          1
+        ],
+        [
+          "series:outlander → guessed series:the-kingsbridge-series",
           1
         ]
       ],
       "perBookFailures": [
         {
-          "id": "cmu:enwiki:242130",
-          "fails": 17
-        },
-        {
-          "id": "cmu:enwiki:606612",
-          "fails": 17
-        },
-        {
-          "id": "cmu:enwiki:61489",
-          "fails": 14
-        },
-        {
-          "id": "cmu:enwiki:186258",
-          "fails": 13
-        },
-        {
-          "id": "cmu:enwiki:271590",
-          "fails": 13
-        },
-        {
-          "id": "cmu:enwiki:890626",
-          "fails": 13
-        },
-        {
-          "id": "cmu:enwiki:63987",
-          "fails": 13
-        },
-        {
-          "id": "cmu:enwiki:713625",
-          "fails": 12
-        },
-        {
-          "id": "cmu:enwiki:4608346",
-          "fails": 12
-        },
-        {
-          "id": "cmu:enwiki:7911644",
-          "fails": 11
-        },
-        {
-          "id": "cmu:enwiki:330523",
-          "fails": 10
-        },
-        {
-          "id": "cmu:enwiki:76033",
-          "fails": 9
-        },
-        {
-          "id": "cmu:enwiki:14975869",
-          "fails": 9
-        },
-        {
-          "id": "cmu:enwiki:62120",
-          "fails": 9
-        },
-        {
-          "id": "cmu:enwiki:2224493",
-          "fails": 9
-        },
-        {
-          "id": "cmu:enwiki:5326809",
-          "fails": 9
-        },
-        {
-          "id": "cmu:enwiki:1779024",
-          "fails": 9
-        },
-        {
-          "id": "cmu:enwiki:73408",
-          "fails": 8
-        },
-        {
-          "id": "cmu:enwiki:31584",
-          "fails": 8
-        },
-        {
-          "id": "cmu:enwiki:1240426",
-          "fails": 8
-        },
-        {
-          "id": "cmu:enwiki:20128213",
-          "fails": 7
+          "id": "cmu:enwiki:29834",
+          "fails": 26
         },
         {
           "id": "cmu:enwiki:23454753",
-          "fails": 7
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:894970",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:1364178",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:1268726",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:1544083",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:28426",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:2224493",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:25572395",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:167963",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:31058296",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:535144",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:61069",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:163629",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:375359",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:161446",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:55438",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:28411923",
+          "fails": 22
+        },
+        {
+          "id": "series:stephanie-plum",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:635510",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:944096",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:891623",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:1022544",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:21725",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:312623",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:381491",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:10951",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:57766",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:871902",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:133874",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:5205080",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:54436",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:86351",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:723638",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:234527",
+          "fails": 20
+        },
+        {
+          "id": "series:chronicles-of-narnia",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:13116455",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:7923",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:2531453",
+          "fails": 19
+        },
+        {
+          "id": "series:sookie-stackhouse",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:182128",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:17253525",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:159941",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:360245",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:2152",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:155311",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:1769858",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:2890",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:133721",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:27979753",
+          "fails": 19
+        },
+        {
+          "id": "series:robert-langdon",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:901398",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:10392345",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:34890405",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:21796996",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:18951386",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:64029",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:1660387",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:10861",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:333987",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:42609",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:15120912",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:8179637",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:986",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:76033",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:55469",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:654705",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:45896",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:32903764",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:30976827",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:67317",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:340909",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:224500",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:186397",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:55483",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:1259759",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:48573",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:528860",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:703539",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:26476",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:181622",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:1398951",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:8595912",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:302301",
+          "fails": 16
         },
         {
           "id": "cmu:enwiki:55435",
-          "fails": 7
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:36681",
-          "fails": 6
+          "id": "cmu:enwiki:10433866",
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:2449650",
-          "fails": 6
+          "id": "cmu:enwiki:34269647",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:33314889",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:23817576",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:18949410",
+          "fails": 16
+        },
+        {
+          "id": "series:the-vampire-chronicles",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:347822",
+          "fails": 16
+        },
+        {
+          "id": "series:the-heroes-of-olympus",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:271590",
+          "fails": 16
+        },
+        {
+          "id": "series:wheel-of-time",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:162189",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:890626",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:959366",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1937988",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:562456",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:562222",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:161502",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:28755850",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:540888",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1890954",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1804983",
+          "fails": 15
+        },
+        {
+          "id": "series:the-dark-tower",
+          "fails": 15
+        },
+        {
+          "id": "series:foundation",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1301931",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:161301",
+          "fails": 15
+        },
+        {
+          "id": "series:the-hunger-games",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:24756137",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:19918431",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:18451040",
+          "fails": 14
+        },
+        {
+          "id": "series:uglies",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:843",
+          "fails": 14
+        },
+        {
+          "id": "series:the-kingkiller-chronicle",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:10876585",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:3832478",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:11263766",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:182433",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:1225812",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:1164368",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:32688947",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:220272",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:302997",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:52803",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:797758",
+          "fails": 14
+        },
+        {
+          "id": "series:the-giver",
+          "fails": 13
+        },
+        {
+          "id": "series:the-inheritance-cycle",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:714218",
+          "fails": 13
+        },
+        {
+          "id": "series:hitchhiker-s-guide-to-the-galaxy",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:27490",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:165026",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:31342",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:7402039",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:71416",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:472089",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:29798",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:42645",
+          "fails": 13
+        },
+        {
+          "id": "series:jack-ryan-universe",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:231716",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:77652",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:380143",
+          "fails": 13
+        },
+        {
+          "id": "series:harry-potter",
+          "fails": 12
+        },
+        {
+          "id": "series:twilight",
+          "fails": 12
+        },
+        {
+          "id": "series:millennium",
+          "fails": 12
+        },
+        {
+          "id": "series:percy-jackson-and-the-olympians",
+          "fails": 12
+        },
+        {
+          "id": "series:his-dark-materials",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:3433040",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:67003",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:607536",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:45133",
+          "fails": 12
+        },
+        {
+          "id": "series:maze-runner",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:410873",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:3681524",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:63750",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:1196343",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:3552124",
+          "fails": 11
+        },
+        {
+          "id": "series:house-of-night",
+          "fails": 11
+        },
+        {
+          "id": "series:hannibal-lecter",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:30280",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:162770",
+          "fails": 11
+        },
+        {
+          "id": "series:a-song-of-ice-and-fire",
+          "fails": 10
+        },
+        {
+          "id": "series:the-kingsbridge-series",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:288153",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:73670",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:43168",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 9
+        },
+        {
+          "id": "series:outlander",
+          "fails": 9
         },
         {
           "id": "cmu:enwiki:31879966",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:876994",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:43023",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:24162",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 7
+        },
+        {
+          "id": "series:the-mortal-instruments",
           "fails": 6
         },
         {
-          "id": "cmu:enwiki:12995",
-          "fails": 5
+          "id": "cmu:enwiki:217046",
+          "fails": 6
         }
       ]
     },
     {
       "scenario": "difficult",
       "description": "40% unknown, 10% wrong among known",
-      "games": 810,
-      "top1": 6,
-      "firstGuessWrong": 0,
+      "games": 5430,
+      "top1": 8,
+      "firstGuessWrong": 3,
       "recoveredAfterOneRejection": 0,
-      "foundAnyRoute": 409,
-      "inTop3AtEnd": 409,
-      "failures": 401,
-      "meanQuestionsSuccess": 17.968215158924206,
-      "meanQuestionsAll": 17.983950617283952,
+      "foundAnyRoute": 1511,
+      "inTop3AtEnd": 1511,
+      "failures": 3919,
+      "meanQuestionsSuccess": 17.9867637326274,
+      "meanQuestionsAll": 17.9963167587477,
       "p90Questions": 18,
-      "wrongGuessesTotal": 0,
-      "gamesWithWrongGuess": 0,
+      "wrongGuessesTotal": 3,
+      "gamesWithWrongGuess": 3,
       "subsets": {},
-      "topConfusions": [],
+      "topConfusions": [
+        [
+          "cmu:enwiki:2224493 → guessed cmu:enwiki:33314889",
+          1
+        ],
+        [
+          "cmu:enwiki:31879966 → guessed cmu:enwiki:7923",
+          1
+        ],
+        [
+          "series:his-dark-materials → guessed cmu:enwiki:31879966",
+          1
+        ]
+      ],
       "perBookFailures": [
         {
-          "id": "cmu:enwiki:890626",
-          "fails": 22
+          "id": "cmu:enwiki:76033",
+          "fails": 28
         },
         {
-          "id": "cmu:enwiki:242130",
-          "fails": 21
+          "id": "cmu:enwiki:635510",
+          "fails": 28
         },
         {
-          "id": "cmu:enwiki:4608346",
-          "fails": 20
+          "id": "cmu:enwiki:186397",
+          "fails": 28
         },
         {
-          "id": "cmu:enwiki:606612",
-          "fails": 20
-        },
-        {
-          "id": "cmu:enwiki:61489",
-          "fails": 18
+          "id": "cmu:enwiki:21725",
+          "fails": 28
         },
         {
           "id": "cmu:enwiki:2224493",
-          "fails": 17
+          "fails": 28
         },
         {
-          "id": "cmu:enwiki:7911644",
-          "fails": 17
+          "id": "cmu:enwiki:161446",
+          "fails": 28
         },
         {
-          "id": "cmu:enwiki:31584",
-          "fails": 16
+          "id": "cmu:enwiki:1364178",
+          "fails": 28
         },
         {
-          "id": "cmu:enwiki:55435",
-          "fails": 16
+          "id": "cmu:enwiki:10392345",
+          "fails": 27
         },
         {
-          "id": "cmu:enwiki:31879966",
-          "fails": 15
+          "id": "cmu:enwiki:57766",
+          "fails": 27
         },
         {
-          "id": "cmu:enwiki:271590",
-          "fails": 15
+          "id": "cmu:enwiki:5205080",
+          "fails": 27
         },
         {
-          "id": "cmu:enwiki:20128213",
-          "fails": 14
+          "id": "cmu:enwiki:31058296",
+          "fails": 27
         },
         {
-          "id": "cmu:enwiki:73408",
-          "fails": 14
+          "id": "cmu:enwiki:375359",
+          "fails": 27
         },
         {
-          "id": "cmu:enwiki:76033",
-          "fails": 14
+          "id": "cmu:enwiki:381491",
+          "fails": 27
         },
         {
-          "id": "cmu:enwiki:186258",
-          "fails": 14
+          "id": "cmu:enwiki:302301",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:36681",
-          "fails": 14
+          "id": "cmu:enwiki:10951",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:2449650",
-          "fails": 14
+          "id": "cmu:enwiki:45896",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:713625",
-          "fails": 14
+          "id": "cmu:enwiki:871902",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:63987",
-          "fails": 14
+          "id": "cmu:enwiki:3832478",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:12995",
-          "fails": 13
+          "id": "cmu:enwiki:535144",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:5326809",
-          "fails": 13
+          "id": "cmu:enwiki:61069",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:1779024",
-          "fails": 13
+          "id": "cmu:enwiki:55483",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:14975869",
-          "fails": 12
+          "id": "cmu:enwiki:1544083",
+          "fails": 26
         },
         {
-          "id": "cmu:enwiki:330523",
-          "fails": 11
+          "id": "cmu:enwiki:220272",
+          "fails": 26
+        },
+        {
+          "id": "cmu:enwiki:52803",
+          "fails": 26
+        },
+        {
+          "id": "cmu:enwiki:181622",
+          "fails": 26
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:944096",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:540888",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:32903764",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:30976827",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:11263766",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:340909",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:1268726",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:163629",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:28426",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:10861",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:133721",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:986",
+          "fails": 25
         },
         {
           "id": "cmu:enwiki:23454753",
-          "fails": 10
+          "fails": 24
         },
         {
-          "id": "cmu:enwiki:62120",
-          "fails": 10
+          "id": "series:chronicles-of-narnia",
+          "fails": 24
         },
         {
-          "id": "cmu:enwiki:1240426",
-          "fails": 10
+          "id": "cmu:enwiki:55438",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:2531453",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:654705",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:1196343",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:23817576",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:891623",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:1022544",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:29834",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:2152",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:161301",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:77652",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:64029",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:1660387",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:27979753",
+          "fails": 24
+        },
+        {
+          "id": "series:robert-langdon",
+          "fails": 23
+        },
+        {
+          "id": "series:the-giver",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:714218",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:410873",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:165026",
+          "fails": 23
+        },
+        {
+          "id": "series:sookie-stackhouse",
+          "fails": 23
+        },
+        {
+          "id": "series:stephanie-plum",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:347822",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:167963",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:1259759",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:1769858",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:607536",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:797758",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:8179637",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:703539",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:723638",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:234527",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:1398951",
+          "fails": 22
+        },
+        {
+          "id": "series:millennium",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:55435",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:13116455",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:562456",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:31342",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:161502",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:472089",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:288153",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:843",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:3552124",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:133874",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:182128",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:43168",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:1890954",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:17253525",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:271590",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:18951386",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:1301931",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:54436",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:48573",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:162189",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:162770",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:333987",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:312623",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:26476",
+          "fails": 22
+        },
+        {
+          "id": "series:the-hunger-games",
+          "fails": 21
+        },
+        {
+          "id": "series:hitchhiker-s-guide-to-the-galaxy",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:27490",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:3681524",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:7923",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:55469",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:31879966",
+          "fails": 21
+        },
+        {
+          "id": "series:the-kingsbridge-series",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:25572395",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:1804983",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:360245",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:1225812",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:1164368",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:86351",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:302997",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:15120912",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:24756137",
+          "fails": 20
+        },
+        {
+          "id": "series:percy-jackson-and-the-olympians",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:8595912",
+          "fails": 20
+        },
+        {
+          "id": "series:the-mortal-instruments",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:7402039",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:34890405",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:21796996",
+          "fails": 20
+        },
+        {
+          "id": "series:the-dark-tower",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:42645",
+          "fails": 20
+        },
+        {
+          "id": "series:the-heroes-of-olympus",
+          "fails": 20
+        },
+        {
+          "id": "series:foundation",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:894970",
+          "fails": 20
+        },
+        {
+          "id": "series:jack-ryan-universe",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:155311",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:32688947",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:2890",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:24162",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 19
+        },
+        {
+          "id": "series:the-inheritance-cycle",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:10433866",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:562222",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:34269647",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 19
+        },
+        {
+          "id": "series:outlander",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:28755850",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:71416",
+          "fails": 19
+        },
+        {
+          "id": "series:the-kingkiller-chronicle",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:73670",
+          "fails": 19
+        },
+        {
+          "id": "series:the-vampire-chronicles",
+          "fails": 19
+        },
+        {
+          "id": "series:house-of-night",
+          "fails": 19
+        },
+        {
+          "id": "series:wheel-of-time",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:182433",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:876994",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:380143",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:42609",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:528860",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:1937988",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:28411923",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:18451040",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:33314889",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:29798",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:67003",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:10876585",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:159941",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:67317",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:224500",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:45133",
+          "fails": 18
+        },
+        {
+          "id": "series:harry-potter",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:901398",
+          "fails": 17
+        },
+        {
+          "id": "series:his-dark-materials",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 17
+        },
+        {
+          "id": "series:maze-runner",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:19918431",
+          "fails": 17
+        },
+        {
+          "id": "series:uglies",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:231716",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:217046",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:43023",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:30280",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:959366",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:63750",
+          "fails": 16
+        },
+        {
+          "id": "series:twilight",
+          "fails": 15
+        },
+        {
+          "id": "series:a-song-of-ice-and-fire",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:890626",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:3433040",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:18949410",
+          "fails": 13
+        },
+        {
+          "id": "series:hannibal-lecter",
+          "fails": 13
         }
       ]
     },
     {
       "scenario": "one_mistake",
       "description": "5% unknown, exactly one wrong answer in the first 6",
-      "games": 810,
-      "top1": 127,
-      "firstGuessWrong": 18,
+      "games": 5430,
+      "top1": 473,
+      "firstGuessWrong": 46,
       "recoveredAfterOneRejection": 0,
-      "foundAnyRoute": 568,
-      "inTop3AtEnd": 568,
-      "failures": 242,
-      "meanQuestionsSuccess": 17.267605633802816,
-      "meanQuestionsAll": 17.48641975308642,
+      "foundAnyRoute": 3097,
+      "inTop3AtEnd": 3097,
+      "failures": 2333,
+      "meanQuestionsSuccess": 17.6703261220536,
+      "meanQuestionsAll": 17.81197053406998,
       "p90Questions": 18,
-      "wrongGuessesTotal": 18,
-      "gamesWithWrongGuess": 18,
+      "wrongGuessesTotal": 46,
+      "gamesWithWrongGuess": 46,
       "subsets": {},
       "topConfusions": [
         [
-          "cmu:enwiki:1240426 → guessed cmu:enwiki:31584",
+          "cmu:enwiki:1164368 → guessed cmu:enwiki:73670",
           1
         ],
         [
-          "cmu:enwiki:1779024 → guessed cmu:enwiki:31879966",
+          "cmu:enwiki:13116455 → guessed cmu:enwiki:224500",
           1
         ],
         [
-          "cmu:enwiki:186258 → guessed cmu:enwiki:14975869",
+          "cmu:enwiki:161301 → guessed cmu:enwiki:231716",
           1
         ],
         [
-          "cmu:enwiki:20128213 → guessed cmu:enwiki:73408",
+          "cmu:enwiki:162770 → guessed cmu:enwiki:231716",
           1
         ],
         [
-          "cmu:enwiki:242130 → guessed cmu:enwiki:606612",
+          "cmu:enwiki:162770 → guessed cmu:enwiki:894970",
           1
         ],
         [
-          "cmu:enwiki:271590 → guessed cmu:enwiki:2224493",
+          "cmu:enwiki:1769858 → guessed cmu:enwiki:901398",
           1
         ],
         [
-          "cmu:enwiki:271590 → guessed cmu:enwiki:62120",
+          "cmu:enwiki:182433 → guessed series:the-inheritance-cycle",
           1
         ],
         [
-          "cmu:enwiki:31584 → guessed cmu:enwiki:62120",
+          "cmu:enwiki:1890954 → guessed cmu:enwiki:27979753",
           1
         ],
         [
-          "cmu:enwiki:31879966 → guessed cmu:enwiki:12995",
+          "cmu:enwiki:18949410 → guessed cmu:enwiki:45133",
           1
         ],
         [
-          "cmu:enwiki:4608346 → guessed cmu:enwiki:2449650",
+          "cmu:enwiki:1937988 → guessed cmu:enwiki:21796996",
           1
         ]
       ],
       "perBookFailures": [
         {
-          "id": "cmu:enwiki:713625",
-          "fails": 15
+          "id": "cmu:enwiki:944096",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:635510",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:133721",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:1022544",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:77652",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:61069",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:654705",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:797758",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:161446",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:13116455",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:959366",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:1544083",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:10861",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:10392345",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:5205080",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:340909",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:2224493",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:27979753",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:714218",
+          "fails": 18
+        },
+        {
+          "id": "series:stephanie-plum",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:182128",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:1364178",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:23454753",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:165026",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:55469",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:57766",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:891623",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:1301931",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:167963",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:3832478",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:31058296",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:535144",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:162770",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:8179637",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:381491",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:31342",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:28411923",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:21796996",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:25572395",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:18951386",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:11263766",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:21725",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:64029",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:220272",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:333987",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:86351",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:375359",
+          "fails": 16
         },
         {
           "id": "cmu:enwiki:890626",
           "fails": 15
         },
         {
-          "id": "cmu:enwiki:242130",
-          "fails": 12
+          "id": "cmu:enwiki:2029175",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:73408",
-          "fails": 11
+          "id": "cmu:enwiki:843",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:606612",
-          "fails": 11
+          "id": "cmu:enwiki:23817576",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:31584",
-          "fails": 10
+          "id": "cmu:enwiki:45896",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:36681",
-          "fails": 10
+          "id": "cmu:enwiki:133874",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:2224493",
-          "fails": 10
+          "id": "series:the-vampire-chronicles",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:1240426",
-          "fails": 10
+          "id": "cmu:enwiki:540888",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:271590",
-          "fails": 10
+          "id": "series:foundation",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:1779024",
-          "fails": 10
+          "id": "cmu:enwiki:182433",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:14975869",
-          "fails": 9
+          "id": "cmu:enwiki:1259759",
+          "fails": 15
         },
         {
-          "id": "cmu:enwiki:20128213",
-          "fails": 8
+          "id": "cmu:enwiki:162189",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:312623",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:528860",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:703539",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:986",
+          "fails": 15
         },
         {
           "id": "cmu:enwiki:76033",
+          "fails": 14
+        },
+        {
+          "id": "series:robert-langdon",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:302301",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:562222",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:1196343",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:3552124",
+          "fails": 14
+        },
+        {
+          "id": "series:sookie-stackhouse",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:871902",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:43168",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:1890954",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:42645",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:271590",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:67317",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:29834",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:163629",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:234527",
+          "fails": 14
+        },
+        {
+          "id": "series:chronicles-of-narnia",
+          "fails": 13
+        },
+        {
+          "id": "series:hitchhiker-s-guide-to-the-galaxy",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:1937988",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:347822",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:17253525",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:360245",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:2152",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:161301",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:1164368",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:55483",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:43023",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:607536",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:15120912",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:1398951",
+          "fails": 12
+        },
+        {
+          "id": "series:percy-jackson-and-the-olympians",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:901398",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:3681524",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:19918431",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:28755850",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:18451040",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:472089",
+          "fails": 12
+        },
+        {
+          "id": "series:the-kingkiller-chronicle",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:30976827",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:10876585",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:1268726",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:1225812",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:224500",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:380143",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:48573",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:1660387",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:2890",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:28426",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:181622",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:723638",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:55438",
+          "fails": 11
+        },
+        {
+          "id": "series:the-inheritance-cycle",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:3433040",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:161502",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:71416",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:288153",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:67003",
+          "fails": 11
+        },
+        {
+          "id": "series:wheel-of-time",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:54436",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:186397",
+          "fails": 11
+        },
+        {
+          "id": "series:twilight",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:24162",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:10433866",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 10
+        },
+        {
+          "id": "series:maze-runner",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:2531453",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:18949410",
+          "fails": 10
+        },
+        {
+          "id": "series:house-of-night",
+          "fails": 10
+        },
+        {
+          "id": "series:hannibal-lecter",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:1804983",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:159941",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:231716",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:876994",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:155311",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:52803",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:24756137",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:562456",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:7402039",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:34890405",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:33314889",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:73670",
+          "fails": 9
+        },
+        {
+          "id": "series:the-dark-tower",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:32688947",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:26476",
+          "fails": 9
+        },
+        {
+          "id": "series:the-hunger-games",
           "fails": 8
         },
         {
-          "id": "cmu:enwiki:23454753",
+          "id": "cmu:enwiki:32262844",
           "fails": 8
         },
         {
-          "id": "cmu:enwiki:62120",
-          "fails": 8
-        },
-        {
-          "id": "cmu:enwiki:2449650",
-          "fails": 8
-        },
-        {
-          "id": "cmu:enwiki:31879966",
-          "fails": 8
-        },
-        {
-          "id": "cmu:enwiki:4608346",
+          "id": "cmu:enwiki:8595912",
           "fails": 8
         },
         {
@@ -618,100 +3031,472 @@
           "fails": 8
         },
         {
-          "id": "cmu:enwiki:7911644",
+          "id": "cmu:enwiki:34269647",
           "fails": 8
         },
         {
-          "id": "cmu:enwiki:330523",
+          "id": "cmu:enwiki:10951",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:31879966",
+          "fails": 8
+        },
+        {
+          "id": "series:the-kingsbridge-series",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:894970",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:1769858",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:45133",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:302997",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:42609",
+          "fails": 8
+        },
+        {
+          "id": "series:harry-potter",
           "fails": 7
         },
         {
-          "id": "cmu:enwiki:63987",
+          "id": "series:millennium",
           "fails": 7
         },
         {
-          "id": "cmu:enwiki:186258",
+          "id": "series:the-giver",
+          "fails": 7
+        },
+        {
+          "id": "series:the-mortal-instruments",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:27490",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:410873",
+          "fails": 7
+        },
+        {
+          "id": "series:outlander",
+          "fails": 7
+        },
+        {
+          "id": "series:uglies",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:29798",
+          "fails": 7
+        },
+        {
+          "id": "series:the-heroes-of-olympus",
+          "fails": 7
+        },
+        {
+          "id": "series:jack-ryan-universe",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:217046",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:620",
           "fails": 6
         },
         {
-          "id": "cmu:enwiki:61489",
+          "id": "cmu:enwiki:7923",
           "fails": 6
         },
         {
-          "id": "cmu:enwiki:5326809",
-          "fails": 6
-        },
-        {
-          "id": "cmu:enwiki:12995",
+          "id": "cmu:enwiki:32903764",
           "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:30280",
+          "fails": 5
+        },
+        {
+          "id": "series:a-song-of-ice-and-fire",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:63750",
+          "fails": 4
+        },
+        {
+          "id": "series:his-dark-materials",
+          "fails": 3
         }
       ]
     },
     {
       "scenario": "channel",
       "description": "answers sampled from the engine's own channel (baseline)",
-      "games": 810,
-      "top1": 54,
-      "firstGuessWrong": 13,
+      "games": 5430,
+      "top1": 146,
+      "firstGuessWrong": 26,
       "recoveredAfterOneRejection": 0,
-      "foundAnyRoute": 482,
-      "inTop3AtEnd": 482,
-      "failures": 328,
-      "meanQuestionsSuccess": 17.568464730290458,
-      "meanQuestionsAll": 17.74320987654321,
+      "foundAnyRoute": 2099,
+      "inTop3AtEnd": 2099,
+      "failures": 3331,
+      "meanQuestionsSuccess": 17.846593616007624,
+      "meanQuestionsAll": 17.940699815837938,
       "p90Questions": 18,
-      "wrongGuessesTotal": 13,
-      "gamesWithWrongGuess": 13,
+      "wrongGuessesTotal": 26,
+      "gamesWithWrongGuess": 26,
       "subsets": {},
       "topConfusions": [
         [
-          "cmu:enwiki:31584 → guessed cmu:enwiki:23454753",
-          2
-        ],
-        [
-          "cmu:enwiki:61489 → guessed cmu:enwiki:330523",
-          2
-        ],
-        [
-          "cmu:enwiki:14975869 → guessed cmu:enwiki:330523",
+          "cmu:enwiki:1364178 → guessed cmu:enwiki:528860",
           1
         ],
         [
-          "cmu:enwiki:1779024 → guessed cmu:enwiki:2449650",
+          "cmu:enwiki:15120912 → guessed cmu:enwiki:161301",
           1
         ],
         [
-          "cmu:enwiki:2224493 → guessed cmu:enwiki:62120",
+          "cmu:enwiki:1544083 → guessed cmu:enwiki:162770",
           1
         ],
         [
-          "cmu:enwiki:2224493 → guessed cmu:enwiki:713625",
+          "cmu:enwiki:161502 → guessed cmu:enwiki:620",
           1
         ],
         [
-          "cmu:enwiki:31584 → guessed cmu:enwiki:330523",
+          "cmu:enwiki:165026 → guessed cmu:enwiki:28755850",
           1
         ],
         [
-          "cmu:enwiki:330523 → guessed cmu:enwiki:61489",
+          "cmu:enwiki:167963 → guessed cmu:enwiki:55483",
           1
         ],
         [
-          "cmu:enwiki:36681 → guessed cmu:enwiki:31879966",
+          "cmu:enwiki:1769858 → guessed cmu:enwiki:3832478",
           1
         ],
         [
-          "cmu:enwiki:63987 → guessed cmu:enwiki:61489",
+          "cmu:enwiki:2029175 → guessed cmu:enwiki:723638",
+          1
+        ],
+        [
+          "cmu:enwiki:2224493 → guessed cmu:enwiki:29798",
+          1
+        ],
+        [
+          "cmu:enwiki:224500 → guessed cmu:enwiki:30280",
           1
         ]
       ],
       "perBookFailures": [
         {
-          "id": "cmu:enwiki:4608346",
+          "id": "cmu:enwiki:161446",
+          "fails": 29
+        },
+        {
+          "id": "cmu:enwiki:1022544",
+          "fails": 27
+        },
+        {
+          "id": "cmu:enwiki:31058296",
+          "fails": 26
+        },
+        {
+          "id": "cmu:enwiki:381491",
+          "fails": 26
+        },
+        {
+          "id": "cmu:enwiki:23454753",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:944096",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:8179637",
+          "fails": 25
+        },
+        {
+          "id": "cmu:enwiki:302301",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:28411923",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:654705",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:33314889",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:21796996",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:891623",
+          "fails": 24
+        },
+        {
+          "id": "cmu:enwiki:1544083",
+          "fails": 24
+        },
+        {
+          "id": "series:the-giver",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:7923",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:7402039",
+          "fails": 23
+        },
+        {
+          "id": "series:stephanie-plum",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:29834",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:535144",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:1268726",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:635510",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:77652",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:28426",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:15120912",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:797758",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:375359",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:723638",
+          "fails": 23
+        },
+        {
+          "id": "cmu:enwiki:10951",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:133874",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:11263766",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:161301",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:61069",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:21725",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:155311",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:1769858",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:133721",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:1364178",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:234527",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:55438",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:10392345",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:714218",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:10433866",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:959366",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:562456",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:19918431",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:1196343",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:23817576",
+          "fails": 21
+        },
+        {
+          "id": "series:sookie-stackhouse",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:159941",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:5205080",
+          "fails": 21
+        },
+        {
+          "id": "series:foundation",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:3832478",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:340909",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:55483",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:163629",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:607536",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:162189",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:220272",
+          "fails": 21
+        },
+        {
+          "id": "series:harry-potter",
           "fails": 20
         },
         {
-          "id": "cmu:enwiki:606612",
+          "id": "cmu:enwiki:24756137",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:540888",
+          "fails": 20
+        },
+        {
+          "id": "series:the-heroes-of-olympus",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:360245",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:18951386",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:1301931",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:876994",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:10861",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:42609",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:2224493",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 19
+        },
+        {
+          "id": "series:chronicles-of-narnia",
           "fails": 19
         },
         {
@@ -719,100 +3504,428 @@
           "fails": 19
         },
         {
-          "id": "cmu:enwiki:14975869",
-          "fails": 15
+          "id": "cmu:enwiki:410873",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:31584",
-          "fails": 15
+          "id": "cmu:enwiki:3681524",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:63987",
-          "fails": 15
+          "id": "cmu:enwiki:562222",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:23454753",
-          "fails": 14
+          "id": "cmu:enwiki:31342",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:242130",
-          "fails": 14
+          "id": "cmu:enwiki:55469",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:186258",
-          "fails": 13
+          "id": "cmu:enwiki:28755850",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:2224493",
-          "fails": 13
+          "id": "cmu:enwiki:71416",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:61489",
-          "fails": 13
+          "id": "cmu:enwiki:34890405",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:31879966",
-          "fails": 12
+          "id": "cmu:enwiki:1890954",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:713625",
-          "fails": 12
+          "id": "cmu:enwiki:182433",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:73408",
-          "fails": 11
+          "id": "cmu:enwiki:64029",
+          "fails": 19
         },
         {
-          "id": "cmu:enwiki:36681",
-          "fails": 11
+          "id": "cmu:enwiki:48573",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:2890",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:86351",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:181622",
+          "fails": 19
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:45896",
+          "fails": 18
+        },
+        {
+          "id": "series:the-vampire-chronicles",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:347822",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:67003",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:32903764",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:67317",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:224500",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:1259759",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:52803",
+          "fails": 18
+        },
+        {
+          "id": "cmu:enwiki:986",
+          "fails": 18
         },
         {
           "id": "cmu:enwiki:55435",
-          "fails": 11
+          "fails": 17
         },
         {
-          "id": "cmu:enwiki:7911644",
-          "fails": 11
+          "id": "cmu:enwiki:29999",
+          "fails": 17
         },
         {
-          "id": "cmu:enwiki:1779024",
-          "fails": 11
+          "id": "cmu:enwiki:13116455",
+          "fails": 17
         },
         {
-          "id": "cmu:enwiki:20128213",
-          "fails": 10
+          "id": "cmu:enwiki:1937988",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:161502",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:63750",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:57766",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:25572395",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:182128",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:30976827",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:42645",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:894970",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:167963",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:333987",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:302997",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:312623",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:26476",
+          "fails": 17
+        },
+        {
+          "id": "series:twilight",
+          "fails": 16
         },
         {
           "id": "cmu:enwiki:76033",
-          "fails": 9
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:12995",
-          "fails": 9
+          "id": "cmu:enwiki:24162",
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:2449650",
-          "fails": 9
+          "id": "series:millennium",
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:1240426",
-          "fails": 9
+          "id": "series:robert-langdon",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:901398",
+          "fails": 16
+        },
+        {
+          "id": "series:the-inheritance-cycle",
+          "fails": 16
+        },
+        {
+          "id": "series:hitchhiker-s-guide-to-the-galaxy",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:27490",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:165026",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:31879966",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:472089",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:288153",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:3552124",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:18949410",
+          "fails": 16
         },
         {
           "id": "cmu:enwiki:271590",
-          "fails": 9
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:62120",
-          "fails": 8
+          "id": "cmu:enwiki:54436",
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:5326809",
-          "fails": 8
+          "id": "cmu:enwiki:1660387",
+          "fails": 16
         },
         {
-          "id": "cmu:enwiki:330523",
-          "fails": 8
+          "id": "cmu:enwiki:162770",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:528860",
+          "fails": 16
+        },
+        {
+          "id": "series:the-mortal-instruments",
+          "fails": 15
+        },
+        {
+          "id": "series:maze-runner",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:2531453",
+          "fails": 15
+        },
+        {
+          "id": "series:the-kingsbridge-series",
+          "fails": 15
+        },
+        {
+          "id": "series:uglies",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:843",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:871902",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:43168",
+          "fails": 15
+        },
+        {
+          "id": "series:house-of-night",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1804983",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:17253525",
+          "fails": 15
+        },
+        {
+          "id": "series:jack-ryan-universe",
+          "fails": 15
+        },
+        {
+          "id": "series:wheel-of-time",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:231716",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:1225812",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:380143",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:703539",
+          "fails": 15
+        },
+        {
+          "id": "series:a-song-of-ice-and-fire",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:8595912",
+          "fails": 14
+        },
+        {
+          "id": "series:outlander",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:18451040",
+          "fails": 14
+        },
+        {
+          "id": "series:hannibal-lecter",
+          "fails": 14
+        },
+        {
+          "id": "series:the-dark-tower",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:2152",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:43023",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:45133",
+          "fails": 14
+        },
+        {
+          "id": "series:the-hunger-games",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:1398951",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:34269647",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:1164368",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:32688947",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:27979753",
+          "fails": 13
+        },
+        {
+          "id": "series:percy-jackson-and-the-olympians",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:73670",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:29798",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:10876585",
+          "fails": 12
+        },
+        {
+          "id": "series:his-dark-materials",
+          "fails": 11
+        },
+        {
+          "id": "series:the-kingkiller-chronicle",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:186397",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:217046",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:30280",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:3433040",
+          "fails": 10
         }
       ]
     }
