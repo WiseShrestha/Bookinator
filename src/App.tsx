@@ -136,7 +136,9 @@ export default function App() {
         {session && state && <History state={state} />}
       </main>
       <footer className="foot">
-        {ACTIVE_CATALOG.books.length} {ACTIVE_CATALOG.coverage ? "playable" : "supported"} novels
+        {ACTIVE_CATALOG.coverage?.titles_reachable
+          ? `${ACTIVE_CATALOG.coverage.titles_reachable} playable novels in ${ACTIVE_CATALOG.books.length} targets`
+          : `${ACTIVE_CATALOG.books.length} ${ACTIVE_CATALOG.coverage ? "playable" : "supported"} novels`}
         {ACTIVE_CATALOG.coverage && ` (of ${ACTIVE_CATALOG.coverage.imported_source_records} imported records)`} · catalog{" "}
         {ACTIVE_CATALOG.catalog_version} · runs entirely in your browser
         {ACTIVE_CATALOG.credits && <span className="credits">{ACTIVE_CATALOG.credits}</span>}

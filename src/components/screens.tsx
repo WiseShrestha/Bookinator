@@ -76,12 +76,13 @@ function BookCard({ book, compact = false }: { book: CatalogBook; compact?: bool
       <div className="book-info">
         <p className="book-title">{book.title_en}</p>
         {book.title_ko && <p className="book-alt" lang="ko">{book.title_ko}</p>}
-        {!compact && book.aliases.length > 0 && <p className="book-alt small">Also: {book.aliases.join(" · ")}</p>}
+        {!compact && !book.volumes && book.aliases.length > 0 && <p className="book-alt small">Also: {book.aliases.join(" · ")}</p>}
         <p className="book-meta">
           {book.author}
+          {book.volumes ? ` · ${book.volumes.length} books in my collection` : ""}
           {book.first_publication_year ? ` · ${book.first_publication_year}` : ""}
         </p>
-        {book.series_id && !compact && <p className="book-note">Part of a series — check which volume you mean.</p>}
+        {book.series_id && !book.volumes && !compact && <p className="book-note">Part of a series — check which volume you mean.</p>}
       </div>
     </div>
   );
@@ -101,6 +102,7 @@ function ClueProvenance({ bookIndex, feature }: { bookIndex: number; feature: Ma
       );
     }
   }
+  if (feature?.status === "ai_recall") return <em className="unreviewed"> (AI's general knowledge, no source)</em>;
   return <em className="unreviewed"> (unchecked label)</em>;
 }
 
@@ -289,8 +291,9 @@ export function GuessScreen(
       <div className="reveal" key={action.book.id}>
         <BookCard book={action.book} />
       </div>
+      {action.book.volumes && <VolumeList book={action.book} />}
       <Clues bookIndex={action.bookIndex} state={state} />
-      <p className="ask-confirm">Is this your book?</p>
+      <p className="ask-confirm">{action.book.volumes ? "Is it one of these books?" : "Is this your book?"}</p>
       <div className="row">
         <button className="primary glow" onClick={onAccept}>
           Yes, that's it! <kbd>Y</kbd>
@@ -342,24 +345,74 @@ export function ShortlistScreen(
   );
 }
 
+function VolumeList({ book }: { book: CatalogBook }) {
+  return (
+    <ol className="volumes" aria-label={`Books in ${book.title_en}`}>
+      {book.volumes!.map((v) => (
+        <li key={v.id}>{v.title}</li>
+      ))}
+    </ol>
+  );
+}
+
+/** A series target's volume as a displayable book (same author and sources, its own title). */
+function volumeBook(series: CatalogBook, v: NonNullable<CatalogBook["volumes"]>[number]): CatalogBook {
+  return { ...series, id: v.id, title_en: v.title, aliases: [], volumes: undefined, series_id: series.id, series_number: v.number };
+}
+
+function VolumePicker({ book, onPick }: { book: CatalogBook; onPick: (b: CatalogBook) => void }) {
+  return (
+    <div className="volume-picker">
+      <p className="ask-confirm">Which one is it?</p>
+      <ul className="choices">
+        {book.volumes!.map((v, i) => {
+          const vb = volumeBook(book, v);
+          return (
+            <li key={v.id} style={{ ["--i" as string]: i }}>
+              <button className="choice" onClick={() => onPick(vb)} aria-label={`It's ${v.title}`}>
+                <BookCard book={vb} compact />
+                <span className="choice-cta">This one</span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
 export function FoundScreen(props: Common & { action: ActionOf<"found"> }) {
   const { action, headingRef, state, onRestart } = props;
   const n = state.answers.length;
+  const [volume, setVolume] = useState<CatalogBook | null>(null);
+  if (action.book.volumes && !volume) {
+    return (
+      <Scene mood="confident" kind="found volumes-step" line="The series, I knew it! Now tell me which book…">
+        <p className="eyebrow">Found the series</p>
+        <h1 ref={headingRef} tabIndex={-1}>
+          {action.book.title_en}
+        </h1>
+        <VolumePicker book={action.book} onPick={setVolume} />
+        <Controls {...props} />
+      </Scene>
+    );
+  }
+  const shown = volume ?? action.book;
   return (
     <Scene mood="triumph" kind="found" line={action.via === "guess" ? "I knew it! Reading minds is my favourite genre." : "A fine choice. I'll remember that one."}>
       <Confetti />
       <p className="eyebrow">Found it</p>
       <h1 ref={headingRef} tabIndex={-1} className="sr-only">
-        Found: {action.book.title_en}
+        Found: {shown.title_en}
       </h1>
       <div className="reveal">
-        <BookCard book={action.book} />
+        <BookCard book={shown} />
       </div>
       <p className="muted small">
         {action.via === "guess" ? "Guessed" : "Picked from the shortlist"} after {n} question{n === 1 ? "" : "s"}.
       </p>
       <Clues bookIndex={action.bookIndex} state={state} />
-      <Links book={action.book} />
+      <Links book={shown} />
       <div className="row">
         <button className="primary glow" onClick={onRestart}>
           Find another book

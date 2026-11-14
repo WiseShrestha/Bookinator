@@ -21,7 +21,7 @@ export const COLLECTIONS: Record<CollectionId, { catalog: Catalog; label: string
   research: {
     catalog: cmu as unknown as Catalog,
     label: "Research shelf",
-    blurb: `${(cmu as unknown as Catalog).books.length} books · machine-labelled, unreviewed`,
+    blurb: `${(cmu as unknown as Catalog).coverage?.titles_reachable ?? (cmu as unknown as Catalog).books.length} books · machine-labelled, unreviewed`,
   },
 };
 

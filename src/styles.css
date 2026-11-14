@@ -477,6 +477,12 @@ kbd {
 .collection-tab.active { border-color: var(--gold); background: rgba(244, 199, 110, 0.1); box-shadow: 0 0 18px rgba(244, 199, 110, 0.18); }
 .collection-tab.active b { color: var(--gold); }
 
+/* series: volume list on the guess, volume picker on the found screen */
+.volumes { margin: 12px 0 0; padding: 10px 14px 10px 34px; border-radius: 14px; background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--line); font-size: 0.9rem; color: var(--muted); columns: 2 220px; column-gap: 24px; }
+.volumes li { break-inside: avoid; margin: 2px 0; }
+.volume-picker .ask-confirm { margin-top: 4px; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition: none !important; }
   .mote, .confetti { display: none; }
