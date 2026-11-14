@@ -1,0 +1,2909 @@
+{
+ "books": [
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "answers": [
+    {
+     "question_id": "q01",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "The story is narrated by 16-year-old Katniss Everdeen",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q02",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "The story is narrated by 16-year-old Katniss Everdeen, a girl from District",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q03",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "is Peeta Mellark, a former schoolmate of Katniss",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q04",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q05",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q06",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q07",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q08",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q09",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q10",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q11",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q12",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "takes place in a nation known as Panem, established in North America",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q13",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "takes place in a nation known as Panem, established in North America",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q14",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q15",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "established in North America after the destruction of the continent's civilization by an unknown apocalyptic event",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q16",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q17",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "established in North America after the destruction of the continent's civilization by an unknown apocalyptic event",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q18",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "established in North America after the destruction of the continent's civilization by an unknown apocalyptic event",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q19",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "established in North America after the destruction of the continent's civilization by an unknown apocalyptic event",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q20",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "established in North America after the destruction of the continent's civilization by an unknown apocalyptic event",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q21",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "established in North America after the destruction of the continent's civilization by an unknown apocalyptic event",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q22",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q23",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "established in North America after the destruction of the continent's civilization by an unknown apocalyptic event",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q24",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q25",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q26",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q27",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q28",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "must fight to the death in an outdoor arena controlled by the Capitol, until only one individual remains",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q29",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q30",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q31",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "selected by an annual lottery to participate in the Hunger Games",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q32",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q33",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q34",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q35",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q36",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q37",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q38",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q39",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q40",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q41",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q42",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q43",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q44",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "The nation consists of the wealthy Capitol and twelve surrounding, poorer districts united under the Capitol's control",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q45",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q46",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q47",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q48",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q49",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "The story is narrated by 16-year-old Katniss Everdeen",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q50",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:20128213",
+     "evidence_quote": "The story is narrated by 16-year-old Katniss Everdeen",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q51",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q52",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q53",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q54",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q55",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q56",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q57",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q58",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q59",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q60",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q61",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q62",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q63",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q64",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    }
+   ]
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "answers": [
+    {
+     "question_id": "q01",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "Shortly before Harry's eleventh birthday",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q02",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "Hermione takes the blame for the battle and becomes a firm friend of the two boys",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q03",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "how famous he is among wizards as \"the boy who lived\"",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q04",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q05",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q06",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "he is a wizard and has been accepted at Hogwarts for the autumn term",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q07",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q08",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "Harry is a wizard and has been accepted at Hogwarts",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q09",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "Before the term's first dinner in the school's Great Hall, the new pupils are allocated to houses",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q10",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q11",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q12",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q13",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "Hagrid takes Harry to Diagon Alley, a magically-concealed shopping precinct in London",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q14",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q15",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "Diagon Alley, a magically-concealed shopping precinct in London",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q16",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q17",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q18",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q19",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q20",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q21",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q22",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q23",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q24",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q25",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q26",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q27",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q28",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q29",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q30",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q31",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q32",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "Ron uses the levitation spell to knock out the troll with its own club",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q33",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q34",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q35",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q36",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q37",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q38",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q39",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q40",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q41",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q42",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q43",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q44",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q45",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:48648",
+     "evidence_quote": "which results in the three becoming close friends",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q46",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q47",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q48",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q49",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q50",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q51",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q52",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q53",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q54",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q55",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q56",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q57",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q58",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q59",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q60",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q61",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q62",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q63",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q64",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    }
+   ]
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "answers": [
+    {
+     "question_id": "q01",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "Upon returning to Forks, Bella and Edward attend their school prom",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q02",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "Isabella \"Bella\" Swan moves from sunny Phoenix, Arizona to rainy Forks, Washington to live with her father",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q03",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "Over time, Edward and Bella fall in love.",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q04",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q05",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "Bella concludes that Edward and his family are vampires who drink animal blood rather than human",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q06",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "Bella attracts much attention at her new school and is quickly befriended by several students",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q07",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q08",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "Edward saves Bella when he instantaneously appears next to her and stops the van with his bare hands",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q09",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "When Bella is seated next to Edward Cullen in class on her first day of school",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q10",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q11",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q12",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "moves from sunny Phoenix, Arizona to rainy Forks, Washington to live with her father",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q13",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "moves from sunny Phoenix, Arizona to rainy Forks, Washington to live with her father",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q14",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "moves from sunny Phoenix, Arizona to rainy Forks, Washington to live with her father",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q15",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "moves from sunny Phoenix, Arizona to rainy Forks, Washington to live with her father",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q16",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q17",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q18",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q19",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q20",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q21",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q22",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q23",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q24",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q25",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q26",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "Over time, Edward and Bella fall in love.",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q27",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q28",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q29",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q30",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q31",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q32",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q33",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q34",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q35",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q36",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q37",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q38",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q39",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q40",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:4451267",
+     "evidence_quote": "moves from sunny Phoenix, Arizona to rainy Forks, Washington to live with her father",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q41",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q42",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q43",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q44",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q45",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q46",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q47",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q48",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q49",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q50",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q51",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q52",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q53",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q54",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q55",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q56",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q57",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q58",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q59",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q60",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q61",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q62",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q63",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q64",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    }
+   ]
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "answers": [
+    {
+     "question_id": "q01",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "It focuses on six-year-old Scout Finch",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q02",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "six-year-old Scout Finch, who lives with her older brother Jem and their widowed father Atticus",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q03",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "their widowed father Atticus, a middle-aged lawyer",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q04",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q05",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q06",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q07",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q08",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q09",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q10",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "in the fictional \"tired old town\" of Maycomb, Alabama",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q11",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q12",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression in the fictional \"tired old town\" of Maycomb, Alabama",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q13",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression in the fictional \"tired old town\" of Maycomb, Alabama",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q14",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression in the fictional \"tired old town\" of Maycomb, Alabama",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q15",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "of Maycomb, Alabama",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q16",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q17",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q18",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q19",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q20",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q21",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "The main story takes place during three years of the Great Depression",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q22",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q23",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q24",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q25",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q26",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q27",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q28",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q29",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q30",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q31",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q32",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q33",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q34",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q35",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q36",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q37",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q38",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q39",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q40",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q41",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q42",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q43",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q44",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:73408",
+     "evidence_quote": "defend Tom Robinson, a black man who has been accused of raping a young white woman",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q45",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q46",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q47",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q48",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q49",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q50",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q51",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q52",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q53",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q54",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q55",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q56",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q57",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q58",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q59",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q60",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q61",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q62",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q63",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q64",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    }
+   ]
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "answers": [
+    {
+     "question_id": "q01",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "Nick Carraway, a Midwesterner who has graduated from Yale and fought in World War I",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q02",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "Gatsby and Daisy had loved each other five years ago",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q03",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "He is restless and has decided to move to New York to learn the bond business.",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q04",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q05",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q06",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "Nick Carraway, a Midwesterner who has graduated from Yale and fought in World War I",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q07",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q08",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q09",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q10",
+     "p_yes": 0.5,
+     "status": "ambiguous",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q11",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q12",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q13",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q14",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q15",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q16",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q17",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q18",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q19",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q20",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q21",
+     "p_yes": 0.1,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The novel opens early in the summer of 1922 in West Egg, Long Island",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q22",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q23",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q24",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q25",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q26",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "After the War, Gatsby decided to win Daisy back by buying a house in West Egg and throwing lavish parties",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q27",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q28",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q29",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q30",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q31",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q32",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q33",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q34",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q35",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q36",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q37",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q38",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q39",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q40",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q41",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q42",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q43",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q44",
+     "p_yes": 0.7,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "in the more fashionable East Egg, where those coming from 'old money' live",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q45",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q46",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q47",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q48",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q49",
+     "p_yes": 0.9,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The story begins with the narrator, Nick Carraway",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q50",
+     "p_yes": 0.3,
+     "status": "supported",
+     "source_id": "cmu:76033",
+     "evidence_quote": "The story begins with the narrator, Nick Carraway",
+     "premise_safe": true,
+     "reviewed": false
+    },
+    {
+     "question_id": "q51",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q52",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q53",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q54",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q55",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q56",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q57",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q58",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q59",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q60",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q61",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q62",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q63",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    },
+    {
+     "question_id": "q64",
+     "p_yes": 0.5,
+     "status": "insufficient_evidence",
+     "source_id": null,
+     "evidence_quote": null,
+     "premise_safe": false,
+     "reviewed": false
+    }
+   ]
+  }
+ ]
+}
