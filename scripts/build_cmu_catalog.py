@@ -27,6 +27,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -63,6 +64,117 @@ def advantage(a: dict[str, float], b: dict[str, float], group: dict[str, str]) -
     return sum(best.values())
 
 
+# ------------------------------------------------------------------ AI-recall labels
+AI_RECALL = ROOT / "data" / "ai_recall" / "labels.txt"
+RECALL_VALUE = {"Y": 0.9, "y": 0.7, "n": 0.3, "N": 0.1}
+
+
+def merge_ai_recall(cells: dict[str, list[dict]], qids: set[str]) -> dict | None:
+    """Fill UNKNOWN cells from data/ai_recall/labels.txt (an AI assistant's general knowledge of the book, no
+    source). Where a sourced label exists and agrees it is kept; where they disagree the cell becomes unknown.
+    The agreement rate is reported as a check on the recall."""
+    if not AI_RECALL.exists():
+        return None
+    agree = conflict = added = 0
+    conflicts = []
+    for n, line in enumerate(AI_RECALL.read_text(encoding="utf-8").splitlines(), 1):
+        line = line.split("#", 1)[0].strip()
+        if not line:
+            continue
+        bid, _title, tokens = (x.strip() for x in line.split("|", 2))
+        if ":" not in bid:
+            bid = "cmu:enwiki:" + bid
+        if bid not in cells:
+            sys.exit(f"ai_recall line {n}: unknown book {bid}")
+        known = {c["question_id"]: c["p_yes"] for c in cells[bid] if c["p_yes"] != 0.5}
+        seen = set()
+        for tok in tokens.split():
+            qid, code = ("q" + tok[:-1]) if tok[0].isdigit() else tok[:-1], tok[-1]
+            if qid not in qids or code not in RECALL_VALUE or qid in seen:
+                sys.exit(f"ai_recall line {n}: bad token {tok!r}")
+            seen.add(qid)
+            v = RECALL_VALUE[code]
+            if qid in known:
+                if (known[qid] - 0.5) * (v - 0.5) > 0:
+                    agree += 1
+                else:
+                    # Two independent methods disagree: neither is trusted, the cell becomes unknown.
+                    conflict += 1
+                    conflicts.append({"book_id": bid, "question_id": qid, "sourced": known[qid], "ai_recall": v,
+                                      "resolution": "set to unknown (0.5)"})
+                    cells[bid] = [c for c in cells[bid] if c["question_id"] != qid or c["p_yes"] == 0.5]
+                continue
+            cells[bid].append({"question_id": qid, "p_yes": v, "status": "ai_recall", "source_id": None,
+                               "evidence_quote": None, "premise_safe": True, "reviewed": False})
+            added += 1
+    checked = agree + conflict
+    return {"cells_added": added, "checked_against_sourced_labels": checked, "agree": agree, "conflict": conflict,
+            "agreement_rate": round(agree / checked, 3) if checked else None, "conflicts": conflicts,
+            "note": "On conflict both are dropped (unknown). Agreement is with AI-drafted sourced labels, not a human check."}
+
+
+# ------------------------------------------------------------------ series grouping
+SERIES_TAG = re.compile(r"\((.+?),?\s*#(\d+(?:\.\d+)?)\)\s*$")
+SERIES_ALIAS = {"Hitchhiker's Guide": "Hitchhiker's Guide to the Galaxy"}
+
+
+def slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def group_series(records: list[dict], cells: dict[str, list[dict]], quarantine: dict) -> tuple[dict, list[dict]]:
+    """Series with ≥2 in-scope volumes become ONE target (the reader then picks the volume from a list).
+    Series membership comes from the goodbooks title tag "(Series, #n)" in the source record."""
+    by_series: dict[str, list[tuple[float, int, dict]]] = {}
+    for i, r in enumerate(records):
+        if r["id"] in quarantine or not r["authors"] or r["id"] not in cells:
+            continue
+        for a in r["aliases"]:
+            m = SERIES_TAG.search(a)
+            if m:
+                name = SERIES_ALIAS.get(m.group(1).strip(), m.group(1).strip())
+                by_series.setdefault(name, []).append((float(m.group(2)), i, r))
+                break
+    series_of: dict[str, str] = {}
+    out: list[dict] = []
+    for name, vols in sorted(by_series.items()):
+        if len(vols) < 2:
+            continue
+        vols.sort(key=lambda v: (v[0], v[1]))
+        sid = "series:" + slug(name)
+        per_q: dict[str, list[dict]] = {}
+        for _n, _i, r in vols:
+            for c in cells[r["id"]]:
+                if c["p_yes"] != 0.5:
+                    per_q.setdefault(c["question_id"], []).append(c)
+        combined = []
+        for qid, cs in per_q.items():
+            if qid == "q54":  # "first book in its series?" depends on which volume the reader means
+                continue
+            vals = [c["p_yes"] for c in cs]
+            if any(v > 0.5 for v in vals) and any(v < 0.5 for v in vals):
+                continue  # volumes disagree: unknown for the series
+            mean = sum(vals) / len(vals)
+            p = (0.9 if mean >= 0.8 else 0.7) if mean > 0.5 else (0.1 if mean <= 0.2 else 0.3)
+            src = next((c for c in cs if c.get("source_id")), cs[0])
+            combined.append({"question_id": qid, "p_yes": p, "status": src.get("status", "supported"),
+                             "source_id": src.get("source_id"), "evidence_quote": src.get("evidence_quote"),
+                             "premise_safe": True, "reviewed": all(c["reviewed"] for c in cs)})
+        cells[sid] = combined
+        authors = sorted({a for _n, _i, r in vols for a in r["authors"]})
+        out.append({
+            "id": sid, "title": name if re.search(r"\bseries$", name, re.I) else f"{name} series", "title_ko": None, "authors": authors,
+            "aliases": [r["title"] for _n, _i, r in vols], "original_language": None,
+            "original_language_claim": next((r.get("original_language_claim") for _n, _i, r in vols), None),
+            "first_publication_year": None, "rank": min(i for _n, i, _r in vols),
+            "sources": list({s["id"]: s for _n, _i, r in vols for s in r["sources"]}.values()),  # unique ids
+            "volumes": [{"id": r["id"], "title": r["title"], "number": n} for n, _i, r in vols],
+        })
+        for _n, _i, r in vols:
+            series_of[r["id"]] = sid
+    return series_of, out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--pack")
@@ -73,6 +185,8 @@ def main() -> int:
                          "(researched 500-book matrix merged with ours, see scripts/merge_research.py)")
     ap.add_argument("--research")
     ap.add_argument("--no-motifs", action="store_true", help="leave out the motif questions (data/motifs/)")
+    ap.add_argument("--no-series", action="store_true", help="keep series volumes as separate targets")
+    ap.add_argument("--no-ai-recall", action="store_true", help="leave out data/ai_recall/labels.txt")
     ap.add_argument("--gate", choices=["llr", "none"], default="llr",
                     help="llr: pairwise likelihood-ratio gate here; none: emit every candidate that passes the basic "
                          "checks and let scripts/gate_catalog.ts prune it with the real engine")
@@ -128,15 +242,26 @@ def main() -> int:
                 cells[c["book_id"]].append({k: c[k] for k in ("question_id", "p_yes", "status", "source_id",
                                                               "evidence_quote", "premise_safe", "reviewed")})
 
+    recall_stats = merge_ai_recall(cells, {q["id"] for q in questions}) if use_motifs and not args.no_ai_recall else None
+    series_of, series_records = ({}, []) if args.no_series else group_series(records, cells, quarantine)
+
     playable: list[dict] = []
     vec: dict[str, dict[str, float]] = {}
     rows = []
     need = math.log(GUESS_RATIO) - 1e-9
-    for rank, r in enumerate(records):
+    ranked = [(i, r) for i, r in enumerate(records)] + [(sr["rank"], sr) for sr in series_records]
+    ranked.sort(key=lambda x: (x[0], 0 if x[1]["id"].startswith("series:") else 1))
+    for rank, r in ranked:
         bid = r["id"]
         row = {"rank": rank, "id": bid, "title": r["title"], "authors": r["authors"],
                "labelled": bid in cells, "supported_cells": 0, "reviewed_cells": 0, "playable": False, "reason": None}
+        if "volumes" in r:
+            row["volumes"] = [v["id"] for v in r["volumes"]]
         rows.append(row)
+        if bid in series_of:
+            row["series"] = series_of[bid]
+            row["reason"] = f"part of series target {series_of[bid]}"
+            continue
         if bid not in cells:
             row["reason"] = "no question matrix yet (evidence only)"
             continue
@@ -163,9 +288,10 @@ def main() -> int:
 
     counts = {
         "imported_source_records": len(records),
-        "labelled_with_validated_matrix": sum(r["labelled"] for r in rows),
+        "labelled_with_validated_matrix": sum(r["labelled"] for r in rows if not r["id"].startswith("series:")),
         "records_with_human_reviewed_cells": sum(1 for r in rows if r["reviewed_cells"]),
         "playable_game_targets": len(playable),
+        "series_targets": len(series_records),
     }
     supported_total = sum(r["supported_cells"] for r in rows)
     version = args.version or f"cmu-priority{len(records)}-v1"
@@ -173,7 +299,8 @@ def main() -> int:
                  else "from the opening of a Wikipedia-derived plot summary")
     notice = (f"Machine-labelled, unreviewed data. {counts['imported_source_records']} source records imported; "
               f"{counts['labelled_with_validated_matrix']} have a question matrix made by AI assistants {made_from}; "
-              f"the game can currently tell apart {counts['playable_game_targets']} of them. No human has reviewed any label.")
+              f"the game can currently tell apart {counts['playable_game_targets']} of them. Some answers come from an AI "
+              "assistant's general knowledge (no source; marked in the clues). No human has reviewed any label.")
     catalog = {
         "catalog_version": version,
         "data_status": "machine_labelled_unreviewed",
@@ -184,15 +311,18 @@ def main() -> int:
             "id": r["id"], "title_en": r["title"], "title_ko": r["title_ko"], "aliases": r["aliases"],
             "author": ", ".join(r["authors"]),
             "original_language": r["original_language"] or LANG.get(str(r.get("original_language_claim")), UNDETERMINED),
-            "first_publication_year": r["first_publication_year"], "series_id": None, "series_number": None,
+            "first_publication_year": r["first_publication_year"],
+            "series_id": r["id"] if "volumes" in r else None, "series_number": None,
             "openlibrary_work_id": None, "editions": [],
+            **({"volumes": r["volumes"]} if "volumes" in r else {}),
             "sources": [{"id": s["id"], "url": s.get("article_url") or s["url"], "license": s["license"],
                          "attribution": s.get("attribution", "")} for s in r["sources"]
-                        if s["id"] in {c["source_id"] for c in cells[r["id"]] if c["p_yes"] != 0.5}],
+                        if s["id"] in {c.get("source_id") for c in cells[r["id"]] if c["p_yes"] != 0.5}],
         } for r in playable],
         "questions": questions,
-        "features": [{"book_id": r["id"], "question_id": c["question_id"], "p_yes": c["p_yes"], "status": "supported",
-                      "source_ids": [c["source_id"]], "reviewed": c["reviewed"]}
+        "features": [{"book_id": r["id"], "question_id": c["question_id"], "p_yes": c["p_yes"],
+                      "status": "ai_recall" if c.get("status") == "ai_recall" else "supported",
+                      "source_ids": [c["source_id"]] if c.get("source_id") else [], "reviewed": c["reviewed"]}
                      for r in playable for c in cells[r["id"]] if c["p_yes"] != 0.5],
     }
     out = ROOT / args.out
@@ -200,6 +330,7 @@ def main() -> int:
     reasons = Counter((r["reason"] or "playable").split(" (cmu:")[0].split(" 'the higher")[0] for r in rows)
     grouped = Counter("playable" if r["playable"] else "not separable from a higher-priority book" if r["reason"].startswith("labels cannot")
                       else "form hold (not a novel)" if r["reason"].startswith("form hold")
+                      else "grouped into a series target" if r["reason"].startswith("part of series")
                       else "too few supported cells" if r["reason"].startswith("only") else r["reason"] for r in rows)
     del reasons
     report = {
@@ -209,6 +340,7 @@ def main() -> int:
         "books_meeting_handoff_heuristic_12_supported": sum(1 for r in rows if r["supported_cells"] >= 12),
         "gate": {"min_supported": args.min_supported, "pairwise_likelihood_ratio": GUESS_RATIO},
         "status_breakdown": dict(grouped),
+        "ai_recall": recall_stats,
         "scope": "Counts of records and labels. Not a measure of factual correctness or of game success.",
         "records": rows,
     }

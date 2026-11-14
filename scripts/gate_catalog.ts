@@ -109,11 +109,18 @@ function main() {
   }
   report.status_breakdown = breakdown;
   report.counts.playable_game_targets = playable;
+  // A series target covers its volumes: the reader picks the volume from a list after the series is found.
+  const titles = books.reduce((n, b) => n + (((b as { volumes?: unknown[] }).volumes?.length) ?? 1), 0);
+  (report.counts as Record<string, number>).titles_reachable = titles;
+  (catalog.coverage as Record<string, number>).titles_reachable = titles;
   report.gate = { ...report.gate, engine: "first guess when answering exactly from own labels (scripts/gate_catalog.ts); thresholds unchanged" };
   catalog.coverage.playable_game_targets = playable;
-  catalog.notice = catalog.notice.replace(/tell apart \d+ of them/, `tell apart ${playable} of them`);
+  const titlesNow = books.reduce((n, b) => n + (((b as { volumes?: unknown[] }).volumes?.length) ?? 1), 0);
+  catalog.notice = catalog.notice.replace(/tell apart \d+ of them/,
+    `tell apart ${playable} targets covering ${titlesNow} titles (a series counts once; you pick the volume)`);
   writeFileSync(catalogPath, JSON.stringify(catalog) + "\n");
   writeFileSync(reportPath, JSON.stringify(report, null, 1) + "\n");
+  console.log(`titles reachable: ${titles}`);
   console.log(`playable: ${playable}; removed by the engine gate: ${removed.size} (${((Date.now() - started) / 1000).toFixed(1)}s)`);
 }
 

@@ -18,7 +18,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ALLOWED_P = {0.1, 0.3, 0.5, 0.7, 0.9}
-STATUSES = {"supported", "ambiguous", "insufficient_evidence", "unreviewed_fixture"}
+STATUSES = {"supported", "ambiguous", "insufficient_evidence", "unreviewed_fixture", "ai_recall"}
 # machine_labelled_unreviewed: labels made by an AI assistant from quoted source text, no human review.
 DATA_STATUSES = {"development_fixture", "machine_labelled_unreviewed", "production"}
 PLACEHOLDERS = {"VERIFIED_URL", "RECORDED_TERMS", "TODO", "TBD", ""}
@@ -166,7 +166,7 @@ def validate(cat: dict, bank: list[dict] | None = None) -> Report:
         status_count[st] += 1
         if st not in STATUSES:
             r.err(f"{where}: status {st!r} not allowed")
-        if st == "unreviewed_fixture" and production:
+        if st in ("unreviewed_fixture", "ai_recall") and production:
             r.err(f"{where}: fixture labels are not allowed in a production catalog")
         sids = f.get("source_ids", [])
         if not isinstance(sids, list):

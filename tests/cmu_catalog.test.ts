@@ -15,12 +15,16 @@ test("cmu catalog is marked as unreviewed machine-labelled data", () => {
   assert.ok(catalog.notice && /No human has reviewed/.test(catalog.notice));
   assert.ok(catalog.coverage && catalog.coverage.playable_game_targets === catalog.books.length);
   assert.ok(catalog.coverage.imported_source_records >= catalog.books.length);
-  assert.ok(catalog.features.every((f) => f.reviewed === false && f.status === "supported" && f.source_ids.length === 1));
+  // Sourced labels cite exactly one source; AI-recall labels (general knowledge) cite none and say so.
+  assert.ok(catalog.features.every((f) => f.reviewed === false &&
+    ((f.status === "supported" && f.source_ids.length === 1) || (f.status === "ai_recall" && f.source_ids.length === 0))));
 });
 
 test("every cmu feature cites a source registered on its own book", () => {
   const sources = new Map(catalog.books.map((b) => [b.id, new Set(b.sources.map((s) => s.id))]));
-  for (const f of catalog.features) assert.ok(sources.get(f.book_id)?.has(f.source_ids[0]), `${f.book_id}/${f.question_id}`);
+  for (const f of catalog.features) {
+    if (f.source_ids.length) assert.ok(sources.get(f.book_id)?.has(f.source_ids[0]), `${f.book_id}/${f.question_id}`);
+  }
 });
 
 test("every playable cmu book is the first guess when answering from its own labels", () => {
