@@ -1,0 +1,3 @@
+# Optional: only needed to re-parse live Wikipedia wikitext.
+# Validating and importing the cached final data needs only Python's standard library.
+mwparserfromhell==0.7.2

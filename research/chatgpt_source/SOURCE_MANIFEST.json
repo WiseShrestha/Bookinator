@@ -1,0 +1,164 @@
+{
+  "files": [
+    {
+      "path": "ATTRIBUTION.md",
+      "sha256": "c20366185aa7ed85ad2f5795bce61cd5c6c88b7a602155ac3ced0608ebd97055"
+    },
+    {
+      "path": "CLAUDE_PASTE_PROMPT.txt",
+      "sha256": "ce02b796b12ff1a31a83ac337fd4b4427fcb7a76da341a858d8b23e9d256a2ee"
+    },
+    {
+      "path": "CLAUDE_RESUME.md",
+      "sha256": "3b71a34cabf88301e8df24850bccf2a881aaa505992f61e961c240ed0bd03b45"
+    },
+    {
+      "path": "core_tools/build_catalog.py",
+      "sha256": "78a589d5f5d29426665a9c674be3304f60791522eec2aea66815a63e22f01ab8"
+    },
+    {
+      "path": "core_tools/prepare_label_batches.py",
+      "sha256": "4c1efa348862abea009cf2d51199ba12f6123bdc6605f8d095ef9f6f0d27ea07"
+    },
+    {
+      "path": "core_tools/test_catalog_tools.py",
+      "sha256": "0e3fe5f829e00fbf53bd7856c1ffc7d9f78bcadc4dbc922efe3774d26724ccd8"
+    },
+    {
+      "path": "core_tools/validate_matrix.py",
+      "sha256": "260463346db32f34e2f84d6a61efb841c4eaa5d124ffcb838a04ea23a15b7b03"
+    },
+    {
+      "path": "five_book_demo/README.md",
+      "sha256": "90e4692794c057266de0c834875dba202325544766ca190f76f84b7b0a6cf4be"
+    },
+    {
+      "path": "five_book_demo/engine.cjs",
+      "sha256": "471be694c0f67b6274820ec6c9f819e0ce3398b83303fcc1e7cc15f4d3b0cd4e"
+    },
+    {
+      "path": "five_book_demo/fixture.json",
+      "sha256": "a9948da6b183aed8ccb987304a030add1aec8df5bfb3ffcceec9f2208b4b88a4"
+    },
+    {
+      "path": "five_book_demo/standalone.html",
+      "sha256": "75ac0e84eea75f5e8dcc546ef53d7963e1acc997ce6aa0d642bda8b2aadc33fc"
+    },
+    {
+      "path": "five_book_demo/test-engine.cjs",
+      "sha256": "48ca8ff19845e48d2ce59ee1074bdaaf32cd17e505081aed790a4a6e4f44b13c"
+    },
+    {
+      "path": "five_book_demo/widget-script.js",
+      "sha256": "3f9052539e6d5d39f6f55d922f0e221560b8c3777317756d909a46ad713b1689"
+    },
+    {
+      "path": "licenses/CMU_ORIGINAL_README.txt",
+      "sha256": "458c33df24ce11bbc079e1c9a734c317c120504f044546ada275847bf5e023ea"
+    },
+    {
+      "path": "licenses/goodbooks_LICENSE.txt",
+      "sha256": "1a459ea0f6e7f28d4eba7df0ddace58e0874e53dad4f787e0d206fdbf602147d"
+    },
+    {
+      "path": "matrix_response_schema.json",
+      "sha256": "853c199d424734ea80c1de40adb16db9216201b86c4d4c2a0c83105b076a4307"
+    },
+    {
+      "path": "questions_64.json",
+      "sha256": "b9c695e98da64189faba92b4a81a4c6fc6cc8c2f3ee70078d7ad2637b59ed3b3"
+    },
+    {
+      "path": "requirements-research.txt",
+      "sha256": "13a9b89f2030b27752ac3b8605c33ca72489b494db554a88a26862c1cf8fdf5a"
+    },
+    {
+      "path": "scripts/apply_current_decisions.py",
+      "sha256": "bad1c7785e608efdf5c15bc1bde9c306dfea1ede53a81257a4ad6e4461c0ef7b"
+    },
+    {
+      "path": "scripts/apply_semantic_review.py",
+      "sha256": "a2eae9134239f9b3518679c56c82c6507c33954d320a63d922d030de2f81459b"
+    },
+    {
+      "path": "scripts/audit_catalog_engine.cjs",
+      "sha256": "3c028079c5069b96cb30dda07d1106a78547e83b19745e483076afba0839c407"
+    },
+    {
+      "path": "scripts/audit_completion.py",
+      "sha256": "a9c603b14240973211142e2589ce26f110c082ea037f087eb1a62de4a1e7029c"
+    },
+    {
+      "path": "scripts/enrich_bibliography.py",
+      "sha256": "df5050d01e735bb8ea201b2dcb86b6bba62a09d814886dfd10e7b8b1bb33a988"
+    },
+    {
+      "path": "scripts/fetch_work_entities.py",
+      "sha256": "18f9a8da42bd5f835ffd9ecee349ed38a3724ab5d020e0435c82087dc16c8fb5"
+    },
+    {
+      "path": "scripts/fetch_work_evidence.py",
+      "sha256": "4ed47464f2fa60ab4bead567596e5cd268ce2ee5baf355027636b183f4f77c08"
+    },
+    {
+      "path": "scripts/finalize_pass_report.py",
+      "sha256": "ea7463e426cfe9f4ee500e48ebadef50636f037407f7f127fa9fdc98a0525fe1"
+    },
+    {
+      "path": "scripts/finalize_researched_data.py",
+      "sha256": "99507858de47b8c83496832c51bf23c8ae611f5e483e622beb227fb02af6da7a"
+    },
+    {
+      "path": "scripts/ingest_research_checkpoint.py",
+      "sha256": "45a9c1ba678bc09aa6f2e34356867a600e781457adc38a7caf0d87bf71c9191d"
+    },
+    {
+      "path": "scripts/label_catalog.py",
+      "sha256": "5b1b4caa1d7a4b60aece3dc2b81832d8b315fa2ee62aea654284e713a0220a86"
+    },
+    {
+      "path": "scripts/merge_labels.py",
+      "sha256": "58b87c469c17a819a58176e231f76e5010ad64bbf3fb08a46fa9110d4ba679e8"
+    },
+    {
+      "path": "scripts/parse_work_evidence.py",
+      "sha256": "64f4f1d4a0112add28ec368fd687a5bf3ca559709691fe8a8d52fd3e3aa43420"
+    },
+    {
+      "path": "scripts/prepare_current_panels.py",
+      "sha256": "f4e26e267a3f719f0401db6d7dd4cf3916d04a01f21c4624874135e286b5f051"
+    },
+    {
+      "path": "scripts/prepare_semantic_review.py",
+      "sha256": "0eeb23127363d6ee273dccf1635bbe3b508386067e1e53ae422bb6b38a9f79b0"
+    },
+    {
+      "path": "scripts/prepare_weak_panels.py",
+      "sha256": "451a2c85453a37a98015d0b43fb72b598548c5c27c8edfdab90c009191453358"
+    },
+    {
+      "path": "scripts/refine_selected.py",
+      "sha256": "ca8b71178e6a506546ad32a91f94f424f1e198b88151d256ff264dd588d17786"
+    },
+    {
+      "path": "scripts/research_enrichment.py",
+      "sha256": "37797a447cfc69997dc22fb029be0b53a41e6419a17de961c3cace8b2cde3334"
+    },
+    {
+      "path": "scripts/test_completion.py",
+      "sha256": "c6d71db4c2beb53f9acf3d7f8b658c0070fd8ce92067bc116067e894265baa34"
+    },
+    {
+      "path": "scripts/test_evidence_enrichment.py",
+      "sha256": "763bb26f9ef0a8f32e14e968b27dc5a6977d8b0ea3b3c048f9c47adfd52eb302"
+    },
+    {
+      "path": "scripts/test_researched_rules.py",
+      "sha256": "f78c30612dc4b302f1516a828b96cb84363d7132647ac25fba203a611f5acbcd"
+    },
+    {
+      "path": "scripts/validate_evidence_matrix.py",
+      "sha256": "03fd024592403dd3810bf7ef4b8f7f5410f75f696d518ae7ee242a8a5a10e542"
+    }
+  ]
+}

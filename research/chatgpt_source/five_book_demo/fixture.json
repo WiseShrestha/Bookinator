@@ -1,0 +1,194 @@
+{
+  "books": [
+    {
+      "id": "cmu:enwiki:20128213",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "library_url": "https://openlibrary.org/search?title=The+Hunger+Games&author=Suzanne+Collins"
+    },
+    {
+      "id": "cmu:enwiki:48648",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "library_url": "https://openlibrary.org/search?title=Harry+Potter+and+the+Philosopher%27s+Stone&author=J.+K.+Rowling"
+    },
+    {
+      "id": "cmu:enwiki:4451267",
+      "title": "Twilight",
+      "author": "Stephenie Meyer",
+      "library_url": "https://openlibrary.org/search?title=Twilight&author=Stephenie+Meyer"
+    },
+    {
+      "id": "cmu:enwiki:73408",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "library_url": "https://openlibrary.org/search?title=To+Kill+a+Mockingbird&author=Harper+Lee"
+    },
+    {
+      "id": "cmu:enwiki:76033",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "library_url": "https://openlibrary.org/search?title=The+Great+Gatsby&author=F.+Scott+Fitzgerald"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q08",
+      "text": "Does a central character have supernatural abilities?",
+      "p_yes": [
+        0.1,
+        0.9,
+        0.9,
+        0.1,
+        0.1
+      ],
+      "group": "supernatural",
+      "weight": 1
+    },
+    {
+      "id": "q09",
+      "text": "Is a school a major setting?",
+      "p_yes": [
+        0.1,
+        0.9,
+        0.9,
+        0.1,
+        0.1
+      ],
+      "group": "school",
+      "weight": 1
+    },
+    {
+      "id": "q13",
+      "text": "Does much of the story take place in Britain?",
+      "p_yes": [
+        0.1,
+        0.9,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "group": "location",
+      "weight": 1
+    },
+    {
+      "id": "q18",
+      "text": "Is most of the story set between 1900 and 1945?",
+      "p_yes": [
+        0.1,
+        0.1,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "group": "era",
+      "weight": 0.85
+    },
+    {
+      "id": "q21",
+      "text": "Is the story set in an imagined future?",
+      "p_yes": [
+        0.9,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "group": "future",
+      "weight": 1
+    },
+    {
+      "id": "q23",
+      "text": "Has a large disaster already changed society when the story begins?",
+      "p_yes": [
+        0.9,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "group": "future",
+      "weight": 0.8
+    },
+    {
+      "id": "q31",
+      "text": "Is a competition or tournament central to the premise?",
+      "p_yes": [
+        0.9,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "group": "competition",
+      "weight": 1
+    },
+    {
+      "id": "q26",
+      "text": "Is a romantic relationship a main storyline?",
+      "p_yes": [
+        0.7,
+        0.1,
+        0.9,
+        0.1,
+        0.9
+      ],
+      "group": "romance",
+      "weight": 0.85
+    },
+    {
+      "id": "q49",
+      "text": "Is much of the book narrated using “I”?",
+      "p_yes": [
+        0.9,
+        0.1,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "group": "narration",
+      "weight": 0.8
+    },
+    {
+      "id": "q01",
+      "text": "Is a child or teenager a central character?",
+      "p_yes": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.1
+      ],
+      "group": "age",
+      "weight": 1
+    },
+    {
+      "id": "q14",
+      "text": "Does much of the story take place in the United States?",
+      "p_yes": [
+        0.5,
+        0.1,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "group": "location",
+      "weight": 0.8
+    },
+    {
+      "id": "q44",
+      "text": "Does it strongly focus on social class or inequality?",
+      "p_yes": [
+        0.9,
+        0.3,
+        0.1,
+        0.9,
+        0.9
+      ],
+      "group": "theme",
+      "weight": 0.6
+    }
+  ],
+  "data_status": "AI-curated five-book demonstration fixture; not a human-reviewed 500-book matrix.",
+  "production_catalog_coverage": false
+}
