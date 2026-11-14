@@ -1,0 +1,12 @@
+{
+  "_comment": "FORMAT EXAMPLE ONLY — not a real record. One file per book: data/evidence/<book_id>.json. Each source needs a real https URL you opened, the license/terms you checked, and a short excerpt you copied (summary-length, respecting the source's license). Never paste made-up text.",
+  "book_id": "example-book-id",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://example.org/replace-with-the-real-page",
+      "license": "Record the actual terms, e.g. 'CC BY-SA 3.0 — CMU Book Summary Dataset (attribution required)'",
+      "excerpt": "Paste the plot-summary excerpt you are relying on here."
+    }
+  ]
+}

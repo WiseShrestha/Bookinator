@@ -1,0 +1,19 @@
+{
+  "//": "Strict type-check of the React-free parts (engine, data, scripts, tests). Needs only @types/node.",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": ["src/engine", "src/data/*.ts", "scripts/*.ts", "tests"]
+}
