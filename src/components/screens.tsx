@@ -3,6 +3,7 @@ import { matchingClues, type MatchingClue } from "../engine/explain.ts";
 import { catalogLinks } from "../engine/links.ts";
 import { ANSWERS, ANSWER_LABELS, type Answer, type CatalogBook } from "../engine/model.ts";
 import type { Action, SessionState, ShortlistReason } from "../engine/session.ts";
+import { ACTIVE_COLLECTION, COLLECTIONS, collectionHref, type CollectionId } from "../data/index.ts";
 import { CC, CONFIG, LINK_OPTIONS } from "../game.ts";
 import { Availability } from "./Availability.tsx";
 import { Folio, type Mood } from "./Folio.tsx";
@@ -178,6 +179,19 @@ export function StartScreen({ headingRef, onStart }: { headingRef: Heading; onSt
         <li><span>2</span>Answer Yes, No, Probably — or Don't know.</li>
         <li><span>3</span>I name your book and show where to borrow it.</li>
       </ol>
+      <nav className="collections" aria-label="Choose a collection">
+        {(Object.keys(COLLECTIONS) as CollectionId[]).map((id) => (
+          <a
+            key={id}
+            href={collectionHref(id)}
+            className={`collection-tab ${id === ACTIVE_COLLECTION ? "active" : ""}`}
+            aria-current={id === ACTIVE_COLLECTION ? "page" : undefined}
+          >
+            <b>{COLLECTIONS[id].label}</b>
+            <span>{COLLECTIONS[id].blurb}</span>
+          </a>
+        ))}
+      </nav>
       <label className="switch">
         <input type="checkbox" checked={film} onChange={(e) => setFilm(e.target.checked)} />
         <span className="switch-track" aria-hidden="true"><span className="switch-thumb" /></span>

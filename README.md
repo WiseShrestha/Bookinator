@@ -156,8 +156,9 @@ The validator checks:
 
 ## Research catalog (500 imported records → 27 playable books)
 
-Two catalogs ship. The **10-book fixture** stays the default (`npm run dev`). The **CMU / research catalog**
-is selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report imported records as game coverage:
+Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/ and
+`?collection=research`). The **10-book fixture** ("Classic shelf") is the default. The **CMU / research catalog**
+("Research shelf") is also selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report imported records as game coverage:
 
 | Measure (14 Nov 2026) | Count |
 | --- | ---: |
