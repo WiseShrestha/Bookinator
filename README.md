@@ -220,6 +220,10 @@ clues say "AI's general knowledge, no source". This is not a person's review.
 agreeing → that answer, disagreeing → unknown, "first in series?" → unknown. After Folio's guess the reader picks
 the volume from a list. `--no-series` / `--no-ai-recall` turn each off.
 
+**Second labeller.** `docs/GPT_LABELLING_BRIEF.md` is a paste-ready brief for ChatGPT with work lists in
+`data/ai_recall/worklists/` (`scripts/export_worklists.py`). Its answers go in `data/ai_recall/gpt.txt`; labellers
+that disagree on a cell leave it unknown, and per-labeller agreement is reported.
+
 | | 64 + motif questions | + series + AI recall |
 | --- | ---: | ---: |
 | Playable targets (engine gate, thresholds unchanged) | 27 | **181** (28 of them series) |

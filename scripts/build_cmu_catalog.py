@@ -69,48 +69,80 @@ AI_RECALL = ROOT / "data" / "ai_recall" / "labels.txt"
 RECALL_VALUE = {"Y": 0.9, "y": 0.7, "n": 0.3, "N": 0.1}
 
 
-def merge_ai_recall(cells: dict[str, list[dict]], qids: set[str]) -> dict | None:
-    """Fill UNKNOWN cells from data/ai_recall/labels.txt (an AI assistant's general knowledge of the book, no
-    source). Where a sourced label exists and agrees it is kept; where they disagree the cell becomes unknown.
-    The agreement rate is reported as a check on the recall."""
-    if not AI_RECALL.exists():
-        return None
-    agree = conflict = added = 0
-    conflicts = []
-    for n, line in enumerate(AI_RECALL.read_text(encoding="utf-8").splitlines(), 1):
+def read_recall_file(path: Path, qids: set[str], books: set[str]) -> dict[tuple[str, str], float]:
+    """One labeller's file: `book_id | title | tokens`, tokens like 01Y 13N m01n (see labels.txt header)."""
+    out: dict[tuple[str, str], float] = {}
+    for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         line = line.split("#", 1)[0].strip()
         if not line:
             continue
         bid, _title, tokens = (x.strip() for x in line.split("|", 2))
         if ":" not in bid:
             bid = "cmu:enwiki:" + bid
-        if bid not in cells:
-            sys.exit(f"ai_recall line {n}: unknown book {bid}")
-        known = {c["question_id"]: c["p_yes"] for c in cells[bid] if c["p_yes"] != 0.5}
-        seen = set()
+        if bid not in books:
+            sys.exit(f"{path.name} line {n}: unknown book {bid}")
         for tok in tokens.split():
             qid, code = ("q" + tok[:-1]) if tok[0].isdigit() else tok[:-1], tok[-1]
-            if qid not in qids or code not in RECALL_VALUE or qid in seen:
-                sys.exit(f"ai_recall line {n}: bad token {tok!r}")
-            seen.add(qid)
-            v = RECALL_VALUE[code]
-            if qid in known:
-                if (known[qid] - 0.5) * (v - 0.5) > 0:
-                    agree += 1
-                else:
-                    # Two independent methods disagree: neither is trusted, the cell becomes unknown.
-                    conflict += 1
-                    conflicts.append({"book_id": bid, "question_id": qid, "sourced": known[qid], "ai_recall": v,
-                                      "resolution": "set to unknown (0.5)"})
-                    cells[bid] = [c for c in cells[bid] if c["question_id"] != qid or c["p_yes"] == 0.5]
-                continue
-            cells[bid].append({"question_id": qid, "p_yes": v, "status": "ai_recall", "source_id": None,
-                               "evidence_quote": None, "premise_safe": True, "reviewed": False})
-            added += 1
+            if qid not in qids or code not in RECALL_VALUE or (bid, qid) in out:
+                sys.exit(f"{path.name} line {n}: bad or repeated token {tok!r}")
+            out[(bid, qid)] = RECALL_VALUE[code]
+    return out
+
+
+def merge_ai_recall(cells: dict[str, list[dict]], qids: set[str]) -> dict | None:
+    """Fill UNKNOWN cells from AI-recall files in data/ai_recall/ (labels.txt = Claude; any other *.txt = another
+    labeller, named after the file, e.g. gpt.txt). Rules, per cell:
+      * labellers disagree with each other           -> no recall answer (unknown unless a sourced label exists)
+      * labellers agree                              -> the strongest of their values
+      * recall agrees with a sourced label           -> the sourced label is kept
+      * recall disagrees with a sourced label        -> unknown
+    Agreement rates (vs sourced labels, and between labellers) are reported as checks. None is a human review."""
+    files = sorted(AI_RECALL.parent.glob("*.txt"), key=lambda f: (f.name != "labels.txt", f.name))
+    if not files:
+        return None
+    books = set(cells)
+    per = {("claude" if f.name == "labels.txt" else f.stem): read_recall_file(f, qids, books) for f in files}
+    stats: dict = {"labellers": {name: {"answers": len(v), "agree_with_sourced": 0, "conflict_with_sourced": 0}
+                                 for name, v in per.items()}}
+    cross_agree = cross_conflict = added = agree = conflict = 0
+    conflicts = []
+    keys = sorted({k for v in per.values() for k in v})
+    for bid, qid in keys:
+        vals = {name: v[(bid, qid)] for name, v in per.items() if (bid, qid) in v}
+        known = next((c["p_yes"] for c in cells[bid] if c["question_id"] == qid and c["p_yes"] != 0.5), None)
+        for name, v in vals.items():
+            if known is not None:
+                k = "agree_with_sourced" if (known - 0.5) * (v - 0.5) > 0 else "conflict_with_sourced"
+                stats["labellers"][name][k] += 1
+        if len(vals) > 1:
+            if any(v > 0.5 for v in vals.values()) and any(v < 0.5 for v in vals.values()):
+                cross_conflict += 1
+                continue  # the labellers disagree: no recall answer for this cell
+            cross_agree += 1
+        v = max(vals.values(), key=lambda x: abs(x - 0.5))
+        if known is not None:
+            if (known - 0.5) * (v - 0.5) > 0:
+                agree += 1
+            else:
+                conflict += 1
+                conflicts.append({"book_id": bid, "question_id": qid, "sourced": known, "ai_recall": vals,
+                                  "resolution": "set to unknown (0.5)"})
+                cells[bid] = [c for c in cells[bid] if c["question_id"] != qid or c["p_yes"] == 0.5]
+            continue
+        cells[bid].append({"question_id": qid, "p_yes": v, "status": "ai_recall", "source_id": None,
+                           "evidence_quote": None, "premise_safe": True, "reviewed": False})
+        added += 1
+    for name, st in stats["labellers"].items():
+        n = st["agree_with_sourced"] + st["conflict_with_sourced"]
+        st["agreement_with_sourced"] = round(st["agree_with_sourced"] / n, 3) if n else None
     checked = agree + conflict
-    return {"cells_added": added, "checked_against_sourced_labels": checked, "agree": agree, "conflict": conflict,
-            "agreement_rate": round(agree / checked, 3) if checked else None, "conflicts": conflicts,
-            "note": "On conflict both are dropped (unknown). Agreement is with AI-drafted sourced labels, not a human check."}
+    stats.update({"cells_added": added, "checked_against_sourced_labels": checked, "agree": agree, "conflict": conflict,
+                  "agreement_rate": round(agree / checked, 3) if checked else None,
+                  "between_labellers": {"agree": cross_agree, "disagree_dropped": cross_conflict},
+                  "conflicts": conflicts,
+                  "note": "Recall vs sourced: on conflict the cell becomes unknown. Labellers disagreeing: no recall "
+                          "answer. Agreement is with AI-drafted sourced labels, not a human check."})
+    return stats
 
 
 # ------------------------------------------------------------------ series grouping
