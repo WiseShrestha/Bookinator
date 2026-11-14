@@ -45,7 +45,7 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
   - `model.ts` types + channel + `compileCatalog`; `config.ts` **all thresholds**; `posterior.ts` log-space replay;
     `selectQuestion.ts` expected information gain × recallability; `session.ts` event log, Undo, rejection,
     18-question cap, shortlist, no-match; `explain.ts` clues; `links.ts` catalog links.
-- `src/components/` UI screens (`Folio.tsx` = SVG mascot, mood from game state only); `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
+- `src/components/` UI screens (`scenery.tsx` = seagull, cloud buttons, sea; `Contribute.tsx` = add-a-book + opt-in answers); `src/i18n/` Korean/English; `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
 - `src/data/index.ts` — chooses the catalog: `?collection=research|classic` in the URL, else `VITE_CATALOG`, else the fixture.
 - `server/library-proxy.mjs` — stdlib Node proxy keeping the Data4Library key server-side.
 - `research/chatgpt_source/` — ChatGPT's research code, unchanged; tests via `npm run test:research`.
@@ -140,3 +140,12 @@ links only). D3–D6 and D8–D13 are still open in the design doc — don't har
   approved books join only if the engine gate finds them). The JSON catalog in git stays the source of truth.
 - Feature status `community_consensus` requires `reviewed: true` and `consensus` provenance (validator enforces).
 - `scripts/py.mjs` runs Python in UTF-8 mode; with that, `npm run verify` is green on Windows (cp949 console).
+- UI follows the design canvas (seagull, cloud buttons, sea; Korean/English; PC ≥ 900px / phone). Korean question
+  wording lives in `src/i18n/questionsKo.ts` keyed by the English text — add a line when a question is added
+  (`tests/contribute.test.ts` fails otherwise). Covers are generated (D7), never images.
+- Browser contributions: `src/community/client.ts` (supabase-js loaded lazily, anonymous sign-in, Turnstile when
+  `VITE_TURNSTILE_SITE_KEY` is set). Nothing is sent without the reader asking on that screen (D2); the exact
+  payload is `src/community/payload.ts`. No `VITE_SUPABASE_*` env → game unchanged, contributions switched off.
+- Dataset in Supabase: `npm run community -- sync` saves a shipped catalog, `get_release_catalog()` / `pull` load it
+  back byte-for-byte equal (tested). `VITE_CATALOG_SOURCE=supabase` makes `main.tsx` play the DB copy of the same
+  release, falling back to the bundle on any problem — the engine never depends on the server.

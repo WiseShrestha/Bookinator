@@ -6,6 +6,7 @@
 //
 //   sync      --catalog src/data/fixture.catalog.json   load a shipped release into the read-only mirror,
 //                                                        then mark approved submissions it contains as published
+//   pull      --version <catalog version> [--out file]    load a release back from the database as catalog JSON
 //   consensus [--release <version>] [--dry-run]          recompute community consensus from every raw answer
 //                                                        (new consensus_runs row; nothing is overwritten)
 //   export    --base src/data/fixture.catalog.json --version <new version> [--out data/community]
@@ -167,10 +168,22 @@ async function exportCandidate() {
   console.log(`next: node scripts/py.mjs scripts/validate_catalog.py ${resolve(outDir, "candidate.catalog.json")}`);
 }
 
-const commands: Record<string, () => Promise<void>> = { sync, consensus, export: exportCandidate };
+/** Loads a release back from the database as catalog JSON (the inverse of `sync`). */
+async function pull() {
+  const version = arg("version");
+  if (!version) throw new Error("--version <catalog version> is required");
+  const out = resolve(ROOT, arg("out") ?? `data/community/${version}.catalog.json`);
+  const cat = await rest<Catalog | null>("POST", "/rpc/get_release_catalog", { release_version: version });
+  if (!cat) throw new Error(`release ${version} is not in the database (run sync first)`);
+  mkdirSync(dirname(out), { recursive: true });
+  writeFileSync(out, JSON.stringify(cat) + "\n");
+  console.log(`${version}: ${cat.books.length} books, ${cat.questions.length} questions, ${cat.features.length} features → ${out}`);
+}
+
+const commands: Record<string, () => Promise<void>> = { sync, pull, consensus, export: exportCandidate };
 const cmd = process.argv[2];
 if (!cmd || !commands[cmd]) {
-  console.error("usage: tsx scripts/community.ts sync|consensus|export [options]  (see the header of this file)");
+  console.error("usage: tsx scripts/community.ts sync|pull|consensus|export [options]  (see the header of this file)");
   process.exit(2);
 }
 commands[cmd]().catch((e: unknown) => {

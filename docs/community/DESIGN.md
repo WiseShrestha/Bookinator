@@ -11,7 +11,10 @@
 | 카탈로그 동기화 · 집계 실행 · 후보 카탈로그 생성 | `scripts/community.ts`, `scripts/community_lib.ts` | 구현 (원격 호출은 미실행) |
 | 엔진·검증기의 `community_consensus` 상태 지원 | `src/engine/model.ts`, `scripts/validate_catalog.py`, `src/components/screens.tsx` | 구현 |
 | 테스트 | `tests/consensus.test.ts`, `tests/community_export.test.ts`, `tests/db/schema.test.ts`, `tests/test_pipeline.py` | `npm run verify` 통과 |
-| 기여 UI · 관리자 화면 | — | **미구현** (D1·D2·D7 결정 완료, 다음 단계) |
+| 새 디자인(갈매기·구름·바다, 한/영, PC/모바일) + 기여 UI | `src/components/scenery.tsx`, `screens.tsx`, `Contribute.tsx`, `src/i18n/` | 구현. 원격 Supabase 연결 테스트는 아직 못 함 |
+| 브라우저 Supabase 클라이언트 · 데이터셋 불러오기 | `src/community/client.ts`, `payload.ts`, `search.ts`, `src/main.tsx` | 구현 + 단위 테스트 |
+| 데이터셋 저장·불러오기 (`tb_sync_release` ↔ `get_release_catalog`) | 마이그레이션, `npm run community -- sync / pull` | PGlite에서 두 카탈로그 왕복 일치 확인 |
+| 관리자 화면 | — | **미구현** |
 
 > **결정됨 (2026-11-14):** D1 = 익명 로그인 + CAPTCHA, D2 = 게임 종료 시마다 묻는 opt-in, D7 = 표지 업로드 받지 않음(Open Library 표지 링크만). 나머지 D#은 미정이다.
 >

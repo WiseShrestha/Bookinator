@@ -75,6 +75,15 @@ describe("catalog mirror", () => {
     assert.deepEqual(counts.rows[0], { books: BOOKS, features: FEATURES, revs: 2 });
   });
 
+  it("gives back each shipped catalog exactly as saved (books, questions, features, order, metadata)", async () => {
+    for (const cat of [FIXTURE, CMU]) {
+      const r = await as(null, "anon", () => db.query<{ c: unknown }>("select public.get_release_catalog($1) as c", [cat.catalog_version]));
+      assert.deepEqual(r.rows[0].c, cat);
+    }
+    const missing = await db.query<{ c: unknown }>("select public.get_release_catalog('no-such-release') as c");
+    assert.equal(missing.rows[0].c, null);
+  });
+
   it("refuses to load the same release twice", async () => {
     await assert.rejects(as(null, "service_role", () => db.query("select public.tb_sync_release($1::jsonb)", [JSON.stringify(FIXTURE)])), /immutable/);
   });

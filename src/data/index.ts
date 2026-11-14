@@ -4,13 +4,15 @@
 //   research           the machine-labelled CMU/research catalog built by `npm run catalog:research`
 //                      (only the books that pass the engine gate; see data/cmu/coverage_report.json)
 //
-// Choice, highest priority first: the page URL (?collection=research), then VITE_CATALOG=cmu, then classic.
-// The start screen links between the two. The UI shows a warning banner for anything not "production".
+// Which one: see ./collection.ts. The start screen links between the two. The UI shows a warning banner
+// for anything not "production". With VITE_CATALOG_SOURCE=supabase, main.tsx may replace the active
+// catalog with the same release loaded from Supabase (get_release_catalog); otherwise the bundle is used.
 import type { Catalog } from "../engine/model.ts";
+import { activeCollectionId, REMOTE_OVERRIDE_KEY, type CollectionId, type RemoteCatalogOverride } from "./collection.ts";
 import cmu from "./cmu.catalog.json";
 import fixture from "./fixture.catalog.json";
 
-export type CollectionId = "classic" | "research";
+export type { CollectionId } from "./collection.ts";
 
 export const COLLECTIONS: Record<CollectionId, { catalog: Catalog; label: string; blurb: string }> = {
   classic: {
@@ -25,23 +27,18 @@ export const COLLECTIONS: Record<CollectionId, { catalog: Catalog; label: string
   },
 };
 
-const env = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env ?? {}) as Record<string, string | undefined>;
+export const ACTIVE_COLLECTION: CollectionId = activeCollectionId();
 
-function fromUrl(): CollectionId | null {
-  try {
-    const v = new URLSearchParams(globalThis.location?.search ?? "").get("collection");
-    return v === "research" || v === "classic" ? v : null;
-  } catch {
-    return null;
-  }
-}
+const remote = (globalThis as Record<string, unknown>)[REMOTE_OVERRIDE_KEY] as RemoteCatalogOverride | undefined;
 
-export const ACTIVE_COLLECTION: CollectionId = fromUrl() ?? (env.VITE_CATALOG === "cmu" ? "research" : "classic");
-export const ACTIVE_CATALOG = COLLECTIONS[ACTIVE_COLLECTION].catalog;
+/** "remote" when this page plays a release loaded from Supabase, "bundled" otherwise. */
+export const CATALOG_SOURCE: "remote" | "bundled" = remote?.collection === ACTIVE_COLLECTION ? "remote" : "bundled";
+export const ACTIVE_CATALOG: Catalog =
+  CATALOG_SOURCE === "remote" ? (remote!.catalog as Catalog) : COLLECTIONS[ACTIVE_COLLECTION].catalog;
 
 /** Link that reloads the app on the given collection (keeps the rest of the URL). */
 export function collectionHref(id: CollectionId): string {
-  const url = new URL(globalThis.location?.href ?? "http://localhost/");
+  const url = new URL((globalThis as { location?: { href: string } }).location?.href ?? "http://localhost/");
   url.searchParams.set("collection", id);
   return url.pathname + url.search;
 }

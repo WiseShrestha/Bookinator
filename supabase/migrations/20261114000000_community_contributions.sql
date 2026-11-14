@@ -138,7 +138,8 @@ create table public.catalog_releases (
   data_status text not null check (data_status in ('development_fixture', 'machine_labelled_unreviewed', 'production')),
   notice text,
   released_at timestamptz not null default now(),
-  git_commit text
+  git_commit text,
+  meta jsonb not null default '{}'                   -- the JSON's other top-level keys (credits, coverage, …)
 );
 
 -- A work. Editions (translations, revisions) live in public.editions, never as separate books.
@@ -177,6 +178,7 @@ create table public.sources (
   url text not null check (url like 'https://%'),
   license text not null check (btrim(license) <> ''),
   attribution text,
+  position int not null default 0,                   -- order in the book's sources list
   primary key (book_id, id)
 );
 
@@ -204,6 +206,7 @@ create table public.question_revisions (
 create table public.release_books (
   catalog_version text not null references public.catalog_releases (version),
   book_id text not null references public.books (id),
+  position int not null,                             -- order in the shipped JSON
   primary key (catalog_version, book_id)
 );
 
@@ -211,6 +214,7 @@ create table public.release_questions (
   catalog_version text not null references public.catalog_releases (version),
   question_id text not null,
   revision int not null,
+  position int not null,
   primary key (catalog_version, question_id),
   foreign key (question_id, revision) references public.question_revisions (question_id, revision)
 );
@@ -225,7 +229,9 @@ create table public.book_features (
   source_ids text[] not null default '{}',
   reviewed boolean not null default false,
   note text,
-  consensus_id bigint,                               -- set when the cell came from community consensus
+  consensus_id bigint,                               -- feature_consensus.id when the cell came from community consensus
+  consensus jsonb,                                   -- the JSON's provenance object for community_consensus cells
+  position int not null,
   primary key (catalog_version, book_id, question_id)
 );
 
@@ -962,6 +968,7 @@ language plpgsql security definer set search_path = '' as $$
 declare
   v text := cat->>'catalog_version';
   b jsonb; q jsonb; e jsonb; s jsonb; f jsonb;
+  ord bigint;
   rev int;
   nb int := 0; nq int := 0; nf int := 0;
 begin
@@ -971,8 +978,8 @@ begin
   if exists (select 1 from public.catalog_releases where version = v) then
     raise exception 'release % is already loaded (releases are immutable)', v using errcode = '23505';
   end if;
-  insert into public.catalog_releases (version, data_status, notice, git_commit)
-  values (v, cat->>'data_status', cat->>'notice', commit_sha);
+  insert into public.catalog_releases (version, data_status, notice, git_commit, meta)
+  values (v, cat->>'data_status', cat->>'notice', commit_sha, cat - 'books' - 'questions' - 'features');
 
   for b in select * from jsonb_array_elements(cat->'books') loop
     insert into public.books (id, title_en, title_ko, aliases, author, original_language, first_publication_year,
@@ -985,10 +992,11 @@ begin
       original_language = excluded.original_language, first_publication_year = excluded.first_publication_year,
       series_id = excluded.series_id, series_number = excluded.series_number,
       openlibrary_work_id = excluded.openlibrary_work_id;
-    for s in select * from jsonb_array_elements(coalesce(b->'sources', '[]')) loop
-      insert into public.sources (book_id, id, url, license, attribution)
-      values (b->>'id', s->>'id', s->>'url', s->>'license', s->>'attribution')
-      on conflict (book_id, id) do update set url = excluded.url, license = excluded.license, attribution = excluded.attribution;
+    for s, ord in select x.value, x.ordinality from jsonb_array_elements(coalesce(b->'sources', '[]')) with ordinality x loop
+      insert into public.sources (book_id, id, url, license, attribution, position)
+      values (b->>'id', s->>'id', s->>'url', s->>'license', s->>'attribution', ord)
+      on conflict (book_id, id) do update set url = excluded.url, license = excluded.license,
+        attribution = excluded.attribution, position = excluded.position;
     end loop;
     for e in select * from jsonb_array_elements(coalesce(b->'editions', '[]')) loop
       if e->>'isbn' is not null then
@@ -997,7 +1005,7 @@ begin
         on conflict (isbn13) do nothing;
       end if;
     end loop;
-    insert into public.release_books (catalog_version, book_id) values (v, b->>'id');
+    insert into public.release_books (catalog_version, book_id, position) values (v, b->>'id', nb);
     nb := nb + 1;
   end loop;
 
@@ -1007,7 +1015,9 @@ begin
      where r.question_id = q->>'id' and r.text = q->>'text' and r.definition = q->>'definition'
        and r.group_key = coalesce(q->>'group', q->>'id') and r.recallability = (q->>'recallability')::numeric
        and r.adaptation_sensitive = coalesce((q->>'adaptation_sensitive')::boolean, false)
-       and r.active = coalesce((q->>'active')::boolean, true);
+       and r.active = coalesce((q->>'active')::boolean, true)
+       and r.category is not distinct from q->>'category'
+       and r.inactive_reason is not distinct from q->>'inactive_reason';
     if rev is null then
       select coalesce(max(r.revision), 0) + 1 into rev from public.question_revisions r where r.question_id = q->>'id';
       insert into public.question_revisions (question_id, revision, text, definition, category, group_key, recallability,
@@ -1016,19 +1026,68 @@ begin
               (q->>'recallability')::numeric, coalesce((q->>'adaptation_sensitive')::boolean, false),
               coalesce((q->>'active')::boolean, true), q->>'inactive_reason');
     end if;
-    insert into public.release_questions (catalog_version, question_id, revision) values (v, q->>'id', rev);
+    insert into public.release_questions (catalog_version, question_id, revision, position) values (v, q->>'id', rev, nq);
     nq := nq + 1;
   end loop;
 
   for f in select * from jsonb_array_elements(cat->'features') loop
-    insert into public.book_features (catalog_version, book_id, question_id, p_yes, status, source_ids, reviewed, note)
+    insert into public.book_features (catalog_version, book_id, question_id, p_yes, status, source_ids, reviewed, note,
+                                      consensus_id, consensus, position)
     values (v, f->>'book_id', f->>'question_id', (f->>'p_yes')::numeric, (f->>'status')::public.feature_status,
             coalesce(array(select jsonb_array_elements_text(f->'source_ids')), '{}'),
-            coalesce((f->>'reviewed')::boolean, false), f->>'note');
+            coalesce((f->>'reviewed')::boolean, false), f->>'note',
+            (f->'consensus'->>'consensus_id')::bigint, f->'consensus', nf);
     nf := nf + 1;
   end loop;
   return jsonb_build_object('catalog_version', v, 'books', nb, 'questions', nq, 'features', nf);
 end $$;
+
+-- Loads one release back in the exact JSON shape the engine plays (src/engine/model.ts Catalog), so a
+-- client can fetch the dataset from Supabase instead of the bundle. Readable by anyone, like the mirror.
+-- Book metadata is the newest synced version of each work (books are shared across releases).
+create or replace function public.get_release_catalog(release_version text) returns jsonb
+language sql stable set search_path = '' as $$
+  select r.meta || jsonb_build_object(
+    'catalog_version', r.version,
+    'data_status', r.data_status,
+    'books', coalesce((
+      select jsonb_agg(jsonb_build_object(
+        'id', b.id, 'title_en', b.title_en, 'title_ko', b.title_ko, 'aliases', to_jsonb(b.aliases),
+        'author', b.author, 'original_language', b.original_language,
+        'first_publication_year', b.first_publication_year, 'series_id', b.series_id,
+        'series_number', b.series_number, 'openlibrary_work_id', b.openlibrary_work_id,
+        'editions', coalesce((
+          select jsonb_agg(jsonb_build_object('isbn', e.isbn13, 'language', e.language, 'title', e.title,
+                                              'source_id', e.source_id) order by e.id)
+          from public.editions e where e.book_id = b.id), '[]'::jsonb),
+        'sources', coalesce((
+          select jsonb_agg(jsonb_strip_nulls(jsonb_build_object('id', s.id, 'url', s.url, 'license', s.license,
+                                                                'attribution', s.attribution)) order by s.position)
+          from public.sources s where s.book_id = b.id), '[]'::jsonb)
+      ) order by rb.position)
+      from public.release_books rb join public.books b on b.id = rb.book_id
+      where rb.catalog_version = r.version), '[]'::jsonb),
+    'questions', coalesce((
+      select jsonb_agg(
+        jsonb_build_object('id', q.question_id, 'category', q.category, 'group', q.group_key,
+                           'recallability', q.recallability, 'adaptation_sensitive', q.adaptation_sensitive,
+                           'text', q.text, 'definition', q.definition)
+        || case when q.active then '{}'::jsonb
+                else jsonb_strip_nulls(jsonb_build_object('active', false, 'inactive_reason', q.inactive_reason)) end
+        order by rq.position)
+      from public.release_questions rq
+      join public.question_revisions q on q.question_id = rq.question_id and q.revision = rq.revision
+      where rq.catalog_version = r.version), '[]'::jsonb),
+    'features', coalesce((
+      select jsonb_agg(
+        jsonb_build_object('book_id', f.book_id, 'question_id', f.question_id, 'p_yes', f.p_yes,
+                           'status', f.status, 'source_ids', to_jsonb(f.source_ids), 'reviewed', f.reviewed)
+        || jsonb_strip_nulls(jsonb_build_object('note', f.note, 'consensus', f.consensus))
+        order by f.position)
+      from public.book_features f where f.catalog_version = r.version), '[]'::jsonb))
+  from public.catalog_releases r
+  where r.version = release_version
+$$;
 
 -- Client-callable functions. Everything else (tb_* helpers) is internal. Only this migration's
 -- functions are touched, so other objects in the project's public schema keep their grants.
@@ -1039,11 +1098,12 @@ begin
            where n.nspname = 'public'
              and (p.proname like 'tb\_%' or p.proname in ('is_admin', 'search_books', 'search_questions',
                   'submit_game_session', 'submit_book', 'submit_feature_answers', 'submit_question',
-                  'submit_image', 'admin_review')) loop
+                  'submit_image', 'admin_review', 'get_release_catalog')) loop
     execute format('revoke execute on function %s from public, anon, authenticated', f);
   end loop;
 end $$;
-grant execute on function public.search_books(text, int), public.search_questions(text, int) to anon, authenticated;
+grant execute on function public.search_books(text, int), public.search_questions(text, int),
+  public.get_release_catalog(text) to anon, authenticated;
 grant execute on function public.submit_game_session(jsonb), public.submit_book(jsonb),
   public.submit_feature_answers(jsonb), public.submit_question(jsonb), public.submit_image(jsonb),
   public.admin_review(jsonb), public.is_admin() to authenticated;
