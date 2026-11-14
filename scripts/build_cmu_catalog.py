@@ -72,6 +72,7 @@ def main() -> int:
                     help="cmu: this project's own responses only; research: data/research/merged_labels.json "
                          "(researched 500-book matrix merged with ours, see scripts/merge_research.py)")
     ap.add_argument("--research")
+    ap.add_argument("--no-motifs", action="store_true", help="leave out the motif questions (data/motifs/)")
     ap.add_argument("--gate", choices=["llr", "none"], default="llr",
                     help="llr: pairwise likelihood-ratio gate here; none: emit every candidate that passes the basic "
                          "checks and let scripts/gate_catalog.ts prune it with the real engine")
@@ -105,6 +106,11 @@ def main() -> int:
             row["active"] = False
             row["inactive_reason"] = b.get("inactive_reason", "inactive in the app's question bank")
         questions.append(row)
+    motif_q = ROOT / "data" / "motifs" / "motif_questions.json"
+    use_motifs = args.labels == "research" and not args.no_motifs and motif_q.exists()
+    if use_motifs:  # concrete-story-element questions (scripts/motif_labels.py), positive labels only
+        questions += [{k: q[k] for k in ("id", "category", "group", "recallability", "adaptation_sensitive", "text", "definition")}
+                      for q in json.loads(motif_q.read_text(encoding="utf-8"))]
     active = {q["id"] for q in questions if q.get("active", True)}
     group = {q["id"]: q["group"] for q in questions}
 
@@ -115,7 +121,12 @@ def main() -> int:
         for b in json.loads(f.read_text(encoding="utf-8"))["books"]:
             if b["book_id"] in cells:
                 sys.exit(f"book {b['book_id']} appears in two responses")
-            cells[b["book_id"]] = b["answers"]
+            cells[b["book_id"]] = list(b["answers"])
+    if use_motifs:
+        for c in json.loads((ROOT / "data" / "motifs" / "motif_labels.json").read_text(encoding="utf-8"))["labels"]:
+            if c["book_id"] in cells:
+                cells[c["book_id"]].append({k: c[k] for k in ("question_id", "p_yes", "status", "source_id",
+                                                              "evidence_quote", "premise_safe", "reviewed")})
 
     playable: list[dict] = []
     vec: dict[str, dict[str, float]] = {}

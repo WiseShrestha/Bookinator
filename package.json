@@ -18,7 +18,7 @@
     "proxy": "node server/library-proxy.mjs",
     "verify": "npm run typecheck && npm test && npm run test:py && npm run test:research && npm run validate && npm run validate:cmu && vite build",
     "validate:cmu": "node scripts/py.mjs scripts/validate_catalog.py src/data/cmu.catalog.json --bank data/cmu/question_bank_core.json --max-warnings 3",
-    "catalog:research": "node scripts/py.mjs scripts/merge_research.py && node scripts/py.mjs scripts/build_cmu_catalog.py --limit 500 --gate none && tsx scripts/gate_catalog.ts",
+    "catalog:research": "node scripts/py.mjs scripts/merge_research.py && node scripts/py.mjs scripts/motif_labels.py && node scripts/py.mjs scripts/build_cmu_catalog.py --limit 500 --gate none && tsx scripts/gate_catalog.ts",
     "dev:cmu": "vite --mode cmu",
     "test:research": "node scripts/py.mjs -m unittest discover -s research/chatgpt_source/scripts -p \"test_*.py\" && node scripts/py.mjs -m unittest discover -s research/chatgpt_source/core_tools -p \"test_*.py\" && node research/chatgpt_source/five_book_demo/test-engine.cjs"
   },
