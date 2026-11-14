@@ -1,23 +1,24 @@
 {
- "catalog_version": "cmu-priority100-v1",
- "source": "priority_500.jsonl (first 100 records)",
+ "catalog_version": "cmu-priority500-v1",
+ "source": "priority_500.jsonl (first 500 records)",
  "counts": {
-  "imported_source_records": 100,
-  "labelled_with_validated_matrix": 100,
+  "imported_source_records": 500,
+  "labelled_with_validated_matrix": 500,
   "records_with_human_reviewed_cells": 0,
-  "playable_game_targets": 23
+  "playable_game_targets": 17
  },
- "supported_cells_total": 699,
- "supported_cells_per_labelled_book_mean": 6.99,
- "books_meeting_handoff_heuristic_12_supported": 15,
+ "supported_cells_total": 7338,
+ "supported_cells_per_labelled_book_mean": 14.68,
+ "books_meeting_handoff_heuristic_12_supported": 468,
  "gate": {
   "min_supported": 6,
-  "pairwise_likelihood_ratio": 4.0
+  "pairwise_likelihood_ratio": 4,
+  "engine": "first guess when answering exactly from own labels (scripts/gate_catalog.ts); thresholds unchanged"
  },
  "status_breakdown": {
-  "playable": 23,
-  "not separable from a higher-priority book": 37,
-  "too few supported cells": 40
+  "playable": 17,
+  "not identifiable by the engine from its own labels": 475,
+  "form hold (not a novel)": 8
  },
  "scope": "Counts of records and labels. Not a measure of factual correctness or of game success.",
  "records": [
@@ -29,7 +30,7 @@
     "Suzanne Collins"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 26,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -42,10 +43,10 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 20,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 2,
@@ -55,10 +56,10 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 22,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 3,
@@ -68,10 +69,10 @@
     "Harper Lee"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 23,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 4,
@@ -81,7 +82,7 @@
     "F. Scott Fitzgerald"
    ],
    "labelled": true,
-   "supported_cells": 17,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -94,10 +95,10 @@
     "John Green"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 16,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 6,
@@ -107,7 +108,7 @@
     "J. D. Salinger"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -120,10 +121,10 @@
     "Jane Austen"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 8,
@@ -133,7 +134,7 @@
     "George Orwell"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 25,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -146,10 +147,10 @@
     "George Orwell"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 16,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 10,
@@ -159,10 +160,10 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 11,
@@ -172,10 +173,10 @@
     "Suzanne Collins"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 12,
@@ -185,10 +186,10 @@
     "Khaled Hosseini"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 13,
@@ -198,7 +199,7 @@
     "Stieg Larsson"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -211,10 +212,10 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 15,
@@ -224,10 +225,10 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 16,
@@ -237,10 +238,10 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 9,
+   "supported_cells": 19,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 17,
@@ -250,10 +251,10 @@
     "Suzanne Collins"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 18,
@@ -263,10 +264,10 @@
     "J. K. Rowling"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 19,
@@ -276,7 +277,7 @@
     "William Golding"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -289,10 +290,10 @@
     "C. S. Lewis"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 19,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 21,
@@ -302,10 +303,10 @@
     "Kathryn Stockett"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 21,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Animal Farm' (cmu:enwiki:620)"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 22,
@@ -315,7 +316,7 @@
     "John Steinbeck"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -328,10 +329,10 @@
     "Dan Brown"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 24,
@@ -341,10 +342,10 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 25,
@@ -354,10 +355,10 @@
     "George R. R. Martin"
    ],
    "labelled": true,
-   "supported_cells": 4,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 4 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 26,
@@ -367,10 +368,10 @@
     "Arthur Golden"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 27,
@@ -380,10 +381,10 @@
     "Lois Lowry"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 28,
@@ -393,10 +394,10 @@
     "Louisa May Alcott"
    ],
    "labelled": true,
-   "supported_cells": 0,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 0 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 29,
@@ -406,10 +407,10 @@
     "Charlotte Brontë"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 30,
@@ -419,10 +420,10 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 31,
@@ -432,10 +433,10 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 32,
@@ -445,10 +446,10 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 33,
@@ -458,10 +459,10 @@
     "Christopher Paolini"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 19,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Harry Potter and the Deathly Hallows' (cmu:enwiki:776049)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 34,
@@ -471,10 +472,10 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 35,
@@ -484,10 +485,10 @@
     "Sara Gruen"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 36,
@@ -497,10 +498,10 @@
     "E. B. White"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 37,
@@ -510,10 +511,10 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 38,
@@ -523,10 +524,10 @@
     "Aldous Huxley"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Nineteen Eighty-Four' (cmu:enwiki:23454753)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 39,
@@ -536,10 +537,10 @@
     "Yann Martel"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 17,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 40,
@@ -549,10 +550,10 @@
     "Philip Pullman"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 41,
@@ -562,10 +563,10 @@
     "Douglas Adams"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 42,
@@ -575,10 +576,10 @@
     "Sue Monk Kidd"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 22,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 13 questions) when answering from its own labels"
   },
   {
    "rank": 43,
@@ -588,7 +589,7 @@
     "Emily Brontë"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -601,10 +602,10 @@
     "Stephen Chbosky"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 19,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 45,
@@ -614,7 +615,7 @@
     "Margaret Mitchell"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -627,10 +628,10 @@
     "Mark Haddon"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 47,
@@ -640,10 +641,10 @@
     "Jodi Picoult"
    ],
    "labelled": true,
-   "supported_cells": 14,
+   "supported_cells": 22,
    "reviewed_cells": 0,
-   "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Girl with the Dragon Tattoo' (cmu:enwiki:14975869)"
+   "playable": true,
+   "reason": null
   },
   {
    "rank": 48,
@@ -653,10 +654,10 @@
     "Khaled Hosseini"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 49,
@@ -666,10 +667,10 @@
     "Stephen King"
    ],
    "labelled": true,
-   "supported_cells": 16,
+   "supported_cells": 23,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 50,
@@ -679,10 +680,10 @@
     "Stephenie Meyer"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 17,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 51,
@@ -692,10 +693,10 @@
     "Louis Sachar"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 52,
@@ -705,10 +706,10 @@
     "Audrey Niffenegger"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 21,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 53,
@@ -718,10 +719,10 @@
     "Jane Austen"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 54,
@@ -731,10 +732,10 @@
     "James Dashner"
    ],
    "labelled": true,
-   "supported_cells": 4,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 4 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 55,
@@ -744,10 +745,10 @@
     "Lauren Weisberger"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 56,
@@ -757,10 +758,10 @@
     "S. E. Hinton"
    ],
    "labelled": true,
-   "supported_cells": 2,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 2 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 57,
@@ -770,10 +771,10 @@
     "Frances Hodgson Burnett"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 58,
@@ -783,10 +784,10 @@
     "Charles Dickens"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 59,
@@ -796,10 +797,10 @@
     "William Goldman"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 60,
@@ -809,10 +810,10 @@
     "Bram Stoker"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 61,
@@ -822,10 +823,10 @@
     "Madeleine L'Engle"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 62,
@@ -835,10 +836,10 @@
     "Ransom Riggs"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 63,
@@ -848,10 +849,10 @@
     "Margaret Atwood"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
   },
   {
    "rank": 64,
@@ -861,10 +862,10 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 4,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 4 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 65,
@@ -874,10 +875,10 @@
     "Oscar Wilde"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 66,
@@ -887,10 +888,10 @@
     "Ray Bradbury"
    ],
    "labelled": true,
-   "supported_cells": 1,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 1 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 67,
@@ -900,10 +901,10 @@
     "Stieg Larsson"
    ],
    "labelled": true,
-   "supported_cells": 4,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 4 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 68,
@@ -913,10 +914,10 @@
     "Joseph Heller"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 69,
@@ -926,10 +927,10 @@
     "Nicholas Sparks"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 20,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 70,
@@ -939,10 +940,10 @@
     "Barbara Kingsolver"
    ],
    "labelled": true,
-   "supported_cells": 13,
+   "supported_cells": 21,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Animal Farm' (cmu:enwiki:620)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 71,
@@ -952,10 +953,10 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 72,
@@ -965,10 +966,10 @@
     "Ann Brashares"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 15,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 73,
@@ -978,10 +979,10 @@
     "Ernest Hemingway"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 74,
@@ -991,10 +992,10 @@
     "Diana Gabaldon"
    ],
    "labelled": true,
-   "supported_cells": 2,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 2 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 75,
@@ -1004,10 +1005,10 @@
     "Amy Tan"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Secret Life of Bees' (cmu:enwiki:2224493)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 76,
@@ -1017,10 +1018,10 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 77,
@@ -1030,10 +1031,10 @@
     "Victor Hugo"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Gone with the Wind' (cmu:enwiki:12995)"
+   "reason": "engine gate: engine never became confident (shortlist after 16 questions) when answering from its own labels"
   },
   {
    "rank": 78,
@@ -1043,10 +1044,10 @@
     "Emma Donoghue"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 79,
@@ -1056,10 +1057,10 @@
     "Rick Riordan"
    ],
    "labelled": true,
-   "supported_cells": 4,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 4 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 80,
@@ -1069,10 +1070,10 @@
     "Gregory Maguire"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 20,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 81,
@@ -1082,10 +1083,10 @@
     "Cormac McCarthy"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'Harry Potter and the Deathly Hallows' (cmu:enwiki:776049)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 82,
@@ -1095,10 +1096,10 @@
     "Gayle Forman"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 83,
@@ -1108,10 +1109,10 @@
     "Kim Edwards"
    ],
    "labelled": true,
-   "supported_cells": 10,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Catcher in the Rye' (cmu:enwiki:186258)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 84,
@@ -1121,10 +1122,10 @@
     "Ken Kesey"
    ],
    "labelled": true,
-   "supported_cells": 4,
+   "supported_cells": 12,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 4 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 85,
@@ -1134,10 +1135,10 @@
     "Cassandra Clare"
    ],
    "labelled": true,
-   "supported_cells": 12,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+   "reason": "engine gate: adding it stops the engine finding The Lion, the Witch and the Wardrobe when answering from its own labels"
   },
   {
    "rank": 86,
@@ -1147,10 +1148,10 @@
     "Gabriel García Márquez"
    ],
    "labelled": true,
-   "supported_cells": 2,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 2 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 87,
@@ -1160,10 +1161,10 @@
     "Jeffrey Eugenides"
    ],
    "labelled": true,
-   "supported_cells": 7,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 88,
@@ -1173,10 +1174,10 @@
     "Frank Herbert"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 89,
@@ -1186,10 +1187,10 @@
     "J. R. R. Tolkien"
    ],
    "labelled": true,
-   "supported_cells": 6,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 90,
@@ -1199,7 +1200,7 @@
     "George R. R. Martin"
    ],
    "labelled": true,
-   "supported_cells": 8,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
@@ -1212,10 +1213,10 @@
     "Rebecca Wells"
    ],
    "labelled": true,
-   "supported_cells": 3,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 3 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 92,
@@ -1225,10 +1226,10 @@
     "Jay Asher"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 14,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 93,
@@ -1238,10 +1239,10 @@
     "Ken Follett"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 15,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 94,
@@ -1251,10 +1252,10 @@
     "John Green"
    ],
    "labelled": true,
-   "supported_cells": 9,
+   "supported_cells": 16,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 95,
@@ -1264,10 +1265,10 @@
     "Dan Brown"
    ],
    "labelled": true,
-   "supported_cells": 1,
+   "supported_cells": 8,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 1 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 96,
@@ -1277,10 +1278,10 @@
     "Roald Dahl"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 13,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 97,
@@ -1290,10 +1291,10 @@
     "Mitch Albom"
    ],
    "labelled": true,
-   "supported_cells": 5,
+   "supported_cells": 11,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "only 5 supported cells (minimum 6)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 98,
@@ -1303,10 +1304,10 @@
     "Scott Westerfeld"
    ],
    "labelled": true,
-   "supported_cells": 9,
+   "supported_cells": 18,
    "reviewed_cells": 0,
    "playable": false,
-   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 99,
@@ -1316,10 +1317,5210 @@
     "Michael Crichton"
    ],
    "labelled": true,
-   "supported_cells": 11,
+   "supported_cells": 22,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null
+  },
+  {
+   "rank": 100,
+   "id": "cmu:enwiki:7504806",
+   "title": "The Titan's Curse",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 101,
+   "id": "cmu:enwiki:23404033",
+   "title": "The Girl Who Kicked the Hornets' Nest",
+   "authors": [
+    "Stieg Larsson"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 102,
+   "id": "cmu:enwiki:472089",
+   "title": "Matilda",
+   "authors": [
+    "Roald Dahl"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 103,
+   "id": "cmu:enwiki:288153",
+   "title": "The Stand",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 104,
+   "id": "cmu:enwiki:34890405",
+   "title": "Beautiful Creatures",
+   "authors": [
+    "Margaret Stohl"
+   ],
+   "labelled": true,
+   "supported_cells": 22,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 105,
+   "id": "cmu:enwiki:843",
+   "title": "A Clockwork Orange",
+   "authors": [
+    "Anthony Burgess"
+   ],
+   "labelled": true,
+   "supported_cells": 20,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 15 questions) when answering from its own labels"
+  },
+  {
+   "rank": 106,
+   "id": "cmu:enwiki:33314889",
+   "title": "The Night Circus",
+   "authors": [
+    "Erin Morgenstern"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 107,
+   "id": "cmu:enwiki:796676",
+   "title": "A Feast for Crows",
+   "authors": [
+    "George R. R. Martin"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 108,
+   "id": "cmu:enwiki:3552124",
+   "title": "The Red Tent",
+   "authors": [
+    "Anita Diamant"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 109,
+   "id": "cmu:enwiki:23817576",
+   "title": "The Last Song",
+   "authors": [
+    "Nicholas Sparks"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 110,
+   "id": "cmu:enwiki:944096",
+   "title": "Digital Fortress",
+   "authors": [
+    "Dan Brown"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 111,
+   "id": "cmu:enwiki:21243200",
+   "title": "Dead Until Dark",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 112,
+   "id": "cmu:enwiki:45896",
+   "title": "The Stranger",
+   "authors": [
+    "Albert Camus"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 113,
+   "id": "cmu:enwiki:18949410",
+   "title": "And Then There Were None",
+   "authors": [
+    "Agatha Christie"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 114,
+   "id": "cmu:enwiki:21796996",
+   "title": "Something Borrowed",
+   "authors": [
+    "Emily Giffin"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 115,
+   "id": "cmu:enwiki:12814208",
+   "title": "The Name of the Wind",
+   "authors": [
+    "Patrick Rothfuss"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 116,
+   "id": "cmu:enwiki:20007123",
+   "title": "The Last Olympian",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 117,
+   "id": "cmu:enwiki:25572395",
+   "title": "Fallen",
+   "authors": [
+    "Lauren Kate"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 118,
+   "id": "cmu:enwiki:73670",
+   "title": "A Christmas Carol",
+   "authors": [
+    "Charles Dickens"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 119,
+   "id": "cmu:enwiki:3385082",
+   "title": "One for the Money",
+   "authors": [
+    "Janet Evanovich"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 120,
+   "id": "cmu:enwiki:29798",
+   "title": "The Lord of the Rings",
+   "authors": [
+    "J. R. R. Tolkien"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 121,
+   "id": "cmu:enwiki:871902",
+   "title": "Artemis Fowl",
+   "authors": [
+    "Eoin Colfer"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 122,
+   "id": "cmu:enwiki:133874",
+   "title": "Crime and Punishment",
+   "authors": [
+    "Fyodor Dostoyevsky"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 123,
+   "id": "cmu:enwiki:182128",
+   "title": "American Gods",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 124,
+   "id": "cmu:enwiki:43168",
+   "title": "The Color Purple",
+   "authors": [
+    "Alice Walker"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 125,
+   "id": "cmu:enwiki:79120",
+   "title": "Interview with the Vampire",
+   "authors": [
+    "Anne Rice"
+   ],
+   "labelled": true,
+   "supported_cells": 21,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 126,
+   "id": "cmu:enwiki:330523",
+   "title": "Siddhartha",
+   "authors": [
+    "Hermann Hesse"
+   ],
+   "labelled": true,
+   "supported_cells": 20,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 127,
+   "id": "cmu:enwiki:2041080",
+   "title": "The Lost Symbol",
+   "authors": [
+    "Dan Brown"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 128,
+   "id": "cmu:enwiki:2202702",
+   "title": "A Dance with Dragons",
+   "authors": [
+    "George R. R. Martin"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 129,
+   "id": "cmu:enwiki:347822",
+   "title": "Persuasion",
+   "authors": [
+    "Jane Austen"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 130,
+   "id": "cmu:enwiki:23854860",
+   "title": "Fight Club",
+   "authors": [
+    "Chuck Palahniuk"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 131,
+   "id": "cmu:enwiki:540888",
+   "title": "Speak",
+   "authors": [
+    "Laurie Halse Anderson"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 132,
+   "id": "cmu:enwiki:33230852",
+   "title": "Marked",
+   "authors": [
+    "Kristin Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 133,
+   "id": "cmu:enwiki:19859",
+   "title": "Moby-Dick; or, The Whale",
+   "authors": [
+    "Herman Melville"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 134,
+   "id": "cmu:enwiki:67003",
+   "title": "Carrie",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 135,
+   "id": "cmu:enwiki:4608346",
+   "title": "The Silence of the Lambs",
+   "authors": [
+    "Thomas Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 22,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
+  },
+  {
+   "rank": 136,
+   "id": "cmu:enwiki:32903764",
+   "title": "Ready Player One",
+   "authors": [
+    "Ernest Cline"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 137,
+   "id": "cmu:enwiki:1890954",
+   "title": "Atonement",
+   "authors": [
+    "Ian McEwan"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 138,
+   "id": "cmu:enwiki:27532695",
+   "title": "City of Fallen Angels",
+   "authors": [
+    "Cassandra Clare"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 139,
+   "id": "cmu:enwiki:891623",
+   "title": "Ella Enchanted",
+   "authors": [
+    "Gail Carson Levine"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 140,
+   "id": "cmu:enwiki:386568",
+   "title": "Misery",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 141,
+   "id": "cmu:enwiki:43206",
+   "title": "A Midsummer Night's Dream",
+   "authors": [
+    "William Shakespeare"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Play; excluded from the default novels-only scope."
+  },
+  {
+   "rank": 142,
+   "id": "cmu:enwiki:1804983",
+   "title": "Number the Stars",
+   "authors": [
+    "Lois Lowry"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 143,
+   "id": "cmu:enwiki:30976827",
+   "title": "Dark Places",
+   "authors": [
+    "Gillian Flynn"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 144,
+   "id": "cmu:enwiki:63987",
+   "title": "The Gunslinger",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 145,
+   "id": "cmu:enwiki:26683273",
+   "title": "The Art of Racing in the Rain",
+   "authors": [
+    "Garth Stein"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 146,
+   "id": "cmu:enwiki:397398",
+   "title": "The Bourne Identity",
+   "authors": [
+    "Robert Ludlum"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 147,
+   "id": "cmu:enwiki:42645",
+   "title": "The Grapes of Wrath",
+   "authors": [
+    "John Steinbeck"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
+  },
+  {
+   "rank": 148,
+   "id": "cmu:enwiki:161446",
+   "title": "East of Eden",
+   "authors": [
+    "John Steinbeck"
+   ],
+   "labelled": true,
+   "supported_cells": 24,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 17 questions) when answering from its own labels"
+  },
+  {
+   "rank": 149,
+   "id": "cmu:enwiki:17253525",
+   "title": "Flowers for Algernon",
+   "authors": [
+    "Daniel Keyes"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 150,
+   "id": "cmu:enwiki:10023921",
+   "title": "An Abundance of Katherines",
+   "authors": [
+    "John Green"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 151,
+   "id": "cmu:enwiki:427310",
+   "title": "The Voyage of the Dawn Treader",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 152,
+   "id": "cmu:enwiki:29022842",
+   "title": "The Scorch Trials",
+   "authors": [
+    "James Dashner"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 153,
+   "id": "cmu:enwiki:10876585",
+   "title": "The Graveyard Book",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 154,
+   "id": "cmu:enwiki:29179339",
+   "title": "The Son of Neptune",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 155,
+   "id": "cmu:enwiki:159941",
+   "title": "Anna Karenina",
+   "authors": [
+    "Leo Tolstoy"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 156,
+   "id": "cmu:enwiki:1779024",
+   "title": "Extremely Loud and Incredibly Close",
+   "authors": [
+    "Jonathan Safran Foer"
+   ],
+   "labelled": true,
+   "supported_cells": 21,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 157,
+   "id": "cmu:enwiki:1697748",
+   "title": "Never Let Me Go",
+   "authors": [
+    "Kazuo Ishiguro"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 158,
+   "id": "cmu:enwiki:271590",
+   "title": "It",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 24,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 16 questions) when answering from its own labels"
+  },
+  {
+   "rank": 159,
+   "id": "cmu:enwiki:67317",
+   "title": "Watership Down",
+   "authors": [
+    "Richard Adams"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 160,
+   "id": "cmu:enwiki:1364178",
+   "title": "A Tree Grows In Brooklyn",
+   "authors": [
+    "Betty Smith"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 161,
+   "id": "cmu:enwiki:543142",
+   "title": "The Pelican Brief",
+   "authors": [
+    "John Grisham"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 162,
+   "id": "cmu:enwiki:5205080",
+   "title": "The Boy in the Striped Pyjamas",
+   "authors": [
+    "John Boyne"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 163,
+   "id": "cmu:enwiki:360245",
+   "title": "The Sun Also Rises",
+   "authors": [
+    "Ernest Hemingway"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 164,
+   "id": "cmu:enwiki:1022544",
+   "title": "Love in the Time of Cholera",
+   "authors": [
+    "Gabriel García Márquez"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 165,
+   "id": "cmu:enwiki:18951386",
+   "title": "Atlas Shrugged",
+   "authors": [
+    "Ayn Rand"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 166,
+   "id": "cmu:enwiki:22293380",
+   "title": "Graceling",
+   "authors": [
+    "Kristin Cashore"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 167,
+   "id": "cmu:enwiki:17271493",
+   "title": "Snow Flower and the Secret Fan",
+   "authors": [
+    "Lisa See"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 168,
+   "id": "cmu:enwiki:309409",
+   "title": "Foundation",
+   "authors": [
+    "Isaac Asimov"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 169,
+   "id": "cmu:enwiki:29834",
+   "title": "The Time Machine",
+   "authors": [
+    "H. G. Wells"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 170,
+   "id": "cmu:enwiki:27796919",
+   "title": "The Lost Hero",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 171,
+   "id": "cmu:enwiki:894970",
+   "title": "James and the Giant Peach",
+   "authors": [
+    "Roald Dahl"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 172,
+   "id": "cmu:enwiki:30761",
+   "title": "The Hunt for Red October",
+   "authors": [
+    "Tom Clancy"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 173,
+   "id": "cmu:enwiki:1301931",
+   "title": "Where the Red Fern Grows",
+   "authors": [
+    "Wilson Rawls"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 174,
+   "id": "cmu:enwiki:53071",
+   "title": "The Magician's Nephew",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 175,
+   "id": "cmu:enwiki:10125728",
+   "title": "Neverwhere",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 176,
+   "id": "cmu:enwiki:167963",
+   "title": "Treasure Island",
+   "authors": [
+    "Robert Louis Stevenson"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 177,
+   "id": "cmu:enwiki:19902875",
+   "title": "The Lucky One",
+   "authors": [
+    "Nicholas Sparks"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 178,
+   "id": "cmu:enwiki:24977554",
+   "title": "Shadow Kiss",
+   "authors": [
+    "Richelle Mead"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 179,
+   "id": "cmu:enwiki:3832478",
+   "title": "The Shadow of the Wind",
+   "authors": [
+    "Carlos Ruiz Zafón"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 180,
+   "id": "cmu:enwiki:42572",
+   "title": "The Eye of the World",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 181,
+   "id": "cmu:enwiki:3608386",
+   "title": "She's Come Undone",
+   "authors": [
+    "Wally Lamb"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 182,
+   "id": "cmu:enwiki:31058296",
+   "title": "11/22/63",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 183,
+   "id": "cmu:enwiki:16781602",
+   "title": "Frostbite",
+   "authors": [
+    "Richelle Mead"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 184,
+   "id": "cmu:enwiki:535144",
+   "title": "Pet Sematary",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 185,
+   "id": "cmu:enwiki:381491",
+   "title": "The Thorn Birds",
+   "authors": [
+    "Colleen McCullough"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 186,
+   "id": "cmu:enwiki:11263766",
+   "title": "Diary of a Wimpy Kid",
+   "authors": [
+    "Jeff Kinney"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 187,
+   "id": "cmu:enwiki:30841087",
+   "title": "I Am Number Four",
+   "authors": [
+    "Pittacus Lore"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 188,
+   "id": "cmu:enwiki:242128",
+   "title": "Prince Caspian",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 189,
+   "id": "cmu:enwiki:711958",
+   "title": "Eldest",
+   "authors": [
+    "Christopher Paolini"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 190,
+   "id": "cmu:enwiki:2152",
+   "title": "All Quiet on the Western Front",
+   "authors": [
+    "Erich Maria Remarque"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 191,
+   "id": "cmu:enwiki:25812499",
+   "title": "Good in Bed",
+   "authors": [
+    "Jennifer Weiner"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 192,
+   "id": "cmu:enwiki:23896488",
+   "title": "Vampire Academy",
+   "authors": [
+    "Richelle Mead"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 193,
+   "id": "cmu:enwiki:54436",
+   "title": "The Wonderful Wizard of Oz",
+   "authors": [
+    "L. Frank Baum"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 194,
+   "id": "cmu:enwiki:3574282",
+   "title": "I Know This Much Is True",
+   "authors": [
+    "Wally Lamb"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 195,
+   "id": "cmu:enwiki:340909",
+   "title": "On the Road",
+   "authors": [
+    "Jack Kerouac"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 196,
+   "id": "cmu:enwiki:231716",
+   "title": "The BFG",
+   "authors": [
+    "Roald Dahl"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 197,
+   "id": "cmu:enwiki:23563172",
+   "title": "The Wise Man's Fear",
+   "authors": [
+    "Patrick Rothfuss"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 198,
+   "id": "cmu:enwiki:594829",
+   "title": "White Oleander",
+   "authors": [
+    "Janet Fitch"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 199,
+   "id": "cmu:enwiki:188341",
+   "title": "Goodnight Moon",
+   "authors": [
+    "Margaret Wise Brown"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Illustrated bedtime/children's book; excluded pending a broader form-scope decision."
+  },
+  {
+   "rank": 200,
+   "id": "cmu:enwiki:180464",
+   "title": "The Fountainhead",
+   "authors": [
+    "Ayn Rand"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 201,
+   "id": "cmu:enwiki:420985",
+   "title": "The Subtle Knife",
+   "authors": [
+    "Philip Pullman"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 202,
+   "id": "cmu:enwiki:182433",
+   "title": "Stardust",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 203,
+   "id": "cmu:enwiki:3083277",
+   "title": "Stargirl",
+   "authors": [
+    "Jerry Spinelli"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 204,
+   "id": "cmu:enwiki:26533595",
+   "title": "Will Grayson, Will Grayson",
+   "authors": [
+    "David Levithan"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 205,
+   "id": "cmu:enwiki:876994",
+   "title": "Island of the Blue Dolphins",
+   "authors": [
+    "Scott O'Dell"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 206,
+   "id": "cmu:enwiki:10614529",
+   "title": "Nineteen Minutes",
+   "authors": [
+    "Jodi Picoult"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 207,
+   "id": "cmu:enwiki:13881203",
+   "title": "1st to Die",
+   "authors": [
+    "James Patterson"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 208,
+   "id": "cmu:enwiki:1268726",
+   "title": "Beloved",
+   "authors": [
+    "Toni Morrison"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 209,
+   "id": "cmu:enwiki:27979753",
+   "title": "The Red Pyramid",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 210,
+   "id": "cmu:enwiki:5842145",
+   "title": "Fear and Loathing in Las Vegas",
+   "authors": [
+    "Hunter S. Thompson"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 211,
+   "id": "cmu:enwiki:20767082",
+   "title": "Blood Promise",
+   "authors": [
+    "Richelle Mead"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 212,
+   "id": "cmu:enwiki:35471510",
+   "title": "The Casual Vacancy",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 213,
+   "id": "cmu:enwiki:161301",
+   "title": "Oliver Twist",
+   "authors": [
+    "Charles Dickens"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 214,
+   "id": "cmu:enwiki:23344986",
+   "title": "Evermore",
+   "authors": [
+    "Alyson Noel"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 215,
+   "id": "cmu:enwiki:412654",
+   "title": "A Prayer for Owen Meany",
+   "authors": [
+    "John Irving"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 216,
+   "id": "cmu:enwiki:3506780",
+   "title": "The Lorax",
+   "authors": [
+    "Dr. Seuss"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Illustrated children's fable; excluded pending a broader form-scope decision."
+  },
+  {
+   "rank": 217,
+   "id": "cmu:enwiki:31080252",
+   "title": "Crescendo",
+   "authors": [
+    "Becca Fitzpatrick"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 218,
+   "id": "cmu:enwiki:25496797",
+   "title": "Spirit Bound",
+   "authors": [
+    "Richelle Mead"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 219,
+   "id": "cmu:enwiki:358335",
+   "title": "The Call of the Wild",
+   "authors": [
+    "Jack London"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 220,
+   "id": "cmu:enwiki:33701149",
+   "title": "The Death Cure",
+   "authors": [
+    "James Dashner"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 221,
+   "id": "cmu:enwiki:752068",
+   "title": "The Runaway Jury",
+   "authors": [
+    "John Grisham"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 222,
+   "id": "cmu:enwiki:1225812",
+   "title": "Hatchet",
+   "authors": [
+    "Gary Paulsen"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 223,
+   "id": "cmu:enwiki:635510",
+   "title": "The Witches",
+   "authors": [
+    "Roald Dahl"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 224,
+   "id": "cmu:enwiki:53595",
+   "title": "Stranger in a Strange Land",
+   "authors": [
+    "Robert A. Heinlein"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 225,
+   "id": "cmu:enwiki:8841014",
+   "title": "The Thirteenth Tale",
+   "authors": [
+    "Diane Setterfield"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 226,
+   "id": "cmu:enwiki:2998715",
+   "title": "Brisingr",
+   "authors": [
+    "Christopher Paolini"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 227,
+   "id": "cmu:enwiki:6216269",
+   "title": "Mistborn: The Final Empire",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 228,
+   "id": "cmu:enwiki:3608396",
+   "title": "Where the Heart Is",
+   "authors": [
+    "Billie Letts"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 229,
+   "id": "cmu:enwiki:27518176",
+   "title": "Last Sacrifice",
+   "authors": [
+    "Richelle Mead"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 230,
+   "id": "cmu:enwiki:1137787",
+   "title": "Odd Thomas",
+   "authors": [
+    "Dean Koontz"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 231,
+   "id": "cmu:enwiki:33247807",
+   "title": "Betrayed",
+   "authors": [
+    "P. C. Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 232,
+   "id": "cmu:enwiki:3345384",
+   "title": "Mansfield Park",
+   "authors": [
+    "Jane Austen"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 233,
+   "id": "cmu:enwiki:8600119",
+   "title": "Storm Front",
+   "authors": [
+    "Jim Butcher"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 234,
+   "id": "cmu:enwiki:11651402",
+   "title": "Just Listen",
+   "authors": [
+    "Sarah Dessen"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 235,
+   "id": "cmu:enwiki:224500",
+   "title": "A Study in Scarlet",
+   "authors": [
+    "Arthur Conan Doyle"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 236,
+   "id": "cmu:enwiki:186397",
+   "title": "The Name of the Rose",
+   "authors": [
+    "Umberto Eco"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 237,
+   "id": "cmu:enwiki:1164368",
+   "title": "A Little Princess",
+   "authors": [
+    "Frances Hodgson Burnett"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 238,
+   "id": "cmu:enwiki:21629798",
+   "title": "Dead to the World",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 239,
+   "id": "cmu:enwiki:1093821",
+   "title": "The City of Ember",
+   "authors": [
+    "Jeanne DuPrau"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 240,
+   "id": "cmu:enwiki:217046",
+   "title": "The Three Musketeers",
+   "authors": [
+    "Alexandre Dumas"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 241,
+   "id": "cmu:enwiki:77652",
+   "title": "For Whom the Bell Tolls",
+   "authors": [
+    "Ernest Hemingway"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 242,
+   "id": "cmu:enwiki:5306304",
+   "title": "Red Dragon",
+   "authors": [
+    "Thomas Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 243,
+   "id": "cmu:enwiki:7093297",
+   "title": "Pretties",
+   "authors": [
+    "Scott Westerfeld"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 244,
+   "id": "cmu:enwiki:10178524",
+   "title": "The Princess Diaries",
+   "authors": [
+    "Meg Cabot"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 245,
+   "id": "cmu:enwiki:5740888",
+   "title": "Bel Canto",
+   "authors": [
+    "Ann Patchett"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 246,
+   "id": "cmu:enwiki:530285",
+   "title": "The Amber Spyglass",
+   "authors": [
+    "Philip Pullman"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 247,
+   "id": "cmu:enwiki:16274299",
+   "title": "Untamed",
+   "authors": [
+    "Kristin Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 248,
+   "id": "cmu:enwiki:32249586",
+   "title": "Silence",
+   "authors": [
+    "Becca Fitzpatrick"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 249,
+   "id": "cmu:enwiki:328689",
+   "title": "The Colour of Magic",
+   "authors": [
+    "Terry Pratchett"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 250,
+   "id": "cmu:enwiki:21315197",
+   "title": "Living Dead in Dallas",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 251,
+   "id": "cmu:enwiki:2578185",
+   "title": "The Historian",
+   "authors": [
+    "Elizabeth Kostova"
+   ],
+   "labelled": true,
+   "supported_cells": 20,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 252,
+   "id": "cmu:enwiki:421106",
+   "title": "The Horse and His Boy",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 253,
+   "id": "cmu:enwiki:2168301",
+   "title": "In the Woods",
+   "authors": [
+    "Tana French"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 254,
+   "id": "cmu:enwiki:61069",
+   "title": "A Farewell to Arms",
+   "authors": [
+    "Ernest Hemingway"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 255,
+   "id": "cmu:enwiki:4632423",
+   "title": "Cold Mountain",
+   "authors": [
+    "Charles Frazier"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 256,
+   "id": "cmu:enwiki:241855",
+   "title": "Fantastic Beasts and Where to Find Them",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Fictional textbook/guide, rather than a conventional narrative novel."
+  },
+  {
+   "rank": 257,
+   "id": "cmu:enwiki:2530403",
+   "title": "Message in a Bottle",
+   "authors": [
+    "Nicholas Sparks"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 258,
+   "id": "cmu:enwiki:2368440",
+   "title": "The Namesake",
+   "authors": [
+    "Jhumpa Lahiri"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 259,
+   "id": "cmu:enwiki:21725",
+   "title": "Neuromancer",
+   "authors": [
+    "William Gibson"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 260,
+   "id": "cmu:enwiki:18042052",
+   "title": "Under the Dome",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 261,
+   "id": "cmu:enwiki:380143",
+   "title": "Black Beauty",
+   "authors": [
+    "Anna Sewell"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 262,
+   "id": "cmu:enwiki:410134",
+   "title": "The Good Earth",
+   "authors": [
+    "Pearl S. Buck"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 263,
+   "id": "cmu:enwiki:21316627",
+   "title": "Club Dead",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 264,
+   "id": "cmu:enwiki:33281760",
+   "title": "Chosen",
+   "authors": [
+    "Kristin Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 265,
+   "id": "cmu:enwiki:32860050",
+   "title": "Before I Go to Sleep",
+   "authors": [
+    "S. J. Watson"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 266,
+   "id": "cmu:enwiki:3563571",
+   "title": "The No.1 Ladies' Detective Agency",
+   "authors": [
+    "Alexander McCall Smith"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 267,
+   "id": "cmu:enwiki:2072053",
+   "title": "The Truth About Forever",
+   "authors": [
+    "Sarah Dessen"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 268,
+   "id": "cmu:enwiki:178842",
+   "title": "The Phantom Tollbooth",
+   "authors": [
+    "Norton Juster"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 269,
+   "id": "cmu:enwiki:55483",
+   "title": "Robinson Crusoe",
+   "authors": [
+    "Daniel Defoe"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 270,
+   "id": "cmu:enwiki:3172541",
+   "title": "Dragonfly in Amber",
+   "authors": [
+    "Diana Gabaldon"
+   ],
+   "labelled": true,
+   "supported_cells": 20,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 271,
+   "id": "cmu:enwiki:1259759",
+   "title": "Rebecca",
+   "authors": [
+    "Daphne du Maurier"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 272,
+   "id": "cmu:enwiki:1106246",
+   "title": "The Clan of the Cave Bear",
+   "authors": [
+    "Jean M. Auel"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 273,
+   "id": "cmu:enwiki:697395",
+   "title": "Wizard's First Rule",
+   "authors": [
+    "Terry Goodkind"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 274,
+   "id": "cmu:enwiki:5085908",
+   "title": "Tuck Everlasting",
+   "authors": [
+    "Natalie Babbitt"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 275,
+   "id": "cmu:enwiki:64029",
+   "title": "The Green Mile",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 276,
+   "id": "cmu:enwiki:5162233",
+   "title": "A Great and Terrible Beauty",
+   "authors": [
+    "Libba Bray"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 277,
+   "id": "cmu:enwiki:48573",
+   "title": "The Andromeda Strain",
+   "authors": [
+    "Michael Crichton"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 278,
+   "id": "cmu:enwiki:1660387",
+   "title": "2001: A Space Odyssey",
+   "authors": [
+    "Arthur C. Clarke"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 279,
+   "id": "cmu:enwiki:427317",
+   "title": "The Silver Chair",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 280,
+   "id": "cmu:enwiki:22346498",
+   "title": "Dead as a Doornail",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 281,
+   "id": "cmu:enwiki:28270460",
+   "title": "Fall of Giants",
+   "authors": [
+    "Ken Follett"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 282,
+   "id": "cmu:enwiki:43023",
+   "title": "Gulliver's Travels",
+   "authors": [
+    "Jonathan Swift"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 283,
+   "id": "cmu:enwiki:1678384",
+   "title": "The Secret History",
+   "authors": [
+    "Donna Tartt"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 284,
+   "id": "cmu:enwiki:155311",
+   "title": "War and Peace",
+   "authors": [
+    "Leo Tolstoy"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 285,
+   "id": "cmu:enwiki:1769858",
+   "title": "Kafka on the Shore",
+   "authors": [
+    "Haruki Murakami"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 286,
+   "id": "cmu:enwiki:18619336",
+   "title": "In Her Shoes",
+   "authors": [
+    "Jennifer Weiner"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 287,
+   "id": "cmu:enwiki:4533526",
+   "title": "Postmortem",
+   "authors": [
+    "Patricia Cornwell"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 288,
+   "id": "cmu:enwiki:163629",
+   "title": "American Psycho",
+   "authors": [
+    "Bret Easton Ellis"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 289,
+   "id": "cmu:enwiki:323063",
+   "title": "The God of Small Things",
+   "authors": [
+    "Arundhati Roy"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 290,
+   "id": "cmu:enwiki:10802071",
+   "title": "Little House in the Big Woods",
+   "authors": [
+    "Laura Ingalls Wilder"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 291,
+   "id": "cmu:enwiki:28230",
+   "title": "Speaker for the Dead",
+   "authors": [
+    "Orson Scott Card"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 292,
+   "id": "cmu:enwiki:22346664",
+   "title": "Definitely Dead",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 293,
+   "id": "cmu:enwiki:9633523",
+   "title": "Killing Floor",
+   "authors": [
+    "Lee Child"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 294,
+   "id": "cmu:enwiki:22357290",
+   "title": "All Together Dead",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 295,
+   "id": "cmu:enwiki:42573",
+   "title": "The Great Hunt",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 296,
+   "id": "cmu:enwiki:11423191",
+   "title": "It's Kind of a Funny Story",
+   "authors": [
+    "Ned Vizzini"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 297,
+   "id": "cmu:enwiki:15894908",
+   "title": "The Absolutely True Diary of a Part-Time Indian",
+   "authors": [
+    "Sherman Alexie"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 298,
+   "id": "cmu:enwiki:13726089",
+   "title": "The Brief Wondrous Life of Oscar Wao",
+   "authors": [
+    "Junot Díaz"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 299,
+   "id": "cmu:enwiki:32688947",
+   "title": "The War of the Worlds",
+   "authors": [
+    "H. G. Wells"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 300,
+   "id": "cmu:enwiki:876707",
+   "title": "Love You Forever",
+   "authors": [
+    "Robert Munsch"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Children's picture book; excluded from the default novels-only scope."
+  },
+  {
+   "rank": 301,
+   "id": "cmu:enwiki:80124",
+   "title": "The Virgin Suicides",
+   "authors": [
+    "Jeffrey Eugenides"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 302,
+   "id": "cmu:enwiki:353210",
+   "title": "The Last Battle",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 303,
+   "id": "cmu:enwiki:236599",
+   "title": "Cujo",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 304,
+   "id": "cmu:enwiki:421473",
+   "title": "The Mists of Avalon",
+   "authors": [
+    "Marion Zimmer Bradley"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 305,
+   "id": "cmu:enwiki:13737962",
+   "title": "Redeeming Love",
+   "authors": [
+    "Francine Rivers"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 306,
+   "id": "cmu:enwiki:661719",
+   "title": "A Separate Peace",
+   "authors": [
+    "John Knowles"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 307,
+   "id": "cmu:enwiki:607536",
+   "title": "The Brothers Karamazov",
+   "authors": [
+    "Fyodor Dostoyevsky"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 308,
+   "id": "cmu:enwiki:2890",
+   "title": "A Wizard of Earthsea",
+   "authors": [
+    "Ursula K. Le Guin"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 309,
+   "id": "cmu:enwiki:69485",
+   "title": "Choke",
+   "authors": [
+    "Chuck Palahniuk"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 310,
+   "id": "cmu:enwiki:30280",
+   "title": "The Hound of the Baskervilles",
+   "authors": [
+    "Arthur Conan Doyle"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 311,
+   "id": "cmu:enwiki:1524981",
+   "title": "Because of Winn-Dixie",
+   "authors": [
+    "Kate DiCamillo"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 312,
+   "id": "cmu:enwiki:202349",
+   "title": "The Restaurant at the End of the Universe",
+   "authors": [
+    "Douglas Adams"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 313,
+   "id": "cmu:enwiki:868230",
+   "title": "Needful Things",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 314,
+   "id": "cmu:enwiki:549558",
+   "title": "The Dragon Reborn",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 315,
+   "id": "cmu:enwiki:1544083",
+   "title": "Cloud Atlas",
+   "authors": [
+    "David Mitchell"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 316,
+   "id": "cmu:enwiki:6286677",
+   "title": "This Lullaby",
+   "authors": [
+    "Sarah Dessen"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 317,
+   "id": "cmu:enwiki:576114",
+   "title": "Are You There, God? It's Me, Margaret",
+   "authors": [
+    "Judy Blume"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 318,
+   "id": "cmu:enwiki:20815127",
+   "title": "Along for the Ride",
+   "authors": [
+    "Sarah Dessen"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 319,
+   "id": "cmu:enwiki:537049",
+   "title": "Oryx and Crake",
+   "authors": [
+    "Margaret Atwood"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 320,
+   "id": "cmu:enwiki:320387",
+   "title": "Christine",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 321,
+   "id": "cmu:enwiki:22357422",
+   "title": "From Dead to Worse",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 322,
+   "id": "cmu:enwiki:63110",
+   "title": "David Copperfield",
+   "authors": [
+    "Charles Dickens"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 323,
+   "id": "cmu:enwiki:5631897",
+   "title": "I'd Tell You I Love You, But Then I'd Have to Kill You",
+   "authors": [
+    "Ally Carter"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 324,
+   "id": "cmu:enwiki:7688547",
+   "title": "Darkly Dreaming Dexter",
+   "authors": [
+    "Jeff Lindsay"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 325,
+   "id": "cmu:enwiki:5629681",
+   "title": "Beastly",
+   "authors": [
+    "Alex Flinn"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 326,
+   "id": "cmu:enwiki:12067316",
+   "title": "The Lincoln Lawyer",
+   "authors": [
+    "Michael Connelly"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 327,
+   "id": "cmu:enwiki:1298672",
+   "title": "Timeline",
+   "authors": [
+    "Michael Crichton"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 328,
+   "id": "cmu:enwiki:23986473",
+   "title": "The Magicians",
+   "authors": [
+    "Lev Grossman"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 329,
+   "id": "cmu:enwiki:842685",
+   "title": "The Amazing Adventures of Kavalier & Clay",
+   "authors": [
+    "Michael Chabon"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 330,
+   "id": "cmu:enwiki:14029788",
+   "title": "Inheritance",
+   "authors": [
+    "Christopher Paolini"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 331,
+   "id": "cmu:enwiki:26765356",
+   "title": "The Short Second Life of Bree Tanner",
+   "authors": [
+    "Stephenie Meyer"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 332,
+   "id": "cmu:enwiki:22357464",
+   "title": "Dead and Gone",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 333,
+   "id": "cmu:enwiki:3562073",
+   "title": "Cell",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 334,
+   "id": "cmu:enwiki:22459634",
+   "title": "Unwind",
+   "authors": [
+    "Neal Shusterman"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 335,
+   "id": "cmu:enwiki:535391",
+   "title": "Firestarter",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 336,
+   "id": "cmu:enwiki:901796",
+   "title": "The Bourne Supremacy",
+   "authors": [
+    "Robert Ludlum"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 337,
+   "id": "cmu:enwiki:5317770",
+   "title": "The True Story of the Three Little Pigs",
+   "authors": [
+    "Jon Scieszka"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Illustrated children's retelling; excluded pending a broader form-scope decision."
+  },
+  {
+   "rank": 338,
+   "id": "cmu:enwiki:924814",
+   "title": "Patriot Games",
+   "authors": [
+    "Tom Clancy"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 339,
+   "id": "cmu:enwiki:153150",
+   "title": "The Vampire Lestat",
+   "authors": [
+    "Anne Rice"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 340,
+   "id": "cmu:enwiki:162189",
+   "title": "The Phantom of the Opera",
+   "authors": [
+    "Gaston Leroux"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 341,
+   "id": "cmu:enwiki:30052313",
+   "title": "Bloodlines",
+   "authors": [
+    "Richelle Mead"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 342,
+   "id": "cmu:enwiki:7093327",
+   "title": "Specials",
+   "authors": [
+    "Scott Westerfeld"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 343,
+   "id": "cmu:enwiki:63985",
+   "title": "The Drawing of the Three",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 344,
+   "id": "cmu:enwiki:162770",
+   "title": "Murder on the Orient Express",
+   "authors": [
+    "Agatha Christie"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 345,
+   "id": "cmu:enwiki:22119663",
+   "title": "Hunted",
+   "authors": [
+    "P. C. Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 346,
+   "id": "cmu:enwiki:71989",
+   "title": "Uncle Tom's Cabin",
+   "authors": [
+    "Harriet Beecher Stowe"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 347,
+   "id": "cmu:enwiki:1641867",
+   "title": "Anansi Boys",
+   "authors": [
+    "Neil Gaiman"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 348,
+   "id": "cmu:enwiki:2644402",
+   "title": "The Rainmaker",
+   "authors": [
+    "John Grisham"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 349,
+   "id": "cmu:enwiki:529614",
+   "title": "Sabriel",
+   "authors": [
+    "Garth Nix"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 350,
+   "id": "cmu:enwiki:28426",
+   "title": "Starship Troopers",
+   "authors": [
+    "Robert A. Heinlein"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 351,
+   "id": "cmu:enwiki:24015984",
+   "title": "The Guardian",
+   "authors": [
+    "Nicholas Sparks"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 352,
+   "id": "cmu:enwiki:220272",
+   "title": "Mrs Dalloway",
+   "authors": [
+    "Virginia Woolf"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 353,
+   "id": "cmu:enwiki:1063412",
+   "title": "Mrs. Frisby and the Rats of NIMH",
+   "authors": [
+    "Robert C. O'Brien"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 354,
+   "id": "cmu:enwiki:160046",
+   "title": "High Fidelity",
+   "authors": [
+    "Nick Hornby"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 355,
+   "id": "cmu:enwiki:2620725",
+   "title": "From the Mixed-Up Files of Mrs. Basil E. Frankweiler",
+   "authors": [
+    "E. L. Konigsburg"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 356,
+   "id": "cmu:enwiki:27866702",
+   "title": "The Silmarillion",
+   "authors": [
+    "J. R. R. Tolkien"
+   ],
+   "labelled": true,
+   "supported_cells": 9,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Collection of myths and stories; excluded pending a broader form-scope decision."
+  },
+  {
+   "rank": 357,
+   "id": "cmu:enwiki:1041160",
+   "title": "Jonathan Strange & Mr Norrell",
+   "authors": [
+    "Susanna Clarke"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 358,
+   "id": "cmu:enwiki:3608409",
+   "title": "Midwives",
+   "authors": [
+    "Chris Bohjalian"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 359,
+   "id": "cmu:enwiki:840200",
+   "title": "Assassin's Apprentice",
+   "authors": [
+    "Robin Hobb"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 360,
+   "id": "cmu:enwiki:10902339",
+   "title": "The Dead Zone",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 361,
+   "id": "cmu:enwiki:1851232",
+   "title": "Snow Falling on Cedars",
+   "authors": [
+    "David Guterson"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 362,
+   "id": "cmu:enwiki:10861",
+   "title": "The Trial",
+   "authors": [
+    "Franz Kafka"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 363,
+   "id": "cmu:enwiki:191173",
+   "title": "Life, the Universe and Everything",
+   "authors": [
+    "Douglas Adams"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 364,
+   "id": "cmu:enwiki:333987",
+   "title": "The Master and Margarita",
+   "authors": [
+    "Mikhail Bulgakov"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 365,
+   "id": "cmu:enwiki:367519",
+   "title": "Prey",
+   "authors": [
+    "Michael Crichton"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 366,
+   "id": "cmu:enwiki:1898130",
+   "title": "Bag of Bones",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 367,
+   "id": "cmu:enwiki:3434631",
+   "title": "Thinner",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 368,
+   "id": "cmu:enwiki:608748",
+   "title": "Congo",
+   "authors": [
+    "Michael Crichton"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 369,
+   "id": "cmu:enwiki:19931129",
+   "title": "Nights in Rodanthe",
+   "authors": [
+    "Nicholas Sparks"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 370,
+   "id": "cmu:enwiki:6961605",
+   "title": "Breakfast at Tiffany's",
+   "authors": [
+    "Truman Capote"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 371,
+   "id": "cmu:enwiki:385612",
+   "title": "Walk Two Moons",
+   "authors": [
+    "Sharon Creech"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 372,
+   "id": "cmu:enwiki:9682847",
+   "title": "World without End",
+   "authors": [
+    "Ken Follett"
+   ],
+   "labelled": true,
+   "supported_cells": 20,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 373,
+   "id": "cmu:enwiki:30033",
+   "title": "Mort",
+   "authors": [
+    "Terry Pratchett"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 374,
+   "id": "cmu:enwiki:3433133",
+   "title": "Plain Truth",
+   "authors": [
+    "Jodi Picoult"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 375,
+   "id": "cmu:enwiki:895506",
+   "title": "Sphere",
+   "authors": [
+    "Michael Crichton"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 376,
+   "id": "cmu:enwiki:22105170",
+   "title": "Tempted",
+   "authors": [
+    "Kristin Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 377,
+   "id": "cmu:enwiki:24617147",
+   "title": "Dead in the Family",
+   "authors": [
+    "Charlaine Harris"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 378,
+   "id": "cmu:enwiki:27722629",
+   "title": "The Passage",
+   "authors": [
+    "Justin Cronin"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 379,
+   "id": "cmu:enwiki:7817",
+   "title": "The Cider House Rules",
+   "authors": [
+    "John Irving"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 380,
+   "id": "cmu:enwiki:9309742",
+   "title": "The Constant Princess",
+   "authors": [
+    "Philippa Gregory"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 381,
+   "id": "cmu:enwiki:229593",
+   "title": "The Sound and the Fury",
+   "authors": [
+    "William Faulkner"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 382,
+   "id": "cmu:enwiki:45133",
+   "title": "The Wind in the Willows",
+   "authors": [
+    "Kenneth Grahame"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 383,
+   "id": "cmu:enwiki:86351",
+   "title": "The Exorcist",
+   "authors": [
+    "William Peter Blatty"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 384,
+   "id": "cmu:enwiki:302997",
+   "title": "Howl's Moving Castle",
+   "authors": [
+    "Diana Wynne Jones"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 385,
+   "id": "cmu:enwiki:396639",
+   "title": "Invisible Man",
+   "authors": [
+    "Ralph Ellison"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 386,
+   "id": "cmu:enwiki:549687",
+   "title": "The Shadow Rising",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 387,
+   "id": "cmu:enwiki:1674879",
+   "title": "Hyperion",
+   "authors": [
+    "Dan Simmons"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 388,
+   "id": "cmu:enwiki:24942721",
+   "title": "Burned",
+   "authors": [
+    "P. C. Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 389,
+   "id": "cmu:enwiki:17106013",
+   "title": "Lock and Key",
+   "authors": [
+    "Sarah Dessen"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 390,
+   "id": "cmu:enwiki:1195051",
+   "title": "The House of the Spirits",
+   "authors": [
+    "Isabel Allende"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 391,
+   "id": "cmu:enwiki:2059673",
+   "title": "The Reader",
+   "authors": [
+    "Bernhard Schlink"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 392,
+   "id": "cmu:enwiki:52803",
+   "title": "The Hunchback of Notre Dame",
+   "authors": [
+    "Victor Hugo"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 393,
+   "id": "cmu:enwiki:6161733",
+   "title": "The Lies of Locke Lamora",
+   "authors": [
+    "Scott Lynch"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 394,
+   "id": "cmu:enwiki:133012",
+   "title": "Lamb: The Gospel According to Biff, Christ's Childhood Pal",
+   "authors": [
+    "Christopher Moore"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 395,
+   "id": "cmu:enwiki:29055790",
+   "title": "The Corrections",
+   "authors": [
+    "Jonathan Franzen"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 396,
+   "id": "cmu:enwiki:64007",
+   "title": "The Waste Lands",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 397,
+   "id": "cmu:enwiki:2661883",
+   "title": "The Westing Game",
+   "authors": [
+    "Ellen Raskin"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 398,
+   "id": "cmu:enwiki:42609",
+   "title": "Around the World in Eighty Days",
+   "authors": [
+    "Jules Verne"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 399,
+   "id": "cmu:enwiki:30709",
+   "title": "The Screwtape Letters",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 400,
+   "id": "cmu:enwiki:3385085",
+   "title": "Two For the Dough",
+   "authors": [
+    "Janet Evanovich"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 401,
+   "id": "cmu:enwiki:1282996",
+   "title": "\"A\" is for Alibi",
+   "authors": [
+    "Sue Grafton"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 402,
+   "id": "cmu:enwiki:160428",
+   "title": "Dreamcatcher",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 403,
+   "id": "cmu:enwiki:196963",
+   "title": "Ender's Shadow",
+   "authors": [
+    "Orson Scott Card"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 404,
+   "id": "cmu:enwiki:1467647",
+   "title": "Gathering Blue",
+   "authors": [
+    "Lois Lowry"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 405,
+   "id": "cmu:enwiki:15120912",
+   "title": "Shutter Island",
+   "authors": [
+    "Dennis Lehane"
+   ],
+   "labelled": true,
+   "supported_cells": 20,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 406,
+   "id": "cmu:enwiki:3385088",
+   "title": "Three to Get Deadly",
+   "authors": [
+    "Janet Evanovich"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 407,
+   "id": "cmu:enwiki:2931456",
+   "title": "The Tale of Despereaux",
+   "authors": [
+    "Kate DiCamillo"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 408,
+   "id": "cmu:enwiki:16689232",
+   "title": "Angus, Thongs and Full-Frontal Snogging",
+   "authors": [
+    "Louise Rennison"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 409,
+   "id": "cmu:enwiki:238534",
+   "title": "Lonesome Dove",
+   "authors": [
+    "Larry McMurtry"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 410,
+   "id": "cmu:enwiki:9648004",
+   "title": "Fool Moon",
+   "authors": [
+    "Jim Butcher"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 411,
+   "id": "cmu:enwiki:28108371",
+   "title": "House Rules",
+   "authors": [
+    "Jodi Picoult"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 412,
+   "id": "cmu:enwiki:42906",
+   "title": "The Queen of the Damned",
+   "authors": [
+    "Anne Rice"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 413,
+   "id": "cmu:enwiki:113470",
+   "title": "A Room with a View",
+   "authors": [
+    "E. M. Forster"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 414,
+   "id": "cmu:enwiki:1827695",
+   "title": "The Bluest Eye",
+   "authors": [
+    "Toni Morrison"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 415,
+   "id": "cmu:enwiki:797758",
+   "title": "Sophie's World",
+   "authors": [
+    "Jostein Gaarder"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 416,
+   "id": "cmu:enwiki:4910784",
+   "title": "Watchers",
+   "authors": [
+    "Dean Koontz"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 417,
+   "id": "cmu:enwiki:21341823",
+   "title": "The Way of Shadows",
+   "authors": [
+    "Brent Weeks"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 418,
+   "id": "cmu:enwiki:375359",
+   "title": "The Neverending Story",
+   "authors": [
+    "Michael Ende"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 419,
+   "id": "cmu:enwiki:2295010",
+   "title": "Flowers in the Attic",
+   "authors": [
+    "V. C. Andrews"
+   ],
+   "labelled": true,
+   "supported_cells": 23,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 420,
+   "id": "cmu:enwiki:331967",
+   "title": "Guards! Guards!",
+   "authors": [
+    "Terry Pratchett"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 421,
+   "id": "cmu:enwiki:312623",
+   "title": "Schindler's Ark",
+   "authors": [
+    "Thomas Keneally"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 422,
+   "id": "cmu:enwiki:3766150",
+   "title": "Four to Score",
+   "authors": [
+    "Janet Evanovich"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 423,
+   "id": "cmu:enwiki:19300183",
+   "title": "Shanghai Girls",
+   "authors": [
+    "Lisa See"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 424,
+   "id": "cmu:enwiki:2040458",
+   "title": "Tales of a Fourth Grade Nothing",
+   "authors": [
+    "Judy Blume"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 425,
+   "id": "cmu:enwiki:25839458",
+   "title": "Abraham Lincoln, Vampire Hunter",
+   "authors": [
+    "Seth Grahame-Smith"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 426,
+   "id": "cmu:enwiki:133721",
+   "title": "The Remains of the Day",
+   "authors": [
+    "Kazuo Ishiguro"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 427,
+   "id": "cmu:enwiki:2662485",
+   "title": "The Witch of Blackbird Pond",
+   "authors": [
+    "Elizabeth George Speare"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 428,
+   "id": "cmu:enwiki:331675",
+   "title": "Foundation and Empire",
+   "authors": [
+    "Isaac Asimov"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 429,
+   "id": "cmu:enwiki:55737",
+   "title": "Clear and Present Danger",
+   "authors": [
+    "Tom Clancy"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 430,
+   "id": "cmu:enwiki:1388208",
+   "title": "The Bean Trees",
+   "authors": [
+    "Barbara Kingsolver"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 431,
+   "id": "cmu:enwiki:64002",
+   "title": "Wizard and Glass",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 432,
+   "id": "cmu:enwiki:200701",
+   "title": "Xenocide",
+   "authors": [
+    "Orson Scott Card"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 433,
+   "id": "cmu:enwiki:9366759",
+   "title": "Year of Wonders",
+   "authors": [
+    "Geraldine Brooks"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 434,
+   "id": "cmu:enwiki:4261283",
+   "title": "Guilty Pleasures",
+   "authors": [
+    "Laurell K. Hamilton"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 435,
+   "id": "cmu:enwiki:8520267",
+   "title": "Crank",
+   "authors": [
+    "Ellen Hopkins"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 436,
+   "id": "cmu:enwiki:25504525",
+   "title": "Vision in White",
+   "authors": [
+    "Nora Roberts"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 437,
+   "id": "cmu:enwiki:322301",
+   "title": "As I Lay Dying",
+   "authors": [
+    "William Faulkner"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 438,
+   "id": "cmu:enwiki:2220261",
+   "title": "The Deep End of the Ocean",
+   "authors": [
+    "Jacquelyn Mitchard"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 439,
+   "id": "cmu:enwiki:528860",
+   "title": "The Age of Innocence",
+   "authors": [
+    "Edith Wharton"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 440,
+   "id": "cmu:enwiki:8179637",
+   "title": "Jaws",
+   "authors": [
+    "Peter Benchley"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 441,
+   "id": "cmu:enwiki:2595361",
+   "title": "Eleven Minutes",
+   "authors": [
+    "Paulo Coelho"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 442,
+   "id": "cmu:enwiki:7034259",
+   "title": "For One More Day",
+   "authors": [
+    "Mitch Albom"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 443,
+   "id": "cmu:enwiki:74257",
+   "title": "About a Boy",
+   "authors": [
+    "Nick Hornby"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 444,
+   "id": "cmu:enwiki:19955124",
+   "title": "The Elegance of the Hedgehog",
+   "authors": [
+    "Muriel Barbery"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 445,
+   "id": "cmu:enwiki:4806475",
+   "title": "We Need to Talk About Kevin",
+   "authors": [
+    "Lionel Shriver"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 446,
+   "id": "cmu:enwiki:33303850",
+   "title": "Awakened",
+   "authors": [
+    "Kristin Cast"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 447,
+   "id": "cmu:enwiki:623219",
+   "title": "Insomnia",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 448,
+   "id": "cmu:enwiki:3134572",
+   "title": "No Country for Old Men",
+   "authors": [
+    "Cormac McCarthy"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 449,
+   "id": "cmu:enwiki:7589425",
+   "title": "Déjà Dead",
+   "authors": [
+    "Kathy Reichs"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 450,
+   "id": "cmu:enwiki:703539",
+   "title": "White Fang",
+   "authors": [
+    "Jack London"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 451,
+   "id": "cmu:enwiki:64025",
+   "title": "Gerald's Game",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 452,
+   "id": "cmu:enwiki:2827312",
+   "title": "Maniac Magee",
+   "authors": [
+    "Jerry Spinelli"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 453,
+   "id": "cmu:enwiki:19176822",
+   "title": "The Knife of Never Letting Go",
+   "authors": [
+    "Patrick Ness"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 454,
+   "id": "cmu:enwiki:14607140",
+   "title": "Fablehaven",
+   "authors": [
+    "Brandon Mull"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 455,
+   "id": "cmu:enwiki:3766194",
+   "title": "Hot Six",
+   "authors": [
+    "Janet Evanovich"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 456,
+   "id": "cmu:enwiki:933335",
+   "title": "A Fine Balance",
+   "authors": [
+    "Rohinton Mistry"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 457,
+   "id": "cmu:enwiki:13420965",
+   "title": "The Tenth Circle",
+   "authors": [
+    "Jodi Picoult"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 458,
+   "id": "cmu:enwiki:901697",
+   "title": "Blindness",
+   "authors": [
+    "José Saramago"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 459,
+   "id": "cmu:enwiki:12948231",
+   "title": "The Black Echo",
+   "authors": [
+    "Michael Connelly"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 460,
+   "id": "cmu:enwiki:248364",
+   "title": "The Blind Assassin",
+   "authors": [
+    "Margaret Atwood"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 461,
+   "id": "cmu:enwiki:10917506",
+   "title": "The History of Love",
+   "authors": [
+    "Nicole Krauss"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 462,
+   "id": "cmu:enwiki:409236",
+   "title": "Wolves of the Calla",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 463,
+   "id": "cmu:enwiki:26321496",
+   "title": "Fire",
+   "authors": [
+    "Kristin Cashore"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 464,
+   "id": "cmu:enwiki:32581076",
+   "title": "The Power of Six",
+   "authors": [
+    "Pittacus Lore"
+   ],
+   "labelled": true,
+   "supported_cells": 18,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 465,
+   "id": "cmu:enwiki:10572495",
+   "title": "Grave Peril",
+   "authors": [
+    "Jim Butcher"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 466,
+   "id": "cmu:enwiki:5405446",
+   "title": "Old Man's War",
+   "authors": [
+    "John Scalzi"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 467,
+   "id": "cmu:enwiki:2423068",
+   "title": "The Hours",
+   "authors": [
+    "Michael Cunningham"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 468,
+   "id": "cmu:enwiki:1498012",
+   "title": "The Alienist",
+   "authors": [
+    "Caleb Carr"
+   ],
+   "labelled": true,
+   "supported_cells": 19,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 469,
+   "id": "cmu:enwiki:309433",
+   "title": "Second Foundation",
+   "authors": [
+    "Isaac Asimov"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 470,
+   "id": "cmu:enwiki:15931932",
+   "title": "Poison Study",
+   "authors": [
+    "Maria V. Snyder"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 471,
+   "id": "cmu:enwiki:3445721",
+   "title": "Elantris",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 472,
+   "id": "cmu:enwiki:986",
+   "title": "The Plague",
+   "authors": [
+    "Albert Camus"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 473,
+   "id": "cmu:enwiki:15556648",
+   "title": "People of the Book",
+   "authors": [
+    "Geraldine Brooks"
+   ],
+   "labelled": true,
+   "supported_cells": 9,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 474,
+   "id": "cmu:enwiki:234527",
+   "title": "Anthem",
+   "authors": [
+    "Ayn Rand"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 475,
+   "id": "cmu:enwiki:50376",
+   "title": "Dragonflight",
+   "authors": [
+    "Anne McCaffrey"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 476,
+   "id": "cmu:enwiki:2332270",
+   "title": "North and South",
+   "authors": [
+    "Elizabeth Gaskell"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 477,
+   "id": "cmu:enwiki:862059",
+   "title": "The Dark Half",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 478,
+   "id": "cmu:enwiki:3766182",
+   "title": "Seven Up",
+   "authors": [
+    "Janet Evanovich"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 479,
+   "id": "cmu:enwiki:15529320",
+   "title": "Life As We Knew It",
+   "authors": [
+    "Susan Beth Pfeffer"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 480,
+   "id": "cmu:enwiki:22361419",
+   "title": "The Gathering Storm",
+   "authors": [
+    "Brandon Sanderson"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 481,
+   "id": "cmu:enwiki:69111",
+   "title": "So Long, and Thanks for All the Fish",
+   "authors": [
+    "Douglas Adams"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 482,
+   "id": "cmu:enwiki:760079",
+   "title": "Eye of the Needle",
+   "authors": [
+    "Ken Follett"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 483,
+   "id": "cmu:enwiki:1021467",
+   "title": "The Dark Tower",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 484,
+   "id": "cmu:enwiki:549608",
+   "title": "The Fires of Heaven",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 485,
+   "id": "cmu:enwiki:26476",
+   "title": "Rendezvous with Rama",
+   "authors": [
+    "Arthur C. Clarke"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 486,
+   "id": "cmu:enwiki:5257205",
+   "title": "The Woman in White",
+   "authors": [
+    "Wilkie Collins"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 487,
+   "id": "cmu:enwiki:9816569",
+   "title": "I Am the Messenger",
+   "authors": [
+    "Markus Zusak"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 488,
+   "id": "cmu:enwiki:12184056",
+   "title": "The Goose Girl",
+   "authors": [
+    "Shannon Hale"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 489,
+   "id": "cmu:enwiki:3766159",
+   "title": "High Five",
+   "authors": [
+    "Janet Evanovich"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 490,
+   "id": "cmu:enwiki:5428409",
+   "title": "Presumed Innocent",
+   "authors": [
+    "Scott Turow"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 491,
+   "id": "cmu:enwiki:562243",
+   "title": "Lord of Chaos",
+   "authors": [
+    "Robert Jordan"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 492,
+   "id": "cmu:enwiki:12155810",
+   "title": "Summer Knight",
+   "authors": [
+    "Jim Butcher"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 493,
+   "id": "cmu:enwiki:181622",
+   "title": "Contact",
+   "authors": [
+    "Carl Sagan"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 494,
+   "id": "cmu:enwiki:272678",
+   "title": "Quidditch Through the Ages",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "form hold: Fictional companion/reference book, rather than a conventional narrative novel."
+  },
+  {
+   "rank": 495,
+   "id": "cmu:enwiki:8843578",
+   "title": "Empire Falls",
+   "authors": [
+    "Richard Russo"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 496,
+   "id": "cmu:enwiki:3608696",
+   "title": "Daughter of Fortune",
+   "authors": [
+    "Isabel Allende"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 497,
+   "id": "cmu:enwiki:50223",
+   "title": "Dirk Gently's Holistic Detective Agency",
+   "authors": [
+    "Douglas Adams"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 498,
+   "id": "cmu:enwiki:13094963",
+   "title": "The Surgeon",
+   "authors": [
+    "Tess Gerritsen"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
+  },
+  {
+   "rank": 499,
+   "id": "cmu:enwiki:723638",
+   "title": "Journey to the Center of the Earth",
+   "authors": [
+    "Jules Verne"
+   ],
+   "labelled": true,
+   "supported_cells": 15,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   }
  ]
 }

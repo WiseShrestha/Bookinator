@@ -1,0 +1,4674 @@
+{
+ "inputs": {
+  "research_books": 500,
+  "our_labelled_books": 160
+ },
+ "explicit_method_cells_recalibrated_to_0.9_or_0.1": 3200,
+ "cells_added_from_ours": 312,
+ "conflicts_set_ambiguous": 1,
+ "ours_not_added": 15,
+ "agreeing_cells_strengthened_from_ours": 497,
+ "validation": {
+  "valid": true,
+  "books": 500,
+  "non_unknown_cells": 7348,
+  "count_gate_12": 468,
+  "scope": "Source registration, exact quotes, fields and ID coverage. No human or independent factual approval."
+ },
+ "validation_errors": [],
+ "conflicts": [
+  {
+   "book_id": "cmu:enwiki:10392345",
+   "title": "Water for Elephants",
+   "question_id": "q06",
+   "ours": {
+    "p_yes": 0.3,
+    "quote": "because he had been treating animals in exchange for just beans and eggs and had mortgaged the family home to provide Jacob an Ivy League education, he has a breakdown and leaves school just short of graduation."
+   },
+   "research": {
+    "p_yes": 0.7,
+    "source_id": "cmu:10392345",
+    "quote": ", Jacob Jankowski is a twenty-three year old Polish American preparing for his final exams as a Cornell University veterinary student when he receives the devastating news that his parents were killed in a car accident. "
+   },
+   "resolution": "set to 0.5 ambiguous until a person decides"
+  }
+ ],
+ "strengthened": [
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q23",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q28",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q31",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q08",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q09",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q18",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q18",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q39",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q19",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24162",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24162",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24162",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q23",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q30",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:620",
+   "question_id": "q05",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:620",
+   "question_id": "q11",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:620",
+   "question_id": "q30",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:620",
+   "question_id": "q36",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:254498",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:254498",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:254498",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:254498",
+   "question_id": "q09",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:254498",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21909903",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21909903",
+   "question_id": "q30",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21909903",
+   "question_id": "q54",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1398951",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1398951",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1398951",
+   "question_id": "q10",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q07",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q20",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q25",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:163234",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:163234",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:163234",
+   "question_id": "q08",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:163234",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:259128",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:259128",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:776049",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:776049",
+   "question_id": "q27",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:776049",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:26170677",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:26170677",
+   "question_id": "q30",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2270723",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2270723",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2270723",
+   "question_id": "q09",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2270723",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q02",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:242130",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:242130",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:242130",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q19",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q50",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q18",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q45",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:5043452",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:5043452",
+   "question_id": "q25",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6111753",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6111753",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:713577",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:713577",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:901398",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:901398",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:199932",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:199932",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:55438",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18384765",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18384765",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18384765",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6997883",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6997883",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6997883",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:8497022",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:8497022",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:8497022",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:8497022",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:606612",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:606612",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:606612",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20776698",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20776698",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10392345",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:302301",
+   "question_id": "q05",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:302301",
+   "question_id": "q11",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:302301",
+   "question_id": "q36",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:302301",
+   "question_id": "q45",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:714218",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:714218",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:714218",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:714218",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:36681",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:36681",
+   "question_id": "q21",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:419078",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:571011",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:571011",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:478921",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:478921",
+   "question_id": "q34",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q19",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q29",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:55435",
+   "question_id": "q11",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:55435",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:55435",
+   "question_id": "q15",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:55435",
+   "question_id": "q17",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2162569",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2162569",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2162569",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2162569",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2162569",
+   "question_id": "q51",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q17",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q24",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:890626",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:890626",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:890626",
+   "question_id": "q07",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q20",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q29",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q39",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10433866",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10433866",
+   "question_id": "q50",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q08",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:13116455",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:13116455",
+   "question_id": "q05",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:13116455",
+   "question_id": "q23",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:959366",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:959366",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:959366",
+   "question_id": "q37",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q33",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q50",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:27490",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:27490",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:25491508",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:25491508",
+   "question_id": "q37",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1937988",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1937988",
+   "question_id": "q10",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1937988",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1937988",
+   "question_id": "q38",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:562456",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:410873",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:410873",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:410873",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:3681524",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:3681524",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7923",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7923",
+   "question_id": "q51",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:562222",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:562222",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34269647",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34269647",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q21",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:22216108",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31342",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10951",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20584690",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:55469",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:55469",
+   "question_id": "q18",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:55469",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:55469",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:55469",
+   "question_id": "q52",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q11",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q19",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q50",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21811766",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1599634",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1599634",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1599634",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1599634",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1599634",
+   "question_id": "q45",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1599634",
+   "question_id": "q54",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:161502",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:161502",
+   "question_id": "q16",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:3012644",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:3012644",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:699430",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:699430",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:699430",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:699430",
+   "question_id": "q40",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:699430",
+   "question_id": "q55",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7906594",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:61489",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:61489",
+   "question_id": "q17",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:61489",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:61489",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:61489",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:28755850",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:28755850",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:28755850",
+   "question_id": "q37",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:15011992",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1240426",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1240426",
+   "question_id": "q15",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1240426",
+   "question_id": "q48",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7402039",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7402039",
+   "question_id": "q23",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7402039",
+   "question_id": "q27",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7402039",
+   "question_id": "q28",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7402039",
+   "question_id": "q49",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:28411923",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:28411923",
+   "question_id": "q52",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q19",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2531453",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2531453",
+   "question_id": "q30",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2531453",
+   "question_id": "q37",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2531453",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q10",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q17",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:654705",
+   "question_id": "q55",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:889073",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:889073",
+   "question_id": "q55",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:63750",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:713625",
+   "question_id": "q15",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2133642",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2133642",
+   "question_id": "q29",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23869776",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23869776",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1194427",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1194427",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1022221",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:57766",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:57766",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1196343",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q21",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q23",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q19",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:7504806",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:7504806",
+   "question_id": "q27",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23404033",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23404033",
+   "question_id": "q54",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:472089",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:472089",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:288153",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:288153",
+   "question_id": "q39",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:288153",
+   "question_id": "q50",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q21",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:33314889",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:33314889",
+   "question_id": "q38",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:796676",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:3552124",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23817576",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23817576",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23817576",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23817576",
+   "question_id": "q29",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:944096",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21243200",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21243200",
+   "question_id": "q08",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21243200",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:45896",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:18949410",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21796996",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:21796996",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:12814208",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:12814208",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20007123",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:25572395",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:25572395",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:25572395",
+   "question_id": "q09",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:25572395",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q17",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q35",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:3385082",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29798",
+   "question_id": "q05",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29798",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:871902",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:871902",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:871902",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:133874",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:133874",
+   "question_id": "q10",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:182128",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:182128",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:43168",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:43168",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:43168",
+   "question_id": "q29",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:43168",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:43168",
+   "question_id": "q51",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:79120",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:79120",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q17",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q48",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2041080",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2041080",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2202702",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:347822",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:347822",
+   "question_id": "q26",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:23854860",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:540888",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:540888",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:540888",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:540888",
+   "question_id": "q09",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:33230852",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:33230852",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:33230852",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:33230852",
+   "question_id": "q09",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:19859",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:19859",
+   "question_id": "q16",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:19859",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q06",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q08",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q29",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q07",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q17",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q18",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q19",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q25",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:32903764",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:32903764",
+   "question_id": "q21",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:32903764",
+   "question_id": "q31",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1890954",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1890954",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:27532695",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:891623",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:891623",
+   "question_id": "q32",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:386568",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1804983",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1804983",
+   "question_id": "q24",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q25",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q50",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q52",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:63987",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:63987",
+   "question_id": "q15",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:63987",
+   "question_id": "q27",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:26683273",
+   "question_id": "q05",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:26683273",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:397398",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q27",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q44",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q11",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q15",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q19",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q20",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:17253525",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:17253525",
+   "question_id": "q49",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:17253525",
+   "question_id": "q51",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10023921",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10023921",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q02",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q15",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q16",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29022842",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29022842",
+   "question_id": "q54",
+   "research": 0.3,
+   "ours": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:10876585",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10876585",
+   "question_id": "q35",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29179339",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29179339",
+   "question_id": "q27",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q03",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q10",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q14",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q47",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1697748",
+   "question_id": "q04",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1697748",
+   "question_id": "q09",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1697748",
+   "question_id": "q13",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q01",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q41",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67317",
+   "question_id": "q05",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67317",
+   "question_id": "q27",
+   "research": 0.7,
+   "ours": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:67317",
+   "question_id": "q36",
+   "research": 0.7,
+   "ours": 0.9
+  }
+ ],
+ "not_added": [
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q13",
+   "ours": 0.1,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q44",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q26",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:713577",
+   "question_id": "q15",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:571011",
+   "question_id": "q13",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q35",
+   "ours": 0.9,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:7923",
+   "question_id": "q13",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:63750",
+   "question_id": "q05",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:63750",
+   "question_id": "q15",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q29",
+   "ours": 0.7,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:10023921",
+   "question_id": "q11",
+   "ours": 0.9,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:10023921",
+   "question_id": "q14",
+   "ours": 0.9,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q27",
+   "ours": 0.9,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q36",
+   "ours": 0.9,
+   "reason": "withheld"
+  },
+  {
+   "book_id": "cmu:enwiki:10876585",
+   "question_id": "q43",
+   "ours": 0.7,
+   "reason": "withheld"
+  }
+ ],
+ "added": [
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q19",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q20",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q21",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:20128213",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:48648",
+   "question_id": "q45",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q01",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q12",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q13",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:4451267",
+   "question_id": "q40",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q10",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73408",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q06",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q12",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q13",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:76033",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q06",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q14",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:32262844",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q22",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:186258",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q15",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:23454753",
+   "question_id": "q21",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:620",
+   "question_id": "q04",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:620",
+   "question_id": "q10",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:254498",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1398951",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:14975869",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:259128",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:259128",
+   "question_id": "q19",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:776049",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:776049",
+   "question_id": "q06",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:776049",
+   "question_id": "q09",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:776049",
+   "question_id": "q13",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:2270723",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q04",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q10",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31584",
+   "question_id": "q46",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:242130",
+   "question_id": "q36",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:24756137",
+   "question_id": "q44",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:62120",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:5043452",
+   "question_id": "q02",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:5043452",
+   "question_id": "q10",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:5043452",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:6111753",
+   "question_id": "q28",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:901398",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:901398",
+   "question_id": "q44",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:199932",
+   "question_id": "q21",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:6997883",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:8497022",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:8497022",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:606612",
+   "question_id": "q15",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:20776698",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:20776698",
+   "question_id": "q50",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10392345",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:10392345",
+   "question_id": "q38",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:10392345",
+   "question_id": "q49",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:10392345",
+   "question_id": "q52",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:714218",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:714218",
+   "question_id": "q19",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:714218",
+   "question_id": "q52",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:36681",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:36681",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:36681",
+   "question_id": "q19",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:419078",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:419078",
+   "question_id": "q16",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:419078",
+   "question_id": "q28",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:419078",
+   "question_id": "q46",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:419078",
+   "question_id": "q52",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:571011",
+   "question_id": "q36",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2224493",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:55435",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:55435",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:55435",
+   "question_id": "q52",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:2162569",
+   "question_id": "q43",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:2162569",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q02",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:12995",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q10",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2449650",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:10433866",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:10433866",
+   "question_id": "q24",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q10",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q19",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q20",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:29999",
+   "question_id": "q46",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:13116455",
+   "question_id": "q28",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:13116455",
+   "question_id": "q34",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2029175",
+   "question_id": "q52",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:27490",
+   "question_id": "q13",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1937988",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1937988",
+   "question_id": "q06",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:1937988",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:3433040",
+   "question_id": "q13",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:3433040",
+   "question_id": "q30",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:3681524",
+   "question_id": "q15",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q19",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q23",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:165026",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:22216108",
+   "question_id": "q26",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:31342",
+   "question_id": "q32",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:20584690",
+   "question_id": "q07",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:55469",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q10",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:19918431",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:878757",
+   "question_id": "q40",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:161502",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:161502",
+   "question_id": "q46",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:61489",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:15011992",
+   "question_id": "q35",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1240426",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1240426",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1240426",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:7911644",
+   "question_id": "q29",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q08",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:31879966",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:654705",
+   "question_id": "q04",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:889073",
+   "question_id": "q14",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:889073",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:889073",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:889073",
+   "question_id": "q24",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:889073",
+   "question_id": "q40",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:71416",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:71416",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:71416",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:71416",
+   "question_id": "q15",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:63750",
+   "question_id": "q04",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:713625",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:713625",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:713625",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:713625",
+   "question_id": "q24",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1194427",
+   "question_id": "q17",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1194427",
+   "question_id": "q24",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:18451040",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:57766",
+   "question_id": "q31",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1196343",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:6324034",
+   "question_id": "q19",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:5326809",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:7504806",
+   "question_id": "q04",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:7504806",
+   "question_id": "q28",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:23404033",
+   "question_id": "q37",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:472089",
+   "question_id": "q08",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:288153",
+   "question_id": "q27",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:288153",
+   "question_id": "q28",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:288153",
+   "question_id": "q47",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:34890405",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:843",
+   "question_id": "q19",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:33314889",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:796676",
+   "question_id": "q15",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:796676",
+   "question_id": "q29",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:3552124",
+   "question_id": "q17",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:3552124",
+   "question_id": "q29",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:23817576",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:944096",
+   "question_id": "q07",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:21243200",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:21796996",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:21796996",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:12814208",
+   "question_id": "q15",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:12814208",
+   "question_id": "q52",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:25572395",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:25572395",
+   "question_id": "q37",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:73670",
+   "question_id": "q44",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:29798",
+   "question_id": "q15",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:133874",
+   "question_id": "q06",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:133874",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:182128",
+   "question_id": "q27",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:43168",
+   "question_id": "q44",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:43168",
+   "question_id": "q50",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:79120",
+   "question_id": "q05",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:79120",
+   "question_id": "q17",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:79120",
+   "question_id": "q48",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:79120",
+   "question_id": "q52",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:330523",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2041080",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:2202702",
+   "question_id": "q04",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:2202702",
+   "question_id": "q15",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:2202702",
+   "question_id": "q32",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:347822",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:347822",
+   "question_id": "q17",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:33230852",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:33230852",
+   "question_id": "q15",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:67003",
+   "question_id": "q51",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q14",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:4608346",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:32903764",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:32903764",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:32903764",
+   "question_id": "q19",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:32903764",
+   "question_id": "q23",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1890954",
+   "question_id": "q18",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:27532695",
+   "question_id": "q05",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:891623",
+   "question_id": "q15",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:386568",
+   "question_id": "q19",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1804983",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1804983",
+   "question_id": "q45",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q07",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q44",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:30976827",
+   "question_id": "q49",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:63987",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:63987",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:63987",
+   "question_id": "q14",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:26683273",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:397398",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:397398",
+   "question_id": "q39",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:42645",
+   "question_id": "q18",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q12",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q13",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:161446",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:17253525",
+   "question_id": "q01",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:10023921",
+   "question_id": "q06",
+   "p_yes": 0.3
+  },
+  {
+   "book_id": "cmu:enwiki:427310",
+   "question_id": "q32",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:159941",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q19",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q20",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:1779024",
+   "question_id": "q27",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1697748",
+   "question_id": "q02",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1697748",
+   "question_id": "q03",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:1697748",
+   "question_id": "q45",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q04",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q14",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q15",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q17",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q18",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q19",
+   "p_yes": 0.9
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q20",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q21",
+   "p_yes": 0.1
+  },
+  {
+   "book_id": "cmu:enwiki:271590",
+   "question_id": "q45",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:67317",
+   "question_id": "q04",
+   "p_yes": 0.7
+  },
+  {
+   "book_id": "cmu:enwiki:67317",
+   "question_id": "q11",
+   "p_yes": 0.7
+  }
+ ]
+}

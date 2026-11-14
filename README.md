@@ -150,6 +150,38 @@ The validator checks:
 | QR code | Deploy workflow added; generate the QR from the Pages URL once deployed. |
 | Human playtests, timed rehearsals | **Can't be done by me.** Recruit 10 fresh testers and record outcomes with exact denominators. |
 
+## Research catalog (500 imported records → 17 playable books)
+
+Two catalogs ship. The **10-book fixture** stays the default (`npm run dev`). The **CMU / research catalog**
+is selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report imported records as game coverage:
+
+| Measure (14 Nov 2026) | Count |
+| --- | ---: |
+| Source records imported (CMU Core priority 500) | 500 |
+| Records with a validated question matrix | 500 (7,348 source-linked cells; 468 have ≥12) |
+| Form holds kept out of the novel pool | 8 |
+| Cells reviewed by a person | **0** |
+| **Playable game targets** | **17** |
+
+Pipeline (`npm run catalog:research`; needs the research and Core packs next to the repo, not committed):
+1. `scripts/merge_research.py`: researched matrix (`core500_researched_labels.json`) merged by stable ID with
+   this project's own 160 labelled books (`data/cmu/responses/`). 312 of our cells added where research had 0.5,
+   none where research withheld or flagged a cell; 1 direction conflict (Water for Elephants q06) set to
+   ambiguous; 497 agreeing cells keep the stronger value. **Calibration:** 3,200 cells whose recorded method is
+   an explicit field or closed official list (language field, Nobel list, named series, corroborated publication
+   period) go from qualified 0.7/0.3 to strong 0.9/0.1, as the labelling prompt's own scale defines. AI
+   interpretations stay 0.7/0.3. The result passes the research pack's own `validate_evidence_matrix`.
+2. `scripts/build_cmu_catalog.py --limit 500 --gate none`: compact runtime catalog, no plot text or quotes.
+3. `scripts/gate_catalog.ts`: **engine gate** with the real engine and unchanged `config.ts` thresholds. A book
+   is playable only if answering exactly from its own labels makes it the engine's first guess (backward seed,
+   then forward retry in priority order). `tests/cmu_catalog.test.ts` re-checks this on every `npm test`.
+
+Simulation of the 17 (`reports/simulation_research.json`, seed 42, 30 games/book): clear memory 26.3% first
+guess, 92.7% found by any route (incl. shortlist); half memory 6.9% / 82.9%. Machine-labelled data: these are
+not accuracy claims. Why so few: most research labels are qualified 0.7/0.3, which the engine cannot turn into a
+confident guess within 18 questions. More playable books need **stronger, distinguishing plot labels reviewed by
+a person**, not lower thresholds. Every book's status and reason is in `data/cmu/coverage_report.json`.
+
 ## Limitations
 
 - The catalog is still a 10-book fixture; the 200-book catalog needs Person B's sourcing and human review.
