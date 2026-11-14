@@ -1,0 +1,546 @@
+{
+  "generated_at": "2026-11-14T06:35:34.753Z",
+  "catalog": "src/data/cmu.catalog.json",
+  "catalog_version": "cmu-priority100-v1",
+  "data_status": "machine_labelled_unreviewed",
+  "truth": "simulated answers generated from the SAME labels the engine uses (internal consistency only)",
+  "seed": 42,
+  "games_per_book_per_scenario": 30,
+  "film_memory_mode": false,
+  "crisp_truth": true,
+  "config": {
+    "channel": {
+      "yes": {
+        "givenYes": 0.55,
+        "givenNo": 0.05
+      },
+      "probably": {
+        "givenYes": 0.2,
+        "givenNo": 0.1
+      },
+      "dont_know": {
+        "givenYes": 0.1,
+        "givenNo": 0.1
+      },
+      "probably_not": {
+        "givenYes": 0.1,
+        "givenNo": 0.2
+      },
+      "no": {
+        "givenYes": 0.05,
+        "givenNo": 0.55
+      }
+    },
+    "unknownPYes": 0.5,
+    "minInformativeAnswers": 6,
+    "guessMinProbability": 0.8,
+    "guessMinRatio": 4,
+    "maxQuestions": 18,
+    "minScore": 0.01,
+    "maxRejections": 2,
+    "questionsAfterRejection": 1,
+    "shortlistSize": 3,
+    "maxPerGroup": 1,
+    "tieEpsilon": 1e-12
+  },
+  "scenarios": [
+    {
+      "scenario": "clear",
+      "description": "5% unknown, no wrong answers",
+      "games": 690,
+      "top1": 95,
+      "firstGuessWrong": 0,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 643,
+      "inTop3AtEnd": 643,
+      "failures": 47,
+      "meanQuestionsSuccess": 16.928460342146188,
+      "meanQuestionsAll": 16.99855072463768,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 0,
+      "gamesWithWrongGuess": 0,
+      "subsets": {},
+      "topConfusions": [],
+      "perBookFailures": [
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 11
+        },
+        {
+          "id": "cmu:enwiki:419078",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:776049",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:48648",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:4451267",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:713625",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 1
+        }
+      ]
+    },
+    {
+      "scenario": "half",
+      "description": "25% unknown, 5% wrong among known",
+      "games": 690,
+      "top1": 8,
+      "firstGuessWrong": 0,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 548,
+      "inTop3AtEnd": 548,
+      "failures": 142,
+      "meanQuestionsSuccess": 17.875912408759124,
+      "meanQuestionsAll": 17.89855072463768,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 0,
+      "gamesWithWrongGuess": 0,
+      "subsets": {},
+      "topConfusions": [],
+      "perBookFailures": [
+        {
+          "id": "cmu:enwiki:419078",
+          "fails": 20
+        },
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 13
+        },
+        {
+          "id": "cmu:enwiki:4451267",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:776049",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:48648",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:55435",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:1240426",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:14975869",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:713625",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:5326809",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:20128213",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:186258",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:23454753",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:31584",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:2224493",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:76033",
+          "fails": 1
+        },
+        {
+          "id": "cmu:enwiki:62120",
+          "fails": 1
+        },
+        {
+          "id": "cmu:enwiki:12995",
+          "fails": 1
+        }
+      ]
+    },
+    {
+      "scenario": "difficult",
+      "description": "40% unknown, 10% wrong among known",
+      "games": 690,
+      "top1": 0,
+      "firstGuessWrong": 0,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 435,
+      "inTop3AtEnd": 435,
+      "failures": 255,
+      "meanQuestionsSuccess": 17.986206896551725,
+      "meanQuestionsAll": 17.991304347826087,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 0,
+      "gamesWithWrongGuess": 0,
+      "subsets": {},
+      "topConfusions": [],
+      "perBookFailures": [
+        {
+          "id": "cmu:enwiki:419078",
+          "fails": 26
+        },
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 22
+        },
+        {
+          "id": "cmu:enwiki:776049",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:713625",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:48648",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:4451267",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:55435",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:31584",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:12995",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:14975869",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:1240426",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:5326809",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:186258",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:62120",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:2224493",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:23454753",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:20128213",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:76033",
+          "fails": 2
+        }
+      ]
+    },
+    {
+      "scenario": "one_mistake",
+      "description": "5% unknown, exactly one wrong answer in the first 6",
+      "games": 690,
+      "top1": 14,
+      "firstGuessWrong": 1,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 575,
+      "inTop3AtEnd": 575,
+      "failures": 115,
+      "meanQuestionsSuccess": 17.756521739130434,
+      "meanQuestionsAll": 17.782608695652176,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 1,
+      "gamesWithWrongGuess": 1,
+      "subsets": {},
+      "topConfusions": [
+        [
+          "cmu:enwiki:48648 → guessed cmu:enwiki:20128213",
+          1
+        ]
+      ],
+      "perBookFailures": [
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 16
+        },
+        {
+          "id": "cmu:enwiki:419078",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:1240426",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:55435",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:4451267",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:776049",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:48648",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:31584",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:713625",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:14975869",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:5326809",
+          "fails": 2
+        },
+        {
+          "id": "cmu:enwiki:186258",
+          "fails": 1
+        },
+        {
+          "id": "cmu:enwiki:2224493",
+          "fails": 1
+        }
+      ]
+    },
+    {
+      "scenario": "channel",
+      "description": "answers sampled from the engine's own channel (baseline)",
+      "games": 690,
+      "top1": 9,
+      "firstGuessWrong": 1,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 490,
+      "inTop3AtEnd": 490,
+      "failures": 200,
+      "meanQuestionsSuccess": 17.86122448979592,
+      "meanQuestionsAll": 17.89710144927536,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 1,
+      "gamesWithWrongGuess": 1,
+      "subsets": {},
+      "topConfusions": [
+        [
+          "cmu:enwiki:2224493 → guessed cmu:enwiki:20128213",
+          1
+        ]
+      ],
+      "perBookFailures": [
+        {
+          "id": "cmu:enwiki:419078",
+          "fails": 21
+        },
+        {
+          "id": "cmu:enwiki:2029175",
+          "fails": 17
+        },
+        {
+          "id": "cmu:enwiki:620",
+          "fails": 15
+        },
+        {
+          "id": "cmu:enwiki:776049",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:2162569",
+          "fails": 14
+        },
+        {
+          "id": "cmu:enwiki:1599634",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:713625",
+          "fails": 12
+        },
+        {
+          "id": "cmu:enwiki:1240426",
+          "fails": 10
+        },
+        {
+          "id": "cmu:enwiki:4451267",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:31584",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:55435",
+          "fails": 9
+        },
+        {
+          "id": "cmu:enwiki:32262844",
+          "fails": 8
+        },
+        {
+          "id": "cmu:enwiki:48648",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:29999",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:5326809",
+          "fails": 7
+        },
+        {
+          "id": "cmu:enwiki:2224493",
+          "fails": 6
+        },
+        {
+          "id": "cmu:enwiki:62120",
+          "fails": 5
+        },
+        {
+          "id": "cmu:enwiki:20128213",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:23454753",
+          "fails": 4
+        },
+        {
+          "id": "cmu:enwiki:186258",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:14975869",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:12995",
+          "fails": 3
+        },
+        {
+          "id": "cmu:enwiki:76033",
+          "fails": 1
+        }
+      ]
+    }
+  ]
+}

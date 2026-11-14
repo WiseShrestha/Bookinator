@@ -1,0 +1,41 @@
+@ cmu:enwiki:10392345 Water for Elephants
+q01 .1 3 a twenty-three year old Polish American
+q03 .9 1
+q06 .3 5 leaves school just short of graduation
+q38 .9 7
+q49 .7 1
+q52 .7 1
+@ cmu:enwiki:302301 Charlotte's Web
+q01 .7 3
+q02 .7 3
+q05 .9 9
+q11 .9 7
+q36 .9 10
+q45 .9 9
+@ cmu:enwiki:714218 The Notebook
+q02 .9 4
+q03 .9 2
+q14 .9 2
+q15 .1 2
+q19 .7 2
+q26 .9 5
+q44 .7 6
+q52 .7 1
+@ cmu:enwiki:36681 Brave New World
+q10 .7 1
+q13 .7 1
+q17 .1 1
+q18 .1 1
+q19 .1 1
+q20 .1 1
+q21 .9 1
+q44 .7 3 divided into five castes
+@ cmu:enwiki:419078 Life of Pi
+q03 .9 2
+q05 .7 10
+q16 .9 10
+q28 .9 17
+q40 .7 8
+q46 .7 17
+q48 .7 7
+q52 .7 2

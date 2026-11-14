@@ -1,0 +1,31 @@
+@ cmu:enwiki:699430 The Joy Luck Club
+q02 .9 1
+q04 .9 1
+q14 .9 2
+q29 .7 4
+q40 .9 1
+q50 .7 5
+q55 .9 5
+@ cmu:enwiki:7906594 The Sea of Monsters
+q03 .9 5
+q06 .7 3
+q32 .7 11
+@ cmu:enwiki:61489 Les Misérables
+q03 .9 2 The peasant Jean Valjean
+q17 .9 1
+q18 .1 1
+q19 .1 1
+q20 .1 1
+q21 .1 1
+q44 .7 2 stealing bread for his starving sister
+@ cmu:enwiki:28755850 Room
+q01 .9 1
+q02 .7 6
+q03 .9 1
+q37 .9 1
+q46 .7 2
+@ cmu:enwiki:15011992 The Battle of the Labyrinth
+q02 .7 6
+q03 .9 2
+q27 .7 9
+q35 .7 12

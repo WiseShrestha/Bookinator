@@ -1,0 +1,34 @@
+@ cmu:enwiki:13116455 The Host
+q02 .9 2
+q05 .9 2
+q23 .9 1
+q26 .7 10
+q28 .7 8
+q34 .7 2
+@ cmu:enwiki:959366 Holes
+q01 .9 1 Stanley, a teenage boy
+q03 .9 1 Stanley, a teenage boy
+q37 .9 2 Camp Green Lake, a juvenile detention and correctional facility
+@ cmu:enwiki:2029175 The Time Traveler's Wife
+q02 .9 1 his wife, Clare Anne Abshire (born 1971)
+q03 .9 1 Henry DeTamble (born 1963), a librarian
+q10 .7 1 the Newberry Library in Chicago
+q14 .9 1 the Newberry Library in Chicago
+q15 .1 1 the Newberry Library in Chicago
+q26 .7 3
+q33 .9 2
+q39 .7 2
+q49 .9 1 Using alternating first-person perspectives
+q50 .9 1 Using alternating first-person perspectives
+q52 .9 4
+@ cmu:enwiki:27490 Sense and Sensibility
+q02 .9 4
+q13 .7 16
+q26 .9 10
+q29 .7 6
+q44 .7 7
+@ cmu:enwiki:25491508 The Maze Runner
+q01 .7 2
+q03 .9 1
+q28 .7 9
+q37 .9 3

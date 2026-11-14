@@ -1,0 +1,35 @@
+@ cmu:enwiki:713625 A Storm of Swords
+q04 .7 2
+q12 .1 2
+q13 .1 2
+q14 .1 2
+q15 .9 2
+q24 .1 2
+q53 .7 1
+q54 .1 1
+@ cmu:enwiki:2133642 Divine Secrets of the Ya-Ya Sisterhood
+q02 .9 4 has never had a smooth relationship with her mother, Vivi
+q29 .9 3
+q45 .7 2
+@ cmu:enwiki:23869776 Thirteen Reasons Why
+q01 .7 1
+q02 .7 4
+q03 .9 1
+q06 .9 1
+q47 .7 2 who recently committed suicide
+@ cmu:enwiki:1194427 The Pillars of the Earth
+q02 .7 14
+q03 .9 2
+q13 .9 1
+q17 .7 15
+q24 .7 15
+@ cmu:enwiki:18451040 Paper Towns
+q01 .9 4
+q02 .7 5
+q03 .9 3 The protagonist and narrator, Quentin
+q06 .9 4
+q12 .1 1
+q13 .1 1
+q14 .9 1
+q15 .1 1
+q49 .9 3 The protagonist and narrator, Quentin

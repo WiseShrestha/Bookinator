@@ -1,0 +1,38 @@
+@ cmu:enwiki:18384765 City of Bones
+q01 .9 1 Fifteen-year-old Brooklynite Clary Fray
+q02 .9 1 Fifteen-year-old Brooklynite Clary Fray is at a nightclub with her best friend Simon
+q03 .7 9
+q10 .7 1 Fifteen-year-old Brooklynite Clary Fray
+q14 .7 1 Fifteen-year-old Brooklynite Clary Fray
+q32 .9 10 with magic called glamour
+@ cmu:enwiki:6997883 New Moon
+q01 .9 1
+q02 .9 1
+q03 .7 1
+q05 .7 1
+q26 .9 1
+q47 .7 4
+q53 .7 8
+q54 .3 8
+@ cmu:enwiki:8497022 Eclipse
+q02 .9 2
+q03 .9 2
+q05 .7 2
+q14 .9 1
+q15 .1 1
+q26 .9 6
+@ cmu:enwiki:606612 Eragon
+q01 .9 4
+q03 .9 4
+q05 .7 12
+q11 .7 4
+q15 .7 13
+q27 .7 10
+q32 .9 3
+@ cmu:enwiki:20776698 Breaking Dawn
+q02 .9 3
+q03 .7 2
+q05 .7 7
+q14 .7 4
+q26 .9 2
+q50 .9 7

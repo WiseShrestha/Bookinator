@@ -1,0 +1,31 @@
+@ cmu:enwiki:31342 The Picture of Dorian Gray
+q03 .9 1 a handsome young man named Dorian Gray
+q32 .7 12 his wish has come true
+q48 .7 2
+@ cmu:enwiki:10951 Fahrenheit 451
+q03 .9 1
+@ cmu:enwiki:20584690 The Girl Who Played with Fire
+q02 .9 7
+q07 .7 12
+q53 .7 4
+q54 .3 4
+@ cmu:enwiki:55469 Catch-22
+q04 .7 2
+q17 .1 2
+q18 .9 2
+q19 .1 2
+q20 .1 2
+q21 .1 2
+q24 ?
+q52 .9 3 flashes back
+@ cmu:enwiki:19918431 A Walk to Remember
+q01 .9 2
+q03 .9 2
+q06 .9 2
+q09 .7 9
+q10 .1 3
+q12 .1 3
+q13 .1 3
+q14 .9 3
+q15 .1 3
+q26 .7 13

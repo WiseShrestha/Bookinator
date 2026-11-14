@@ -1,0 +1,37 @@
+@ cmu:enwiki:878757 The Poisonwood Bible
+q02 .9 2
+q04 .9 2
+q11 .9 3
+q15 .1 3
+q17 .1 3
+q18 .1 3
+q19 .9 3
+q21 .1 3
+q29 .7 3
+q40 .7 3
+q43 .7 6
+q49 .7 1
+q50 .9 2
+@ cmu:enwiki:21811766 City of Ashes
+q02 .9 1
+q03 .7 3
+q26 .7 2
+@ cmu:enwiki:1599634 The Sisterhood of the Traveling Pants
+q01 .9 1 four high school students
+q02 .9 1 four high school students
+q04 .9 1 four high school students
+q06 .9 1 four high school students
+q26 .7 8
+q32 ?
+q45 .9 1 who have been best friends
+q53 .9 1 In the first novel in the series
+q54 .9 1 In the first novel in the series
+@ cmu:enwiki:161502 The Old Man and the Sea
+q01 .1 1
+q03 .9 1
+q16 .9 7
+q28 .7 11
+q46 .7 7
+@ cmu:enwiki:3012644 Outlander
+q02 .9 1 British Army nurse Claire Randall
+q13 .9 1 Inverness, Scotland

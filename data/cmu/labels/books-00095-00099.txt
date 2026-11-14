@@ -1,0 +1,37 @@
+@ cmu:enwiki:1022221 Deception Point
+q02 .9 1
+@ cmu:enwiki:57766 Charlie and the Chocolate Factory
+q01 .9 1
+q03 .9 1
+q31 .7 4 has hidden a Golden Ticket in five chocolate bars
+q38 .7 2 candy factory located in his hometown
+q44 .7 1
+@ cmu:enwiki:1196343 The Five People You Meet in Heaven
+q01 .1 1
+q03 .9 1
+q35 .7 8
+q38 .7 1
+q48 .7 11
+@ cmu:enwiki:6324034 Uglies
+q01 .9 10
+q02 .9 10
+q10 .7 1
+q14 ?
+q17 .1 1
+q18 .1 1
+q19 .1 1
+q20 .1 1
+q21 .9 1
+q23 .9 6 before the supposed apocalypse that had ended the old society
+@ cmu:enwiki:5326809 Jurassic Park
+q02 .7 3 his paleobotanist graduate student, Ellie Sattler
+q03 .9 3 Paleontologist Alan Grant
+q12 .1 1
+q13 .1 1
+q14 .1 1
+q15 .3 1
+q17 .1 1
+q18 .1 1
+q19 .9 1
+q20 .1 1
+q21 .1 1

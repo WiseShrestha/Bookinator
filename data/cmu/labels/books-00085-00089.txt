@@ -1,0 +1,37 @@
+@ cmu:enwiki:31879966 Clockwork Angel
+q02 .9 5
+q03 .7 18
+q08 .9 12
+q10 .9 1
+q13 .9 1
+q15 .1 1
+q17 .9 1
+q18 .1 1
+q19 .1 1
+q20 .1 1
+q21 .1 1
+q37 .7 11
+@ cmu:enwiki:654705 One Hundred Years of Solitude
+q04 .7 1
+q55 .9 1
+@ cmu:enwiki:889073 Middlesex
+q14 .7 12
+q17 .1 5
+q21 .1 5
+q24 .7 10
+q40 .9 12
+q49 .9 1 The novel starts with a narration by its protagonist, Cal
+q55 .9 2
+@ cmu:enwiki:71416 Dune
+q03 .7 6
+q12 .1 4 spice planet
+q13 .1 4 spice planet
+q14 .1 4 spice planet
+q15 .9 4 spice planet
+@ cmu:enwiki:63750 The Two Towers
+q03 .9 1
+q04 .7 6
+q05 .7 8
+q15 .7 7
+q27 .7 6
+q32 .7 10 the wizard Saruman

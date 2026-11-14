@@ -1,22 +1,23 @@
 {
- "catalog_version": "cmu-priority5-v1",
- "source": "priority_500.jsonl (first 5 records)",
+ "catalog_version": "cmu-priority100-v1",
+ "source": "priority_500.jsonl (first 100 records)",
  "counts": {
-  "imported_source_records": 5,
-  "labelled_with_validated_matrix": 5,
+  "imported_source_records": 100,
+  "labelled_with_validated_matrix": 100,
   "records_with_human_reviewed_cells": 0,
-  "playable_game_targets": 4
+  "playable_game_targets": 23
  },
- "supported_cells_total": 71,
- "supported_cells_per_labelled_book_mean": 14.2,
- "books_meeting_handoff_heuristic_12_supported": 4,
+ "supported_cells_total": 699,
+ "supported_cells_per_labelled_book_mean": 6.99,
+ "books_meeting_handoff_heuristic_12_supported": 15,
  "gate": {
   "min_supported": 6,
   "pairwise_likelihood_ratio": 4.0
  },
  "status_breakdown": {
-  "playable": 4,
-  "not separable from a higher-priority book": 1
+  "playable": 23,
+  "not separable from a higher-priority book": 37,
+  "too few supported cells": 40
  },
  "scope": "Counts of records and labels. Not a measure of factual correctness or of game success.",
  "records": [
@@ -81,6 +82,1241 @@
    ],
    "labelled": true,
    "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 5,
+   "id": "cmu:enwiki:32262844",
+   "title": "The Fault in Our Stars",
+   "authors": [
+    "John Green"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 6,
+   "id": "cmu:enwiki:186258",
+   "title": "The Catcher in the Rye",
+   "authors": [
+    "J. D. Salinger"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 7,
+   "id": "cmu:enwiki:24162",
+   "title": "Pride and Prejudice",
+   "authors": [
+    "Jane Austen"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 8,
+   "id": "cmu:enwiki:23454753",
+   "title": "Nineteen Eighty-Four",
+   "authors": [
+    "George Orwell"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 9,
+   "id": "cmu:enwiki:620",
+   "title": "Animal Farm",
+   "authors": [
+    "George Orwell"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 10,
+   "id": "cmu:enwiki:254498",
+   "title": "Harry Potter and the Prisoner of Azkaban",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 11,
+   "id": "cmu:enwiki:21909903",
+   "title": "Catching Fire",
+   "authors": [
+    "Suzanne Collins"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 12,
+   "id": "cmu:enwiki:1398951",
+   "title": "The Kite Runner",
+   "authors": [
+    "Khaled Hosseini"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+  },
+  {
+   "rank": 13,
+   "id": "cmu:enwiki:14975869",
+   "title": "The Girl with the Dragon Tattoo",
+   "authors": [
+    "Stieg Larsson"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 14,
+   "id": "cmu:enwiki:163234",
+   "title": "Harry Potter and the Chamber of Secrets",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 15,
+   "id": "cmu:enwiki:259128",
+   "title": "Harry Potter and the Goblet of Fire",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 16,
+   "id": "cmu:enwiki:776049",
+   "title": "Harry Potter and the Deathly Hallows",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 9,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 17,
+   "id": "cmu:enwiki:26170677",
+   "title": "Mockingjay",
+   "authors": [
+    "Suzanne Collins"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 18,
+   "id": "cmu:enwiki:2270723",
+   "title": "Harry Potter and the Half-Blood Prince",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 19,
+   "id": "cmu:enwiki:31584",
+   "title": "Lord of the Flies",
+   "authors": [
+    "William Golding"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 20,
+   "id": "cmu:enwiki:242130",
+   "title": "The Lion, the Witch and the Wardrobe",
+   "authors": [
+    "C. S. Lewis"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+  },
+  {
+   "rank": 21,
+   "id": "cmu:enwiki:24756137",
+   "title": "The Help",
+   "authors": [
+    "Kathryn Stockett"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Animal Farm' (cmu:enwiki:620)"
+  },
+  {
+   "rank": 22,
+   "id": "cmu:enwiki:62120",
+   "title": "Of Mice and Men",
+   "authors": [
+    "John Steinbeck"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 23,
+   "id": "cmu:enwiki:5043452",
+   "title": "The Da Vinci Code",
+   "authors": [
+    "Dan Brown"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 24,
+   "id": "cmu:enwiki:6111753",
+   "title": "The Lightning Thief",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 25,
+   "id": "cmu:enwiki:713577",
+   "title": "A Game of Thrones",
+   "authors": [
+    "George R. R. Martin"
+   ],
+   "labelled": true,
+   "supported_cells": 4,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 4 supported cells (minimum 6)"
+  },
+  {
+   "rank": 26,
+   "id": "cmu:enwiki:901398",
+   "title": "Memoirs of a Geisha",
+   "authors": [
+    "Arthur Golden"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 27,
+   "id": "cmu:enwiki:199932",
+   "title": "The Giver",
+   "authors": [
+    "Lois Lowry"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 28,
+   "id": "cmu:enwiki:8595912",
+   "title": "Little Women",
+   "authors": [
+    "Louisa May Alcott"
+   ],
+   "labelled": true,
+   "supported_cells": 0,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 0 supported cells (minimum 6)"
+  },
+  {
+   "rank": 29,
+   "id": "cmu:enwiki:55438",
+   "title": "Jane Eyre",
+   "authors": [
+    "Charlotte Brontë"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 30,
+   "id": "cmu:enwiki:18384765",
+   "title": "City of Bones",
+   "authors": [
+    "Cassandra Clare"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 31,
+   "id": "cmu:enwiki:6997883",
+   "title": "New Moon",
+   "authors": [
+    "Stephenie Meyer"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+  },
+  {
+   "rank": 32,
+   "id": "cmu:enwiki:8497022",
+   "title": "Eclipse",
+   "authors": [
+    "Stephenie Meyer"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+  },
+  {
+   "rank": 33,
+   "id": "cmu:enwiki:606612",
+   "title": "Eragon",
+   "authors": [
+    "Christopher Paolini"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Harry Potter and the Deathly Hallows' (cmu:enwiki:776049)"
+  },
+  {
+   "rank": 34,
+   "id": "cmu:enwiki:20776698",
+   "title": "Breaking Dawn",
+   "authors": [
+    "Stephenie Meyer"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+  },
+  {
+   "rank": 35,
+   "id": "cmu:enwiki:10392345",
+   "title": "Water for Elephants",
+   "authors": [
+    "Sara Gruen"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+  },
+  {
+   "rank": 36,
+   "id": "cmu:enwiki:302301",
+   "title": "Charlotte's Web",
+   "authors": [
+    "E. B. White"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 37,
+   "id": "cmu:enwiki:714218",
+   "title": "The Notebook",
+   "authors": [
+    "Nicholas Sparks"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+  },
+  {
+   "rank": 38,
+   "id": "cmu:enwiki:36681",
+   "title": "Brave New World",
+   "authors": [
+    "Aldous Huxley"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Nineteen Eighty-Four' (cmu:enwiki:23454753)"
+  },
+  {
+   "rank": 39,
+   "id": "cmu:enwiki:419078",
+   "title": "Life of Pi",
+   "authors": [
+    "Yann Martel"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 40,
+   "id": "cmu:enwiki:571011",
+   "title": "Northern Lights",
+   "authors": [
+    "Philip Pullman"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 41,
+   "id": "cmu:enwiki:478921",
+   "title": "The Hitchhiker's Guide to the Galaxy",
+   "authors": [
+    "Douglas Adams"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 42,
+   "id": "cmu:enwiki:2224493",
+   "title": "The Secret Life of Bees",
+   "authors": [
+    "Sue Monk Kidd"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 43,
+   "id": "cmu:enwiki:55435",
+   "title": "Wuthering Heights",
+   "authors": [
+    "Emily Brontë"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 44,
+   "id": "cmu:enwiki:2162569",
+   "title": "The Perks of Being a Wallflower",
+   "authors": [
+    "Stephen Chbosky"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 45,
+   "id": "cmu:enwiki:12995",
+   "title": "Gone with the Wind",
+   "authors": [
+    "Margaret Mitchell"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 46,
+   "id": "cmu:enwiki:890626",
+   "title": "The Curious Incident of the Dog in the Night-time",
+   "authors": [
+    "Mark Haddon"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 47,
+   "id": "cmu:enwiki:2449650",
+   "title": "My Sister's Keeper",
+   "authors": [
+    "Jodi Picoult"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Girl with the Dragon Tattoo' (cmu:enwiki:14975869)"
+  },
+  {
+   "rank": 48,
+   "id": "cmu:enwiki:10433866",
+   "title": "A Thousand Splendid Suns",
+   "authors": [
+    "Khaled Hosseini"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+  },
+  {
+   "rank": 49,
+   "id": "cmu:enwiki:29999",
+   "title": "The Shining",
+   "authors": [
+    "Stephen King"
+   ],
+   "labelled": true,
+   "supported_cells": 16,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 50,
+   "id": "cmu:enwiki:13116455",
+   "title": "The Host",
+   "authors": [
+    "Stephenie Meyer"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 51,
+   "id": "cmu:enwiki:959366",
+   "title": "Holes",
+   "authors": [
+    "Louis Sachar"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 52,
+   "id": "cmu:enwiki:2029175",
+   "title": "The Time Traveler's Wife",
+   "authors": [
+    "Audrey Niffenegger"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 53,
+   "id": "cmu:enwiki:27490",
+   "title": "Sense and Sensibility",
+   "authors": [
+    "Jane Austen"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 54,
+   "id": "cmu:enwiki:25491508",
+   "title": "The Maze Runner",
+   "authors": [
+    "James Dashner"
+   ],
+   "labelled": true,
+   "supported_cells": 4,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 4 supported cells (minimum 6)"
+  },
+  {
+   "rank": 55,
+   "id": "cmu:enwiki:1937988",
+   "title": "The Devil Wears Prada",
+   "authors": [
+    "Lauren Weisberger"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+  },
+  {
+   "rank": 56,
+   "id": "cmu:enwiki:562456",
+   "title": "The Outsiders",
+   "authors": [
+    "S. E. Hinton"
+   ],
+   "labelled": true,
+   "supported_cells": 2,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 2 supported cells (minimum 6)"
+  },
+  {
+   "rank": 57,
+   "id": "cmu:enwiki:410873",
+   "title": "The Secret Garden",
+   "authors": [
+    "Frances Hodgson Burnett"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+  },
+  {
+   "rank": 58,
+   "id": "cmu:enwiki:3433040",
+   "title": "A Tale of Two Cities",
+   "authors": [
+    "Charles Dickens"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 59,
+   "id": "cmu:enwiki:3681524",
+   "title": "The Princess Bride",
+   "authors": [
+    "William Goldman"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 60,
+   "id": "cmu:enwiki:7923",
+   "title": "Dracula",
+   "authors": [
+    "Bram Stoker"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+  },
+  {
+   "rank": 61,
+   "id": "cmu:enwiki:562222",
+   "title": "A Wrinkle in Time",
+   "authors": [
+    "Madeleine L'Engle"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 62,
+   "id": "cmu:enwiki:34269647",
+   "title": "Miss Peregrine's Home for Peculiar Children",
+   "authors": [
+    "Ransom Riggs"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 63,
+   "id": "cmu:enwiki:165026",
+   "title": "The Handmaid's Tale",
+   "authors": [
+    "Margaret Atwood"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 64,
+   "id": "cmu:enwiki:22216108",
+   "title": "City of Glass",
+   "authors": [
+    "Cassandra Clare"
+   ],
+   "labelled": true,
+   "supported_cells": 4,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 4 supported cells (minimum 6)"
+  },
+  {
+   "rank": 65,
+   "id": "cmu:enwiki:31342",
+   "title": "The Picture of Dorian Gray",
+   "authors": [
+    "Oscar Wilde"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 66,
+   "id": "cmu:enwiki:10951",
+   "title": "Fahrenheit 451",
+   "authors": [
+    "Ray Bradbury"
+   ],
+   "labelled": true,
+   "supported_cells": 1,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 1 supported cells (minimum 6)"
+  },
+  {
+   "rank": 67,
+   "id": "cmu:enwiki:20584690",
+   "title": "The Girl Who Played with Fire",
+   "authors": [
+    "Stieg Larsson"
+   ],
+   "labelled": true,
+   "supported_cells": 4,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 4 supported cells (minimum 6)"
+  },
+  {
+   "rank": 68,
+   "id": "cmu:enwiki:55469",
+   "title": "Catch-22",
+   "authors": [
+    "Joseph Heller"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+  },
+  {
+   "rank": 69,
+   "id": "cmu:enwiki:19918431",
+   "title": "A Walk to Remember",
+   "authors": [
+    "Nicholas Sparks"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+  },
+  {
+   "rank": 70,
+   "id": "cmu:enwiki:878757",
+   "title": "The Poisonwood Bible",
+   "authors": [
+    "Barbara Kingsolver"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Animal Farm' (cmu:enwiki:620)"
+  },
+  {
+   "rank": 71,
+   "id": "cmu:enwiki:21811766",
+   "title": "City of Ashes",
+   "authors": [
+    "Cassandra Clare"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 72,
+   "id": "cmu:enwiki:1599634",
+   "title": "The Sisterhood of the Traveling Pants",
+   "authors": [
+    "Ann Brashares"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 73,
+   "id": "cmu:enwiki:161502",
+   "title": "The Old Man and the Sea",
+   "authors": [
+    "Ernest Hemingway"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 74,
+   "id": "cmu:enwiki:3012644",
+   "title": "Outlander",
+   "authors": [
+    "Diana Gabaldon"
+   ],
+   "labelled": true,
+   "supported_cells": 2,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 2 supported cells (minimum 6)"
+  },
+  {
+   "rank": 75,
+   "id": "cmu:enwiki:699430",
+   "title": "The Joy Luck Club",
+   "authors": [
+    "Amy Tan"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Secret Life of Bees' (cmu:enwiki:2224493)"
+  },
+  {
+   "rank": 76,
+   "id": "cmu:enwiki:7906594",
+   "title": "The Sea of Monsters",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 77,
+   "id": "cmu:enwiki:61489",
+   "title": "Les Misérables",
+   "authors": [
+    "Victor Hugo"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Gone with the Wind' (cmu:enwiki:12995)"
+  },
+  {
+   "rank": 78,
+   "id": "cmu:enwiki:28755850",
+   "title": "Room",
+   "authors": [
+    "Emma Donoghue"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 79,
+   "id": "cmu:enwiki:15011992",
+   "title": "The Battle of the Labyrinth",
+   "authors": [
+    "Rick Riordan"
+   ],
+   "labelled": true,
+   "supported_cells": 4,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 4 supported cells (minimum 6)"
+  },
+  {
+   "rank": 80,
+   "id": "cmu:enwiki:1240426",
+   "title": "Wicked: The Life and Times of the Wicked Witch of the West",
+   "authors": [
+    "Gregory Maguire"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 81,
+   "id": "cmu:enwiki:7402039",
+   "title": "The Road",
+   "authors": [
+    "Cormac McCarthy"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Harry Potter and the Deathly Hallows' (cmu:enwiki:776049)"
+  },
+  {
+   "rank": 82,
+   "id": "cmu:enwiki:28411923",
+   "title": "If I Stay",
+   "authors": [
+    "Gayle Forman"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 83,
+   "id": "cmu:enwiki:7911644",
+   "title": "The Memory Keeper's Daughter",
+   "authors": [
+    "Kim Edwards"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Catcher in the Rye' (cmu:enwiki:186258)"
+  },
+  {
+   "rank": 84,
+   "id": "cmu:enwiki:2531453",
+   "title": "One Flew Over the Cuckoo's Nest",
+   "authors": [
+    "Ken Kesey"
+   ],
+   "labelled": true,
+   "supported_cells": 4,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 4 supported cells (minimum 6)"
+  },
+  {
+   "rank": 85,
+   "id": "cmu:enwiki:31879966",
+   "title": "Clockwork Angel",
+   "authors": [
+    "Cassandra Clare"
+   ],
+   "labelled": true,
+   "supported_cells": 12,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+  },
+  {
+   "rank": 86,
+   "id": "cmu:enwiki:654705",
+   "title": "One Hundred Years of Solitude",
+   "authors": [
+    "Gabriel García Márquez"
+   ],
+   "labelled": true,
+   "supported_cells": 2,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 2 supported cells (minimum 6)"
+  },
+  {
+   "rank": 87,
+   "id": "cmu:enwiki:889073",
+   "title": "Middlesex",
+   "authors": [
+    "Jeffrey Eugenides"
+   ],
+   "labelled": true,
+   "supported_cells": 7,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Great Gatsby' (cmu:enwiki:76033)"
+  },
+  {
+   "rank": 88,
+   "id": "cmu:enwiki:71416",
+   "title": "Dune",
+   "authors": [
+    "Frank Herbert"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 89,
+   "id": "cmu:enwiki:63750",
+   "title": "The Two Towers",
+   "authors": [
+    "J. R. R. Tolkien"
+   ],
+   "labelled": true,
+   "supported_cells": 6,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book \"Harry Potter and the Philosopher's Stone\" (cmu:enwiki:48648)"
+  },
+  {
+   "rank": 90,
+   "id": "cmu:enwiki:713625",
+   "title": "A Storm of Swords",
+   "authors": [
+    "George R. R. Martin"
+   ],
+   "labelled": true,
+   "supported_cells": 8,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 91,
+   "id": "cmu:enwiki:2133642",
+   "title": "Divine Secrets of the Ya-Ya Sisterhood",
+   "authors": [
+    "Rebecca Wells"
+   ],
+   "labelled": true,
+   "supported_cells": 3,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 3 supported cells (minimum 6)"
+  },
+  {
+   "rank": 92,
+   "id": "cmu:enwiki:23869776",
+   "title": "Thirteen Reasons Why",
+   "authors": [
+    "Jay Asher"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 93,
+   "id": "cmu:enwiki:1194427",
+   "title": "The Pillars of the Earth",
+   "authors": [
+    "Ken Follett"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 94,
+   "id": "cmu:enwiki:18451040",
+   "title": "Paper Towns",
+   "authors": [
+    "John Green"
+   ],
+   "labelled": true,
+   "supported_cells": 9,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 95,
+   "id": "cmu:enwiki:1022221",
+   "title": "Deception Point",
+   "authors": [
+    "Dan Brown"
+   ],
+   "labelled": true,
+   "supported_cells": 1,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 1 supported cells (minimum 6)"
+  },
+  {
+   "rank": 96,
+   "id": "cmu:enwiki:57766",
+   "title": "Charlie and the Chocolate Factory",
+   "authors": [
+    "Roald Dahl"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 97,
+   "id": "cmu:enwiki:1196343",
+   "title": "The Five People You Meet in Heaven",
+   "authors": [
+    "Mitch Albom"
+   ],
+   "labelled": true,
+   "supported_cells": 5,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "only 5 supported cells (minimum 6)"
+  },
+  {
+   "rank": 98,
+   "id": "cmu:enwiki:6324034",
+   "title": "Uglies",
+   "authors": [
+    "Scott Westerfeld"
+   ],
+   "labelled": true,
+   "supported_cells": 9,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'The Hunger Games' (cmu:enwiki:20128213)"
+  },
+  {
+   "rank": 99,
+   "id": "cmu:enwiki:5326809",
+   "title": "Jurassic Park",
+   "authors": [
+    "Michael Crichton"
+   ],
+   "labelled": true,
+   "supported_cells": 11,
    "reviewed_cells": 0,
    "playable": true,
    "reason": null

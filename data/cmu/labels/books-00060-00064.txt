@@ -1,0 +1,36 @@
+@ cmu:enwiki:7923 Dracula
+q03 .9 4 Jonathan Harker, a newly qualified English solicitor
+q04 .7 2
+q13 .7 11
+q37 .7 6
+q50 .7 2
+q51 .9 1
+@ cmu:enwiki:562222 A Wrinkle in Time
+q01 .7 3
+q02 .9 3
+q06 .9 3
+@ cmu:enwiki:34269647 Miss Peregrine's Home for Peculiar Children
+q01 .9 1
+q03 .9 1
+q08 .7 2
+q13 .7 1
+q33 .7 3
+@ cmu:enwiki:165026 The Handmaid's Tale
+q02 .9 7
+q12 .1 1
+q13 .1 1
+q14 ?
+q17 .1 1
+q18 .1 1
+q19 .1 1
+q20 .1 1
+q21 .9 1
+q23 .7 2 theocratic-organized military coup
+q44 .7 8
+q49 .9 9
+q50 .3 9
+@ cmu:enwiki:22216108 City of Glass
+q02 .9 10
+q03 .7 1
+q26 .7 9
+q32 .7 12

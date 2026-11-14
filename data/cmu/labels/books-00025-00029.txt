@@ -1,0 +1,23 @@
+@ cmu:enwiki:713577 A Game of Thrones
+q03 .9 2
+q04 .9 1
+q15 .7 2
+q25 .7 7
+@ cmu:enwiki:901398 Memoirs of a Geisha
+q01 .9 1 At the age of nine, Chiyo Sakamoto is taken from her poverty-stricken fishing village
+q02 .9 1 At the age of nine, Chiyo Sakamoto is taken from her poverty-stricken fishing village
+q10 .7 1 the most prominent geisha district in Kyoto
+q15 .1 1 the most prominent geisha district in Kyoto
+q38 .7 3
+q44 .7 6
+@ cmu:enwiki:199932 The Giver
+q01 .9 1 a twelve-year-old boy named Jonas
+q03 .9 1 a twelve-year-old boy named Jonas
+q21 .7 2 before the start of the strict system through which the world is now run
+@ cmu:enwiki:8595912 Little Women
+@ cmu:enwiki:55438 Jane Eyre
+q01 .7 1
+q02 .9 1
+q06 .7 8
+q09 .7 20
+q29 .7 5

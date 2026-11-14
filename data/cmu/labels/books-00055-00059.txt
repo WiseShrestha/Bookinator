@@ -1,0 +1,31 @@
+@ cmu:enwiki:1937988 The Devil Wears Prada
+q01 .1 1
+q02 .9 1
+q06 .3 1
+q10 .9 1
+q14 .9 1
+q15 .1 1
+q38 .9 3
+@ cmu:enwiki:562456 The Outsiders
+q03 .9 2
+q29 .7 7
+@ cmu:enwiki:410873 The Secret Garden
+q01 .9 1
+q02 .9 1
+q11 .7 7 the vast stretch of moor
+q13 .9 6
+q40 .7 6
+q46 .7 8
+@ cmu:enwiki:3433040 A Tale of Two Cities
+q02 .7 2
+q03 .7 9 Darnay is on trial for treason at the Old Bailey
+q10 .7 2
+q13 .7 9 Darnay is on trial for treason at the Old Bailey
+q24 ?
+q30 .7 3 a clandestine band of revolutionaries
+@ cmu:enwiki:3681524 The Princess Bride
+q02 .9 1
+q03 .7 2
+q11 .7 1
+q15 .7 1
+q26 .9 4

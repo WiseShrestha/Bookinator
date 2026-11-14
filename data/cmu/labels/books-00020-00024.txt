@@ -1,0 +1,51 @@
+@ cmu:enwiki:242130 The Lion, the Witch and the Wardrobe
+q01 .9 3
+q02 .9 4
+q03 .7 8 Her older brother Edmund enters the wardrobe
+q04 .7 12
+q15 .7 3
+q24 ?
+q32 .9 3
+q36 .7 16
+@ cmu:enwiki:24756137 The Help
+q02 .9 1
+q04 .9 8
+q12 .1 1
+q13 .1 1
+q14 .9 1
+q15 .1 1
+q17 .1 1
+q18 .1 1
+q19 .9 1
+q20 .1 1
+q21 .1 1
+q44 .9 2
+q49 .9 1
+q50 .9 1
+@ cmu:enwiki:62120 Of Mice and Men
+q03 .9 1 George Milton, an intelligent but uneducated man
+q11 .7 8 At the ranch
+q12 .1 1 Two migrant field workers in California
+q13 .1 1 Two migrant field workers in California
+q14 .9 1 Two migrant field workers in California
+q15 .1 1 Two migrant field workers in California
+q17 .1 1 during the Great Depression
+q18 .9 1 during the Great Depression
+q19 .1 1 during the Great Depression
+q20 .1 1 during the Great Depression
+q21 .1 1 during the Great Depression
+q38 .7 8 At the ranch
+q45 .9 7
+@ cmu:enwiki:5043452 The Da Vinci Code
+q02 .9 6 A police cryptographer, Sophie Neveu
+q03 .9 2
+q07 .7 3
+q10 .7 8 the Paris branch of the Depository Bank of Zurich
+q15 .1 8 the Paris branch of the Depository Bank of Zurich
+q25 .9 3
+@ cmu:enwiki:6111753 The Lightning Thief
+q01 .9 1
+q03 .9 1
+q08 .7 7
+q14 .7 2
+q28 .7 8

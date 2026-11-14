@@ -1,0 +1,58 @@
+@ cmu:enwiki:12995 Gone with the Wind
+q02 .9 8
+q12 .1 1 takes place in the southern United States in the state of Georgia
+q13 .1 1 takes place in the southern United States in the state of Georgia
+q14 .9 1 takes place in the southern United States in the state of Georgia
+q15 .1 1 takes place in the southern United States in the state of Georgia
+q17 .9 1 during the American Civil War (1861–1865)
+q18 .1 1 during the American Civil War (1861–1865)
+q19 .1 1 during the American Civil War (1861–1865)
+q20 .1 1 during the American Civil War (1861–1865)
+q21 .1 1 during the American Civil War (1861–1865)
+q24 .9 1 during the American Civil War (1861–1865)
+q26 .7 8
+@ cmu:enwiki:890626 The Curious Incident of the Dog in the Night-time
+q01 .9 1
+q03 .9 1
+q07 .9 5
+q25 .7 5
+q49 .7 7
+@ cmu:enwiki:2449650 My Sister's Keeper
+q01 .9 5
+q02 .9 3
+q10 .3 1
+q12 .1 1
+q13 .1 1
+q14 .9 1
+q15 .1 1
+q17 .1 1
+q18 .1 1
+q19 .1 1
+q20 .9 1
+q21 .1 1
+q29 .9 9
+q39 .9 2
+@ cmu:enwiki:10433866 A Thousand Splendid Suns
+q02 .9 2
+q10 .7 12
+q15 .1 14
+q24 .7 14
+q29 .7 12
+q50 .9 2
+@ cmu:enwiki:29999 The Shining
+q01 .7 6 their five-year-old son, Danny
+q03 .9 1 In 1976, Jack Torrance is an aspiring writer
+q08 .9 6 who has telepathic abilities unknown to his parents
+q10 .1 4
+q14 .9 4
+q15 .1 4
+q17 .1 1 In 1976, Jack Torrance is an aspiring writer
+q18 .1 1 In 1976, Jack Torrance is an aspiring writer
+q19 .9 1 In 1976, Jack Torrance is an aspiring writer
+q20 .1 1 In 1976, Jack Torrance is an aspiring writer
+q21 .1 1 In 1976, Jack Torrance is an aspiring writer
+q29 .7 2
+q35 .9 12
+q38 .7 4
+q41 .7 12
+q46 .7 4

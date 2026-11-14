@@ -1,0 +1,46 @@
+@ cmu:enwiki:571011 Northern Lights
+q01 .9 3 a 12-year-old girl
+q02 .9 3 a 12-year-old girl
+q13 .7 8 kidnapping children throughout England
+q15 .7 1
+q36 .7 2
+@ cmu:enwiki:478921 The Hitchhiker's Guide to the Galaxy
+q03 .9 2
+q23 ?
+q27 .7 8
+q34 .9 5
+@ cmu:enwiki:2224493 The Secret Life of Bees
+q01 .9 1
+q02 .9 1
+q12 .1 1
+q13 .1 1
+q14 .9 1
+q15 .1 1
+q17 .1 1
+q18 .1 1
+q19 .9 1
+q20 .1 1
+q21 .1 1
+q29 .9 2
+q44 .7 10
+q47 .7 8
+@ cmu:enwiki:55435 Wuthering Heights
+q11 .9 4
+q12 .1 2
+q13 .9 2
+q14 .1 2
+q15 .1 2
+q17 .9 1
+q35 ?
+q52 .7 18
+@ cmu:enwiki:2162569 The Perks of Being a Wallflower
+q01 .9 1
+q03 .9 1
+q06 .9 1
+q09 .7 3
+q43 .9 7
+q45 .7 6
+q47 .7 3
+q49 .9 1
+q50 .3 1
+q51 .9 2

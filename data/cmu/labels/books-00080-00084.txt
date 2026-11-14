@@ -1,0 +1,38 @@
+@ cmu:enwiki:1240426 Wicked
+q02 .9 2
+q12 .1 1
+q13 .1 1
+q14 .1 1
+q15 .9 1
+q32 .7 2
+q43 .7 2
+q48 .9 1
+@ cmu:enwiki:7402039 The Road
+q01 .7 1
+q03 .9 1
+q23 .9 1
+q27 .9 1
+q28 .9 7 the constant threats of attack, exposure, and starvation
+q49 .1 5
+@ cmu:enwiki:28411923 If I Stay
+q02 .9 2
+q26 .7 3
+q39 ?
+q52 .9 2
+@ cmu:enwiki:7911644 The Memory Keeper's Daughter
+q02 .7 7
+q03 .7 2
+q14 .9 1
+q15 .1 1
+q17 .1 1
+q18 .1 1
+q19 .9 1
+q20 .1 1
+q21 .1 1
+q29 .9 11 David lies to Norah and tells her that their daughter died at birth
+@ cmu:enwiki:2531453 One Flew Over the Cuckoo's Nest
+q03 .9 1 the rebellious Randle Patrick McMurphy
+q30 .9 4
+q37 .9 2
+q39 ?
+q49 .9 1 The story, narrated by the gigantic but docile half-Native American inmate
