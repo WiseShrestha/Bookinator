@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "That Book \u2014 remember the story, forget the title. Local Bayesian book-guessing game for the 2026 IST-Tech IT Arena Hackathon.",
+  "description": "That Book — remember the story, forget the title. Local Bayesian book-guessing game for the 2026 IST-Tech IT Arena Hackathon.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.json --noEmit && vite build",
@@ -16,7 +16,10 @@
     "test:py": "node scripts/py.mjs -m unittest discover -s tests -p \"test_*.py\"",
     "simulate:truth": "tsx scripts/simulate.ts --truth data/truth/fixture_supported_truth.json --out reports/simulation_truth.json",
     "proxy": "node server/library-proxy.mjs",
-    "verify": "npm run typecheck && npm test && npm run test:py && npm run validate && vite build"
+    "verify": "npm run typecheck && npm test && npm run test:py && npm run validate && npm run validate:cmu && vite build",
+    "validate:cmu": "node scripts/py.mjs scripts/validate_catalog.py src/data/cmu.catalog.json --bank data/cmu/question_bank_core.json --max-warnings 3",
+    "catalog:research": "node scripts/py.mjs scripts/merge_research.py && node scripts/py.mjs scripts/build_cmu_catalog.py --limit 500 --gate none && tsx scripts/gate_catalog.ts",
+    "dev:cmu": "vite --mode cmu"
   },
   "dependencies": {
     "react": "^19.0.0",
