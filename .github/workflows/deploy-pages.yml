@@ -1,18 +1,26 @@
-# Manual: publish dist/ to GitHub Pages (enable Pages → "GitHub Actions" in repo settings first).
-# The resulting URL is what to put in the demo QR code.
+# Builds the site and publishes dist/ to the gh-pages branch, which GitHub Pages serves at
+# https://wiseshrestha.github.io/Bookinator/ (Pages source: "Deploy from a branch", gh-pages / root).
+# Runs on every push to main and on demand. The QR code for the demo should point at that URL.
 name: deploy-pages
-on: workflow_dispatch
-permissions: { contents: read, pages: write, id-token: write }
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+permissions: { contents: write }
+concurrency: { group: pages, cancel-in-progress: true }
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: { name: github-pages, url: "${{ steps.d.outputs.page_url }}" }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm install --no-audit --no-fund && npm run build
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: dist }
-      - id: d
-        uses: actions/deploy-pages@v4
+      - name: Publish dist/ to gh-pages
+        run: |
+          cd dist
+          touch .nojekyll
+          git init -q -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -qm "Deploy ${GITHUB_SHA::7} to GitHub Pages"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" gh-pages

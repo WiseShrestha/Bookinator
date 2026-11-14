@@ -99,4 +99,4 @@ a person**, not lower thresholds. Every book's status and reason is in `data/cmu
 - Fixture: 171/589 labels AI-checked against cited sources; 414 unchecked; **no human review**.
 - Research catalog: 500 imported, 17 playable, 0 reviewed. Human review of distinguishing labels is the next lever.
 - LLM labelling and Data4Library proxy were tested only against mock servers; try one real call each.
-- Human playtests, rehearsals, QR code (from the GitHub Pages URL via `deploy-pages.yml`).
+- Human playtests, rehearsals, QR code (live site: https://wiseshrestha.github.io/Bookinator/, redeployed on every push to main).

@@ -29,7 +29,7 @@ npm run proxy          # optional Data4Library proxy (needs DATA4LIBRARY_AUTH_KE
 npm run build          # production build into dist/ (static; works offline after load)
 ```
 
-Requires Node 20+ and Python 3.10+. **CI** (`.github/workflows/ci.yml`) runs `npm install && npm run verify` on every push. **Deploy** (`deploy-pages.yml`, manual) publishes `dist/` to GitHub Pages; use that URL for the demo QR code.
+Requires Node 20+ and Python 3.10+. **CI** (`.github/workflows/ci.yml`) runs `npm install && npm run verify` on every push. **Deploy** (`deploy-pages.yml`) rebuilds the site on every push to `main` and publishes it to the `gh-pages` branch: **https://wiseshrestha.github.io/Bookinator/** (use this URL for the demo QR code).
 
 A ready-made **offline single-file build** and a **labelled backup recording** are shipped alongside the zip.
 
