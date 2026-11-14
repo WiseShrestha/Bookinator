@@ -410,3 +410,8 @@ textarea:disabled, input:disabled { opacity: .7; }
 @media (prefers-reduced-motion: no-preference) {
   .btn, .answer, .tile, .chip { transition: background-color .15s, border-color .15s, color .15s; }
 }
+
+/* series targets: volume list on the proposal */
+.volumes { list-style: decimal; padding-left: 22px; columns: 2 220px; column-gap: 32px; font-size: 16px; line-height: 1.7; }
+.volumes li { break-inside: avoid; }
+[hidden] { display: none !important; }

@@ -31,7 +31,9 @@ export type FeatureStatus =
   | "insufficient_evidence"
   | "unreviewed_fixture"
   /** Accepted by a reviewer from aggregated reader answers (src/community/consensus.ts). */
-  | "community_consensus";
+  | "community_consensus"
+  /** An AI assistant's general knowledge of the book; no source. Never shown as source-checked. */
+  | "ai_recall";
 
 export const ALLOWED_P_YES = [0.1, 0.3, 0.5, 0.7, 0.9] as const;
 
@@ -64,6 +66,8 @@ export interface CatalogBook {
   openlibrary_work_id: string | null;
   editions: CatalogEdition[];
   sources: CatalogSource[];
+  /** Set on a SERIES target: the reader confirms the series, then picks the volume from this list. */
+  volumes?: { id: string; title: string; number: number | null }[];
 }
 
 export interface CatalogQuestion {
@@ -111,6 +115,8 @@ export interface Catalog {
     labelled_with_validated_matrix: number;
     records_with_human_reviewed_cells: number;
     playable_game_targets: number;
+    /** Titles the reader can reach: one per single-book target plus every volume of a series target. */
+    titles_reachable?: number;
   };
   books: CatalogBook[];
   questions: CatalogQuestion[];

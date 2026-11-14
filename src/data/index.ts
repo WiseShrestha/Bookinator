@@ -1,8 +1,8 @@
 // The single place that decides which catalog the app plays.
 //
-//   classic (default)  the 10-book DEVELOPMENT FIXTURE (labels from general knowledge, partly source-checked)
-//   research           the machine-labelled CMU/research catalog built by `npm run catalog:research`
-//                      (only the books that pass the engine gate; see data/cmu/coverage_report.json)
+//   research (default) the machine-labelled CMU/research catalog built by `npm run catalog:research`
+//                      (only the targets that pass the engine gate; see data/cmu/coverage_report.json)
+//   classic            the 10-book DEVELOPMENT FIXTURE (labels from general knowledge, partly source-checked)
 //
 // Which one: see ./collection.ts. The start screen links between the two. The UI shows a warning banner
 // for anything not "production". With VITE_CATALOG_SOURCE=supabase, main.tsx may replace the active
@@ -15,15 +15,15 @@ import fixture from "./fixture.catalog.json";
 export type { CollectionId } from "./collection.ts";
 
 export const COLLECTIONS: Record<CollectionId, { catalog: Catalog; label: string; blurb: string }> = {
-  classic: {
-    catalog: fixture as unknown as Catalog,
-    label: "Classic shelf",
-    blurb: "10 well-labelled books · best play",
-  },
   research: {
     catalog: cmu as unknown as Catalog,
     label: "Research shelf",
-    blurb: `${(cmu as unknown as Catalog).books.length} books · machine-labelled, unreviewed`,
+    blurb: `${(cmu as unknown as Catalog).coverage?.titles_reachable ?? (cmu as unknown as Catalog).books.length} books · machine-labelled, unreviewed`,
+  },
+  classic: {
+    catalog: fixture as unknown as Catalog,
+    label: "Classic shelf",
+    blurb: "10 well-labelled books · most reliable play",
   },
 };
 

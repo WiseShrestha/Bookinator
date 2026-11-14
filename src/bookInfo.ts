@@ -67,8 +67,23 @@ export function trimBlurb(raw: string, max = 420): string | null {
 
 const WIKI_CURID = /^https:\/\/en\.wikipedia\.org\/\?curid=(\d+)$/;
 
+/** Books a reader can reach: every single-book target plus every volume of a series target. */
+export function titleCount(catalog: { books: unknown[]; coverage?: { titles_reachable?: number } }): number {
+  return catalog.coverage?.titles_reachable ?? catalog.books.length;
+}
+
+/** A series target's volume as a displayable book: its own title and, when the id names it, its own source. */
+export function volumeBook(series: CatalogBook, v: NonNullable<CatalogBook["volumes"]>[number]): CatalogBook {
+  const pageId = /^cmu:enwiki:(\d+)$/.exec(v.id)?.[1];
+  const own = pageId ? series.sources.filter((s) => s.url === `https://en.wikipedia.org/?curid=${pageId}`) : [];
+  return { ...series, id: v.id, title_en: v.title, title_ko: null, aliases: [], volumes: undefined, series_id: series.id, series_number: v.number,
+    openlibrary_work_id: null, editions: [], sources: own.length ? own : series.sources };
+}
+
 export function fetchBlurb(book: CatalogBook): Promise<BookBlurb | null> {
   return once(`blurb:${book.id}`, async () => {
+    if (book.volumes) return null; // a series target has no single description
+
     const wiki = book.sources.map((s) => WIKI_CURID.exec(s.url)).find(Boolean);
     if (wiki) {
       const id = wiki[1];

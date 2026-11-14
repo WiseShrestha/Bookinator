@@ -2,7 +2,7 @@
 // guess), 04 Similar Books. 05 Not Found lives in Contribute.tsx. The engine decides everything; these
 // components only show its state.
 import { useState, type RefObject } from "react";
-import { fetchBlurb, fetchImage, fetchLibraryPopular, fetchPopular, type LibraryLoan, type PopularBook } from "../bookInfo.ts";
+import { fetchBlurb, fetchImage, fetchLibraryPopular, fetchPopular, titleCount, volumeBook, type LibraryLoan, type PopularBook } from "../bookInfo.ts";
 import { ACTIVE_COLLECTION, COLLECTIONS, collectionHref, type CollectionId } from "../data/index.ts";
 import { matchingClues, type MatchingClue } from "../engine/explain.ts";
 import { catalogLinks } from "../engine/links.ts";
@@ -151,7 +151,7 @@ export function HomeScreen({ headingRef, onStart, t, L, lang }: { headingRef: He
               <nav className="shelf-switch" aria-label={t.collectionsLabel}>
                 {(Object.keys(COLLECTIONS) as CollectionId[]).map((id) => (
                   <a key={id} href={collectionHref(id)} className="chip" aria-current={id === ACTIVE_COLLECTION ? "page" : undefined}>
-                    {shelfName[id]} · {t.booksCount(COLLECTIONS[id].catalog.books.length)}
+                    {shelfName[id]} · {t.booksCount(titleCount(COLLECTIONS[id].catalog))}
                   </a>
                 ))}
               </nav>
@@ -208,10 +208,10 @@ export function HomeScreen({ headingRef, onStart, t, L, lang }: { headingRef: He
           ))}
         </div>
         <details className="shelf-list">
-          <summary>{t.seeShelf(books.length)}</summary>
+          <summary>{t.seeShelf(titleCount(CC.catalog))}</summary>
           <ul>
             {books.map((b) => (
-              <li key={b.id}><b>{bookTitles(b, lang).main}</b> <span>{b.author}</span></li>
+              <li key={b.id}><b>{bookTitles(b, lang).main}</b> <span>{b.author}{b.volumes ? ` · ${t.booksCount(b.volumes.length)}` : ""}</span></li>
             ))}
           </ul>
         </details>
@@ -282,7 +282,7 @@ export function QuestionScreen(props: Common & { action: ActionOf<"ask">; onAnsw
             <p className="card-label">{L.progress}</p>
             <p className="progress-count" aria-label={t.questionOf(n, max)}><b>{L.questionN(n)}</b> <span>{L.upTo(max)}</span></p>
             <div className="progress-bar" aria-hidden="true"><span style={{ width: `${Math.min(100, (n / max) * 100)}%` }} /></div>
-            <p className="progress-note">{L.shelfSize(CC.books.length)}</p>
+            <p className="progress-note">{L.shelfSize(titleCount(CC.catalog))}</p>
           </div>
           <AnswerHistory state={state} t={t} L={L} lang={lang} />
         </aside>
@@ -331,7 +331,7 @@ export function QuestionScreen(props: Common & { action: ActionOf<"ask">; onAnsw
 
 // ---------------------------------------------------------------- 03 · Result — Book Found
 
-function ClueProvenance({ bookIndex, feature, t }: { bookIndex: number; feature: MatchingClue["feature"]; t: Strings }) {
+function ClueProvenance({ bookIndex, feature, t, L }: { bookIndex: number; feature: MatchingClue["feature"]; t: Strings; L: LibraryStrings }) {
   if (feature?.status === "supported" && feature.source_ids.length) {
     const src = CC.books[bookIndex].sources.find((x) => x.id === feature.source_ids[0]);
     if (src) {
@@ -350,6 +350,7 @@ function ClueProvenance({ bookIndex, feature, t }: { bookIndex: number; feature:
     }
   }
   if (feature?.status === "community_consensus" && feature.consensus) return <small>{t.fromReaders(feature.consensus.contributors)}</small>;
+  if (feature?.status === "ai_recall") return <small>{L.aiRecall}</small>;
   return <small>{t.unchecked}</small>;
 }
 
@@ -365,7 +366,7 @@ function Clues({ bookIndex, state, t, L, lang }: { bookIndex: number; state: Ses
             <Icon name="checkClue" />
             <span className="clue-q">
               {questionText(CC.questions[CC.questionIndex.get(c.questionId)!], lang)}
-              <ClueProvenance bookIndex={bookIndex} feature={c.feature} t={t} />
+              <ClueProvenance bookIndex={bookIndex} feature={c.feature} t={t} L={L} />
             </span>
             <b>{ANSWER_TEXT[lang][c.userAnswer]}</b>
           </li>
@@ -380,12 +381,39 @@ type BookScreenProps = Common &
 
 export function BookScreen(props: BookScreenProps) {
   const { action, headingRef, state, session, t, L, lang } = props;
-  const book = action.book;
+  // Series target: the engine finds the series; after the reader confirms it, they pick the volume.
+  const [volume, setVolume] = useState<CatalogBook | null>(null);
+  const series = action.book.volumes ? action.book : null;
+  const book = volume ?? action.book;
   const guess = action.kind === "guess" ? (props as Extract<BookScreenProps, { onAccept: () => void }>) : null;
   const { main, alt } = bookTitles(book, lang);
   const blurb = useLoaded(() => fetchBlurb(book), book.id);
   const photo = useLoaded(() => fetchImage(book), book.id);
   const links = catalogLinks(book, LINK_OPTIONS);
+  if (series && !guess && !volume) {
+    return (
+      <>
+        <section className="intro">
+          <p className="eyebrow">{series.title_en}</p>
+          <h1 ref={headingRef} tabIndex={-1}>{L.seriesFoundTitle}</h1>
+          <p className="lead-sm">{L.seriesFoundLead(series.volumes!.length)}</p>
+        </section>
+        <section className="card-grid similar-grid">
+          {series.volumes!.map((v) => {
+            const vb = volumeBook(series, v);
+            return <SimilarCard key={v.id} book={vb} lang={lang} L={L} onPick={() => setVolume(vb)} />;
+          })}
+        </section>
+        <section className="still">
+          <div><h2>{L.stillTitle}</h2></div>
+          <div className="still-actions">
+            <Button variant="secondary" arrow={false} onClick={props.onUndo}>{t.undo}</Button>
+            <Button onClick={props.onRestart}>{t.anotherBook}</Button>
+          </div>
+        </section>
+      </>
+    );
+  }
   return (
     <>
       <section className="banner">
@@ -393,10 +421,10 @@ export function BookScreen(props: BookScreenProps) {
           <span className="banner-check"><Icon name="checkWhiteLg" size={24} /></span>
           <div>
             <h1 ref={headingRef} tabIndex={-1}>
-              {guess ? (state.rejected.size > 0 ? L.foundBannerAgain : L.foundBanner) : L.confirmedBanner}
+              {guess ? (series ? L.seriesBanner : state.rejected.size > 0 ? L.foundBannerAgain : L.foundBanner) : L.confirmedBanner}
               <span className="sr-only"> {main}</span>
             </h1>
-            <p>{guess ? L.foundSub(state.answers.length, CC.books.length) : t.foundAfter(state.answers.length, action.kind === "found" && action.via === "guess")}</p>
+            <p>{guess ? L.foundSub(state.answers.length, titleCount(CC.catalog)) : t.foundAfter(state.answers.length, action.kind === "found" && action.via === "guess")}</p>
           </div>
         </div>
         <div className="banner-actions">
@@ -431,7 +459,15 @@ export function BookScreen(props: BookScreenProps) {
             <p className="book-title">{main}</p>
             <p className="muted">{[alt, book.author, book.first_publication_year].filter(Boolean).join("  ·  ")}</p>
           </div>
-          <div className="synopsis">
+          {series && !volume && (
+            <div className="synopsis">
+              <h2>{L.seriesVolumes}</h2>
+              <ol className="volumes">
+                {series.volumes!.map((v) => <li key={v.id}>{v.title}</li>)}
+              </ol>
+            </div>
+          )}
+          <div className="synopsis" hidden={Boolean(series && !volume)}>
             <h2>{L.synopsis}</h2>
             {blurb ? (
               <>

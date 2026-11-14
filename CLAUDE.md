@@ -50,7 +50,8 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
   `Contribute.tsx` = Not Found / add-a-book + opt-in answers. Colours only as CSS variables in `src/styles.css`; design wording in
   `src/i18n/library.ts` (ko/en); design sample content only in `src/mock/design.ts`; icons exported from Figma in `src/assets/icons/`.
   `src/bookInfo.ts` = sourced descriptions (Wikipedia page id / Open Library work id), Unsplash photo and popular lists via Edge Functions; `src/i18n/` Korean/English; `src/App.tsx` state + keyboard; `src/game.ts` wiring + env vars.
-- `src/data/index.ts` — chooses the catalog: `?collection=research|classic` in the URL, else `VITE_CATALOG`, else the fixture.
+- `src/data/index.ts` — chooses the catalog: `?collection=research|classic` in the URL, else `VITE_CATALOG`, else the research shelf. Series targets (`volumes`) are
+  guessed as a series; the reader then picks the volume.
 - `server/library-proxy.mjs` — stdlib Node proxy keeping the Data4Library key server-side.
 - `research/chatgpt_source/` — ChatGPT's research code, unchanged; tests via `npm run test:research`.
 - `scripts/` — Python data pipeline (stdlib only) + simulator. `data/` — question bank, curation, evidence, truth set.
@@ -66,11 +67,11 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
 - Don't add accounts, vector databases, online learning or a live LLM chatbot.
 - UI must not show raw posterior percentages as accuracy.
 
-## Research catalog (500 imported records → 27 playable books)
+## Research catalog (500 imported records → 181 targets, 268 titles)
 
-Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/ and
-`?collection=research`). The **10-book fixture** ("Classic shelf") is the default. The **CMU / research catalog**
-("Research shelf") is also selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report imported records as game coverage:
+Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/). The **CMU /
+research catalog** ("Research shelf", 268 titles) is the **default**. The **10-book fixture** ("Classic shelf") is at
+`?collection=classic`, `npm run dev:classic` or `VITE_CATALOG=classic`. Never report imported records as game coverage:
 
 | Measure (14 Nov 2026) | Count |
 | --- | ---: |
@@ -78,7 +79,7 @@ Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.gi
 | Records with a validated question matrix | 500 (7,348 source-linked cells; 468 have ≥12) |
 | Form holds kept out of the novel pool | 8 |
 | Cells reviewed by a person | **0** |
-| **Playable game targets** | **27** (17 with the base 64 questions only) |
+| **Playable game targets** | **181** covering **268** titles (27 before series + AI recall; 17 with the base 64 only) |
 
 Pipeline (`npm run catalog:research`; needs the research and Core packs next to the repo, not committed):
 1. `scripts/merge_research.py`: researched matrix (`core500_researched_labels.json`) merged by stable ID with
@@ -119,10 +120,38 @@ Experiment, **not shipped**: counting "the summary never mentions it" as a weak 
 makes 178 books pass the gate, but clear-memory play falls to 8.6% first guess / 57.1% found. That breaks the
 brief's "missing evidence is unknown, not No" rule and is a product decision, not a default.
 
+### AI-recall labels and series targets (14 Nov 2026, evening)
+
+**AI recall (replaces human review for now).** `data/ai_recall/labels.txt` holds an AI assistant's answers from
+general knowledge for 219 well-known books (Y/N strong, y/n qualified; anything uncertain left unknown).
+They only fill cells the sourced data leaves unknown, and they can say **No** ("no dragon in *Pride and
+Prejudice*"), which source text can't. Check against the sourced labels: 2088 of 2245 overlapping cells agree
+(**93.0%**); on the 157 disagreements the cell becomes unknown. Status `ai_recall`, no source, `reviewed=false`;
+clues say "AI's general knowledge, no source". This is not a person's review.
+
+**Series targets.** Series with ≥2 volumes in the pool (goodbooks tag "(Series, #n)") become one target: volumes
+agreeing → that answer, disagreeing → unknown, "first in series?" → unknown. After Folio's guess the reader picks
+the volume from a list. `--no-series` / `--no-ai-recall` turn each off.
+
+**Second labeller.** `docs/GPT_LABELLING_BRIEF.md` is a paste-ready brief for ChatGPT with work lists in
+`data/ai_recall/worklists/` (`scripts/export_worklists.py`). Its answers go in `data/ai_recall/gpt.txt`; labellers
+that disagree on a cell leave it unknown, and per-labeller agreement is reported.
+
+| | 64 + motif questions | + series + AI recall |
+| --- | ---: | ---: |
+| Playable targets (engine gate, thresholds unchanged) | 27 | **181** (28 of them series) |
+| Titles a reader can reach | 27 | **268** |
+| Clear memory: first guess right / found by any route | 31.9% / 82.7% | 20.4% / 73.3% |
+| Half memory: first guess right / found by any route | 6.7% / 67.0% | 2.5% / 46.4% |
+| One mistake: first guess right / found by any route | 15.7% / 70.1% | 8.7% / 57.0% |
+
+Simulated readers answer from the same labels (internal consistency, not accuracy). More books means more to
+confuse, so per-game rates drop while coverage grows tenfold.
+
 ## Known open items (not errors — need people or keys)
 
 - Fixture: 171/589 labels AI-checked against cited sources; 414 unchecked; **no human review**.
-- Research catalog: 500 imported, 27 playable (with motif questions), 0 reviewed. Human review of distinguishing labels is the next lever.
+- Research catalog: 500 imported, 181 targets / 268 titles, 0 human-reviewed (AI recall is not review). Human review of distinguishing labels is the next lever.
 - LLM labelling and Data4Library proxy were tested only against mock servers; try one real call each.
 - Human playtests, rehearsals, QR code (live site: https://wiseshrestha.github.io/Bookinator/, redeployed on every push to main).
 

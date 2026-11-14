@@ -152,11 +152,11 @@ The validator checks:
 | QR code | Deploy workflow added; generate the QR from the Pages URL once deployed. |
 | Human playtests, timed rehearsals | **Can't be done by me.** Recruit 10 fresh testers and record outcomes with exact denominators. |
 
-## Research catalog (500 imported records → 27 playable books)
+## Research catalog (500 imported records → 181 targets, 268 titles)
 
-Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/ and
-`?collection=research`). The **10-book fixture** ("Classic shelf") is the default. The **CMU / research catalog**
-("Research shelf") is also selected with `npm run dev:cmu` (or `VITE_CATALOG=cmu`). Never report imported records as game coverage:
+Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/). The **CMU /
+research catalog** ("Research shelf", 268 titles) is the **default**. The **10-book fixture** ("Classic shelf") is at
+`?collection=classic`, `npm run dev:classic` or `VITE_CATALOG=classic`. Never report imported records as game coverage:
 
 | Measure (14 Nov 2026) | Count |
 | --- | ---: |
@@ -164,7 +164,7 @@ Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.gi
 | Records with a validated question matrix | 500 (7,348 source-linked cells; 468 have ≥12) |
 | Form holds kept out of the novel pool | 8 |
 | Cells reviewed by a person | **0** |
-| **Playable game targets** | **27** (17 with the base 64 questions only) |
+| **Playable game targets** | **181** covering **268** titles (27 before series + AI recall; 17 with the base 64 only) |
 
 Pipeline (`npm run catalog:research`; needs the research and Core packs next to the repo, not committed):
 1. `scripts/merge_research.py`: researched matrix (`core500_researched_labels.json`) merged by stable ID with
@@ -204,6 +204,34 @@ reviewed them. Result: 2,146 motif labels on 467 books.
 Experiment, **not shipped**: counting "the summary never mentions it" as a weak No (0.3) on motif questions
 makes 178 books pass the gate, but clear-memory play falls to 8.6% first guess / 57.1% found. That breaks the
 brief's "missing evidence is unknown, not No" rule and is a product decision, not a default.
+
+### AI-recall labels and series targets (14 Nov 2026, evening)
+
+**AI recall (replaces human review for now).** `data/ai_recall/labels.txt` holds an AI assistant's answers from
+general knowledge for 219 well-known books (Y/N strong, y/n qualified; anything uncertain left unknown).
+They only fill cells the sourced data leaves unknown, and they can say **No** ("no dragon in *Pride and
+Prejudice*"), which source text can't. Check against the sourced labels: 2088 of 2245 overlapping cells agree
+(**93.0%**); on the 157 disagreements the cell becomes unknown. Status `ai_recall`, no source, `reviewed=false`;
+clues say "AI's general knowledge, no source". This is not a person's review.
+
+**Series targets.** Series with ≥2 volumes in the pool (goodbooks tag "(Series, #n)") become one target: volumes
+agreeing → that answer, disagreeing → unknown, "first in series?" → unknown. After Folio's guess the reader picks
+the volume from a list. `--no-series` / `--no-ai-recall` turn each off.
+
+**Second labeller.** `docs/GPT_LABELLING_BRIEF.md` is a paste-ready brief for ChatGPT with work lists in
+`data/ai_recall/worklists/` (`scripts/export_worklists.py`). Its answers go in `data/ai_recall/gpt.txt`; labellers
+that disagree on a cell leave it unknown, and per-labeller agreement is reported.
+
+| | 64 + motif questions | + series + AI recall |
+| --- | ---: | ---: |
+| Playable targets (engine gate, thresholds unchanged) | 27 | **181** (28 of them series) |
+| Titles a reader can reach | 27 | **268** |
+| Clear memory: first guess right / found by any route | 31.9% / 82.7% | 20.4% / 73.3% |
+| Half memory: first guess right / found by any route | 6.7% / 67.0% | 2.5% / 46.4% |
+| One mistake: first guess right / found by any route | 15.7% / 70.1% | 8.7% / 57.0% |
+
+Simulated readers answer from the same labels (internal consistency, not accuracy). More books means more to
+confuse, so per-game rates drop while coverage grows tenfold.
 
 ## Front end: the seagull, the clouds and the sea
 

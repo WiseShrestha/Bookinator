@@ -132,7 +132,7 @@ export default function App() {
         )}
         <p>
           {t.footer(
-            ACTIVE_CATALOG.books.length,
+            ACTIVE_CATALOG.coverage?.titles_reachable ?? ACTIVE_CATALOG.books.length,
             ACTIVE_CATALOG.coverage?.imported_source_records ?? null,
             ACTIVE_CATALOG.catalog_version,
             CATALOG_SOURCE === "remote" ? t.sourceRemote : t.sourceBundled,
