@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-norwegian-wood",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/Norwegian_Wood_(novel)",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "1987 Japanese novel narrated in first person by Toru Watanabe, aged 37, looking back on his college years in late-1960s Tokyo amid student strikes; relationships with Naoko, who lives in a mountain sanatorium, and Midori, whose father has brain cancer. A story of loss. 2010 film."
+  },
+  {
+   "id": "s2",
+   "url": "https://ko.wikipedia.org/wiki/%EB%85%B8%EB%A5%B4%EC%9B%A8%EC%9D%B4%EC%9D%98_%EC%88%B2_(%EC%86%8C%EC%84%A4)",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Korean title 노르웨이의 숲; one Korean translation and the film were titled 상실의 시대."
+  },
+  {
+   "id": "s3",
+   "url": "https://openlibrary.org/works/OL2625457W",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "Work record OL2625457W."
+  }
+ ]
+}

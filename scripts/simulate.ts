@@ -82,6 +82,8 @@ export function playGame(
   rng: () => number,
   filmMemoryMode = false,
   crispTruth = false,
+  /** Truth-fixture mode: cells with no vouched-for fact (0.5) are answered "Don't know". */
+  unknownAsDontKnow = false,
 ): GameResult {
   const truth = new Map<number, boolean>();
   const factFor = (q: number) => {
@@ -94,6 +96,10 @@ export function playGame(
   let answered = 0;
 
   const answerFor = (q: number): Answer => {
+    if (unknownAsDontKnow && truthX[q][target] === 0.5 && !scenario.useChannel) {
+      answered++;
+      return "dont_know";
+    }
     const fact = factFor(q);
     const n = answered++;
     if (scenario.useChannel) {
@@ -238,7 +244,7 @@ function main() {
     const t = loadTruth(resolve(ROOT, args.truth), cc);
     truthX = t.x;
     targets = t.books;
-    truthNote = `simulated answers generated from independent truth fixture ${args.truth} (${t.books.length} books)`;
+    truthNote = `simulated answers generated from truth fixture ${args.truth} (${t.books.length} books); cells absent from it are answered "Don't know"`;
   }
 
   const scenarios = SCENARIOS.filter((s) => !only || only.includes(s.name));
@@ -267,7 +273,7 @@ function main() {
     for (const b of targets) {
       for (let g = 0; g < games; g++) {
         const rng = mulberry32(hashSeed(seed, sc.name, cc.books[b].id, g));
-        results.push(playGame(cc, config, truthX, b, sc, rng, film, crisp));
+        results.push(playGame(cc, config, truthX, b, sc, rng, film, crisp, Boolean(args.truth)));
       }
     }
     const s = summarize(sc, results);

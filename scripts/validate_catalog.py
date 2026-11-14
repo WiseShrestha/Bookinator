@@ -24,6 +24,13 @@ PLACEHOLDERS = {"VERIFIED_URL", "RECORDED_TERMS", "TODO", "TBD", ""}
 OL_WORK = re.compile(r"^OL\d+W$")
 
 
+def isbn13_ok(isbn: str) -> bool:
+    if not re.fullmatch(r"97[89]\d{10}", isbn):
+        return False
+    total = sum(int(c) * (1 if i % 2 == 0 else 3) for i, c in enumerate(isbn[:12]))
+    return (10 - total % 10) % 10 == int(isbn[12])
+
+
 class Report:
     def __init__(self) -> None:
         self.errors: list[str] = []
@@ -94,6 +101,12 @@ def validate(cat: dict, bank: list[dict] | None = None) -> Report:
             if str(s.get("license", "")).strip() in PLACEHOLDERS:
                 r.err(f"{where}: source {sid} must record its license/terms")
         source_ids[bid] = sids
+        for ed in b.get("editions", []):
+            isbn = str(ed.get("isbn") or "")
+            if isbn and not isbn13_ok(isbn):
+                r.err(f"{where}: edition ISBN {isbn!r} is not a valid ISBN-13 (no hyphens)")
+            if ed.get("source_id") and ed["source_id"] not in sids:
+                r.err(f"{where}: edition {isbn} cites unknown source {ed['source_id']!r}")
         if production and not sids:
             r.err(f"{where}: production books need at least one source")
 

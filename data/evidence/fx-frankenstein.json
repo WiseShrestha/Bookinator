@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-frankenstein",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/Frankenstein",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "1818 Gothic novel set in the late 18th century across Europe and the Arctic. Victor Frankenstein creates a sapient creature; themes of loss, guilt and defying nature; foregrounds his moral struggles; multiple narratives."
+  },
+  {
+   "id": "s2",
+   "url": "https://en.wikipedia.org/wiki/Frankenstein%27s_monster",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "The creature is shunned and isolated, seeks revenge, and leads Victor on a pursuit north through Scandinavia and Russia into the Arctic; an icon of horror fiction."
+  },
+  {
+   "id": "s3",
+   "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%9E%91%EC%BC%84%EC%8A%88%ED%83%80%EC%9D%B8",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Korean title 프랑켄슈타인; framed as letters between Captain Walton and his sister. Film adaptations include 1931 and 2025."
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-harry-potter-1",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher's_Stone",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Debut fantasy novel, first of the Harry Potter series (UK, 1997). Harry, an orphan, learns at 11 he is a wizard and attends Hogwarts, a school of magic, befriending Ron and Hermione. Set in England 1991-92. Reviewers noted its humour; Rowling channelled grief for her mother into the orphaned Harry. Filmed in 2001."
+  },
+  {
+   "id": "s2",
+   "url": "https://ko.wikipedia.org/wiki/%ED%95%B4%EB%A6%AC_%ED%8F%AC%ED%84%B0%EC%99%80_%EB%A7%88%EB%B2%95%EC%82%AC%EC%9D%98_%EB%8F%8C",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Korean title 해리 포터와 마법사의 돌; story period 1991-1992; first book of the series; 2001 film."
+  },
+  {
+   "id": "s3",
+   "url": "https://openlibrary.org/books/OL7961604M/Harry_Potter_and_the_Philosopher's_Stone",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "Edition record listing Work ID OL82563W."
+  }
+ ]
+}

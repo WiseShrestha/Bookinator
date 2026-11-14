@@ -14,6 +14,12 @@ export const LINK_OPTIONS = {
   localSearchLabel: env.VITE_LOCAL_LIBRARY_LABEL,
 };
 
+export const AVAILABILITY = {
+  proxyUrl: env.VITE_LIBRARY_PROXY_URL,
+  libCode: env.VITE_LIBRARY_CODE,
+  libName: env.VITE_LIBRARY_NAME,
+};
+
 // Session persistence is a light convenience only: it may be unavailable or empty.
 const STORAGE_KEY = `that-book-session:${ACTIVE_CATALOG.catalog_version}`;
 

@@ -1,0 +1,577 @@
+{
+  "generated_at": "2026-11-14T05:44:48.667Z",
+  "catalog": "src/data/fixture.catalog.json",
+  "catalog_version": "fixture-2026-11-14b",
+  "data_status": "development_fixture",
+  "truth": "simulated answers generated from truth fixture data/truth/fixture_supported_truth.json (10 books); cells absent from it are answered \"Don't know\"",
+  "seed": 42,
+  "games_per_book_per_scenario": 30,
+  "film_memory_mode": false,
+  "crisp_truth": false,
+  "config": {
+    "channel": {
+      "yes": {
+        "givenYes": 0.55,
+        "givenNo": 0.05
+      },
+      "probably": {
+        "givenYes": 0.2,
+        "givenNo": 0.1
+      },
+      "dont_know": {
+        "givenYes": 0.1,
+        "givenNo": 0.1
+      },
+      "probably_not": {
+        "givenYes": 0.1,
+        "givenNo": 0.2
+      },
+      "no": {
+        "givenYes": 0.05,
+        "givenNo": 0.55
+      }
+    },
+    "unknownPYes": 0.5,
+    "minInformativeAnswers": 6,
+    "guessMinProbability": 0.8,
+    "guessMinRatio": 4,
+    "maxQuestions": 18,
+    "minScore": 0.01,
+    "maxRejections": 2,
+    "questionsAfterRejection": 1,
+    "shortlistSize": 3,
+    "maxPerGroup": 1,
+    "tieEpsilon": 1e-12
+  },
+  "scenarios": [
+    {
+      "scenario": "clear",
+      "description": "5% unknown, no wrong answers",
+      "games": 300,
+      "top1": 170,
+      "firstGuessWrong": 1,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 266,
+      "inTop3AtEnd": 266,
+      "failures": 34,
+      "meanQuestionsSuccess": 13.6203007518797,
+      "meanQuestionsAll": 14.116666666666667,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 1,
+      "gamesWithWrongGuess": 1,
+      "subsets": {
+        "korean": {
+          "scenario": "clear",
+          "description": "5% unknown, no wrong answers",
+          "games": 30,
+          "top1": 15,
+          "firstGuessWrong": 0,
+          "recoveredAfterOneRejection": 0,
+          "foundAnyRoute": 23,
+          "inTop3AtEnd": 23,
+          "failures": 7,
+          "meanQuestionsSuccess": 15.869565217391305,
+          "meanQuestionsAll": 16.366666666666667,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 0,
+          "gamesWithWrongGuess": 0
+        },
+        "global": {
+          "scenario": "clear",
+          "description": "5% unknown, no wrong answers",
+          "games": 270,
+          "top1": 155,
+          "firstGuessWrong": 1,
+          "recoveredAfterOneRejection": 0,
+          "foundAnyRoute": 243,
+          "inTop3AtEnd": 243,
+          "failures": 27,
+          "meanQuestionsSuccess": 13.407407407407407,
+          "meanQuestionsAll": 13.866666666666667,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 1,
+          "gamesWithWrongGuess": 1
+        }
+      },
+      "topConfusions": [
+        [
+          "fx-harry-potter-1 → guessed fx-murder-orient-express",
+          1
+        ]
+      ],
+      "perBookFailures": [
+        {
+          "id": "fx-frankenstein",
+          "fails": 13
+        },
+        {
+          "id": "fx-the-vegetarian",
+          "fails": 7
+        },
+        {
+          "id": "fx-little-prince",
+          "fails": 5
+        },
+        {
+          "id": "fx-nineteen-eighty-four",
+          "fails": 3
+        },
+        {
+          "id": "fx-the-hobbit",
+          "fails": 3
+        },
+        {
+          "id": "fx-harry-potter-1",
+          "fails": 1
+        },
+        {
+          "id": "fx-hunger-games-1",
+          "fails": 1
+        },
+        {
+          "id": "fx-murder-orient-express",
+          "fails": 1
+        }
+      ]
+    },
+    {
+      "scenario": "half",
+      "description": "25% unknown, 5% wrong among known",
+      "games": 300,
+      "top1": 72,
+      "firstGuessWrong": 1,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 241,
+      "inTop3AtEnd": 241,
+      "failures": 59,
+      "meanQuestionsSuccess": 16.448132780082986,
+      "meanQuestionsAll": 16.753333333333334,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 1,
+      "gamesWithWrongGuess": 1,
+      "subsets": {
+        "korean": {
+          "scenario": "half",
+          "description": "25% unknown, 5% wrong among known",
+          "games": 30,
+          "top1": 6,
+          "firstGuessWrong": 0,
+          "recoveredAfterOneRejection": 0,
+          "foundAnyRoute": 21,
+          "inTop3AtEnd": 21,
+          "failures": 9,
+          "meanQuestionsSuccess": 17.285714285714285,
+          "meanQuestionsAll": 17.5,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 0,
+          "gamesWithWrongGuess": 0
+        },
+        "global": {
+          "scenario": "half",
+          "description": "25% unknown, 5% wrong among known",
+          "games": 270,
+          "top1": 66,
+          "firstGuessWrong": 1,
+          "recoveredAfterOneRejection": 0,
+          "foundAnyRoute": 220,
+          "inTop3AtEnd": 220,
+          "failures": 50,
+          "meanQuestionsSuccess": 16.368181818181817,
+          "meanQuestionsAll": 16.67037037037037,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 1,
+          "gamesWithWrongGuess": 1
+        }
+      },
+      "topConfusions": [
+        [
+          "fx-hunger-games-1 → guessed fx-nineteen-eighty-four",
+          1
+        ]
+      ],
+      "perBookFailures": [
+        {
+          "id": "fx-murder-orient-express",
+          "fails": 12
+        },
+        {
+          "id": "fx-frankenstein",
+          "fails": 11
+        },
+        {
+          "id": "fx-the-vegetarian",
+          "fails": 9
+        },
+        {
+          "id": "fx-pride-and-prejudice",
+          "fails": 6
+        },
+        {
+          "id": "fx-nineteen-eighty-four",
+          "fails": 5
+        },
+        {
+          "id": "fx-little-prince",
+          "fails": 5
+        },
+        {
+          "id": "fx-the-hobbit",
+          "fails": 4
+        },
+        {
+          "id": "fx-norwegian-wood",
+          "fails": 3
+        },
+        {
+          "id": "fx-harry-potter-1",
+          "fails": 2
+        },
+        {
+          "id": "fx-hunger-games-1",
+          "fails": 2
+        }
+      ]
+    },
+    {
+      "scenario": "difficult",
+      "description": "40% unknown, 10% wrong among known",
+      "games": 300,
+      "top1": 28,
+      "firstGuessWrong": 0,
+      "recoveredAfterOneRejection": 0,
+      "foundAnyRoute": 208,
+      "inTop3AtEnd": 208,
+      "failures": 92,
+      "meanQuestionsSuccess": 17.408653846153847,
+      "meanQuestionsAll": 17.59,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 0,
+      "gamesWithWrongGuess": 0,
+      "subsets": {
+        "korean": {
+          "scenario": "difficult",
+          "description": "40% unknown, 10% wrong among known",
+          "games": 30,
+          "top1": 1,
+          "firstGuessWrong": 0,
+          "recoveredAfterOneRejection": 0,
+          "foundAnyRoute": 17,
+          "inTop3AtEnd": 17,
+          "failures": 13,
+          "meanQuestionsSuccess": 18,
+          "meanQuestionsAll": 18,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 0,
+          "gamesWithWrongGuess": 0
+        },
+        "global": {
+          "scenario": "difficult",
+          "description": "40% unknown, 10% wrong among known",
+          "games": 270,
+          "top1": 27,
+          "firstGuessWrong": 0,
+          "recoveredAfterOneRejection": 0,
+          "foundAnyRoute": 191,
+          "inTop3AtEnd": 191,
+          "failures": 79,
+          "meanQuestionsSuccess": 17.356020942408378,
+          "meanQuestionsAll": 17.544444444444444,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 0,
+          "gamesWithWrongGuess": 0
+        }
+      },
+      "topConfusions": [],
+      "perBookFailures": [
+        {
+          "id": "fx-little-prince",
+          "fails": 14
+        },
+        {
+          "id": "fx-murder-orient-express",
+          "fails": 13
+        },
+        {
+          "id": "fx-the-vegetarian",
+          "fails": 13
+        },
+        {
+          "id": "fx-harry-potter-1",
+          "fails": 9
+        },
+        {
+          "id": "fx-hunger-games-1",
+          "fails": 9
+        },
+        {
+          "id": "fx-nineteen-eighty-four",
+          "fails": 8
+        },
+        {
+          "id": "fx-frankenstein",
+          "fails": 8
+        },
+        {
+          "id": "fx-the-hobbit",
+          "fails": 7
+        },
+        {
+          "id": "fx-norwegian-wood",
+          "fails": 6
+        },
+        {
+          "id": "fx-pride-and-prejudice",
+          "fails": 5
+        }
+      ]
+    },
+    {
+      "scenario": "one_mistake",
+      "description": "5% unknown, exactly one wrong answer in the first 6",
+      "games": 300,
+      "top1": 132,
+      "firstGuessWrong": 5,
+      "recoveredAfterOneRejection": 3,
+      "foundAnyRoute": 243,
+      "inTop3AtEnd": 243,
+      "failures": 57,
+      "meanQuestionsSuccess": 14.954732510288066,
+      "meanQuestionsAll": 15.533333333333333,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 5,
+      "gamesWithWrongGuess": 5,
+      "subsets": {
+        "korean": {
+          "scenario": "one_mistake",
+          "description": "5% unknown, exactly one wrong answer in the first 6",
+          "games": 30,
+          "top1": 15,
+          "firstGuessWrong": 0,
+          "recoveredAfterOneRejection": 0,
+          "foundAnyRoute": 22,
+          "inTop3AtEnd": 22,
+          "failures": 8,
+          "meanQuestionsSuccess": 16.5,
+          "meanQuestionsAll": 16.9,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 0,
+          "gamesWithWrongGuess": 0
+        },
+        "global": {
+          "scenario": "one_mistake",
+          "description": "5% unknown, exactly one wrong answer in the first 6",
+          "games": 270,
+          "top1": 117,
+          "firstGuessWrong": 5,
+          "recoveredAfterOneRejection": 3,
+          "foundAnyRoute": 221,
+          "inTop3AtEnd": 221,
+          "failures": 49,
+          "meanQuestionsSuccess": 14.800904977375566,
+          "meanQuestionsAll": 15.381481481481481,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 5,
+          "gamesWithWrongGuess": 5
+        }
+      },
+      "topConfusions": [
+        [
+          "fx-hunger-games-1 → guessed fx-harry-potter-1",
+          1
+        ],
+        [
+          "fx-hunger-games-1 → guessed fx-nineteen-eighty-four",
+          1
+        ],
+        [
+          "fx-nineteen-eighty-four → guessed fx-hunger-games-1",
+          1
+        ],
+        [
+          "fx-pride-and-prejudice → guessed fx-harry-potter-1",
+          1
+        ],
+        [
+          "fx-pride-and-prejudice → guessed fx-norwegian-wood",
+          1
+        ]
+      ],
+      "perBookFailures": [
+        {
+          "id": "fx-frankenstein",
+          "fails": 12
+        },
+        {
+          "id": "fx-murder-orient-express",
+          "fails": 8
+        },
+        {
+          "id": "fx-the-vegetarian",
+          "fails": 8
+        },
+        {
+          "id": "fx-the-hobbit",
+          "fails": 8
+        },
+        {
+          "id": "fx-nineteen-eighty-four",
+          "fails": 5
+        },
+        {
+          "id": "fx-norwegian-wood",
+          "fails": 5
+        },
+        {
+          "id": "fx-little-prince",
+          "fails": 4
+        },
+        {
+          "id": "fx-harry-potter-1",
+          "fails": 3
+        },
+        {
+          "id": "fx-pride-and-prejudice",
+          "fails": 3
+        },
+        {
+          "id": "fx-hunger-games-1",
+          "fails": 1
+        }
+      ]
+    },
+    {
+      "scenario": "channel",
+      "description": "answers sampled from the engine's own channel (baseline)",
+      "games": 300,
+      "top1": 105,
+      "firstGuessWrong": 121,
+      "recoveredAfterOneRejection": 26,
+      "foundAnyRoute": 220,
+      "inTop3AtEnd": 220,
+      "failures": 80,
+      "meanQuestionsSuccess": 12.95,
+      "meanQuestionsAll": 14.2,
+      "p90Questions": 18,
+      "wrongGuessesTotal": 144,
+      "gamesWithWrongGuess": 121,
+      "subsets": {
+        "korean": {
+          "scenario": "channel",
+          "description": "answers sampled from the engine's own channel (baseline)",
+          "games": 30,
+          "top1": 9,
+          "firstGuessWrong": 14,
+          "recoveredAfterOneRejection": 3,
+          "foundAnyRoute": 21,
+          "inTop3AtEnd": 21,
+          "failures": 9,
+          "meanQuestionsSuccess": 13.666666666666666,
+          "meanQuestionsAll": 14.833333333333334,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 18,
+          "gamesWithWrongGuess": 14
+        },
+        "global": {
+          "scenario": "channel",
+          "description": "answers sampled from the engine's own channel (baseline)",
+          "games": 270,
+          "top1": 96,
+          "firstGuessWrong": 107,
+          "recoveredAfterOneRejection": 23,
+          "foundAnyRoute": 199,
+          "inTop3AtEnd": 199,
+          "failures": 71,
+          "meanQuestionsSuccess": 12.874371859296483,
+          "meanQuestionsAll": 14.12962962962963,
+          "p90Questions": 18,
+          "wrongGuessesTotal": 126,
+          "gamesWithWrongGuess": 107
+        }
+      },
+      "topConfusions": [
+        [
+          "fx-norwegian-wood → guessed fx-harry-potter-1",
+          8
+        ],
+        [
+          "fx-the-vegetarian → guessed fx-nineteen-eighty-four",
+          6
+        ],
+        [
+          "fx-nineteen-eighty-four → guessed fx-harry-potter-1",
+          5
+        ],
+        [
+          "fx-nineteen-eighty-four → guessed fx-hunger-games-1",
+          5
+        ],
+        [
+          "fx-frankenstein → guessed fx-pride-and-prejudice",
+          4
+        ],
+        [
+          "fx-frankenstein → guessed fx-the-vegetarian",
+          4
+        ],
+        [
+          "fx-hunger-games-1 → guessed fx-norwegian-wood",
+          4
+        ],
+        [
+          "fx-murder-orient-express → guessed fx-little-prince",
+          4
+        ],
+        [
+          "fx-norwegian-wood → guessed fx-hunger-games-1",
+          4
+        ],
+        [
+          "fx-pride-and-prejudice → guessed fx-nineteen-eighty-four",
+          4
+        ]
+      ],
+      "perBookFailures": [
+        {
+          "id": "fx-murder-orient-express",
+          "fails": 17
+        },
+        {
+          "id": "fx-frankenstein",
+          "fails": 12
+        },
+        {
+          "id": "fx-little-prince",
+          "fails": 10
+        },
+        {
+          "id": "fx-the-vegetarian",
+          "fails": 9
+        },
+        {
+          "id": "fx-nineteen-eighty-four",
+          "fails": 8
+        },
+        {
+          "id": "fx-the-hobbit",
+          "fails": 6
+        },
+        {
+          "id": "fx-harry-potter-1",
+          "fails": 5
+        },
+        {
+          "id": "fx-hunger-games-1",
+          "fails": 5
+        },
+        {
+          "id": "fx-pride-and-prejudice",
+          "fails": 4
+        },
+        {
+          "id": "fx-norwegian-wood",
+          "fails": 4
+        }
+      ]
+    }
+  ]
+}

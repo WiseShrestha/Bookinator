@@ -1,27 +1,27 @@
 
-That Book simulation — catalog fixture-2026-11-14 (development_fixture), 10 target books
+That Book simulation — catalog fixture-2026-11-14b (development_fixture), 10 target books
 Truth: simulated answers generated from the SAME labels the engine uses (internal consistency only)
 Seed 42, 30 games per book per scenario
 
-[clear] most frequent wrong guesses: fx-frankenstein → guessed fx-the-hobbit ×2; fx-hunger-games-1 → guessed fx-harry-potter-1 ×2; fx-frankenstein → guessed fx-little-prince ×1
-[half] most frequent wrong guesses: fx-norwegian-wood → guessed fx-harry-potter-1 ×2; fx-pride-and-prejudice → guessed fx-frankenstein ×2; fx-frankenstein → guessed fx-hunger-games-1 ×1
-[difficult] most frequent wrong guesses: fx-nineteen-eighty-four → guessed fx-hunger-games-1 ×2; fx-nineteen-eighty-four → guessed fx-pride-and-prejudice ×2; fx-frankenstein → guessed fx-little-prince ×1
-[one_mistake] most frequent wrong guesses: fx-little-prince → guessed fx-the-hobbit ×3; fx-little-prince → guessed fx-hunger-games-1 ×2; fx-little-prince → guessed fx-murder-orient-express ×2
-[channel] most frequent wrong guesses: fx-frankenstein → guessed fx-little-prince ×3; fx-frankenstein → guessed fx-the-hobbit ×3; fx-nineteen-eighty-four → guessed fx-hunger-games-1 ×3
+[clear] most frequent wrong guesses: fx-hunger-games-1 → guessed fx-harry-potter-1 ×2; fx-harry-potter-1 → guessed fx-murder-orient-express ×1; fx-harry-potter-1 → guessed fx-the-vegetarian ×1
+[half] most frequent wrong guesses: fx-frankenstein → guessed fx-hunger-games-1 ×1; fx-frankenstein → guessed fx-the-vegetarian ×1; fx-harry-potter-1 → guessed fx-norwegian-wood ×1
+[difficult] most frequent wrong guesses: fx-harry-potter-1 → guessed fx-hunger-games-1 ×2; fx-frankenstein → guessed fx-little-prince ×1; fx-hunger-games-1 → guessed fx-frankenstein ×1
+[one_mistake] most frequent wrong guesses: fx-nineteen-eighty-four → guessed fx-pride-and-prejudice ×3; fx-little-prince → guessed fx-murder-orient-express ×2; fx-the-hobbit → guessed fx-little-prince ×2
+[channel] most frequent wrong guesses: fx-nineteen-eighty-four → guessed fx-hunger-games-1 ×3; fx-frankenstein → guessed fx-little-prince ×2; fx-frankenstein → guessed fx-the-hobbit ×2
 
 | scenario    | top-1           | recovered after 1 rejection | found (any route) | target in top-3 at end | mean Q (success) | mean Q (all) | p90 Q | failures | wrong guesses |
 | ----------- | --------------- | --------------------------- | ----------------- | ---------------------- | ---------------- | ------------ | ----- | -------- | ------------- |
-| clear       | 93.3% (280/300) | 75.0% (6/8)                 | 99.7% (299/300)   | 99.7% (299/300)        | 8.9              | 8.9          | 14    | 1        | 9             |
-| half        | 62.3% (187/300) | 31.8% (7/22)                | 95.7% (287/300)   | 95.7% (287/300)        | 13.3             | 13.5         | 18    | 13       | 23            |
-| difficult   | 38.0% (114/300) | 0.0% (0/13)                 | 88.0% (264/300)   | 88.0% (264/300)        | 15.9             | 16.1         | 18    | 36       | 14            |
-| one_mistake | 79.7% (239/300) | 72.0% (18/25)               | 97.3% (292/300)   | 97.3% (292/300)        | 11.9             | 12.0         | 18    | 8        | 28            |
-| channel     | 63.0% (189/300) | 39.4% (13/33)               | 95.0% (285/300)   | 95.0% (285/300)        | 12.7             | 12.9         | 18    | 15       | 34            |
+| clear       | 92.7% (278/300) | 62.5% (5/8)                 | 100.0% (300/300)  | 100.0% (300/300)       | 8.9              | 8.9          | 15    | 0        | 8             |
+| half        | 67.0% (201/300) | 35.7% (5/14)                | 96.0% (288/300)   | 96.0% (288/300)        | 13.2             | 13.4         | 18    | 12       | 15            |
+| difficult   | 34.3% (103/300) | 15.4% (2/13)                | 85.3% (256/300)   | 85.3% (256/300)        | 15.9             | 16.2         | 18    | 44       | 13            |
+| one_mistake | 76.0% (228/300) | 69.0% (20/29)               | 97.0% (291/300)   | 97.0% (291/300)        | 12.1             | 12.3         | 18    | 9        | 30            |
+| channel     | 60.7% (182/300) | 42.9% (12/28)               | 94.0% (282/300)   | 94.0% (282/300)        | 12.5             | 12.8         | 18    | 18       | 28            |
 
 Brief's provisional targets (unvalidated):
-  clear  top-1 ≥ 95% within 18 Q: 93.3% (280/300) → below
-  half   top-1 ≥ 80%: 62.3% (187/300) → below
-  half   found incl. shortlist ≥ 90%: 95.7% (287/300) → meets
+  clear  top-1 ≥ 95% within 18 Q: 92.7% (278/300) → below
+  half   top-1 ≥ 80%: 67.0% (201/300) → below
+  half   found incl. shortlist ≥ 90%: 96.0% (288/300) → meets
 
 ⚠ Catalog is "development_fixture". These numbers are NOT accuracy claims.
 
-Wrote /home/claude/that-book/reports/simulation.json in 0.7s
+Wrote /home/claude/that-book/reports/simulation.json in 0.9s

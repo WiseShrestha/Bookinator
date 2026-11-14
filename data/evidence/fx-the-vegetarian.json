@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-the-vegetarian",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/The_Vegetarian",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "2007 Korean novel by Han Kang (2024 Nobel laureate) in three parts set in modern-day Seoul. Yeong-hye stops eating meat; her family force-feeds her; she ends up hospitalised. Part 1 is first-person by her husband, part 2 follows her brother-in-law, part 3 her sister. Explores violence and mental instability."
+  },
+  {
+   "id": "s2",
+   "url": "https://en.wikipedia.org/wiki/Vegetarian_(film)",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "2009 South Korean film based on the novel."
+  },
+  {
+   "id": "s3",
+   "url": "https://openlibrary.org/works/OL17334243W",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "Work record OL17334243W (original title 채식주의자)."
+  }
+ ]
+}

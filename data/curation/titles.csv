@@ -1,0 +1,11 @@
+id,title_en,title_ko,aliases,author,original_language,first_publication_year,series_id,series_number,openlibrary_work_id,demo_pool
+fx-harry-potter-1,Harry Potter and the Philosopher's Stone,해리 포터와 마법사의 돌,Harry Potter and the Sorcerer's Stone,J. K. Rowling,en,1997,fx-harry-potter,1,OL82563W,yes
+fx-pride-and-prejudice,Pride and Prejudice,오만과 편견,First Impressions,Jane Austen,en,1813,,,OL66554W,yes
+fx-nineteen-eighty-four,Nineteen Eighty-Four,1984,1984;1984년,George Orwell,en,1949,,,OL1168083W,yes
+fx-hunger-games-1,The Hunger Games,헝거 게임,,Suzanne Collins,en,2008,fx-hunger-games,1,OL5735363W,yes
+fx-murder-orient-express,Murder on the Orient Express,오리엔트 특급 살인,Murder in the Calais Coach,Agatha Christie,en,1934,fx-hercule-poirot,,,yes
+fx-little-prince,The Little Prince,어린 왕자,Le Petit Prince,Antoine de Saint-Exupéry,fr,1943,,,OL10263W,yes
+fx-frankenstein,Frankenstein,프랑켄슈타인,"Frankenstein; or, The Modern Prometheus",Mary Shelley,en,1818,,,,yes
+fx-the-vegetarian,The Vegetarian,채식주의자,,Han Kang,ko,2007,,,OL17334243W,yes
+fx-norwegian-wood,Norwegian Wood,노르웨이의 숲,상실의 시대;ノルウェイの森,Haruki Murakami,ja,1987,,,OL2625457W,yes
+fx-the-hobbit,The Hobbit,호빗,"The Hobbit, or There and Back Again",J. R. R. Tolkien,en,1937,,,OL27482W,yes

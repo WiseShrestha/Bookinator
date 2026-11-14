@@ -412,7 +412,11 @@ describe("fixture catalog", () => {
     assert.equal(cc.books.length, 10);
     assert.equal(cc.questions.length, 64);
     assert.equal(cc.questions[cc.questionIndex.get("q56")!].active, false);
-    assert.ok(ACTIVE_CATALOG.features.every((f) => !f.reviewed && f.status === "unreviewed_fixture"));
+    assert.ok(ACTIVE_CATALOG.features.every((f) => !f.reviewed), "nothing is human-reviewed yet");
+    for (const f of ACTIVE_CATALOG.features.filter((x) => x.status === "supported")) {
+      const book = ACTIVE_CATALOG.books.find((b) => b.id === f.book_id)!;
+      assert.ok(f.source_ids.length > 0 && f.source_ids.every((s) => book.sources.some((src) => src.id === s)));
+    }
   });
 
   it("each fixture book is guessed when answers follow its own labels exactly", () => {

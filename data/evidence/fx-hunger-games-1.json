@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-hunger-games-1",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/The_Hunger_Games_(novel)",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "2008 YA dystopia, first of the trilogy, told from 16-year-old Katniss's perspective in post-apocalyptic Panem in former North America. She volunteers for a televised fight to the death; male tribute Peeta. Themes: survival, poverty, oppression; she lost her father. 2012 film."
+  },
+  {
+   "id": "s2",
+   "url": "https://en.wikipedia.org/wiki/The_Hunger_Games",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Series page: Katniss is the trilogy's narrator; themes include distrust of authority, class, resistance."
+  },
+  {
+   "id": "s3",
+   "url": "https://openlibrary.org/books/OL22549594M/The_Hunger_Games",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "First-edition record; Work ID OL5735363W listed on related edition records."
+  }
+ ]
+}

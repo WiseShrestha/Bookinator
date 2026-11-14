@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "That Book — remember the story, forget the title. Local Bayesian book-guessing game for the 2026 IST-Tech IT Arena Hackathon.",
+  "description": "That Book \u2014 remember the story, forget the title. Local Bayesian book-guessing game for the 2026 IST-Tech IT Arena Hackathon.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.json --noEmit && vite build",
@@ -12,7 +12,11 @@
     "typecheck:engine": "tsc -p tsconfig.engine.json --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "simulate": "tsx scripts/simulate.ts",
-    "validate": "python3 scripts/validate_catalog.py src/data/fixture.catalog.json"
+    "validate": "python3 scripts/validate_catalog.py src/data/fixture.catalog.json --bank data/question_bank.json",
+    "test:py": "python3 -m unittest discover -s tests -p \"test_*.py\"",
+    "simulate:truth": "tsx scripts/simulate.ts --truth data/truth/fixture_supported_truth.json --out reports/simulation_truth.json",
+    "proxy": "node server/library-proxy.mjs",
+    "verify": "npm run typecheck && npm test && npm run test:py && npm run validate && vite build"
   },
   "dependencies": {
     "react": "^19.0.0",

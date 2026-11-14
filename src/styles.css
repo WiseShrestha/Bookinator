@@ -174,3 +174,7 @@ button:active:not(:disabled) { transform: translateY(1px); }
 .foot { margin-top: 24px; text-align: center; color: var(--muted); font-size: 0.8rem; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.availability { margin: 12px 0 4px; }
+.availability p { margin: 0; }
+.sourced { color: var(--accent); }
+.sourced a { font-weight: 600; }

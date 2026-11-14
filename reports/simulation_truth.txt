@@ -1,0 +1,26 @@
+
+That Book simulation — catalog fixture-2026-11-14b (development_fixture), 10 target books
+Truth: simulated answers generated from truth fixture data/truth/fixture_supported_truth.json (10 books); cells absent from it are answered "Don't know"
+Seed 42, 30 games per book per scenario
+
+[clear] most frequent wrong guesses: fx-harry-potter-1 → guessed fx-murder-orient-express ×1
+[half] most frequent wrong guesses: fx-hunger-games-1 → guessed fx-nineteen-eighty-four ×1
+[one_mistake] most frequent wrong guesses: fx-hunger-games-1 → guessed fx-harry-potter-1 ×1; fx-hunger-games-1 → guessed fx-nineteen-eighty-four ×1; fx-nineteen-eighty-four → guessed fx-hunger-games-1 ×1
+[channel] most frequent wrong guesses: fx-norwegian-wood → guessed fx-harry-potter-1 ×8; fx-the-vegetarian → guessed fx-nineteen-eighty-four ×6; fx-nineteen-eighty-four → guessed fx-harry-potter-1 ×5
+
+| scenario    | top-1           | recovered after 1 rejection | found (any route) | target in top-3 at end | mean Q (success) | mean Q (all) | p90 Q | failures | wrong guesses |
+| ----------- | --------------- | --------------------------- | ----------------- | ---------------------- | ---------------- | ------------ | ----- | -------- | ------------- |
+| clear       | 56.7% (170/300) | 0.0% (0/1)                  | 88.7% (266/300)   | 88.7% (266/300)        | 13.6             | 14.1         | 18    | 34       | 1             |
+| half        | 24.0% (72/300)  | 0.0% (0/1)                  | 80.3% (241/300)   | 80.3% (241/300)        | 16.4             | 16.8         | 18    | 59       | 1             |
+| difficult   | 9.3% (28/300)   | n/a (0/0)                   | 69.3% (208/300)   | 69.3% (208/300)        | 17.4             | 17.6         | 18    | 92       | 0             |
+| one_mistake | 44.0% (132/300) | 60.0% (3/5)                 | 81.0% (243/300)   | 81.0% (243/300)        | 15.0             | 15.5         | 18    | 57       | 5             |
+| channel     | 35.0% (105/300) | 21.5% (26/121)              | 73.3% (220/300)   | 73.3% (220/300)        | 12.9             | 14.2         | 18    | 80       | 144           |
+
+Brief's provisional targets (unvalidated):
+  clear  top-1 ≥ 95% within 18 Q: 56.7% (170/300) → below
+  half   top-1 ≥ 80%: 24.0% (72/300) → below
+  half   found incl. shortlist ≥ 90%: 80.3% (241/300) → below
+
+⚠ Catalog is "development_fixture". These numbers are NOT accuracy claims.
+
+Wrote /home/claude/that-book/reports/simulation_truth.json in 1.0s

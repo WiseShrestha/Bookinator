@@ -1,24 +1,23 @@
 
-That Book simulation — catalog fixture-2026-11-14 (development_fixture), 10 target books
+That Book simulation — catalog fixture-2026-11-14b (development_fixture), 10 target books
 Truth: simulated answers generated from the SAME labels the engine uses (internal consistency only)
 Seed 42, 30 games per book per scenario, crisp truth (labels ≠ 0.5 treated as certain)
 
-[half] most frequent wrong guesses: fx-little-prince → guessed fx-murder-orient-express ×1; fx-little-prince → guessed fx-the-hobbit ×1; fx-the-hobbit → guessed fx-pride-and-prejudice ×1
-[difficult] most frequent wrong guesses: fx-nineteen-eighty-four → guessed fx-norwegian-wood ×1
-[one_mistake] most frequent wrong guesses: fx-the-hobbit → guessed fx-murder-orient-express ×1
-[channel] most frequent wrong guesses: fx-the-vegetarian → guessed fx-pride-and-prejudice ×2; fx-nineteen-eighty-four → guessed fx-hunger-games-1 ×1; fx-the-hobbit → guessed fx-murder-orient-express ×1
+[half] most frequent wrong guesses: fx-frankenstein → guessed fx-the-hobbit ×1
+[difficult] most frequent wrong guesses: fx-the-vegetarian → guessed fx-hunger-games-1 ×1
+[channel] most frequent wrong guesses: fx-frankenstein → guessed fx-the-hobbit ×1; fx-nineteen-eighty-four → guessed fx-hunger-games-1 ×1
 
 | scenario    | top-1            | recovered after 1 rejection | found (any route) | target in top-3 at end | mean Q (success) | mean Q (all) | p90 Q | failures | wrong guesses |
 | ----------- | ---------------- | --------------------------- | ----------------- | ---------------------- | ---------------- | ------------ | ----- | -------- | ------------- |
 | clear       | 100.0% (300/300) | n/a (0/0)                   | 100.0% (300/300)  | 100.0% (300/300)       | 6.7              | 6.7          | 8     | 0        | 0             |
-| half        | 93.7% (281/300)  | 0.0% (0/2)                  | 100.0% (300/300)  | 100.0% (300/300)       | 10.8             | 10.8         | 17    | 0        | 3             |
-| difficult   | 64.3% (193/300)  | 100.0% (1/1)                | 96.3% (289/300)   | 96.3% (289/300)        | 14.0             | 14.2         | 18    | 11       | 1             |
-| one_mistake | 99.7% (299/300)  | 100.0% (1/1)                | 100.0% (300/300)  | 100.0% (300/300)       | 9.3              | 9.3          | 12    | 0        | 1             |
-| channel     | 89.3% (268/300)  | 40.0% (2/5)                 | 99.7% (299/300)   | 99.7% (299/300)        | 10.5             | 10.5         | 18    | 1        | 6             |
+| half        | 92.0% (276/300)  | 100.0% (1/1)                | 100.0% (300/300)  | 100.0% (300/300)       | 10.6             | 10.6         | 17    | 0        | 1             |
+| difficult   | 63.0% (189/300)  | 100.0% (1/1)                | 97.7% (293/300)   | 97.7% (293/300)        | 14.0             | 14.1         | 18    | 7        | 1             |
+| one_mistake | 100.0% (300/300) | n/a (0/0)                   | 100.0% (300/300)  | 100.0% (300/300)       | 9.4              | 9.4          | 12    | 0        | 0             |
+| channel     | 86.3% (259/300)  | 100.0% (2/2)                | 98.7% (296/300)   | 98.7% (296/300)        | 10.7             | 10.8         | 18    | 4        | 2             |
 
 Brief's provisional targets (unvalidated):
   clear  top-1 ≥ 95% within 18 Q: 100.0% (300/300) → meets
-  half   top-1 ≥ 80%: 93.7% (281/300) → meets
+  half   top-1 ≥ 80%: 92.0% (276/300) → meets
   half   found incl. shortlist ≥ 90%: 100.0% (300/300) → meets
 
 ⚠ Catalog is "development_fixture". These numbers are NOT accuracy claims.

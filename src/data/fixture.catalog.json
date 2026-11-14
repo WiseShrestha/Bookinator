@@ -1,69 +1,176 @@
 {
- "catalog_version": "fixture-2026-11-14",
+ "catalog_version": "fixture-2026-11-14b",
  "data_status": "development_fixture",
- "notice": "Development fixture: 10 books labeled from general knowledge by an AI assistant. Not source-checked or human-reviewed. Replace with a reviewed catalog before any accuracy claim.",
+ "notice": "Development fixture: 10 books. 171 of 589 labels checked by an AI assistant against cited Wikipedia/Open Library pages; the rest are unchecked. No human review yet.",
  "books": [
   {
    "id": "fx-harry-potter-1",
    "title_en": "Harry Potter and the Philosopher's Stone",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "해리 포터와 마법사의 돌",
+   "aliases": [
+    "Harry Potter and the Sorcerer's Stone"
+   ],
    "author": "J. K. Rowling",
    "original_language": "en",
    "first_publication_year": 1997,
    "series_id": "fx-harry-potter",
    "series_number": 1,
-   "openlibrary_work_id": null,
-   "editions": [],
-   "sources": []
+   "openlibrary_work_id": "OL82563W",
+   "editions": [
+    {
+     "isbn": "9788983925558",
+     "language": "ko",
+     "title": "해리 포터와 마법사의 돌 (문학수첩)",
+     "source_id": "s2"
+    },
+    {
+     "isbn": "9780747532743",
+     "language": "en",
+     "title": "Bloomsbury paperback, 2000",
+     "source_id": "s3"
+    }
+   ],
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher's_Stone",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%ED%95%B4%EB%A6%AC_%ED%8F%AC%ED%84%B0%EC%99%80_%EB%A7%88%EB%B2%95%EC%82%AC%EC%9D%98_%EB%8F%8C",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL7961604M/Harry_Potter_and_the_Philosopher's_Stone",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   },
   {
    "id": "fx-pride-and-prejudice",
    "title_en": "Pride and Prejudice",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "오만과 편견",
+   "aliases": [
+    "First Impressions"
+   ],
    "author": "Jane Austen",
    "original_language": "en",
    "first_publication_year": 1813,
    "series_id": null,
    "series_number": null,
-   "openlibrary_work_id": null,
-   "editions": [],
-   "sources": []
+   "openlibrary_work_id": "OL66554W",
+   "editions": [
+    {
+     "isbn": "9788990324788",
+     "language": "ko",
+     "title": "오만과 편견 (Brown Hill, 2014)",
+     "source_id": "s3"
+    }
+   ],
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%A7%8C%EA%B3%BC_%ED%8E%B8%EA%B2%AC",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/works/OL66554W/Pride_and_Prejudice",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   },
   {
    "id": "fx-nineteen-eighty-four",
    "title_en": "Nineteen Eighty-Four",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "1984",
+   "aliases": [
+    "1984",
+    "1984년"
+   ],
    "author": "George Orwell",
    "original_language": "en",
    "first_publication_year": 1949,
    "series_id": null,
    "series_number": null,
-   "openlibrary_work_id": null,
-   "editions": [],
-   "sources": []
+   "openlibrary_work_id": "OL1168083W",
+   "editions": [
+    {
+     "isbn": "9788937460777",
+     "language": "ko",
+     "title": "1984 (민음사, 정회성 옮김, 2003)",
+     "source_id": "s2"
+    }
+   ],
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/1984_(%EC%86%8C%EC%84%A4)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL24636613M/1984",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   },
   {
    "id": "fx-hunger-games-1",
    "title_en": "The Hunger Games",
-   "title_ko": null,
+   "title_ko": "헝거 게임",
    "aliases": [],
    "author": "Suzanne Collins",
    "original_language": "en",
    "first_publication_year": 2008,
    "series_id": "fx-hunger-games",
    "series_number": 1,
-   "openlibrary_work_id": null,
-   "editions": [],
-   "sources": []
+   "openlibrary_work_id": "OL5735363W",
+   "editions": [
+    {
+     "isbn": "9780439023481",
+     "language": "en",
+     "title": "Scholastic Press first edition, 2008",
+     "source_id": "s3"
+    }
+   ],
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Hunger_Games_(novel)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/The_Hunger_Games",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL22549594M/The_Hunger_Games",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   },
   {
    "id": "fx-murder-orient-express",
    "title_en": "Murder on the Orient Express",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "오리엔트 특급 살인",
+   "aliases": [
+    "Murder in the Calais Coach"
+   ],
    "author": "Agatha Christie",
    "original_language": "en",
    "first_publication_year": 1934,
@@ -71,27 +178,63 @@
    "series_number": null,
    "openlibrary_work_id": null,
    "editions": [],
-   "sources": []
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Murder_on_the_Orient_Express",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%A6%AC%EC%97%94%ED%8A%B8_%ED%8A%B9%EA%B8%89_%EC%82%B4%EC%9D%B8_(2017%EB%85%84_%EC%98%81%ED%99%94)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    }
+   ]
   },
   {
    "id": "fx-little-prince",
    "title_en": "The Little Prince",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "어린 왕자",
+   "aliases": [
+    "Le Petit Prince"
+   ],
    "author": "Antoine de Saint-Exupéry",
    "original_language": "fr",
    "first_publication_year": 1943,
    "series_id": null,
    "series_number": null,
-   "openlibrary_work_id": null,
+   "openlibrary_work_id": "OL10263W",
    "editions": [],
-   "sources": []
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Little_Prince",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%A6%B0_%EC%99%95%EC%9E%90",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://en.wikipedia.org/wiki/Category:The_Little_Prince",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s4",
+     "url": "https://openlibrary.org/books/OL6462595M/The_Little_Prince",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   },
   {
    "id": "fx-frankenstein",
    "title_en": "Frankenstein",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "프랑켄슈타인",
+   "aliases": [
+    "Frankenstein; or, The Modern Prometheus"
+   ],
    "author": "Mary Shelley",
    "original_language": "en",
    "first_publication_year": 1818,
@@ -99,49 +242,151 @@
    "series_number": null,
    "openlibrary_work_id": null,
    "editions": [],
-   "sources": []
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Frankenstein",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/Frankenstein%27s_monster",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%9E%91%EC%BC%84%EC%8A%88%ED%83%80%EC%9D%B8",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    }
+   ]
   },
   {
    "id": "fx-the-vegetarian",
    "title_en": "The Vegetarian",
-   "title_ko": null,
+   "title_ko": "채식주의자",
    "aliases": [],
    "author": "Han Kang",
    "original_language": "ko",
    "first_publication_year": 2007,
    "series_id": null,
    "series_number": null,
-   "openlibrary_work_id": null,
-   "editions": [],
-   "sources": []
+   "openlibrary_work_id": "OL17334243W",
+   "editions": [
+    {
+     "isbn": "9788936433598",
+     "language": "ko",
+     "title": "채식주의자 (창비, 2007)",
+     "source_id": "s1"
+    },
+    {
+     "isbn": "9780553448184",
+     "language": "en",
+     "title": "Hogarth hardcover, 2016",
+     "source_id": "s3"
+    }
+   ],
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Vegetarian",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/Vegetarian_(film)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/works/OL17334243W",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   },
   {
    "id": "fx-norwegian-wood",
    "title_en": "Norwegian Wood",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "노르웨이의 숲",
+   "aliases": [
+    "상실의 시대",
+    "ノルウェイの森"
+   ],
    "author": "Haruki Murakami",
    "original_language": "ja",
    "first_publication_year": 1987,
    "series_id": null,
    "series_number": null,
-   "openlibrary_work_id": null,
-   "editions": [],
-   "sources": []
+   "openlibrary_work_id": "OL2625457W",
+   "editions": [
+    {
+     "isbn": "9788937463105",
+     "language": "ko",
+     "title": "노르웨이의 숲 (민음사, 양억관 옮김, 2013)",
+     "source_id": "s2"
+    },
+    {
+     "isbn": "9780375704024",
+     "language": "en",
+     "title": "Vintage, 2000",
+     "source_id": "s3"
+    }
+   ],
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Norwegian_Wood_(novel)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EB%85%B8%EB%A5%B4%EC%9B%A8%EC%9D%B4%EC%9D%98_%EC%88%B2_(%EC%86%8C%EC%84%A4)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/works/OL2625457W",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   },
   {
    "id": "fx-the-hobbit",
    "title_en": "The Hobbit",
-   "title_ko": null,
-   "aliases": [],
+   "title_ko": "호빗",
+   "aliases": [
+    "The Hobbit, or There and Back Again"
+   ],
    "author": "J. R. R. Tolkien",
    "original_language": "en",
    "first_publication_year": 1937,
    "series_id": null,
    "series_number": null,
-   "openlibrary_work_id": null,
-   "editions": [],
-   "sources": []
+   "openlibrary_work_id": "OL27482W",
+   "editions": [
+    {
+     "isbn": "9780395520215",
+     "language": "en",
+     "title": "Houghton Mifflin illustrated paperback, 1984",
+     "source_id": "s3"
+    }
+   ],
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Hobbit",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/Bilbo_Baggins",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only"
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL7466619M/The_Hobbit",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing"
+    }
+   ]
   }
  ],
  "questions": [
@@ -729,24 +974,30 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q01",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q02",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q03",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -769,8 +1020,10 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q06",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -785,16 +1038,20 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q08",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q09",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -809,16 +1066,20 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q13",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q14",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -841,40 +1102,50 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q17",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q18",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q19",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q20",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q21",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -921,8 +1192,10 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q32",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1001,16 +1274,20 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q42",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q43",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1025,16 +1302,20 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q45",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q47",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1081,16 +1362,20 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q53",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q54",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1105,48 +1390,60 @@
    "book_id": "fx-harry-potter-1",
    "question_id": "q57",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q58",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q59",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-harry-potter-1",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1161,24 +1458,30 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q01",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q02",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q03",
-   "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "p_yes": 0.9,
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1241,8 +1544,10 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q11",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1257,16 +1562,20 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q13",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q14",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1289,40 +1598,50 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q17",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q18",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q19",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q20",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q21",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1361,8 +1680,10 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q26",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1385,8 +1706,10 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q29",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1489,8 +1812,10 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q42",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -1505,8 +1830,10 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q44",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1609,8 +1936,10 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q58",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1625,32 +1954,40 @@
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q60",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-pride-and-prejudice",
    "question_id": "q63",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -1665,16 +2002,20 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q01",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q03",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1729,8 +2070,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q10",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1753,8 +2096,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q13",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1808,9 +2153,11 @@
   {
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q21",
-   "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "p_yes": 0.9,
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1824,9 +2171,11 @@
   {
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q23",
-   "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "p_yes": 0.9,
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1849,8 +2198,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q26",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -1881,8 +2232,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q30",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1937,16 +2290,20 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q37",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q38",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -1977,8 +2334,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q42",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -1993,8 +2352,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q44",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -2025,8 +2386,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q48",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2097,8 +2460,10 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q58",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2113,24 +2478,30 @@
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-nineteen-eighty-four",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -2145,24 +2516,30 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q01",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-hunger-games-1",
    "question_id": "q02",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-hunger-games-1",
    "question_id": "q03",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2231,6 +2608,28 @@
   },
   {
    "book_id": "fx-hunger-games-1",
+   "question_id": "q14",
+   "p_yes": 0.3,
+   "status": "ambiguous",
+   "source_ids": [
+    "s1"
+   ],
+   "reviewed": false,
+   "note": "Panem occupies former North America (District 12 in Appalachia) but is not the United States as it exists."
+  },
+  {
+   "book_id": "fx-hunger-games-1",
+   "question_id": "q15",
+   "p_yes": 0.3,
+   "status": "ambiguous",
+   "source_ids": [
+    "s1"
+   ],
+   "reviewed": false,
+   "note": "Panem is a fictional future nation on Earth, not an invented world; readers may disagree."
+  },
+  {
+   "book_id": "fx-hunger-games-1",
    "question_id": "q16",
    "p_yes": 0.1,
    "status": "unreviewed_fixture",
@@ -2273,8 +2672,10 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q21",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2289,8 +2690,10 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q23",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2313,8 +2716,10 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q26",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2329,8 +2734,10 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q28",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2345,16 +2752,20 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q30",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-hunger-games-1",
    "question_id": "q31",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2449,16 +2860,20 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q44",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-hunger-games-1",
    "question_id": "q47",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2473,8 +2888,10 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q49",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -2505,16 +2922,20 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q53",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-hunger-games-1",
    "question_id": "q54",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2537,8 +2958,10 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q58",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2553,24 +2976,30 @@
    "book_id": "fx-hunger-games-1",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-hunger-games-1",
    "question_id": "q61",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-hunger-games-1",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2609,8 +3038,10 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q03",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2641,8 +3072,10 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q07",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2681,8 +3114,10 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q13",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2721,8 +3156,10 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q18",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2777,8 +3214,10 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q25",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -2977,16 +3416,20 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q53",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-murder-orient-express",
    "question_id": "q54",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3009,8 +3452,10 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q58",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3025,33 +3470,42 @@
    "book_id": "fx-murder-orient-express",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-murder-orient-express",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-murder-orient-express",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-murder-orient-express",
    "question_id": "q63",
-   "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
-   "reviewed": false
+   "p_yes": 0.5,
+   "status": "ambiguous",
+   "source_ids": [
+    "s2"
+   ],
+   "reviewed": false,
+   "note": "Only a TV film and one episode of a Poirot TV series; no dedicated series adaptation found."
   },
   {
    "book_id": "fx-murder-orient-express",
@@ -3065,8 +3519,10 @@
    "book_id": "fx-little-prince",
    "question_id": "q01",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3081,8 +3537,10 @@
    "book_id": "fx-little-prince",
    "question_id": "q03",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3225,8 +3683,10 @@
    "book_id": "fx-little-prince",
    "question_id": "q27",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3281,8 +3741,10 @@
    "book_id": "fx-little-prince",
    "question_id": "q34",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3297,8 +3759,10 @@
    "book_id": "fx-little-prince",
    "question_id": "q36",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3361,40 +3825,50 @@
    "book_id": "fx-little-prince",
    "question_id": "q45",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s3"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q46",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s3"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q47",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s3"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q48",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q49",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3449,48 +3923,70 @@
    "book_id": "fx-little-prince",
    "question_id": "q57",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q58",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q59",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-little-prince",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
+   "reviewed": false
+  },
+  {
+   "book_id": "fx-little-prince",
+   "question_id": "q63",
+   "p_yes": 0.9,
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -3521,8 +4017,10 @@
    "book_id": "fx-frankenstein",
    "question_id": "q03",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3536,10 +4034,13 @@
   {
    "book_id": "fx-frankenstein",
    "question_id": "q05",
-   "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
-   "reviewed": false
+   "p_yes": 0.7,
+   "status": "ambiguous",
+   "source_ids": [
+    "s2"
+   ],
+   "reviewed": false,
+   "note": "The creature is central but assembled from human remains; readers may not call it nonhuman."
   },
   {
    "book_id": "fx-frankenstein",
@@ -3617,8 +4118,10 @@
    "book_id": "fx-frankenstein",
    "question_id": "q17",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3697,8 +4200,10 @@
    "book_id": "fx-frankenstein",
    "question_id": "q27",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -3809,8 +4314,10 @@
    "book_id": "fx-frankenstein",
    "question_id": "q41",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -3849,24 +4356,30 @@
    "book_id": "fx-frankenstein",
    "question_id": "q46",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-frankenstein",
    "question_id": "q47",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-frankenstein",
    "question_id": "q48",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3881,16 +4394,20 @@
    "book_id": "fx-frankenstein",
    "question_id": "q50",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-frankenstein",
    "question_id": "q51",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s3"
+   ],
    "reviewed": false
   },
   {
@@ -3937,8 +4454,10 @@
    "book_id": "fx-frankenstein",
    "question_id": "q58",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -3953,24 +4472,30 @@
    "book_id": "fx-frankenstein",
    "question_id": "q60",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-frankenstein",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-frankenstein",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s3"
+   ],
    "reviewed": false
   },
   {
@@ -3993,16 +4518,20 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q02",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q03",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4057,8 +4586,10 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q10",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4073,8 +4604,10 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q12",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4137,8 +4670,10 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q20",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4209,8 +4744,10 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q29",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4273,8 +4810,10 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q37",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4289,8 +4828,10 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q39",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4345,8 +4886,10 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q46",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4361,24 +4904,30 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q48",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q49",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q50",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4425,48 +4974,60 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q57",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q58",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q59",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q61",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-vegetarian",
    "question_id": "q62",
-   "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "p_yes": 0.9,
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -4481,24 +5042,30 @@
    "book_id": "fx-the-vegetarian",
    "question_id": "q64",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-norwegian-wood",
    "question_id": "q02",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-norwegian-wood",
    "question_id": "q03",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4521,8 +5088,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q06",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4553,8 +5122,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q10",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4617,8 +5188,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q19",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4673,8 +5246,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q26",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4705,8 +5280,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q30",
    "p_yes": 0.3,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4777,8 +5354,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q39",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4841,8 +5420,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q47",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4857,8 +5438,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q49",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4881,8 +5464,10 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q52",
    "p_yes": 0.3,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4913,48 +5498,60 @@
    "book_id": "fx-norwegian-wood",
    "question_id": "q57",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-norwegian-wood",
    "question_id": "q58",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-norwegian-wood",
    "question_id": "q59",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-norwegian-wood",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-norwegian-wood",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-norwegian-wood",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -4977,8 +5574,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q01",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s2"
+   ],
    "reviewed": false
   },
   {
@@ -4993,8 +5592,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q03",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5009,8 +5610,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q05",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5081,8 +5684,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q15",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5137,16 +5742,20 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q27",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-hobbit",
    "question_id": "q28",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5177,8 +5786,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q32",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5265,8 +5876,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q43",
    "p_yes": 0.7,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5313,8 +5926,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q49",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5361,8 +5976,10 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q58",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
@@ -5377,24 +5994,30 @@
    "book_id": "fx-the-hobbit",
    "question_id": "q60",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-hobbit",
    "question_id": "q61",
    "p_yes": 0.1,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {
    "book_id": "fx-the-hobbit",
    "question_id": "q62",
    "p_yes": 0.9,
-   "status": "unreviewed_fixture",
-   "source_ids": [],
+   "status": "supported",
+   "source_ids": [
+    "s1"
+   ],
    "reviewed": false
   },
   {

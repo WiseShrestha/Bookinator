@@ -1,0 +1,18 @@
+{
+ "book_id": "fx-murder-orient-express",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/Murder_on_the_Orient_Express",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "1934 Hercule Poirot mystery (preceded by Lord Edgware Dies). The Orient Express is stopped by snow in Yugoslavia; opening chapters in Istanbul; 1930s. Poirot investigates a murder aboard. Films 1974 and 2017."
+  },
+  {
+   "id": "s2",
+   "url": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%A6%AC%EC%97%94%ED%8A%B8_%ED%8A%B9%EA%B8%89_%EC%82%B4%EC%9D%B8_(2017%EB%85%84_%EC%98%81%ED%99%94)",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Korean title 오리엔트 특급 살인; earlier adaptations include a 2001 TV film and a 2010 episode of the TV series Agatha Christie's Poirot."
+  }
+ ]
+}

@@ -39,9 +39,12 @@ export interface CatalogSource {
 }
 
 export interface CatalogEdition {
+  /** ISBN-13 without hyphens (checksum-validated by scripts/validate_catalog.py). */
   isbn?: string | null;
   language?: string | null;
   title?: string | null;
+  /** Which of the book's sources the ISBN was taken from. */
+  source_id?: string | null;
 }
 
 export interface CatalogBook {

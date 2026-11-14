@@ -1,0 +1,30 @@
+{
+ "book_id": "fx-little-prince",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/The_Little_Prince",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "French novella (1943). A pilot-narrator stranded in the Sahara meets a young boy, the little prince, from asteroid B-612, who recounts visits to other planets; a fox teaches him about love. Philosophical observations on adults. 1974 film."
+  },
+  {
+   "id": "s2",
+   "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%A6%B0_%EC%99%95%EC%9E%90",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Korean title 어린 왕자; original language French. Related ko pages: 2015 animated film and a 52-episode 2010 TV animated series."
+  },
+  {
+   "id": "s3",
+   "url": "https://en.wikipedia.org/wiki/Category:The_Little_Prince",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Category summary: themes of loneliness, friendship, love and loss."
+  },
+  {
+   "id": "s4",
+   "url": "https://openlibrary.org/books/OL6462595M/The_Little_Prince",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "1943 edition record listing Work ID OL10263W."
+  }
+ ]
+}

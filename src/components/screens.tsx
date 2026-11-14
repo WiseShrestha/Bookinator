@@ -1,9 +1,10 @@
 import { useState, type RefObject } from "react";
-import { matchingClues } from "../engine/explain.ts";
+import { matchingClues, type MatchingClue } from "../engine/explain.ts";
 import { catalogLinks } from "../engine/links.ts";
 import { ANSWERS, ANSWER_LABELS, type Answer, type CatalogBook } from "../engine/model.ts";
 import type { Action, SessionState, ShortlistReason } from "../engine/session.ts";
 import { CC, CONFIG, LINK_OPTIONS } from "../game.ts";
+import { Availability } from "./Availability.tsx";
 
 type Heading = RefObject<HTMLHeadingElement | null>;
 type ActionOf<K extends Action["kind"]> = Extract<Action, { kind: K }>;
@@ -38,6 +39,7 @@ function BookCard({ book, compact = false }: { book: CatalogBook; compact?: bool
       <div>
         <p className="book-title">{book.title_en}</p>
         {book.title_ko && <p className="book-alt" lang="ko">{book.title_ko}</p>}
+        {!compact && book.aliases.length > 0 && <p className="book-alt small">Also: {book.aliases.join(" · ")}</p>}
         <p className="book-meta">
           {book.author}
           {book.first_publication_year ? ` · ${book.first_publication_year}` : ""}
@@ -46,6 +48,23 @@ function BookCard({ book, compact = false }: { book: CatalogBook; compact?: bool
       </div>
     </div>
   );
+}
+
+function ClueProvenance({ bookIndex, feature }: { bookIndex: number; feature: MatchingClue["feature"] }) {
+  if (feature?.status === "supported" && feature.source_ids.length) {
+    const src = CC.books[bookIndex].sources.find((x) => x.id === feature.source_ids[0]);
+    if (src) {
+      const host = new URL(src.url).hostname.replace(/^www\./, "");
+      return (
+        <span className="sourced">
+          {" "}· source:{" "}
+          <a href={src.url} target="_blank" rel="noopener noreferrer">{host}</a>
+          {feature.reviewed ? "" : " (AI-checked)"}
+        </span>
+      );
+    }
+  }
+  return <em className="unreviewed"> (unchecked label)</em>;
 }
 
 function Clues({ bookIndex, state }: { bookIndex: number; state: SessionState }) {
@@ -60,7 +79,7 @@ function Clues({ bookIndex, state }: { bookIndex: number; state: SessionState })
             <span className="clue-q">{c.questionText}</span>
             <span className="clue-a">
               You said <b>{c.userAnswerLabel}</b> · catalog says <b>{c.catalogLabel}</b>
-              {c.feature && !c.feature.reviewed && <em className="unreviewed"> (unreviewed label)</em>}
+              <ClueProvenance bookIndex={bookIndex} feature={c.feature} />
             </span>
           </li>
         ))}
@@ -84,7 +103,8 @@ function Links({ book }: { book: CatalogBook }) {
           </li>
         ))}
       </ul>
-      <p className="muted small">Availability is not checked here. Ask a librarian or check the library's own catalog for copies.</p>
+      <Availability book={book} />
+      <p className="muted small">Ask a librarian or check the library's own catalog for copies and the exact edition.</p>
     </div>
   );
 }

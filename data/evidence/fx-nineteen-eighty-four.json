@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-nineteen-eighty-four",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Orwell dystopia (1949). Set in a fictional future London; Britain is now Airstrip One after decades of war and revolution. Protagonist Winston Smith, 39, rewrites records at the Ministry of Truth and secretly opposes the Party. Themes: totalitarianism, surveillance, truth."
+  },
+  {
+   "id": "s2",
+   "url": "https://ko.wikipedia.org/wiki/1984_(%EC%86%8C%EC%84%A4)",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Korean title 1984 (translations also 1984년). Forbidden affair with Julia; arrest and long torture at the Ministry of Love. Described as Orwell's least witty book. Class structure of Oceania. Films 1956 and 1984."
+  },
+  {
+   "id": "s3",
+   "url": "https://openlibrary.org/books/OL24636613M/1984",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "Edition record listing Work ID OL1168083W."
+  }
+ ]
+}

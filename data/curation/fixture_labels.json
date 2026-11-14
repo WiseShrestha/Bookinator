@@ -1,55 +1,1599 @@
 {
-  "_comment": "DEVELOPMENT FIXTURE ONLY. Labels written from general knowledge by an AI assistant during the build; NOT checked against sources and NOT reviewed by a human. Unlisted cells are unknown (0.5). Do not quote these as verified facts or use them for accuracy claims. Korean titles, Open Library IDs and ISBNs are intentionally null until verified. Values: 0.1 strong No, 0.3 qualified No, 0.7 qualified Yes, 0.9 strong Yes.",
-  "books": [
+ "_comment": "DEVELOPMENT FIXTURE. Labels were first written from general knowledge by an AI assistant, then checked by the assistant against the cited Wikipedia / Open Library pages (14 Nov 2026). 'supported' cells cite a source; 'ambiguous' cells carry a note; all other cells remain unchecked. No human review yet. Source notes are paraphrases, not quotations.",
+ "books": [
+  {
+   "id": "fx-harry-potter-1",
+   "title_en": "Harry Potter and the Philosopher's Stone",
+   "author": "J. K. Rowling",
+   "original_language": "en",
+   "first_publication_year": 1997,
+   "series_id": "fx-harry-potter",
+   "series_number": 1,
+   "labels": {
+    "q01": 0.9,
+    "q02": 0.7,
+    "q03": 0.9,
+    "q04": 0.3,
+    "q05": 0.1,
+    "q06": 0.9,
+    "q07": 0.1,
+    "q08": 0.9,
+    "q09": 0.9,
+    "q12": 0.1,
+    "q13": 0.9,
+    "q14": 0.1,
+    "q15": 0.3,
+    "q16": 0.1,
+    "q17": 0.1,
+    "q18": 0.1,
+    "q19": 0.9,
+    "q20": 0.1,
+    "q21": 0.1,
+    "q22": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q26": 0.1,
+    "q27": 0.1,
+    "q32": 0.9,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.7,
+    "q36": 0.3,
+    "q37": 0.1,
+    "q38": 0.1,
+    "q39": 0.1,
+    "q40": 0.1,
+    "q41": 0.3,
+    "q42": 0.7,
+    "q43": 0.9,
+    "q44": 0.3,
+    "q45": 0.9,
+    "q47": 0.7,
+    "q48": 0.3,
+    "q49": 0.1,
+    "q50": 0.1,
+    "q51": 0.1,
+    "q52": 0.1,
+    "q53": 0.9,
+    "q54": 0.9,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.9,
+    "q59": 0.1,
+    "q60": 0.1,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q64": 0.1
+   },
+   "title_ko": "해리 포터와 마법사의 돌",
+   "aliases": [
+    "Harry Potter and the Sorcerer's Stone"
+   ],
+   "openlibrary_work_id": "OL82563W",
+   "sources": [
     {
-      "id": "fx-harry-potter-1", "title_en": "Harry Potter and the Philosopher's Stone", "author": "J. K. Rowling",
-      "original_language": "en", "first_publication_year": 1997, "series_id": "fx-harry-potter", "series_number": 1,
-      "labels": {"q01":0.9,"q02":0.7,"q03":0.9,"q04":0.3,"q05":0.1,"q06":0.9,"q07":0.1,"q08":0.9,"q09":0.9,"q12":0.1,"q13":0.9,"q14":0.1,"q15":0.3,"q16":0.1,"q17":0.1,"q18":0.1,"q19":0.9,"q20":0.1,"q21":0.1,"q22":0.1,"q23":0.1,"q24":0.1,"q26":0.1,"q27":0.1,"q32":0.9,"q33":0.1,"q34":0.1,"q35":0.7,"q36":0.3,"q37":0.1,"q38":0.1,"q39":0.1,"q40":0.1,"q41":0.3,"q42":0.7,"q43":0.9,"q44":0.3,"q45":0.9,"q47":0.7,"q48":0.3,"q49":0.1,"q50":0.1,"q51":0.1,"q52":0.1,"q53":0.9,"q54":0.9,"q55":0.1,"q57":0.1,"q58":0.9,"q59":0.1,"q60":0.1,"q61":0.1,"q62":0.9,"q64":0.1}
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher's_Stone",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Debut fantasy novel, first of the Harry Potter series (UK, 1997). Harry, an orphan, learns at 11 he is a wizard and attends Hogwarts, a school of magic, befriending Ron and Hermione. Set in England 1991-92. Reviewers noted its humour; Rowling channelled grief for her mother into the orphaned Harry. Filmed in 2001."
     },
     {
-      "id": "fx-pride-and-prejudice", "title_en": "Pride and Prejudice", "author": "Jane Austen",
-      "original_language": "en", "first_publication_year": 1813, "series_id": null, "series_number": null,
-      "labels": {"q01":0.1,"q02":0.9,"q03":0.7,"q04":0.3,"q05":0.1,"q06":0.1,"q07":0.1,"q08":0.1,"q09":0.1,"q10":0.3,"q11":0.7,"q12":0.1,"q13":0.9,"q14":0.1,"q15":0.1,"q16":0.1,"q17":0.9,"q18":0.1,"q19":0.1,"q20":0.1,"q21":0.1,"q22":0.1,"q23":0.1,"q24":0.1,"q25":0.1,"q26":0.9,"q27":0.1,"q28":0.1,"q29":0.7,"q30":0.1,"q31":0.1,"q32":0.1,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.1,"q37":0.1,"q38":0.1,"q39":0.1,"q40":0.1,"q41":0.1,"q42":0.9,"q43":0.3,"q44":0.9,"q45":0.3,"q46":0.1,"q47":0.1,"q48":0.3,"q49":0.1,"q50":0.1,"q51":0.3,"q52":0.1,"q53":0.1,"q54":0.1,"q55":0.1,"q57":0.1,"q58":0.9,"q59":0.1,"q60":0.9,"q61":0.1,"q62":0.9,"q63":0.9,"q64":0.1}
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%ED%95%B4%EB%A6%AC_%ED%8F%AC%ED%84%B0%EC%99%80_%EB%A7%88%EB%B2%95%EC%82%AC%EC%9D%98_%EB%8F%8C",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Korean title 해리 포터와 마법사의 돌; story period 1991-1992; first book of the series; 2001 film."
     },
     {
-      "id": "fx-nineteen-eighty-four", "title_en": "Nineteen Eighty-Four", "author": "George Orwell",
-      "original_language": "en", "first_publication_year": 1949, "series_id": null, "series_number": null,
-      "labels": {"q01":0.1,"q03":0.9,"q04":0.1,"q05":0.1,"q06":0.1,"q07":0.1,"q08":0.1,"q09":0.1,"q10":0.9,"q11":0.1,"q12":0.1,"q13":0.9,"q14":0.1,"q15":0.3,"q16":0.1,"q17":0.1,"q18":0.1,"q20":0.1,"q21":0.7,"q22":0.1,"q23":0.7,"q24":0.3,"q25":0.1,"q26":0.7,"q27":0.1,"q28":0.3,"q29":0.1,"q30":0.9,"q31":0.1,"q32":0.1,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.1,"q37":0.7,"q38":0.7,"q39":0.1,"q40":0.1,"q41":0.7,"q42":0.1,"q43":0.1,"q44":0.7,"q45":0.1,"q46":0.7,"q47":0.3,"q48":0.9,"q49":0.1,"q50":0.1,"q51":0.3,"q52":0.1,"q53":0.1,"q54":0.1,"q55":0.1,"q57":0.1,"q58":0.9,"q59":0.1,"q60":0.1,"q61":0.1,"q62":0.9,"q64":0.1}
-    },
-    {
-      "id": "fx-hunger-games-1", "title_en": "The Hunger Games", "author": "Suzanne Collins",
-      "original_language": "en", "first_publication_year": 2008, "series_id": "fx-hunger-games", "series_number": 1,
-      "labels": {"q01":0.9,"q02":0.9,"q03":0.7,"q04":0.1,"q05":0.1,"q06":0.1,"q07":0.1,"q08":0.1,"q09":0.1,"q12":0.1,"q13":0.1,"q16":0.1,"q17":0.1,"q18":0.1,"q19":0.1,"q20":0.1,"q21":0.9,"q22":0.1,"q23":0.9,"q24":0.1,"q25":0.1,"q26":0.7,"q27":0.3,"q28":0.9,"q29":0.3,"q30":0.7,"q31":0.9,"q32":0.1,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.1,"q37":0.1,"q38":0.1,"q39":0.1,"q40":0.1,"q42":0.1,"q43":0.7,"q44":0.9,"q47":0.7,"q48":0.7,"q49":0.9,"q50":0.1,"q51":0.1,"q52":0.1,"q53":0.9,"q54":0.9,"q55":0.1,"q57":0.1,"q58":0.9,"q59":0.1,"q60":0.1,"q61":0.9,"q62":0.9,"q63":0.1,"q64":0.1}
-    },
-    {
-      "id": "fx-murder-orient-express", "title_en": "Murder on the Orient Express", "author": "Agatha Christie",
-      "original_language": "en", "first_publication_year": 1934, "series_id": "fx-hercule-poirot", "series_number": null,
-      "labels": {"q01":0.1,"q02":0.3,"q03":0.9,"q04":0.3,"q05":0.1,"q06":0.1,"q07":0.9,"q08":0.1,"q09":0.1,"q10":0.1,"q12":0.1,"q13":0.1,"q14":0.1,"q15":0.1,"q16":0.1,"q17":0.1,"q18":0.9,"q19":0.1,"q20":0.1,"q21":0.1,"q22":0.1,"q23":0.1,"q24":0.1,"q25":0.9,"q26":0.1,"q28":0.1,"q29":0.1,"q30":0.1,"q31":0.1,"q32":0.1,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.1,"q37":0.3,"q38":0.1,"q39":0.1,"q40":0.1,"q41":0.3,"q42":0.3,"q43":0.1,"q44":0.3,"q45":0.1,"q46":0.1,"q49":0.1,"q50":0.1,"q51":0.1,"q52":0.1,"q53":0.9,"q54":0.1,"q55":0.1,"q57":0.1,"q58":0.9,"q59":0.1,"q60":0.1,"q61":0.1,"q62":0.9,"q63":0.7,"q64":0.1}
-    },
-    {
-      "id": "fx-little-prince", "title_en": "The Little Prince", "author": "Antoine de Saint-Exupéry",
-      "original_language": "fr", "first_publication_year": 1943, "series_id": null, "series_number": null,
-      "labels": {"q01":0.9,"q02":0.1,"q03":0.9,"q04":0.1,"q06":0.1,"q07":0.1,"q08":0.1,"q09":0.1,"q10":0.1,"q11":0.1,"q12":0.1,"q13":0.1,"q14":0.1,"q16":0.1,"q17":0.1,"q21":0.1,"q23":0.1,"q24":0.1,"q25":0.1,"q26":0.3,"q27":0.9,"q28":0.3,"q29":0.1,"q30":0.1,"q31":0.1,"q32":0.3,"q33":0.1,"q34":0.7,"q35":0.1,"q36":0.9,"q37":0.1,"q38":0.1,"q39":0.1,"q40":0.1,"q41":0.1,"q43":0.7,"q44":0.1,"q45":0.9,"q46":0.9,"q47":0.7,"q48":0.9,"q49":0.9,"q50":0.1,"q51":0.1,"q52":0.3,"q53":0.1,"q54":0.1,"q55":0.1,"q57":0.1,"q58":0.1,"q59":0.1,"q60":0.1,"q61":0.1,"q62":0.9,"q64":0.1}
-    },
-    {
-      "id": "fx-frankenstein", "title_en": "Frankenstein", "author": "Mary Shelley",
-      "original_language": "en", "first_publication_year": 1818, "series_id": null, "series_number": null,
-      "labels": {"q01":0.1,"q02":0.1,"q03":0.9,"q04":0.3,"q05":0.9,"q06":0.3,"q07":0.1,"q08":0.1,"q09":0.3,"q10":0.3,"q12":0.1,"q13":0.3,"q14":0.1,"q15":0.1,"q17":0.9,"q18":0.1,"q19":0.1,"q20":0.1,"q21":0.1,"q22":0.1,"q23":0.1,"q24":0.1,"q25":0.3,"q26":0.3,"q27":0.7,"q28":0.3,"q29":0.3,"q30":0.1,"q31":0.1,"q32":0.1,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.1,"q37":0.1,"q38":0.1,"q39":0.3,"q40":0.1,"q41":0.9,"q42":0.1,"q43":0.1,"q44":0.3,"q45":0.3,"q46":0.9,"q47":0.9,"q48":0.9,"q49":0.9,"q50":0.7,"q51":0.9,"q52":0.3,"q53":0.1,"q54":0.1,"q55":0.1,"q57":0.1,"q58":0.9,"q59":0.1,"q60":0.9,"q61":0.1,"q62":0.9,"q64":0.1}
-    },
-    {
-      "id": "fx-the-vegetarian", "title_en": "The Vegetarian", "author": "Han Kang",
-      "original_language": "ko", "first_publication_year": 2007, "series_id": null, "series_number": null,
-      "labels": {"q01":0.1,"q02":0.9,"q03":0.7,"q04":0.3,"q05":0.1,"q06":0.1,"q07":0.1,"q08":0.1,"q09":0.1,"q10":0.9,"q11":0.1,"q12":0.9,"q13":0.1,"q14":0.1,"q15":0.1,"q16":0.1,"q17":0.1,"q18":0.1,"q19":0.1,"q20":0.7,"q21":0.1,"q22":0.1,"q23":0.1,"q24":0.1,"q25":0.1,"q26":0.3,"q27":0.1,"q28":0.1,"q29":0.9,"q30":0.3,"q31":0.1,"q32":0.1,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.1,"q37":0.7,"q38":0.1,"q39":0.7,"q40":0.1,"q41":0.3,"q42":0.1,"q43":0.1,"q44":0.3,"q45":0.1,"q46":0.9,"q47":0.3,"q48":0.7,"q49":0.7,"q50":0.9,"q51":0.1,"q52":0.3,"q53":0.1,"q54":0.1,"q55":0.1,"q57":0.9,"q58":0.1,"q59":0.1,"q60":0.1,"q61":0.9,"q62":0.7,"q63":0.1,"q64":0.9}
-    },
-    {
-      "id": "fx-norwegian-wood", "title_en": "Norwegian Wood", "author": "Haruki Murakami",
-      "original_language": "ja", "first_publication_year": 1987, "series_id": null, "series_number": null,
-      "labels": {"q02":0.7,"q03":0.9,"q04":0.1,"q05":0.1,"q06":0.9,"q07":0.1,"q08":0.1,"q09":0.3,"q10":0.9,"q12":0.1,"q13":0.1,"q14":0.1,"q15":0.1,"q16":0.1,"q17":0.1,"q18":0.1,"q19":0.9,"q20":0.1,"q21":0.1,"q22":0.1,"q23":0.1,"q24":0.1,"q25":0.1,"q26":0.9,"q27":0.1,"q28":0.1,"q29":0.1,"q30":0.3,"q31":0.1,"q32":0.1,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.1,"q37":0.3,"q38":0.1,"q39":0.9,"q40":0.1,"q41":0.1,"q42":0.3,"q43":0.9,"q44":0.1,"q45":0.7,"q46":0.9,"q47":0.9,"q48":0.7,"q49":0.9,"q50":0.1,"q51":0.3,"q52":0.3,"q53":0.1,"q54":0.1,"q55":0.1,"q57":0.1,"q58":0.1,"q59":0.9,"q60":0.1,"q61":0.1,"q62":0.9,"q63":0.1,"q64":0.1}
-    },
-    {
-      "id": "fx-the-hobbit", "title_en": "The Hobbit", "author": "J. R. R. Tolkien",
-      "original_language": "en", "first_publication_year": 1937, "series_id": null, "series_number": null,
-      "labels": {"q01":0.1,"q02":0.1,"q03":0.9,"q04":0.3,"q05":0.9,"q06":0.1,"q07":0.1,"q08":0.3,"q09":0.1,"q10":0.1,"q12":0.1,"q13":0.1,"q14":0.1,"q15":0.9,"q16":0.1,"q21":0.1,"q23":0.1,"q24":0.1,"q25":0.1,"q26":0.1,"q27":0.9,"q28":0.9,"q29":0.1,"q30":0.1,"q31":0.1,"q32":0.9,"q33":0.1,"q34":0.1,"q35":0.1,"q36":0.7,"q37":0.3,"q38":0.1,"q39":0.1,"q40":0.1,"q41":0.3,"q42":0.7,"q43":0.7,"q44":0.1,"q45":0.7,"q46":0.1,"q47":0.3,"q48":0.3,"q49":0.1,"q50":0.1,"q51":0.1,"q52":0.1,"q55":0.1,"q57":0.1,"q58":0.9,"q59":0.1,"q60":0.1,"q61":0.1,"q62":0.9,"q63":0.3,"q64":0.1}
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL7961604M/Harry_Potter_and_the_Philosopher's_Stone",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "Edition record listing Work ID OL82563W."
     }
-  ]
+   ],
+   "supported": {
+    "q01": [
+     "s1"
+    ],
+    "q02": [
+     "s1"
+    ],
+    "q03": [
+     "s1"
+    ],
+    "q06": [
+     "s1"
+    ],
+    "q08": [
+     "s1"
+    ],
+    "q09": [
+     "s1"
+    ],
+    "q13": [
+     "s1"
+    ],
+    "q14": [
+     "s1"
+    ],
+    "q17": [
+     "s1"
+    ],
+    "q18": [
+     "s1"
+    ],
+    "q19": [
+     "s1"
+    ],
+    "q20": [
+     "s1"
+    ],
+    "q21": [
+     "s1"
+    ],
+    "q32": [
+     "s1"
+    ],
+    "q42": [
+     "s1"
+    ],
+    "q43": [
+     "s1"
+    ],
+    "q45": [
+     "s1"
+    ],
+    "q47": [
+     "s1"
+    ],
+    "q53": [
+     "s1"
+    ],
+    "q54": [
+     "s1"
+    ],
+    "q57": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q59": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q62": [
+     "s1"
+    ]
+   },
+   "ambiguous": {},
+   "editions": [
+    {
+     "isbn": "9788983925558",
+     "language": "ko",
+     "title": "해리 포터와 마법사의 돌 (문학수첩)",
+     "source_id": "s2"
+    },
+    {
+     "isbn": "9780747532743",
+     "language": "en",
+     "title": "Bloomsbury paperback, 2000",
+     "source_id": "s3"
+    }
+   ]
+  },
+  {
+   "id": "fx-pride-and-prejudice",
+   "title_en": "Pride and Prejudice",
+   "author": "Jane Austen",
+   "original_language": "en",
+   "first_publication_year": 1813,
+   "series_id": null,
+   "series_number": null,
+   "labels": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q03": 0.9,
+    "q04": 0.3,
+    "q05": 0.1,
+    "q06": 0.1,
+    "q07": 0.1,
+    "q08": 0.1,
+    "q09": 0.1,
+    "q10": 0.3,
+    "q11": 0.7,
+    "q12": 0.1,
+    "q13": 0.9,
+    "q14": 0.1,
+    "q15": 0.1,
+    "q16": 0.1,
+    "q17": 0.9,
+    "q18": 0.1,
+    "q19": 0.1,
+    "q20": 0.1,
+    "q21": 0.1,
+    "q22": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q27": 0.1,
+    "q28": 0.1,
+    "q29": 0.7,
+    "q30": 0.1,
+    "q31": 0.1,
+    "q32": 0.1,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.1,
+    "q37": 0.1,
+    "q38": 0.1,
+    "q39": 0.1,
+    "q40": 0.1,
+    "q41": 0.1,
+    "q42": 0.9,
+    "q43": 0.3,
+    "q44": 0.9,
+    "q45": 0.3,
+    "q46": 0.1,
+    "q47": 0.1,
+    "q48": 0.3,
+    "q49": 0.1,
+    "q50": 0.1,
+    "q51": 0.3,
+    "q52": 0.1,
+    "q53": 0.1,
+    "q54": 0.1,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.9,
+    "q59": 0.1,
+    "q60": 0.9,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q63": 0.9,
+    "q64": 0.1
+   },
+   "title_ko": "오만과 편견",
+   "aliases": [
+    "First Impressions"
+   ],
+   "openlibrary_work_id": "OL66554W",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Austen novel of manners (1813) following Elizabeth Bennet, about 20, and Mr Darcy, described as one of the two central characters. Early 19th-century English gentry estates near a small town in Hertfordshire. Marriage, wealth, class and ineffectual parents are themes. Many film and TV versions; films in 1940 and 2005."
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%A7%8C%EA%B3%BC_%ED%8E%B8%EA%B2%AC",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Korean title 오만과 편견; genre listed as novel of manners and satirical novel; rural setting; 1995 BBC six-part TV drama exists."
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/works/OL66554W/Pride_and_Prejudice",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "Work record OL66554W."
+    }
+   ],
+   "supported": {
+    "q01": [
+     "s1"
+    ],
+    "q02": [
+     "s1"
+    ],
+    "q03": [
+     "s1"
+    ],
+    "q11": [
+     "s1"
+    ],
+    "q13": [
+     "s1"
+    ],
+    "q14": [
+     "s1"
+    ],
+    "q17": [
+     "s1"
+    ],
+    "q18": [
+     "s1"
+    ],
+    "q19": [
+     "s1"
+    ],
+    "q20": [
+     "s1"
+    ],
+    "q21": [
+     "s1"
+    ],
+    "q26": [
+     "s1"
+    ],
+    "q29": [
+     "s1"
+    ],
+    "q44": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q62": [
+     "s1"
+    ],
+    "q42": [
+     "s2"
+    ],
+    "q63": [
+     "s2"
+    ]
+   },
+   "ambiguous": {},
+   "editions": [
+    {
+     "isbn": "9788990324788",
+     "language": "ko",
+     "title": "오만과 편견 (Brown Hill, 2014)",
+     "source_id": "s3"
+    }
+   ]
+  },
+  {
+   "id": "fx-nineteen-eighty-four",
+   "title_en": "Nineteen Eighty-Four",
+   "author": "George Orwell",
+   "original_language": "en",
+   "first_publication_year": 1949,
+   "series_id": null,
+   "series_number": null,
+   "labels": {
+    "q01": 0.1,
+    "q03": 0.9,
+    "q04": 0.1,
+    "q05": 0.1,
+    "q06": 0.1,
+    "q07": 0.1,
+    "q08": 0.1,
+    "q09": 0.1,
+    "q10": 0.9,
+    "q11": 0.1,
+    "q12": 0.1,
+    "q13": 0.9,
+    "q14": 0.1,
+    "q15": 0.3,
+    "q16": 0.1,
+    "q17": 0.1,
+    "q18": 0.1,
+    "q20": 0.1,
+    "q21": 0.9,
+    "q22": 0.1,
+    "q23": 0.9,
+    "q24": 0.3,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q27": 0.1,
+    "q28": 0.3,
+    "q29": 0.1,
+    "q30": 0.9,
+    "q31": 0.1,
+    "q32": 0.1,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.1,
+    "q37": 0.7,
+    "q38": 0.7,
+    "q39": 0.1,
+    "q40": 0.1,
+    "q41": 0.7,
+    "q42": 0.1,
+    "q43": 0.1,
+    "q44": 0.7,
+    "q45": 0.1,
+    "q46": 0.7,
+    "q47": 0.3,
+    "q48": 0.9,
+    "q49": 0.1,
+    "q50": 0.1,
+    "q51": 0.3,
+    "q52": 0.1,
+    "q53": 0.1,
+    "q54": 0.1,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.9,
+    "q59": 0.1,
+    "q60": 0.1,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q64": 0.1
+   },
+   "title_ko": "1984",
+   "aliases": [
+    "1984",
+    "1984년"
+   ],
+   "openlibrary_work_id": "OL1168083W",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Orwell dystopia (1949). Set in a fictional future London; Britain is now Airstrip One after decades of war and revolution. Protagonist Winston Smith, 39, rewrites records at the Ministry of Truth and secretly opposes the Party. Themes: totalitarianism, surveillance, truth."
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/1984_(%EC%86%8C%EC%84%A4)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Korean title 1984 (translations also 1984년). Forbidden affair with Julia; arrest and long torture at the Ministry of Love. Described as Orwell's least witty book. Class structure of Oceania. Films 1956 and 1984."
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL24636613M/1984",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "Edition record listing Work ID OL1168083W."
+    }
+   ],
+   "supported": {
+    "q01": [
+     "s1"
+    ],
+    "q03": [
+     "s1"
+    ],
+    "q10": [
+     "s1"
+    ],
+    "q13": [
+     "s1"
+    ],
+    "q21": [
+     "s1"
+    ],
+    "q23": [
+     "s1"
+    ],
+    "q30": [
+     "s1"
+    ],
+    "q38": [
+     "s1"
+    ],
+    "q48": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q26": [
+     "s2"
+    ],
+    "q37": [
+     "s2"
+    ],
+    "q42": [
+     "s2"
+    ],
+    "q44": [
+     "s2"
+    ],
+    "q62": [
+     "s2"
+    ]
+   },
+   "ambiguous": {},
+   "editions": [
+    {
+     "isbn": "9788937460777",
+     "language": "ko",
+     "title": "1984 (민음사, 정회성 옮김, 2003)",
+     "source_id": "s2"
+    }
+   ]
+  },
+  {
+   "id": "fx-hunger-games-1",
+   "title_en": "The Hunger Games",
+   "author": "Suzanne Collins",
+   "original_language": "en",
+   "first_publication_year": 2008,
+   "series_id": "fx-hunger-games",
+   "series_number": 1,
+   "labels": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q03": 0.7,
+    "q04": 0.1,
+    "q05": 0.1,
+    "q06": 0.1,
+    "q07": 0.1,
+    "q08": 0.1,
+    "q09": 0.1,
+    "q12": 0.1,
+    "q13": 0.1,
+    "q16": 0.1,
+    "q17": 0.1,
+    "q18": 0.1,
+    "q19": 0.1,
+    "q20": 0.1,
+    "q21": 0.9,
+    "q22": 0.1,
+    "q23": 0.9,
+    "q24": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q27": 0.3,
+    "q28": 0.9,
+    "q29": 0.3,
+    "q30": 0.7,
+    "q31": 0.9,
+    "q32": 0.1,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.1,
+    "q37": 0.1,
+    "q38": 0.1,
+    "q39": 0.1,
+    "q40": 0.1,
+    "q42": 0.1,
+    "q43": 0.7,
+    "q44": 0.9,
+    "q47": 0.7,
+    "q48": 0.7,
+    "q49": 0.9,
+    "q50": 0.1,
+    "q51": 0.1,
+    "q52": 0.1,
+    "q53": 0.9,
+    "q54": 0.9,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.9,
+    "q59": 0.1,
+    "q60": 0.1,
+    "q61": 0.9,
+    "q62": 0.9,
+    "q63": 0.1,
+    "q64": 0.1,
+    "q14": 0.3,
+    "q15": 0.3
+   },
+   "title_ko": "헝거 게임",
+   "aliases": [],
+   "openlibrary_work_id": "OL5735363W",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Hunger_Games_(novel)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "2008 YA dystopia, first of the trilogy, told from 16-year-old Katniss's perspective in post-apocalyptic Panem in former North America. She volunteers for a televised fight to the death; male tribute Peeta. Themes: survival, poverty, oppression; she lost her father. 2012 film."
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/The_Hunger_Games",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Series page: Katniss is the trilogy's narrator; themes include distrust of authority, class, resistance."
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL22549594M/The_Hunger_Games",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "First-edition record; Work ID OL5735363W listed on related edition records."
+    }
+   ],
+   "supported": {
+    "q01": [
+     "s1"
+    ],
+    "q02": [
+     "s1"
+    ],
+    "q03": [
+     "s1"
+    ],
+    "q21": [
+     "s1"
+    ],
+    "q23": [
+     "s1"
+    ],
+    "q26": [
+     "s1"
+    ],
+    "q28": [
+     "s1"
+    ],
+    "q31": [
+     "s1"
+    ],
+    "q44": [
+     "s1"
+    ],
+    "q47": [
+     "s1"
+    ],
+    "q53": [
+     "s1"
+    ],
+    "q54": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q62": [
+     "s1"
+    ],
+    "q30": [
+     "s2"
+    ],
+    "q49": [
+     "s2"
+    ]
+   },
+   "ambiguous": {
+    "q14": {
+     "source_ids": [
+      "s1"
+     ],
+     "note": "Panem occupies former North America (District 12 in Appalachia) but is not the United States as it exists."
+    },
+    "q15": {
+     "source_ids": [
+      "s1"
+     ],
+     "note": "Panem is a fictional future nation on Earth, not an invented world; readers may disagree."
+    }
+   },
+   "editions": [
+    {
+     "isbn": "9780439023481",
+     "language": "en",
+     "title": "Scholastic Press first edition, 2008",
+     "source_id": "s3"
+    }
+   ]
+  },
+  {
+   "id": "fx-murder-orient-express",
+   "title_en": "Murder on the Orient Express",
+   "author": "Agatha Christie",
+   "original_language": "en",
+   "first_publication_year": 1934,
+   "series_id": "fx-hercule-poirot",
+   "series_number": null,
+   "labels": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q03": 0.9,
+    "q04": 0.3,
+    "q05": 0.1,
+    "q06": 0.1,
+    "q07": 0.9,
+    "q08": 0.1,
+    "q09": 0.1,
+    "q10": 0.1,
+    "q12": 0.1,
+    "q13": 0.1,
+    "q14": 0.1,
+    "q15": 0.1,
+    "q16": 0.1,
+    "q17": 0.1,
+    "q18": 0.9,
+    "q19": 0.1,
+    "q20": 0.1,
+    "q21": 0.1,
+    "q22": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q25": 0.9,
+    "q26": 0.1,
+    "q28": 0.1,
+    "q29": 0.1,
+    "q30": 0.1,
+    "q31": 0.1,
+    "q32": 0.1,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.1,
+    "q37": 0.3,
+    "q38": 0.1,
+    "q39": 0.1,
+    "q40": 0.1,
+    "q41": 0.3,
+    "q42": 0.3,
+    "q43": 0.1,
+    "q44": 0.3,
+    "q45": 0.1,
+    "q46": 0.1,
+    "q49": 0.1,
+    "q50": 0.1,
+    "q51": 0.1,
+    "q52": 0.1,
+    "q53": 0.9,
+    "q54": 0.1,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.9,
+    "q59": 0.1,
+    "q60": 0.1,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q63": 0.5,
+    "q64": 0.1
+   },
+   "title_ko": "오리엔트 특급 살인",
+   "aliases": [
+    "Murder in the Calais Coach"
+   ],
+   "openlibrary_work_id": null,
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Murder_on_the_Orient_Express",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "1934 Hercule Poirot mystery (preceded by Lord Edgware Dies). The Orient Express is stopped by snow in Yugoslavia; opening chapters in Istanbul; 1930s. Poirot investigates a murder aboard. Films 1974 and 2017."
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%A6%AC%EC%97%94%ED%8A%B8_%ED%8A%B9%EA%B8%89_%EC%82%B4%EC%9D%B8_(2017%EB%85%84_%EC%98%81%ED%99%94)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Korean title 오리엔트 특급 살인; earlier adaptations include a 2001 TV film and a 2010 episode of the TV series Agatha Christie's Poirot."
+    }
+   ],
+   "supported": {
+    "q03": [
+     "s1"
+    ],
+    "q07": [
+     "s1"
+    ],
+    "q13": [
+     "s1"
+    ],
+    "q18": [
+     "s1"
+    ],
+    "q25": [
+     "s1"
+    ],
+    "q53": [
+     "s1"
+    ],
+    "q54": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q62": [
+     "s1"
+    ]
+   },
+   "ambiguous": {
+    "q63": {
+     "source_ids": [
+      "s2"
+     ],
+     "note": "Only a TV film and one episode of a Poirot TV series; no dedicated series adaptation found."
+    }
+   },
+   "editions": []
+  },
+  {
+   "id": "fx-little-prince",
+   "title_en": "The Little Prince",
+   "author": "Antoine de Saint-Exupéry",
+   "original_language": "fr",
+   "first_publication_year": 1943,
+   "series_id": null,
+   "series_number": null,
+   "labels": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q03": 0.9,
+    "q04": 0.1,
+    "q06": 0.1,
+    "q07": 0.1,
+    "q08": 0.1,
+    "q09": 0.1,
+    "q10": 0.1,
+    "q11": 0.1,
+    "q12": 0.1,
+    "q13": 0.1,
+    "q14": 0.1,
+    "q16": 0.1,
+    "q17": 0.1,
+    "q21": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q27": 0.9,
+    "q28": 0.3,
+    "q29": 0.1,
+    "q30": 0.1,
+    "q31": 0.1,
+    "q32": 0.3,
+    "q33": 0.1,
+    "q34": 0.7,
+    "q35": 0.1,
+    "q36": 0.9,
+    "q37": 0.1,
+    "q38": 0.1,
+    "q39": 0.1,
+    "q40": 0.1,
+    "q41": 0.1,
+    "q43": 0.7,
+    "q44": 0.1,
+    "q45": 0.9,
+    "q46": 0.9,
+    "q47": 0.7,
+    "q48": 0.9,
+    "q49": 0.9,
+    "q50": 0.1,
+    "q51": 0.1,
+    "q52": 0.3,
+    "q53": 0.1,
+    "q54": 0.1,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.1,
+    "q59": 0.1,
+    "q60": 0.1,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q64": 0.1,
+    "q63": 0.9
+   },
+   "title_ko": "어린 왕자",
+   "aliases": [
+    "Le Petit Prince"
+   ],
+   "openlibrary_work_id": "OL10263W",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Little_Prince",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "French novella (1943). A pilot-narrator stranded in the Sahara meets a young boy, the little prince, from asteroid B-612, who recounts visits to other planets; a fox teaches him about love. Philosophical observations on adults. 1974 film."
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%A6%B0_%EC%99%95%EC%9E%90",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Korean title 어린 왕자; original language French. Related ko pages: 2015 animated film and a 52-episode 2010 TV animated series."
+    },
+    {
+     "id": "s3",
+     "url": "https://en.wikipedia.org/wiki/Category:The_Little_Prince",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Category summary: themes of loneliness, friendship, love and loss."
+    },
+    {
+     "id": "s4",
+     "url": "https://openlibrary.org/books/OL6462595M/The_Little_Prince",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "1943 edition record listing Work ID OL10263W."
+    }
+   ],
+   "supported": {
+    "q01": [
+     "s1"
+    ],
+    "q03": [
+     "s1"
+    ],
+    "q27": [
+     "s1"
+    ],
+    "q34": [
+     "s1"
+    ],
+    "q36": [
+     "s1"
+    ],
+    "q48": [
+     "s1"
+    ],
+    "q49": [
+     "s1"
+    ],
+    "q57": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q59": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q62": [
+     "s1"
+    ],
+    "q63": [
+     "s2"
+    ],
+    "q45": [
+     "s3"
+    ],
+    "q46": [
+     "s3"
+    ],
+    "q47": [
+     "s3"
+    ]
+   },
+   "ambiguous": {},
+   "editions": []
+  },
+  {
+   "id": "fx-frankenstein",
+   "title_en": "Frankenstein",
+   "author": "Mary Shelley",
+   "original_language": "en",
+   "first_publication_year": 1818,
+   "series_id": null,
+   "series_number": null,
+   "labels": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q03": 0.9,
+    "q04": 0.3,
+    "q05": 0.7,
+    "q06": 0.3,
+    "q07": 0.1,
+    "q08": 0.1,
+    "q09": 0.3,
+    "q10": 0.3,
+    "q12": 0.1,
+    "q13": 0.3,
+    "q14": 0.1,
+    "q15": 0.1,
+    "q17": 0.9,
+    "q18": 0.1,
+    "q19": 0.1,
+    "q20": 0.1,
+    "q21": 0.1,
+    "q22": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q25": 0.3,
+    "q26": 0.3,
+    "q27": 0.7,
+    "q28": 0.3,
+    "q29": 0.3,
+    "q30": 0.1,
+    "q31": 0.1,
+    "q32": 0.1,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.1,
+    "q37": 0.1,
+    "q38": 0.1,
+    "q39": 0.3,
+    "q40": 0.1,
+    "q41": 0.9,
+    "q42": 0.1,
+    "q43": 0.1,
+    "q44": 0.3,
+    "q45": 0.3,
+    "q46": 0.9,
+    "q47": 0.9,
+    "q48": 0.9,
+    "q49": 0.9,
+    "q50": 0.7,
+    "q51": 0.9,
+    "q52": 0.3,
+    "q53": 0.1,
+    "q54": 0.1,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.9,
+    "q59": 0.1,
+    "q60": 0.9,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q64": 0.1
+   },
+   "title_ko": "프랑켄슈타인",
+   "aliases": [
+    "Frankenstein; or, The Modern Prometheus"
+   ],
+   "openlibrary_work_id": null,
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Frankenstein",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "1818 Gothic novel set in the late 18th century across Europe and the Arctic. Victor Frankenstein creates a sapient creature; themes of loss, guilt and defying nature; foregrounds his moral struggles; multiple narratives."
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/Frankenstein%27s_monster",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "The creature is shunned and isolated, seeks revenge, and leads Victor on a pursuit north through Scandinavia and Russia into the Arctic; an icon of horror fiction."
+    },
+    {
+     "id": "s3",
+     "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%9E%91%EC%BC%84%EC%8A%88%ED%83%80%EC%9D%B8",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Korean title 프랑켄슈타인; framed as letters between Captain Walton and his sister. Film adaptations include 1931 and 2025."
+    }
+   ],
+   "supported": {
+    "q03": [
+     "s1"
+    ],
+    "q17": [
+     "s1"
+    ],
+    "q47": [
+     "s1"
+    ],
+    "q48": [
+     "s1"
+    ],
+    "q50": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q27": [
+     "s2"
+    ],
+    "q41": [
+     "s2"
+    ],
+    "q46": [
+     "s2"
+    ],
+    "q51": [
+     "s3"
+    ],
+    "q62": [
+     "s3"
+    ]
+   },
+   "ambiguous": {
+    "q05": {
+     "source_ids": [
+      "s2"
+     ],
+     "note": "The creature is central but assembled from human remains; readers may not call it nonhuman."
+    }
+   },
+   "editions": []
+  },
+  {
+   "id": "fx-the-vegetarian",
+   "title_en": "The Vegetarian",
+   "author": "Han Kang",
+   "original_language": "ko",
+   "first_publication_year": 2007,
+   "series_id": null,
+   "series_number": null,
+   "labels": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q03": 0.7,
+    "q04": 0.3,
+    "q05": 0.1,
+    "q06": 0.1,
+    "q07": 0.1,
+    "q08": 0.1,
+    "q09": 0.1,
+    "q10": 0.9,
+    "q11": 0.1,
+    "q12": 0.9,
+    "q13": 0.1,
+    "q14": 0.1,
+    "q15": 0.1,
+    "q16": 0.1,
+    "q17": 0.1,
+    "q18": 0.1,
+    "q19": 0.1,
+    "q20": 0.7,
+    "q21": 0.1,
+    "q22": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q27": 0.1,
+    "q28": 0.1,
+    "q29": 0.9,
+    "q30": 0.3,
+    "q31": 0.1,
+    "q32": 0.1,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.1,
+    "q37": 0.7,
+    "q38": 0.1,
+    "q39": 0.7,
+    "q40": 0.1,
+    "q41": 0.3,
+    "q42": 0.1,
+    "q43": 0.1,
+    "q44": 0.3,
+    "q45": 0.1,
+    "q46": 0.9,
+    "q47": 0.3,
+    "q48": 0.7,
+    "q49": 0.7,
+    "q50": 0.9,
+    "q51": 0.1,
+    "q52": 0.3,
+    "q53": 0.1,
+    "q54": 0.1,
+    "q55": 0.1,
+    "q57": 0.9,
+    "q58": 0.1,
+    "q59": 0.1,
+    "q60": 0.1,
+    "q61": 0.9,
+    "q62": 0.9,
+    "q63": 0.1,
+    "q64": 0.9
+   },
+   "title_ko": "채식주의자",
+   "aliases": [],
+   "openlibrary_work_id": "OL17334243W",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Vegetarian",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "2007 Korean novel by Han Kang (2024 Nobel laureate) in three parts set in modern-day Seoul. Yeong-hye stops eating meat; her family force-feeds her; she ends up hospitalised. Part 1 is first-person by her husband, part 2 follows her brother-in-law, part 3 her sister. Explores violence and mental instability."
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/Vegetarian_(film)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "2009 South Korean film based on the novel."
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/works/OL17334243W",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "Work record OL17334243W (original title 채식주의자)."
+    }
+   ],
+   "supported": {
+    "q02": [
+     "s1"
+    ],
+    "q03": [
+     "s1"
+    ],
+    "q10": [
+     "s1"
+    ],
+    "q12": [
+     "s1"
+    ],
+    "q20": [
+     "s1"
+    ],
+    "q29": [
+     "s1"
+    ],
+    "q37": [
+     "s1"
+    ],
+    "q39": [
+     "s1"
+    ],
+    "q46": [
+     "s1"
+    ],
+    "q48": [
+     "s1"
+    ],
+    "q49": [
+     "s1"
+    ],
+    "q50": [
+     "s1"
+    ],
+    "q57": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q59": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q64": [
+     "s1"
+    ],
+    "q62": [
+     "s2"
+    ]
+   },
+   "ambiguous": {},
+   "editions": [
+    {
+     "isbn": "9788936433598",
+     "language": "ko",
+     "title": "채식주의자 (창비, 2007)",
+     "source_id": "s1"
+    },
+    {
+     "isbn": "9780553448184",
+     "language": "en",
+     "title": "Hogarth hardcover, 2016",
+     "source_id": "s3"
+    }
+   ]
+  },
+  {
+   "id": "fx-norwegian-wood",
+   "title_en": "Norwegian Wood",
+   "author": "Haruki Murakami",
+   "original_language": "ja",
+   "first_publication_year": 1987,
+   "series_id": null,
+   "series_number": null,
+   "labels": {
+    "q02": 0.7,
+    "q03": 0.9,
+    "q04": 0.1,
+    "q05": 0.1,
+    "q06": 0.9,
+    "q07": 0.1,
+    "q08": 0.1,
+    "q09": 0.3,
+    "q10": 0.9,
+    "q12": 0.1,
+    "q13": 0.1,
+    "q14": 0.1,
+    "q15": 0.1,
+    "q16": 0.1,
+    "q17": 0.1,
+    "q18": 0.1,
+    "q19": 0.9,
+    "q20": 0.1,
+    "q21": 0.1,
+    "q22": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q27": 0.1,
+    "q28": 0.1,
+    "q29": 0.1,
+    "q30": 0.3,
+    "q31": 0.1,
+    "q32": 0.1,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.1,
+    "q37": 0.3,
+    "q38": 0.1,
+    "q39": 0.9,
+    "q40": 0.1,
+    "q41": 0.1,
+    "q42": 0.3,
+    "q43": 0.9,
+    "q44": 0.1,
+    "q45": 0.7,
+    "q46": 0.9,
+    "q47": 0.9,
+    "q48": 0.7,
+    "q49": 0.9,
+    "q50": 0.1,
+    "q51": 0.3,
+    "q52": 0.3,
+    "q53": 0.1,
+    "q54": 0.1,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.1,
+    "q59": 0.9,
+    "q60": 0.1,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q63": 0.1,
+    "q64": 0.1
+   },
+   "title_ko": "노르웨이의 숲",
+   "aliases": [
+    "상실의 시대",
+    "ノルウェイの森"
+   ],
+   "openlibrary_work_id": "OL2625457W",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/Norwegian_Wood_(novel)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "1987 Japanese novel narrated in first person by Toru Watanabe, aged 37, looking back on his college years in late-1960s Tokyo amid student strikes; relationships with Naoko, who lives in a mountain sanatorium, and Midori, whose father has brain cancer. A story of loss. 2010 film."
+    },
+    {
+     "id": "s2",
+     "url": "https://ko.wikipedia.org/wiki/%EB%85%B8%EB%A5%B4%EC%9B%A8%EC%9D%B4%EC%9D%98_%EC%88%B2_(%EC%86%8C%EC%84%A4)",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Korean title 노르웨이의 숲; one Korean translation and the film were titled 상실의 시대."
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/works/OL2625457W",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "Work record OL2625457W."
+    }
+   ],
+   "supported": {
+    "q02": [
+     "s1"
+    ],
+    "q03": [
+     "s1"
+    ],
+    "q06": [
+     "s1"
+    ],
+    "q10": [
+     "s1"
+    ],
+    "q19": [
+     "s1"
+    ],
+    "q26": [
+     "s1"
+    ],
+    "q30": [
+     "s1"
+    ],
+    "q39": [
+     "s1"
+    ],
+    "q47": [
+     "s1"
+    ],
+    "q49": [
+     "s1"
+    ],
+    "q52": [
+     "s1"
+    ],
+    "q57": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q59": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q62": [
+     "s1"
+    ]
+   },
+   "ambiguous": {},
+   "editions": [
+    {
+     "isbn": "9788937463105",
+     "language": "ko",
+     "title": "노르웨이의 숲 (민음사, 양억관 옮김, 2013)",
+     "source_id": "s2"
+    },
+    {
+     "isbn": "9780375704024",
+     "language": "en",
+     "title": "Vintage, 2000",
+     "source_id": "s3"
+    }
+   ]
+  },
+  {
+   "id": "fx-the-hobbit",
+   "title_en": "The Hobbit",
+   "author": "J. R. R. Tolkien",
+   "original_language": "en",
+   "first_publication_year": 1937,
+   "series_id": null,
+   "series_number": null,
+   "labels": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q03": 0.9,
+    "q04": 0.3,
+    "q05": 0.9,
+    "q06": 0.1,
+    "q07": 0.1,
+    "q08": 0.3,
+    "q09": 0.1,
+    "q10": 0.1,
+    "q12": 0.1,
+    "q13": 0.1,
+    "q14": 0.1,
+    "q15": 0.9,
+    "q16": 0.1,
+    "q21": 0.1,
+    "q23": 0.1,
+    "q24": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q27": 0.9,
+    "q28": 0.9,
+    "q29": 0.1,
+    "q30": 0.1,
+    "q31": 0.1,
+    "q32": 0.9,
+    "q33": 0.1,
+    "q34": 0.1,
+    "q35": 0.1,
+    "q36": 0.7,
+    "q37": 0.3,
+    "q38": 0.1,
+    "q39": 0.1,
+    "q40": 0.1,
+    "q41": 0.3,
+    "q42": 0.7,
+    "q43": 0.7,
+    "q44": 0.1,
+    "q45": 0.7,
+    "q46": 0.1,
+    "q47": 0.3,
+    "q48": 0.3,
+    "q49": 0.1,
+    "q50": 0.1,
+    "q51": 0.1,
+    "q52": 0.1,
+    "q55": 0.1,
+    "q57": 0.1,
+    "q58": 0.9,
+    "q59": 0.1,
+    "q60": 0.1,
+    "q61": 0.1,
+    "q62": 0.9,
+    "q63": 0.3,
+    "q64": 0.1
+   },
+   "title_ko": "호빗",
+   "aliases": [
+    "The Hobbit, or There and Back Again"
+   ],
+   "openlibrary_work_id": "OL27482W",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://en.wikipedia.org/wiki/The_Hobbit",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "1937 children's fantasy set in Middle-earth. Bilbo, a hobbit, joins the wizard Gandalf and thirteen dwarves on a quest to reclaim treasure from a dragon; episodic, a new monster or threat in many chapters; personal growth is central; omniscient narrator. Many adaptations including screen."
+    },
+    {
+     "id": "s2",
+     "url": "https://en.wikipedia.org/wiki/Bilbo_Baggins",
+     "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+     "notes": "Bilbo is a middle-aged hobbit."
+    },
+    {
+     "id": "s3",
+     "url": "https://openlibrary.org/books/OL7466619M/The_Hobbit",
+     "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+     "notes": "Edition record listing Work ID OL27482W."
+    }
+   ],
+   "supported": {
+    "q03": [
+     "s1"
+    ],
+    "q05": [
+     "s1"
+    ],
+    "q15": [
+     "s1"
+    ],
+    "q27": [
+     "s1"
+    ],
+    "q28": [
+     "s1"
+    ],
+    "q32": [
+     "s1"
+    ],
+    "q43": [
+     "s1"
+    ],
+    "q49": [
+     "s1"
+    ],
+    "q58": [
+     "s1"
+    ],
+    "q60": [
+     "s1"
+    ],
+    "q61": [
+     "s1"
+    ],
+    "q62": [
+     "s1"
+    ],
+    "q01": [
+     "s2"
+    ]
+   },
+   "ambiguous": {},
+   "editions": [
+    {
+     "isbn": "9780395520215",
+     "language": "en",
+     "title": "Houghton Mifflin illustrated paperback, 1984",
+     "source_id": "s3"
+    }
+   ]
+  }
+ ]
 }

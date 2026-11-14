@@ -43,7 +43,9 @@ export function matchingClues(
       const strength = (v: typeof a) =>
         Math.abs(v.x - 0.5) * 2 +
         (v.answer === "yes" || v.answer === "no" ? 1 : 0) +
-        (POSITIVE.includes(v.answer) ? 1.5 : 0);
+        (POSITIVE.includes(v.answer) ? 1.5 : 0) +
+        // the brief: clues should come from verified evidence where it exists
+        (cc.feature[v.questionIndex][bookIndex]?.status === "supported" ? 3 : 0);
       return strength(b) - strength(a) || a.order - b.order;
     });
   return candidates.slice(0, limit).map((c) => {

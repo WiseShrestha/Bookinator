@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-pride-and-prejudice",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Austen novel of manners (1813) following Elizabeth Bennet, about 20, and Mr Darcy, described as one of the two central characters. Early 19th-century English gentry estates near a small town in Hertfordshire. Marriage, wealth, class and ineffectual parents are themes. Many film and TV versions; films in 1940 and 2005."
+  },
+  {
+   "id": "s2",
+   "url": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%A7%8C%EA%B3%BC_%ED%8E%B8%EA%B2%AC",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Korean title 오만과 편견; genre listed as novel of manners and satirical novel; rural setting; 1995 BBC six-part TV drama exists."
+  },
+  {
+   "id": "s3",
+   "url": "https://openlibrary.org/works/OL66554W/Pride_and_Prejudice",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "Work record OL66554W."
+  }
+ ]
+}

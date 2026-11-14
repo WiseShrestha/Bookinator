@@ -22,7 +22,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CACHE = ROOT / "data" / "work" / "ol_cache.json"
+CACHE = Path(os.environ.get("OL_CACHE", str(ROOT / "data" / "work" / "ol_cache.json")))
 
 
 def main() -> int:
@@ -30,6 +30,7 @@ def main() -> int:
     ap.add_argument("--titles", default=str(ROOT / "data" / "curation" / "titles.csv"))
     ap.add_argument("--out", default=str(ROOT / "data" / "work" / "ol_suggestions.csv"))
     ap.add_argument("--limit", type=int, default=3, help="candidates per title")
+    ap.add_argument("--delay", type=float, default=1.0, help="seconds between requests (keep >= 1 for the real API)")
     args = ap.parse_args()
     contact = os.environ.get("OL_CONTACT")
     if not contact:
@@ -42,7 +43,8 @@ def main() -> int:
     for r in rows:
         params = {"title": r["title_en"], "author": r["author"], "limit": str(args.limit),
                   "fields": "key,title,author_name,first_publish_year,edition_count"}
-        url = "https://openlibrary.org/search.json?" + urllib.parse.urlencode(params)
+        base = os.environ.get("OL_BASE_URL", "https://openlibrary.org").rstrip("/")
+        url = f"{base}/search.json?" + urllib.parse.urlencode(params)
         if url not in cache:
             req = urllib.request.Request(url, headers={"User-Agent": f"ThatBookHackathon/0.1 ({contact})"})
             try:
@@ -52,7 +54,7 @@ def main() -> int:
                 print(f"{r['id']}: lookup failed ({e})")
                 continue
             finally:
-                time.sleep(1.0)
+                time.sleep(args.delay)
             CACHE.write_text(json.dumps(cache), encoding="utf-8")
         for d in cache[url].get("docs", [])[: args.limit]:
             key = d.get("key", "")

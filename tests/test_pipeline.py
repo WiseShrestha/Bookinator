@@ -44,7 +44,13 @@ class ValidatorTests(unittest.TestCase):
         self.assertTrue(any("unknown question" in e for e in errs))
 
     def test_fixture_labels_not_allowed_in_production(self):
-        errs = self.errors_for(lambda c: c.update(data_status="production"))
+        def m(c):
+            c.update(data_status="production")
+            c["books"][0]["sources"] = []
+            for f in c["features"]:
+                if f["book_id"] == c["books"][0]["id"]:
+                    f["source_ids"] = []
+        errs = self.errors_for(m)
         self.assertTrue(any("fixture labels" in e for e in errs))
         self.assertTrue(any("need at least one source" in e for e in errs))
 
@@ -62,6 +68,15 @@ class ValidatorTests(unittest.TestCase):
         self.assertTrue(any("real https URL" in e for e in errs))
         self.assertTrue(any("license" in e for e in errs))
         self.assertTrue(any("Open Library work id" in e for e in errs))
+
+
+class EditionTests(unittest.TestCase):
+    def test_isbn_checksum(self):
+        self.assertTrue(validate_catalog.isbn13_ok("9788936433598"))
+        self.assertFalse(validate_catalog.isbn13_ok("9788936433599"))
+        cat = copy.deepcopy(FIXTURE)
+        cat["books"][0]["editions"] = [{"isbn": "9780000000001", "source_id": "s1"}]
+        self.assertTrue(any("ISBN-13" in e for e in validate_catalog.validate(cat).errors))
 
 
 class PipelineTests(unittest.TestCase):

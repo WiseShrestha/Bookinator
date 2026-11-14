@@ -21,6 +21,7 @@ Examples
       --model <model-id> --input-rate <USD per 1M input tokens> --output-rate <USD per 1M output tokens> --cap 10
   python3 scripts/prepare_catalog.py merge --runtime-out src/data/catalog.json
 
+ANTHROPIC_BASE_URL / OPENAI_BASE_URL override the endpoints (used by the offline tests).
 Prices are NOT hard-coded: pass your provider's current rates. Without rates no paid call is made.
 Stdlib only. API keys are read from the environment and never written to disk.
 """
@@ -214,8 +215,9 @@ def call_llm(provider: str, model: str, prompt: str, max_tokens: int) -> tuple[s
         key = os.environ.get("ANTHROPIC_API_KEY")
         if not key:
             raise SystemExit("ANTHROPIC_API_KEY is not set")
+        base = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/")
         req = urllib.request.Request(
-            "https://api.anthropic.com/v1/messages",
+            f"{base}/v1/messages",
             data=json.dumps({"model": model, "max_tokens": max_tokens,
                              "messages": [{"role": "user", "content": prompt}]}).encode(),
             headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
@@ -229,8 +231,9 @@ def call_llm(provider: str, model: str, prompt: str, max_tokens: int) -> tuple[s
         key = os.environ.get("OPENAI_API_KEY")
         if not key:
             raise SystemExit("OPENAI_API_KEY is not set")
+        base = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
         req = urllib.request.Request(
-            "https://api.openai.com/v1/chat/completions",
+            f"{base}/chat/completions",
             data=json.dumps({"model": model, "max_completion_tokens": max_tokens,
                              "response_format": {"type": "json_object"},
                              "messages": [{"role": "user", "content": prompt}]}).encode(),

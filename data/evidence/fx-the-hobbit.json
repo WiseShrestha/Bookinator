@@ -1,0 +1,24 @@
+{
+ "book_id": "fx-the-hobbit",
+ "_comment": "Excerpts are paraphrased evidence notes written while checking the source, not quotations.",
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://en.wikipedia.org/wiki/The_Hobbit",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "1937 children's fantasy set in Middle-earth. Bilbo, a hobbit, joins the wizard Gandalf and thirteen dwarves on a quest to reclaim treasure from a dragon; episodic, a new monster or threat in many chapters; personal growth is central; omniscient narrator. Many adaptations including screen."
+  },
+  {
+   "id": "s2",
+   "url": "https://en.wikipedia.org/wiki/Bilbo_Baggins",
+   "license": "CC BY-SA 4.0 (Wikipedia text); paraphrased notes only",
+   "excerpt": "Bilbo is a middle-aged hobbit."
+  },
+  {
+   "id": "s3",
+   "url": "https://openlibrary.org/books/OL7466619M/The_Hobbit",
+   "license": "Open Library catalog data; see https://openlibrary.org/developers/licensing",
+   "excerpt": "Edition record listing Work ID OL27482W."
+  }
+ ]
+}
