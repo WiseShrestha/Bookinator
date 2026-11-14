@@ -1,0 +1,39 @@
+@ cmu:enwiki:259128 Harry Potter and the Goblet of Fire
+q02 .7 7
+q03 .9 4
+q06 .7 9
+q19 .7 2
+q32 .9 8
+@ cmu:enwiki:776049 Harry Potter and the Deathly Hallows
+q01 .7 2
+q02 .7 5 Ron and Hermione decide to accompany Harry
+q03 .9 2
+q06 .3 5 instead of returning to Hogwarts School for their seventh year
+q09 .3 5 instead of returning to Hogwarts School for their seventh year
+q13 .7 9 12 Grimmauld Place in London
+q27 .9 5 to finish the quest Dumbledore started
+q28 .7 8 they barely escape with their lives
+q32 .9 3 Polyjuice Potion
+@ cmu:enwiki:26170677 Mockingjay
+q02 .9 1
+q03 .7 4
+q30 .9 1
+@ cmu:enwiki:2270723 Harry Potter and the Half-Blood Prince
+q02 .7 6 Hermione Granger
+q03 .9 4
+q06 .9 8
+q09 .9 8 The students return to school
+q26 .7 10
+q32 .9 1
+@ cmu:enwiki:31584 Lord of the Flies
+q01 .9 2
+q02 .1 2
+q03 .9 2
+q04 .7 8 form a troika of leaders
+q10 .1 1
+q12 .1 1
+q13 .1 1
+q14 .1 1
+q24 ?
+q28 .7 1
+q46 .7 1

@@ -1,0 +1,52 @@
+@ cmu:enwiki:32262844 The Fault in Our Stars
+q01 .9 1
+q02 .9 1
+q03 .9 2 Augustus Waters, a seventeen-year-old boy
+q06 .3 1
+q39 .9 1
+q49 .9 1
+q50 .3 1
+q26 .7 9
+q14 .7 12 back in Indianapolis
+q15 .1 5
+@ cmu:enwiki:186258 The Catcher in the Rye
+q01 .9 2 Seventeen-year-old Holden Caulfield
+q03 .9 2 Seventeen-year-old Holden Caulfield
+q49 .9 2 the book's narrator and protagonist
+q50 .3 2 the book's narrator and protagonist
+q06 .7 3 Pencey Prep, an exclusive private school
+q14 .9 3 Agerstown, Pennsylvania
+q15 .1 3 Agerstown, Pennsylvania
+q17 .1 1
+q18 .1 1
+q19 .9 1
+q20 .1 1
+q21 .1 1
+q22 .1 1
+@ cmu:enwiki:24162 Pride and Prejudice
+q02 .9 6
+q03 .9 6
+q26 .9 6
+@ cmu:enwiki:23454753 Nineteen Eighty-Four
+q01 .1 3
+q03 .9 1 his intellectual rebellion against the Party and illicit romance with Julia
+q10 .7 2 lives in the ruins of London
+q12 .1 1 Airstrip One (England or Britain)
+q13 .9 1 Airstrip One (England or Britain)
+q14 .1 1 Airstrip One (England or Britain)
+q15 .3 1 Airstrip One (England or Britain)
+q17 .1 1 presents the world in the year 1984, after a global atomic war
+q18 .1 1 presents the world in the year 1984, after a global atomic war
+q19 ?
+q21 .7 1 presents the world in the year 1984, after a global atomic war
+q23 .9 1 presents the world in the year 1984, after a global atomic war
+q26 .7 1 illicit romance with Julia
+q30 .9 1 his intellectual rebellion against the Party
+@ cmu:enwiki:620 Animal Farm
+q04 .7 8
+q05 .9 2
+q10 .3 1 the old boar on the Manor Farm
+q11 .9 1 the old boar on the Manor Farm
+q30 .9 3
+q36 .9 1 calls the animals on the farm for a meeting
+q44 .7 6

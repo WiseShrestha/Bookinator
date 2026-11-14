@@ -1,0 +1,40 @@
+@ cmu:enwiki:254498 Harry Potter and the Prisoner of Azkaban
+q01 .9 1
+q02 .7 11
+q03 .9 1
+q06 .9 13
+q08 .7 4
+q09 .9 13
+q32 .9 5
+@ cmu:enwiki:21909903 Catching Fire
+q02 .9 2
+q03 .7 1 Katniss Everdeen and Peeta Mellark return home
+q30 .9 4
+q44 .7 1 the poorest sector in the country of Panem
+q53 .7 1 in the previous novel
+q54 .1 1 in the previous novel
+@ cmu:enwiki:1398951 The Kite Runner
+q01 .9 1 Amir, a well-to-do Pashtun boy
+q03 .9 1 Amir, a well-to-do Pashtun boy
+q10 .9 1 city of Kabul
+q15 .1 1 city of Kabul
+q29 .7 2 often more harshly critical of Amir
+q44 .7 1 the son of Ali, Amir's father's servant
+q45 .7 1 spend their days in the hitherto peaceful city of Kabul, kite fighting
+@ cmu:enwiki:14975869 The Girl with the Dragon Tattoo
+q02 .9 3 Lisbeth Salander, a brilliant but deeply troubled young woman
+q03 .9 1
+q07 .9 8
+q15 .1 1
+q17 .1 1
+q18 .1 1
+q19 .1 1
+q20 .9 1
+q21 .1 1
+q25 .9 5
+@ cmu:enwiki:163234 Harry Potter and the Chamber of Secrets
+q03 .9 1
+q06 .9 3
+q08 .9 5
+q09 .7 3
+q32 .9 3

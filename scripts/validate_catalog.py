@@ -19,7 +19,8 @@ from pathlib import Path
 
 ALLOWED_P = {0.1, 0.3, 0.5, 0.7, 0.9}
 STATUSES = {"supported", "ambiguous", "insufficient_evidence", "unreviewed_fixture"}
-DATA_STATUSES = {"development_fixture", "production"}
+# machine_labelled_unreviewed: labels made by an AI assistant from quoted source text, no human review.
+DATA_STATUSES = {"development_fixture", "machine_labelled_unreviewed", "production"}
 PLACEHOLDERS = {"VERIFIED_URL", "RECORDED_TERMS", "TODO", "TBD", ""}
 OL_WORK = re.compile(r"^OL\d+W$")
 

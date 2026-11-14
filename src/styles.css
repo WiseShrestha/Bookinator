@@ -178,3 +178,5 @@ button:active:not(:disabled) { transform: translateY(1px); }
 .availability p { margin: 0; }
 .sourced { color: var(--accent); }
 .sourced a { font-weight: 600; }
+
+.credits { display: block; margin-top: 0.35rem; font-size: 0.78em; opacity: 0.85; }

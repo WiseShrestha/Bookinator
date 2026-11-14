@@ -1,0 +1,89 @@
+{
+ "catalog_version": "cmu-priority5-v1",
+ "source": "priority_500.jsonl (first 5 records)",
+ "counts": {
+  "imported_source_records": 5,
+  "labelled_with_validated_matrix": 5,
+  "records_with_human_reviewed_cells": 0,
+  "playable_game_targets": 4
+ },
+ "supported_cells_total": 71,
+ "supported_cells_per_labelled_book_mean": 14.2,
+ "books_meeting_handoff_heuristic_12_supported": 4,
+ "gate": {
+  "min_supported": 6,
+  "pairwise_likelihood_ratio": 4.0
+ },
+ "status_breakdown": {
+  "playable": 4,
+  "not separable from a higher-priority book": 1
+ },
+ "scope": "Counts of records and labels. Not a measure of factual correctness or of game success.",
+ "records": [
+  {
+   "rank": 0,
+   "id": "cmu:enwiki:20128213",
+   "title": "The Hunger Games",
+   "authors": [
+    "Suzanne Collins"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 1,
+   "id": "cmu:enwiki:48648",
+   "title": "Harry Potter and the Philosopher's Stone",
+   "authors": [
+    "J. K. Rowling"
+   ],
+   "labelled": true,
+   "supported_cells": 10,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 2,
+   "id": "cmu:enwiki:4451267",
+   "title": "Twilight",
+   "authors": [
+    "Stephenie Meyer"
+   ],
+   "labelled": true,
+   "supported_cells": 13,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  },
+  {
+   "rank": 3,
+   "id": "cmu:enwiki:73408",
+   "title": "To Kill a Mockingbird",
+   "authors": [
+    "Harper Lee"
+   ],
+   "labelled": true,
+   "supported_cells": 14,
+   "reviewed_cells": 0,
+   "playable": false,
+   "reason": "labels cannot separate it from the higher-priority book 'Twilight' (cmu:enwiki:4451267)"
+  },
+  {
+   "rank": 4,
+   "id": "cmu:enwiki:76033",
+   "title": "The Great Gatsby",
+   "authors": [
+    "F. Scott Fitzgerald"
+   ],
+   "labelled": true,
+   "supported_cells": 17,
+   "reviewed_cells": 0,
+   "playable": true,
+   "reason": null
+  }
+ ]
+}

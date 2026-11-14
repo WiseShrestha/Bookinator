@@ -23,7 +23,8 @@ export type Channel = Record<Answer, ChannelRow>;
 // Catalog schema (the JSON contract from the build brief, section 6)
 // ---------------------------------------------------------------------------
 
-export type DataStatus = "development_fixture" | "production";
+/** machine_labelled_unreviewed: labels made by an AI assistant from quoted source text; no human review. */
+export type DataStatus = "development_fixture" | "machine_labelled_unreviewed" | "production";
 export type FeatureStatus =
   | "supported"
   | "ambiguous"
@@ -36,6 +37,7 @@ export interface CatalogSource {
   id: string;
   url: string;
   license: string;
+  attribution?: string;
 }
 
 export interface CatalogEdition {
@@ -89,6 +91,15 @@ export interface Catalog {
   catalog_version: string;
   data_status: DataStatus;
   notice?: string;
+  /** Attribution line for the data sources, shown in the footer. */
+  credits?: string;
+  /** Source records imported vs. books the game can actually identify. Never show the first as the second. */
+  coverage?: {
+    imported_source_records: number;
+    labelled_with_validated_matrix: number;
+    records_with_human_reviewed_cells: number;
+    playable_game_targets: number;
+  };
   books: CatalogBook[];
   questions: CatalogQuestion[];
   features: CatalogFeature[];

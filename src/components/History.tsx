@@ -7,7 +7,7 @@ export function DataBanner({ catalog }: { catalog: Catalog }) {
   if (catalog.data_status === "production") return null;
   return (
     <div className="banner" role="note">
-      <strong>Development data.</strong> {catalog.notice ?? "This catalog has not been reviewed."}
+      <strong>{catalog.data_status === "machine_labelled_unreviewed" ? "Unreviewed data." : "Development data."}</strong> {catalog.notice ?? "This catalog has not been reviewed."}
     </div>
   );
 }
