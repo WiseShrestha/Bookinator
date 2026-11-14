@@ -142,7 +142,7 @@ The validator checks:
 
 | Item | Now |
 | --- | --- |
-| Vite never ran | Still can't run here (no npm registry). **Mitigated:** full React type-check now passes against real types, an esbuild bundle of the same sources passes browser tests, and **CI runs the real `npm install` + `vite build` on first push**. Run `npm run verify` once on a laptop. |
+| Vite never ran | **Resolved (14 Nov 2026).** Real `npm install` (vite 7.3.8, TypeScript 5.9.3, lockfile committed), `npm run verify` incl. `vite build`, and a Chromium playtest of `npm run dev` at phone and desktop size all pass. Python scripts now run through `scripts/py.mjs` so Windows without `python3` works (launcher not yet run on real Windows). |
 | Fixture labels unchecked | **171/589 checked against cited sources**, several corrected (e.g. Darcy central, *1984* set in an imagined future, *The Vegetarian* film, *The Little Prince* TV series; *Orient Express* TV series downgraded). Korean titles for all 10, aliases (e.g. 상실의 시대), **8 Open Library work IDs**, **10 checksum-valid ISBNs** (6 Korean editions). **Still no human review.** |
 | LLM labelling and Open Library lookup never executed | **Executed over HTTP against a mock server** with provider-shaped responses. A real call still needs a key and network: run a 1-book pilot first. |
 | No live availability | **Built**: proxy + UI + tests. Data4Library has **not** been called with a real key; parameter names come from the API page as used by independent clients. Test with a key before the demo. |

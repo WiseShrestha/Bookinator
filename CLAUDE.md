@@ -13,17 +13,16 @@ npm run verify      # tsc + node tests + python tests + catalog validation + vit
 npm run dev         # http://localhost:5173
 ```
 
-This project was built in an environment **without npm registry access**. These were verified there:
-full strict `tsc` against real @types/react 19, 49 node tests, 15 python tests, validation, a Chromium
-playtest of an esbuild bundle. These were **never run** and are the most likely sources of errors:
+The project was first built in an environment without npm registry access. On 14 Nov 2026 the real
+toolchain ran for the first time (Node 22, Python 3.13, Linux) and `npm run verify` is fully green:
 
-1. `npm install` itself (dependency versions in package.json were chosen, not resolved: vite ^7,
-   @vitejs/plugin-react ^5, typescript ^5.6, tsx ^4.19). If resolution fails, pin to the latest working versions.
-2. `vite build` / `vite dev` (only esbuild was run). Check `index.html`, `vite.config.ts` (`base: "./"`).
-3. `tsc` with **TypeScript 5.x** (only TS 7.0 was available). Watch `allowImportingTsExtensions`,
-   `moduleResolution: "Bundler"`, the `@ts-expect-error` on the `.mjs` import in `tests/proxy.test.ts`,
-   and `types: ["node", "vite/client"]`.
-4. Windows: scripts call `python3` (may need `python`/`py`); paths in Python use pathlib (fine).
+- `npm install` resolved every declared range unchanged: vite 7.3.8, @vitejs/plugin-react 5.2.0,
+  typescript 5.9.3, tsx 4.23.15, react 19.3.1. `package-lock.json` is committed.
+- `tsc` 5.9 (both tsconfigs), 49 node tests, 15 python tests, validation and `vite build` all pass with no code changes.
+- `vite dev` was playtested in Chromium at 1280×860 and 390×844: Undo, guess, rejection, undo of a rejection,
+  18-question shortlist, reload-resume, no-match exit; no console errors.
+- Python npm scripts go through `scripts/py.mjs`, which finds `python3`, `python` or `py -3` (3.10+; override
+  with `PYTHON`). **Not yet run on a real Windows machine.**
 
 When fixing, run `npm run verify` until green. Don't "fix" errors by deleting tests or weakening checks.
 
