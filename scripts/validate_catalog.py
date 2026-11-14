@@ -18,7 +18,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ALLOWED_P = {0.1, 0.3, 0.5, 0.7, 0.9}
-STATUSES = {"supported", "ambiguous", "insufficient_evidence", "unreviewed_fixture"}
+# community_consensus: aggregated reader answers that a reviewer accepted (docs/community/DESIGN.md).
+STATUSES = {"supported", "ambiguous", "insufficient_evidence", "unreviewed_fixture", "community_consensus"}
 # machine_labelled_unreviewed: labels made by an AI assistant from quoted source text, no human review.
 DATA_STATUSES = {"development_fixture", "machine_labelled_unreviewed", "production"}
 PLACEHOLDERS = {"VERIFIED_URL", "RECORDED_TERMS", "TODO", "TBD", ""}
@@ -181,6 +182,16 @@ def validate(cat: dict, bank: list[dict] | None = None) -> Report:
             r.err(f"{where}: insufficient_evidence must have p_yes 0.5 and no sources")
         if st == "supported" and p == 0.5:
             r.warn(f"{where}: supported but p_yes 0.5")
+        if st == "community_consensus":
+            ref = f.get("consensus")
+            if not isinstance(ref, dict) or not isinstance(ref.get("algorithm_version"), str)                     or not isinstance(ref.get("consensus_id"), int)                     or not isinstance(ref.get("contributors"), int) or ref["contributors"] < 1:
+                r.err(f"{where}: community_consensus needs consensus {{algorithm_version, consensus_id, contributors>=1}}")
+            if f.get("reviewed") is not True:
+                r.err(f"{where}: community_consensus cells must be accepted by a reviewer (reviewed: true)")
+            if p == 0.5:
+                r.warn(f"{where}: community_consensus with p_yes 0.5 adds nothing")
+        elif "consensus" in f:
+            r.err(f"{where}: consensus provenance is only allowed on community_consensus cells")
         if not isinstance(f.get("reviewed"), bool):
             r.err(f"{where}: reviewed must be boolean")
         elif not f["reviewed"]:

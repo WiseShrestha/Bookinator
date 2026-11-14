@@ -16,17 +16,20 @@
     "test:py": "node scripts/py.mjs -m unittest discover -s tests -p \"test_*.py\"",
     "simulate:truth": "tsx scripts/simulate.ts --truth data/truth/fixture_supported_truth.json --out reports/simulation_truth.json",
     "proxy": "node server/library-proxy.mjs",
-    "verify": "npm run typecheck && npm test && npm run test:py && npm run test:research && npm run validate && npm run validate:cmu && vite build",
+    "verify": "npm run typecheck && npm test && npm run test:db && npm run test:py && npm run test:research && npm run validate && npm run validate:cmu && vite build",
     "validate:cmu": "node scripts/py.mjs scripts/validate_catalog.py src/data/cmu.catalog.json --bank data/cmu/question_bank_core.json --max-warnings 3",
     "catalog:research": "node scripts/py.mjs scripts/merge_research.py && node scripts/py.mjs scripts/motif_labels.py && node scripts/py.mjs scripts/build_cmu_catalog.py --limit 500 --gate none && tsx scripts/gate_catalog.ts",
     "dev:cmu": "vite --mode cmu",
-    "test:research": "node scripts/py.mjs -m unittest discover -s research/chatgpt_source/scripts -p \"test_*.py\" && node scripts/py.mjs -m unittest discover -s research/chatgpt_source/core_tools -p \"test_*.py\" && node research/chatgpt_source/five_book_demo/test-engine.cjs"
+    "test:research": "node scripts/py.mjs -m unittest discover -s research/chatgpt_source/scripts -p \"test_*.py\" && node scripts/py.mjs -m unittest discover -s research/chatgpt_source/core_tools -p \"test_*.py\" && node research/chatgpt_source/five_book_demo/test-engine.cjs",
+    "test:db": "tsx --test \"tests/db/*.test.ts\"",
+    "community": "tsx scripts/community.ts"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",

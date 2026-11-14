@@ -101,6 +101,9 @@ function ClueProvenance({ bookIndex, feature }: { bookIndex: number; feature: Ma
       );
     }
   }
+  if (feature?.status === "community_consensus" && feature.consensus) {
+    return <span className="sourced"> · from {feature.consensus.contributors} readers' answers (reviewed)</span>;
+  }
   return <em className="unreviewed"> (unchecked label)</em>;
 }
 

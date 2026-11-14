@@ -29,7 +29,9 @@ export type FeatureStatus =
   | "supported"
   | "ambiguous"
   | "insufficient_evidence"
-  | "unreviewed_fixture";
+  | "unreviewed_fixture"
+  /** Accepted by a reviewer from aggregated reader answers (src/community/consensus.ts). */
+  | "community_consensus";
 
 export const ALLOWED_P_YES = [0.1, 0.3, 0.5, 0.7, 0.9] as const;
 
@@ -85,6 +87,16 @@ export interface CatalogFeature {
   source_ids: string[];
   reviewed: boolean;
   note?: string;
+  /** Provenance for status "community_consensus": which aggregation produced the value. */
+  consensus?: CatalogConsensusRef;
+}
+
+export interface CatalogConsensusRef {
+  algorithm_version: string;
+  /** feature_consensus.id in the contribution database. */
+  consensus_id: number;
+  /** Distinct readers whose answers were counted. */
+  contributors: number;
 }
 
 export interface Catalog {

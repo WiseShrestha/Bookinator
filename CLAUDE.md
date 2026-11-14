@@ -121,3 +121,22 @@ brief's "missing evidence is unknown, not No" rule and is a product decision, no
 - Research catalog: 500 imported, 27 playable (with motif questions), 0 reviewed. Human review of distinguishing labels is the next lever.
 - LLM labelling and Data4Library proxy were tested only against mock servers; try one real call each.
 - Human playtests, rehearsals, QR code (live site: https://wiseshrestha.github.io/Bookinator/, redeployed on every push to main).
+
+## Community contributions (DRAFT — design in `docs/community/DESIGN.md`)
+
+New requirement: Akinator-style reader contributions (new books after a miss, corrections, feature answers,
+question and cover proposals) stored in Supabase (project ref `jvfxqusmnfdvslrgbjyv`, MCP server in `.mcp.json`).
+Nothing has been applied to the remote project yet. Decided (14 Nov 2026): D1 Supabase anonymous sign-in + CAPTCHA,
+D2 opt-in consent asked at the end of each game (send nothing on decline), D7 no cover uploads (Open Library cover
+links only). D3–D6 and D8–D13 are still open in the design doc — don't hard-code an answer to one of them.
+
+- `supabase/migrations/…_community_contributions.sql`: catalog mirror (read-only) / raw contributions (insert-only via
+  `submit_*` RPCs) / derived + review data (append-only). RLS + `is_admin()` from `app_admins`. Tested in PGlite:
+  `npm run test:db` (`tests/db/`, Supabase auth/storage stubbed in `tests/db/supabase_stub.sql`).
+- `src/community/consensus.ts`: aggregation `crowd-v1` (same channel as the engine; one vote per contributor;
+  "Don't know" neutral but counted; not-asked = no row). Pure TS, never writes the catalog.
+- `scripts/community.ts sync|consensus|export` (service-role key, maintainer only) and `scripts/community_lib.ts`
+  (candidate catalog: accepted consensus fills only unlabelled/unreviewed cells, never `supported`/reviewed ones;
+  approved books join only if the engine gate finds them). The JSON catalog in git stays the source of truth.
+- Feature status `community_consensus` requires `reviewed: true` and `consensus` provenance (validator enforces).
+- `scripts/py.mjs` runs Python in UTF-8 mode; with that, `npm run verify` is green on Windows (cp949 console).
