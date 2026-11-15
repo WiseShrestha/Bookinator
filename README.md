@@ -2,11 +2,9 @@
 
 *(project name during the hackathon: "That Book")*
 
-![Folio, the Bookinator mascot](docs/folio.png)
-
 **Remember the story. Forget the title.**
 
-A reader half-remembers a novel. Bookinator's mascot **Folio**, an enchanted book, asks short questions (Yes / Probably / Don't know / Probably not / No), narrows down a fixed collection with a local Bayesian engine, proposes a best match with source-linked clues, and links to library catalogs. With an optional proxy, it also checks a library's holdings. Undo, wrong-guess recovery, a top-3 shortlist and an honest "not in this collection" exit are built in.
+A reader half-remembers a novel. Bookinator's seagull (북키네이터 갈매기) asks short questions (Yes / Probably / Don't know / Probably not / No), narrows down a fixed collection with a local Bayesian engine, proposes a best match with source-linked clues, and links to library catalogs. With an optional proxy, it also checks a library's holdings. Undo, wrong-guess recovery, a top-3 shortlist and an honest "not in this collection" exit are built in.
 
 Theme: **Library + "Because I'm Lazy"**: the system chooses the search questions, so the reader doesn't need an author, title, ISBN or a good search query. There are no LLM calls during play.
 
@@ -235,15 +233,16 @@ that disagree on a cell leave it unknown, and per-labeller agreement is reported
 Simulated readers answer from the same labels (internal consistency, not accuracy). More books means more to
 confuse, so per-game rates drop while coverage grows tenfold.
 
-## Front end: Folio and the night library
+## Front end: the seagull, the clouds and the sea
 
-The interface is an original Akinator-style game: **Folio**, an enchanted open book drawn in SVG
-(`src/components/Folio.tsx`), floats in a candle-lit night library and changes expression with the game
-state: curious on early questions, thinking later on, puzzled after "Don't know" or at the shortlist,
-confident when guessing, triumphant when the book is found, sad on no match. Its mood never reflects the
-posterior. Questions appear in a parchment speech bubble; answers are five glowing buttons (keys 1–5);
-books get generated leather covers (no cover images: their rights are not established) with a flip-in
-reveal. Everything is CSS and inline SVG; animation stops under `prefers-reduced-motion`.
+The interface follows the design canvas *북키네이터 (Bookinator) 프론트엔드 디자인*: a seagull in a pale sky asks
+each question in a speech bubble under a hanging "Question N" sign, and the five answers are cloud buttons
+floating on the sea (keys 1–5). Korean and English (`src/i18n/`, Korean question wording keyed by the English
+text), PC layout from 900 px and a phone layout below it. Guesses hang from a rope as a book card with a generated
+cover (no cover images: their rights are not established). After a miss, "Which book was it?" searches the shelf
+for a similar book and, when Supabase is configured, lets the reader add the book and — only if they tick the
+box — send their answers (`src/components/Contribute.tsx`, design: `docs/community/DESIGN.md`). Everything is CSS
+and inline SVG; animation stops under `prefers-reduced-motion`.
 
 ## ChatGPT's research source code
 

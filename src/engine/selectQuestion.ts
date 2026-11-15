@@ -69,6 +69,36 @@ export function scoreQuestions(
  * Deterministic argmax: scores within `tieEpsilon` are ties, and ties go to the
  * question that appears first in the catalog's question order.
  */
+/**
+ * Varied pick for a game with a seed: one of the strongest questions (score ≥ (1 - spread) × best, at most
+ * `topK` of them), chosen by a hash of (seed, question number). Same seed and same answers → same
+ * question, so replay, Undo and reload-resume stay exact. Without a seed it is pickBest().
+ */
+export function pickVaried(
+  scores: readonly QuestionScore[],
+  tieEpsilon: number,
+  seed: number | undefined,
+  step: number,
+  spread: number,
+  topK: number,
+): QuestionScore | null {
+  const best = pickBest(scores, tieEpsilon);
+  if (!best || seed === undefined || spread <= 0 || topK <= 1) return best;
+  const pool = scores
+    .filter((s) => s.score >= best.score * (1 - spread))
+    .sort((a, b) => b.score - a.score || a.questionIndex - b.questionIndex)
+    .slice(0, topK);
+  return pool[hash32(seed, step) % pool.length];
+}
+
+/** Small integer hash (xorshift-multiply), deterministic across platforms. */
+export function hash32(seed: number, step: number): number {
+  let h = (Math.imul(seed | 0, 0x9e3779b1) ^ Math.imul(step + 1, 0x85ebca6b)) >>> 0;
+  h = Math.imul(h ^ (h >>> 16), 0x7feb352d) >>> 0;
+  h = Math.imul(h ^ (h >>> 15), 0x846ca68b) >>> 0;
+  return (h ^ (h >>> 16)) >>> 0;
+}
+
 export function pickBest(scores: readonly QuestionScore[], tieEpsilon: number): QuestionScore | null {
   let best: QuestionScore | null = null;
   for (const s of scores) {

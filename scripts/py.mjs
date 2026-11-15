@@ -33,7 +33,11 @@ if (!found) {
 }
 
 const [cmd, ...pre] = found;
-const run = spawnSync(cmd, [...pre, ...process.argv.slice(2)], { stdio: "inherit", windowsHide: true });
+// The scripts and tests print and read non-ASCII text (—, Korean titles). On Windows the default
+// encoding is the ANSI code page (cp949, cp1252, …), which raises UnicodeEncode/DecodeError, so run
+// Python in UTF-8 mode (PEP 540) unless the caller set it explicitly.
+const env = { ...process.env, PYTHONUTF8: process.env.PYTHONUTF8 ?? "1" };
+const run = spawnSync(cmd, [...pre, ...process.argv.slice(2)], { stdio: "inherit", windowsHide: true, env });
 if (run.error) {
   console.error(`Failed to run ${cmd}: ${run.error.message}`);
   process.exit(1);

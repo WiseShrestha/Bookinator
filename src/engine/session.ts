@@ -7,7 +7,7 @@
 import type { EngineConfig } from "./config.ts";
 import type { Answer, CatalogBook, CatalogQuestion, CompiledCatalog } from "./model.ts";
 import { computePosterior, rankBooks, type AnsweredQuestion } from "./posterior.ts";
-import { pickBest, scoreQuestions } from "./selectQuestion.ts";
+import { pickBest, pickVaried, scoreQuestions } from "./selectQuestion.ts";
 
 export type SessionEvent =
   | { type: "answer"; questionId: string; answer: Answer }
@@ -18,6 +18,8 @@ export type SessionEvent =
 export interface SessionOptions {
   /** User mainly remembers the film/series: skip adaptation-sensitive questions. */
   filmMemoryMode: boolean;
+  /** Per-game seed for question variety (src/engine/selectQuestion.ts pickVaried). Absent = fixed order. */
+  seed?: number;
 }
 
 export interface Session {
@@ -37,7 +39,8 @@ export type Action =
       /** 1-based number of the question about to be asked. */
       number: number;
     }
-  | { kind: "guess"; book: CatalogBook; bookIndex: number }
+  /** tentative: an Akinator-style check-in (most likely so far, not yet confident). */
+  | { kind: "guess"; book: CatalogBook; bookIndex: number; tentative?: boolean }
   | { kind: "shortlist"; books: CatalogBook[]; bookIndices: number[]; reason: ShortlistReason }
   | { kind: "no_match"; reason: "all_rejected" | "user_exit" }
   | { kind: "found"; book: CatalogBook; bookIndex: number; via: "guess" | "shortlist" };
@@ -80,6 +83,26 @@ export function eligibleQuestions(
     out.push(i);
   });
   return out;
+}
+
+export type AnswerSide = "yes" | "no" | "dont_know";
+export const answerSide = (a: Answer): AnswerSide => (a === "yes" || a === "probably" ? "yes" : a === "no" || a === "probably_not" ? "no" : "dont_know");
+
+/** The run of same-side answers at the end of the game so far (Yes/Probably count as one side, No/Probably not as the other). */
+export function answerStreak(answers: readonly AnsweredQuestion[]): { side: AnswerSide; length: number } | null {
+  if (answers.length === 0) return null;
+  const side = answerSide(answers[answers.length - 1].answer);
+  let length = 0;
+  for (let i = answers.length - 1; i >= 0 && answerSide(answers[i].answer) === side; i--) length++;
+  return { side, length };
+}
+
+/** True right when the streak reaches the warning length (and again at every further multiple of it). */
+export function streakWarning(config: EngineConfig, answers: readonly AnsweredQuestion[]): { side: AnswerSide; length: number } | null {
+  const s = answerStreak(answers);
+  if (!s) return null;
+  const limit = config.answerStreakWarning[s.side];
+  return limit > 0 && s.length >= limit && s.length % limit === 0 ? s : null;
 }
 
 /** Replays all events and decides the next action. Pure and deterministic. */
@@ -148,13 +171,25 @@ export function deriveState(cc: CompiledCatalog, config: EngineConfig, session: 
   ) {
     return state({ kind: "guess", book: cc.books[top], bookIndex: top });
   }
+  // Akinator-style check-in: at fixed question counts, show the most likely book and ask.
+  if (
+    config.checkpointQuestions.includes(answers.length) &&
+    informativeAnswers >= config.minInformativeAnswers &&
+    afterRejectionOk &&
+    p[top] >= config.checkpointMinProbability &&
+    (second === 0 || p[top] / second >= config.checkpointMinRatio)
+  ) {
+    return state({ kind: "guess", book: cc.books[top], bookIndex: top, tentative: true });
+  }
 
   const available = eligibleQuestions(cc, config, answers, session.options);
   if (answers.length >= config.maxQuestions) return shortlist("question_cap");
   if (available.length === 0) return shortlist("no_questions");
 
-  const best = pickBest(scoreQuestions(cc, p, available), config.tieEpsilon);
-  if (!best || best.score < config.minScore) return shortlist("low_information");
+  const scores = scoreQuestions(cc, p, available);
+  const strongest = pickBest(scores, config.tieEpsilon);
+  if (!strongest || strongest.score < config.minScore) return shortlist("low_information");
+  const best = pickVaried(scores, config.tieEpsilon, session.options.seed, answers.length, config.questionSpread, config.questionTopK)!;
 
   return state({
     kind: "ask",

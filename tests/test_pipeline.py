@@ -60,6 +60,22 @@ class ValidatorTests(unittest.TestCase):
         errs = self.errors_for(m)
         self.assertTrue(any("not among this book's sources" in e for e in errs))
 
+    def test_community_consensus_needs_provenance_and_review(self):
+        def bare(c):
+            c["features"][0].update(status="community_consensus", p_yes=0.9, source_ids=[], reviewed=False)
+        errs = self.errors_for(bare)
+        self.assertTrue(any("needs consensus" in e for e in errs))
+        self.assertTrue(any("accepted by a reviewer" in e for e in errs))
+
+        def ok(c):
+            c["features"][0].update(status="community_consensus", p_yes=0.9, source_ids=[], reviewed=True,
+                                    consensus={"algorithm_version": "crowd-v1", "consensus_id": 7, "contributors": 5})
+        self.assertEqual(self.errors_for(ok), [])
+
+        def stray(c):
+            c["features"][0]["consensus"] = {"algorithm_version": "crowd-v1", "consensus_id": 7, "contributors": 5}
+        self.assertTrue(any("only allowed on community_consensus" in e for e in self.errors_for(stray)))
+
     def test_rejects_placeholder_sources_and_bad_ol_id(self):
         def m(c):
             c["books"][0]["sources"] = [{"id": "s1", "url": "VERIFIED_URL", "license": "RECORDED_TERMS"}]

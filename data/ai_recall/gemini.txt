@@ -1,0 +1,53 @@
+# GEMINI LABELS — a teammate's run of a Gemini model over the CMU Book Summary text (generate_labels.py, 15 Nov 2026).
+# NO SOURCE QUOTE, NOT REVIEWED BY A PERSON. Read by scripts/build_cmu_catalog.py as one more AI labeller ("gemini"):
+# it only fills unknown cells, and a cell where labellers (or a sourced label) disagree becomes unknown.
+# Same format as labels.txt. Gemini's own question ids were renumbered to this project's ids by meaning:
+#   g01→01 g02→02 g03→05 g05→17 g06→16 g09→25 g10→26 g11→29 g13→27 g14→39 g15→33
+#   left out (meaning differs): g04 school OR university, g07 set in space, g08 magic OR supernatural, g12 any war.
+# Only books in the 500-record research pool are here; the rest are in extra/gemini_outside_pool.json.
+620 | Animal Farm | 01N 02N 05Y 16N 17N 25N 26N 27N 29N 33N 39N
+843 | A Clockwork Orange | 01Y 02N 05N 16N 17N 25N 26N 27N 29N 33N 39n
+986 | The Plague | 01N 02N 05N 16N 25N 26n 27N 29N 33N 39Y
+2152 | All Quiet on the Western Front | 01y 02N 05N 16N 17N 25N 26N 27N 29n 33N 39n
+2890 | A Wizard of Earthsea | 01Y 02N 05n 16Y 25N 26N 27Y 29n 33N 39N
+7817 | The Cider House Rules | 01y 02y 05N 16N 17N 25N 26Y 27N 29n 33N 39n
+7923 | Dracula | 01N 02Y 16n 25n 26n 27n 29N 33N 39n
+10861 | The Trial | 01N 02n 05N 16N 17n 25n 26n 27N 29n 33N 39N
+10951 | Fahrenheit 451 | 01n 02y 05N 16N 17N 25N 26n 27N 33N 39n
+12995 | Gone with the Wind | 02Y 05N 16N 17Y 25N 26Y 27N 29y 33N 39n
+19859 | Moby-Dick; or, The Whale | 01N 02N 05Y 16Y 17Y 25N 26N 27Y 29N 33N 39n
+21725 | Neuromancer | 01N 02Y 05Y 16N 17N 25n 26n 27n 29N 33N 39y
+24162 | Pride and Prejudice | 02Y 05N 16N 17y 25N 26Y 27N 29n 33N 39N
+26476 | Rendezvous with Rama | 01N 02N 05n 16n 17N 25N 26N 27y 29N 33N 39N
+27490 | Sense and Sensibility | 02Y 05N 16N 17Y 25N 26Y 27N 29y 33N
+28230 | Speaker for the Dead | 01N 02Y 05Y 16N 17N 25y 26y 27n 29Y 33N
+28426 | Starship Troopers | 01y 02N 05n 16N 17N 25N 26N 27N 29n 33N 39N
+29798 | The Lord of the Rings | 01N 02N 05Y 16n 25N 26N 27Y 29N 33N 39N
+29834 | The Time Machine | 01N 02n 16N 17N 25N 26n 27n 29N 33Y 39N
+29999 | The Shining | 01Y 02Y 05n 16N 17N 25N 26n 27N 29Y 33N 39y
+30033 | Mort | 01Y 02y 05Y 16N 25N 26n 27N 29N 33N 39N
+30280 | The Hound of the Baskervilles | 01N 02n 05n 16N 25Y 26n 27N 33N 39n
+30709 | The Screwtape Letters | 01n 02n 05Y 16N 25N 26N 27N 29N 33N 39N
+30761 | The Hunt for Red October | 01N 02N 05N 16Y 17N 25n 26N 29N 33N 39N
+31342 | The Picture of Dorian Gray | 01n 02n 05N 16N 17y 25N 27N 29N 33N 39N
+31584 | Lord of the Flies | 01Y 02N 05N 16N 17N 25N 26N 27N 29N 33N 39N
+36681 | Brave New World | 01y 02Y 05N 16N 17N 25N 26n 27N 29y 33N 39n
+42572 | The Eye of the World | 02Y 05y 16N 25N 26N 27Y 29N 33N 39n
+42573 | The Great Hunt | 02Y 05y 16N 25n 26N 27Y 29N 33N 39n
+42609 | Around the World in Eighty Days | 01N 02y 05N 16Y 17Y 25y 26n 27Y 29N 33N 39N
+42645 | The Grapes of Wrath | 01N 02y 05N 16N 17N 25N 26N 27Y 29n 33N 39N
+42906 | The Queen of the Damned | 01N 02Y 05Y 16N 17N 25N 26n 27n 29y 33N 39N
+43023 | Gulliver's Travels | 01N 02N 05Y 16Y 17Y 25N 26N 27Y 29N 33N 39N
+43168 | The Color Purple | 01Y 02Y 05N 16N 17N 25N 26Y 27y 29Y 33N 39n
+43206 | A Midsummer Night's Dream | 02Y 05Y 16N 17Y 25N 26Y 27N 29y 33N 39N
+45133 | The Wind in the Willows | 01N 02N 05Y 16N 25N 26N 27n 29N 33N 39N
+45896 | The Stranger | 01N 02N 05N 16N 17N 25Y 26y 27n 29N 33N 39N
+69111 | So Long, and Thanks for All the Fish | 01N 02Y 05Y 16N 17N 25N 26Y 27Y 29N 33N 39n
+69485 | Choke | 01n 02n 05N 16N 17N 25N 26n 27N 29n 33N 39y
+71416 | Dune | 01Y 02y 05n 16N 17N 25N 26n 27n 29y 33N 39N
+71989 | Uncle Tom's Cabin | 01Y 02Y 05N 16n 17Y 25N 26n 27y 29Y 33N 39Y
+73408 | To Kill a Mockingbird | 01Y 02Y 05N 16N 17N 25n 26N 27N 29n 33N 39N
+73670 | A Christmas Carol | 01n 02N 05N 16N 17Y 25N 26N 27N 29n 33N 39y
+74257 | About a Boy | 01Y 02n 05N 16N 17N 25N 26n 27N 29n 33N 39y
+76033 | The Great Gatsby | 01N 02y 05N 16N 17N 25N 26Y 27N 29n 33N 39N
+77652 | For Whom the Bell Tolls | 01N 02y 05N 16N 17N 25N 26y 27n 29N 33N 39N

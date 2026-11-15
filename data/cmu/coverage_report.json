@@ -5,9 +5,9 @@
   "imported_source_records": 500,
   "labelled_with_validated_matrix": 500,
   "records_with_human_reviewed_cells": 0,
-  "playable_game_targets": 181,
+  "playable_game_targets": 179,
   "series_targets": 35,
-  "titles_reachable": 268
+  "titles_reachable": 266
  },
  "supported_cells_total": 14589,
  "supported_cells_per_labelled_book_mean": 29.18,
@@ -18,11 +18,11 @@
   "engine": "first guess when answering exactly from own labels (scripts/gate_catalog.ts); thresholds unchanged"
  },
  "status_breakdown": {
-  "playable": 181,
+  "playable": 179,
   "part of series target series:the-hunger-games": 3,
   "part of series target series:harry-potter": 6,
   "part of series target series:twilight": 5,
-  "not identifiable by the engine from its own labels": 211,
+  "not identifiable by the engine from its own labels": 213,
   "part of series target series:millennium": 3,
   "part of series target series:chronicles-of-narnia": 7,
   "part of series target series:robert-langdon": 2,
@@ -3323,8 +3323,8 @@
    "labelled": true,
    "supported_cells": 53,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 132,
@@ -5206,8 +5206,8 @@
    "labelled": true,
    "supported_cells": 54,
    "reviewed_cells": 0,
-   "playable": true,
-   "reason": null
+   "playable": false,
+   "reason": "engine gate: engine never became confident (shortlist after 18 questions) when answering from its own labels"
   },
   {
    "rank": 255,

@@ -30,6 +30,8 @@ export type FeatureStatus =
   | "ambiguous"
   | "insufficient_evidence"
   | "unreviewed_fixture"
+  /** Accepted by a reviewer from aggregated reader answers (src/community/consensus.ts). */
+  | "community_consensus"
   /** An AI assistant's general knowledge of the book; no source. Never shown as source-checked. */
   | "ai_recall";
 
@@ -89,6 +91,16 @@ export interface CatalogFeature {
   source_ids: string[];
   reviewed: boolean;
   note?: string;
+  /** Provenance for status "community_consensus": which aggregation produced the value. */
+  consensus?: CatalogConsensusRef;
+}
+
+export interface CatalogConsensusRef {
+  algorithm_version: string;
+  /** feature_consensus.id in the contribution database. */
+  consensus_id: number;
+  /** Distinct readers whose answers were counted. */
+  contributors: number;
 }
 
 export interface Catalog {

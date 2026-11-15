@@ -15,6 +15,10 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm install --no-audit --no-fund && npm run build
+        env:
+          # Public values (publishable key): RLS and the submit_* functions guard every write.
+          VITE_SUPABASE_URL: https://jvfxqusmnfdvslrgbjyv.supabase.co
+          VITE_SUPABASE_ANON_KEY: sb_publishable_iToWHg6gtoyM0DHT0VwCKQ_9nR7Jw8e
       - name: Publish dist/ to gh-pages
         run: |
           cd dist
