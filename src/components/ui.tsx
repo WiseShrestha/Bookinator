@@ -108,13 +108,13 @@ export function Button({ variant = "primary", arrow = true, checkMark = false, h
 
 // ---------------------------------------------------------------- Answer
 
-export function AnswerButton({ label, selected, onSelect, shortcut }: { label: string; selected: boolean; onSelect: () => void; shortcut?: string }) {
-  return (
-    <button type="button" className="answer" aria-pressed={selected} aria-keyshortcuts={shortcut} onClick={onSelect}>
-      {selected && <Icon name="checkWhite" />}
-      <span>{label}</span>
-    </button>
-  );
+export function AnswerButton({ label, onSelect, shortcut }: { label: string; onSelect: () => void; shortcut?: string }) {
+  return <button type="button" className="answer" aria-keyshortcuts={shortcut} onClick={(event) => {
+    // Ignore the second mouse/touch click of a double-click on a freshly rendered answer.
+    if (event.detail <= 1) onSelect();
+  }}>
+    <span>{label}</span>{shortcut && <kbd className="answer-shortcut" aria-hidden="true">{shortcut}</kbd>}
+  </button>;
 }
 
 // ---------------------------------------------------------------- Image / Unsplash
@@ -128,10 +128,10 @@ export interface Photo {
 }
 
 /** An image slot. Without a photo it shows the design's sea gradient; the caption pill is optional. */
-export function UnsplashImage({ photo, caption, className = "" }: { photo?: Photo | null; caption?: string; className?: string }) {
+export function UnsplashImage({ photo, caption, className = "", priority = false }: { photo?: Photo | null; caption?: string; className?: string; priority?: boolean }) {
   return (
     <div className={`photo ${className}`}>
-      {photo && <img className="photo-img" src={photo.url} alt={photo.alt ?? ""} loading="lazy" referrerPolicy="no-referrer" />}
+      {photo && <img className="photo-img" src={photo.url} alt={photo.alt ?? ""} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} referrerPolicy="no-referrer" />}
       {photo?.photographer ? (
         <p className="photo-caption">
           <Icon name="image" size={14} />
@@ -188,6 +188,7 @@ export function BookCard(p: BookCardProps) {
             <span>{p.actionLabel}</span>
             <Icon name="arrowRightSm" size={16} />
           </button>
+          <button type="button" className="icon-btn-plain" disabled aria-label={p.saveLabel} title={p.soonLabel}><Icon name="bookmark" size={20} /></button>
         </div>
       </div>
     </article>
@@ -229,6 +230,8 @@ interface HeaderProps {
   onHome: () => void;
   onStart: () => void;
   onCatalog: () => void;
+  onSection: (id: string) => void;
+  hours: string;
 }
 
 function Logo({ L, onHome, size }: { L: LibraryStrings; onHome: () => void; size: number }) {
@@ -253,45 +256,41 @@ function LangSwitch({ L, lang, setLang }: { L: LibraryStrings; lang: Lang; setLa
   );
 }
 
-export function Header({ L, lang, setLang, onHome, onStart, onCatalog }: HeaderProps) {
-  const E = EXPERIENCE[lang];
+function navigationActions(onStart: () => void, onCatalog: () => void, onSection: (id: string) => void) {
+  return [onStart, onCatalog, () => onSection("leaderboard"), () => onSection("programs"), () => onSection("visit"), () => onSection("about")];
+}
+
+export function Header({ L, lang, setLang, hours, onHome, onStart, onCatalog, onSection }: HeaderProps) {
+  const actions = navigationActions(onStart, onCatalog, onSection);
   return <header className="header desktop-only">
-    <div className="mainbar">
-      <Logo L={L} onHome={onHome} size={24} />
-      <nav className="nav" aria-label="Bookinator">
-        <button type="button" onClick={onHome}>{E.home}</button>
-        <button type="button" onClick={onCatalog}>{E.catalog}</button>
-      </nav>
-      <div className="header-actions"><LangSwitch L={L} lang={lang} setLang={setLang} /><Button onClick={onStart}>{E.find}</Button></div>
+    <div className="utility"><p>{hours}</p><div className="utility-links">{L.utilLinks.map((label) => <span key={label} className="soon" title={L.comingSoon}>{label}</span>)}<LangSwitch L={L} lang={lang} setLang={setLang} /></div></div>
+    <div className="mainbar"><Logo L={L} onHome={onHome} size={24} />
+      <nav className="nav" aria-label="Bookinator">{L.nav.map((label, i) => <button key={label} type="button" onClick={actions[i]}>{label}</button>)}</nav>
+      <div className="header-actions"><button type="button" className="icon-btn" aria-label={L.search} onClick={onCatalog}><Icon name="search" size={20} /></button><Button variant="secondary" arrow={false} disabled title={L.comingSoon}>{L.login}</Button></div>
     </div>
   </header>;
 }
 
-export function MobileHeader({ L, lang, setLang, onHome, onStart, onCatalog }: HeaderProps) {
+export function MobileHeader({ L, lang, setLang, onHome, onStart, onCatalog, onSection }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const E = EXPERIENCE[lang];
+  const actions = navigationActions(onStart, onCatalog, onSection);
   const go = (action: () => void) => { setOpen(false); action(); };
   return <header className="mobile-header mobile-only">
     <Logo L={L} onHome={() => go(onHome)} size={20} />
-    <div className="header-actions">
-      <LangSwitch L={L} lang={lang} setLang={setLang} />
+    <div className="header-actions"><LangSwitch L={L} lang={lang} setLang={setLang} />
+      <button type="button" className="icon-btn mobile-search" aria-label={L.search} onClick={() => go(onCatalog)}><Icon name="search" size={20} /></button>
       <button type="button" className="icon-btn" aria-label={open ? E.close : L.menu} aria-expanded={open} aria-controls="mobile-nav" onClick={() => setOpen(!open)}><Icon name="menu" size={20} /></button>
     </div>
-    {open && <nav id="mobile-nav" className="mobile-nav" aria-label="Bookinator" onKeyDown={(e) => { if (e.key === "Escape") { setOpen(false); e.currentTarget.parentElement?.querySelector<HTMLButtonElement>("[aria-controls]")?.focus(); } }}>
-      <button type="button" onClick={() => go(onHome)}>{E.home}</button>
-      <button type="button" onClick={() => go(onStart)}>{E.find}</button>
-      <button type="button" onClick={() => go(onCatalog)}>{E.catalog}</button>
-    </nav>}
+    {open && <nav id="mobile-nav" className="mobile-nav" aria-label="Bookinator" onKeyDown={(event) => { if (event.key === "Escape") { setOpen(false); event.currentTarget.parentElement?.querySelector<HTMLButtonElement>("[aria-controls]")?.focus(); } }}>{L.nav.map((label, i) => <button key={label} type="button" onClick={() => go(actions[i])}>{label}</button>)}</nav>}
   </header>;
 }
 
-export function Footer({ L, onHome, onCatalog, children }: { L: LibraryStrings; onHome: () => void; onCatalog: () => void; children?: ReactNode }) {
-  return <footer className="footer">
-    <div className="footer-top"><div className="footer-brand"><p className="footer-logo">Bookinator</p><p>{L.footerTag}</p></div>
-      <nav className="footer-links" aria-label="Bookinator"><button type="button" onClick={onHome}>{L.home}</button><button type="button" onClick={onCatalog}>{L.colAll}</button></nav>
-    </div>
-    <hr />{children && <div className="footer-notes">{children}</div>}
-    <div className="footer-bottom"><p>{L.copyright}</p></div>
+export function Footer({ L, address, children }: { L: LibraryStrings; address: string; children?: ReactNode }) {
+  return <footer className="footer" id="about" tabIndex={-1}>
+    <div className="footer-top"><div className="footer-brand" id="visit"><p className="footer-logo">Bookinator</p><p>{L.footerTag}</p><p>{address}</p></div>
+      <div className="footer-cols">{L.footerCols.map((col) => <ul key={col[0]}>{col.map((label, i) => <li key={label} className={i === 0 ? "footer-col-head" : undefined}>{label}</li>)}</ul>)}</div>
+    </div><hr />{children && <div className="footer-notes">{children}</div>}<div className="footer-bottom"><p>{L.copyright}</p><p>{L.legal}</p></div>
   </footer>;
 }
 

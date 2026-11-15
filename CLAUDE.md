@@ -58,6 +58,8 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
 
 ## Rules (from the build brief — keep them)
 
+- Preserve the original Sea Library layout, library navigation (Catalog, Leaderboard, Programs, Visit, About), content sections and Unsplash imagery. Keep quiz and live-challenge improvements isolated unless the user explicitly asks to change the library pages.
+
 - **Never invent** book facts, ISBNs, Open Library IDs, Korean titles, citations, API parameters, availability,
   or benchmark numbers. Unknown = p_yes 0.5 / null. Fixture data stays visibly marked as development data.
 - Thresholds stay configurable in `config.ts`. Don't lower the guess threshold to make numbers look better.
