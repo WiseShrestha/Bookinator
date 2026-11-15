@@ -267,6 +267,22 @@ Not playable: Divine Secrets of the Ya-Ya Sisterhood, The Lucky One, Good in Bed
 *Harry Potter*, *Narnia* and *Twilight* series with volume pick; *To Kill a Mockingbird*, *Pride and Prejudice*,
 *The Wonderful Wizard of Oz*; *The Catcher in the Rye* with one wrong answer (found after 22): all found, no errors.
 
+**Simulation of v3** (`reports/simulation_research.json`: seed 42, 30 games per target per scenario = 11,640 games
+each, main's engine settings: 40-question cap, check-ins, 4 rejections; simulated answers come from the same labels, so
+this is internal consistency, not accuracy):
+
+| Simulated reader | First guess right | Found by any route | Mean questions |
+| --- | ---: | ---: | ---: |
+| Clear memory | 69.8% | 93.1% | 28.2 |
+| One wrong answer | 59.7% | 88.5% | 31.1 |
+| Half memory | 34.0% | 68.9% | 35.8 |
+| Engine's own answer noise | 26.4% | 59.1% | 36.5 |
+| Difficult memory | 10.1% | 40.9% | 39.0 |
+
+Not comparable with the v1 table above (18-question cap, 2 rejections): the longer games and check-ins account for
+much of the rise from 20.4% / 73.3% (clear memory, v1).
+
+
 ## Front end: the seagull, the clouds and the sea
 
 The interface follows the design canvas *북키네이터 (Bookinator) 프론트엔드 디자인*: a seagull in a pale sky asks
