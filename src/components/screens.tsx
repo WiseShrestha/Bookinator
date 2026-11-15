@@ -7,7 +7,7 @@ import { ACTIVE_COLLECTION, COLLECTIONS, collectionHref, type CollectionId } fro
 import { matchingClues, type MatchingClue } from "../engine/explain.ts";
 import { catalogLinks } from "../engine/links.ts";
 import { ANSWERS, type Answer, type CatalogBook } from "../engine/model.ts";
-import type { Action, Session, SessionState } from "../engine/session.ts";
+import { streakWarning, type Action, type Session, type SessionState } from "../engine/session.ts";
 import { CC, CONFIG, LINK_OPTIONS } from "../game.ts";
 import { ANSWER_TEXT, bookTitles, questionText, type Lang, type Strings } from "../i18n/index.ts";
 import { LIBRARY, type LibraryStrings } from "../i18n/library.ts";
@@ -269,6 +269,9 @@ export function QuestionScreen(props: Common & { action: ActionOf<"ask">; onAnsw
   const { action, headingRef, onAnswer, state, t, L, lang } = props;
   const [picked, setPicked] = useState<Answer | null>(null);
   const questionPhoto = useLoaded(() => fetchPhoto(LIBRARY.en.questionImage), "question");
+  // Akinator-style "yes-man / no-man" check: shown once when the run of same-side answers reaches the limit.
+  const streak = streakWarning(CONFIG, state.answers);
+  const [streakDismissed, setStreakDismissed] = useState(false);
   const n = action.number;
   const max = CONFIG.maxQuestions;
   return (
@@ -297,6 +300,16 @@ export function QuestionScreen(props: Common & { action: ActionOf<"ask">; onAnsw
                 <summary>{t.whatCounts}</summary>
                 <p lang="en">{action.question.definition}</p>
               </details>
+              {streak && !streakDismissed && (
+                <div className="streak-alert" role="alert">
+                  <p className="streak-title">{L.streakTitle[streak.side]}</p>
+                  <p>{L.streakBody(streak.length)}{streak.side === "dont_know" ? ` ${L.streakDontKnow}` : ""}</p>
+                  <div className="streak-actions">
+                    <button type="button" className="btn btn-secondary" onClick={props.onUndo}>{L.streakReview}</button>
+                    <button type="button" className="text-btn" onClick={() => setStreakDismissed(true)}>{L.streakContinue}</button>
+                  </div>
+                </div>
+              )}
               <div className="answers" role="group" aria-label={t.answersGroup}>
                 {ANSWERS.map((a, i) => (
                   <AnswerButton key={a} label={ANSWER_TEXT[lang][a]} selected={picked === a} shortcut={String(i + 1)} onSelect={() => setPicked(a)} />

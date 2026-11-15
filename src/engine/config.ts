@@ -43,6 +43,11 @@ export interface EngineConfig {
    */
   questionSpread: number;
   questionTopK: number;
+  /**
+   * Akinator's "yes-man / no-man" check: warn (UI only, the engine is unaffected) when this many answers in a
+   * row are on the same side. yes = Yes/Probably, no = No/Probably not, dont_know = Don't know.
+   */
+  answerStreakWarning: { yes: number; no: number; dont_know: number };
   /** Max questions asked per correlation group (brief: initially one). */
   maxPerGroup: number;
   /** Scores within this distance are treated as ties; ties go to the lower index. */
@@ -73,6 +78,7 @@ export const DEFAULT_CONFIG: EngineConfig = {
   checkpointMinRatio: 1.5,
   questionsAfterRejection: 3,
   shortlistSize: 3,
+  answerStreakWarning: { yes: 7, no: 7, dont_know: 5 },
   questionSpread: 0.25,
   questionTopK: 4,
   maxPerGroup: 1,

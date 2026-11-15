@@ -8,10 +8,12 @@ import { ANSWERS, compileCatalog, likelihood, validateChannel, type Answer } fro
 import { computePosterior, entropy, rankBooks, softmax } from "../src/engine/posterior.ts";
 import { informationGain, pickBest } from "../src/engine/selectQuestion.ts";
 import {
+  answerStreak,
   applyEvent,
   deriveState,
   eligibleQuestions,
   newSession,
+  streakWarning,
   undo,
   type Session,
 } from "../src/engine/session.ts";
@@ -513,5 +515,30 @@ describe("question variety", () => {
     s = undo(s);
     const back = deriveState(cc, config, s);
     assert.equal((back.action as { question: { id: string } }).question.id, q0);
+  });
+});
+
+describe("same-answer streak warning", () => {
+  const config = makeConfig();
+  const run = (answers: Answer[]) => answers.map((answer, i) => ({ questionIndex: i, answer }));
+
+  it("counts Yes and Probably as one side, and warns exactly at the limit", () => {
+    const n = config.answerStreakWarning.yes;
+    const yes = run([...Array(n - 1).fill("yes"), "probably"] as Answer[]);
+    assert.deepEqual(answerStreak(yes), { side: "yes", length: n });
+    assert.deepEqual(streakWarning(config, yes), { side: "yes", length: n });
+    assert.equal(streakWarning(config, yes.slice(0, n - 1)), null);
+    assert.equal(streakWarning(config, run([...Array(n).fill("yes"), "yes"] as Answer[])), null, "not again on the next answer");
+  });
+
+  it("a different answer resets the run", () => {
+    const answers = run(["no", "no", "no", "no", "no", "no", "yes", "no"] as Answer[]);
+    assert.deepEqual(answerStreak(answers), { side: "no", length: 1 });
+    assert.equal(streakWarning(config, answers), null);
+  });
+
+  it("warns sooner for a run of Don't know", () => {
+    const n = config.answerStreakWarning.dont_know;
+    assert.deepEqual(streakWarning(config, run(Array(n).fill("dont_know") as Answer[])), { side: "dont_know", length: n });
   });
 });

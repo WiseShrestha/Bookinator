@@ -422,3 +422,9 @@ textarea:disabled, input:disabled { opacity: .7; }
 .shelf-options { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 20px 24px; background: var(--white); border: 1px solid var(--putty); border-radius: 8px; }
 .shelf-options h3 { font-family: var(--sans); font-size: 15px; font-weight: 600; }
 @media (max-width: 760px) { .btn-hero { width: 100%; } }
+
+/* same-answer streak warning (Akinator's yes-man / no-man) */
+.streak-alert { display: flex; flex-direction: column; gap: 8px; padding: 16px 20px; border: 1.5px solid var(--rock); border-left-width: 6px; border-radius: 8px; background: var(--paper); }
+.streak-title { font-weight: 700; color: var(--rock); }
+.streak-alert p { font-size: 15px; line-height: 1.6; }
+.streak-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 4px; }

@@ -85,6 +85,26 @@ export function eligibleQuestions(
   return out;
 }
 
+export type AnswerSide = "yes" | "no" | "dont_know";
+export const answerSide = (a: Answer): AnswerSide => (a === "yes" || a === "probably" ? "yes" : a === "no" || a === "probably_not" ? "no" : "dont_know");
+
+/** The run of same-side answers at the end of the game so far (Yes/Probably count as one side, No/Probably not as the other). */
+export function answerStreak(answers: readonly AnsweredQuestion[]): { side: AnswerSide; length: number } | null {
+  if (answers.length === 0) return null;
+  const side = answerSide(answers[answers.length - 1].answer);
+  let length = 0;
+  for (let i = answers.length - 1; i >= 0 && answerSide(answers[i].answer) === side; i--) length++;
+  return { side, length };
+}
+
+/** True right when the streak reaches the warning length (and again at every further multiple of it). */
+export function streakWarning(config: EngineConfig, answers: readonly AnsweredQuestion[]): { side: AnswerSide; length: number } | null {
+  const s = answerStreak(answers);
+  if (!s) return null;
+  const limit = config.answerStreakWarning[s.side];
+  return limit > 0 && s.length >= limit && s.length % limit === 0 ? s : null;
+}
+
 /** Replays all events and decides the next action. Pure and deterministic. */
 export function deriveState(cc: CompiledCatalog, config: EngineConfig, session: Session): SessionState {
   const answers: AnsweredQuestion[] = [];
