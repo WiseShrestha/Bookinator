@@ -1,17 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ACTIVE_CATALOG } from "./data/index.ts";
+import { ACTIVE_CATALOG, CATALOG_SOURCE } from "./data/index.ts";
 import { ANSWERS, type Answer } from "./engine/model.ts";
 import { applyEvent, deriveState, newSession, undo, type Session, type SessionEvent } from "./engine/session.ts";
 import { CC, CONFIG, loadSession, saveSession } from "./game.ts";
-import { DataBanner, History } from "./components/History.tsx";
-import {
-  FoundScreen,
-  GuessScreen,
-  NoMatchScreen,
-  QuestionScreen,
-  ShortlistScreen,
-  StartScreen,
-} from "./components/screens.tsx";
+import { STRINGS, useLang } from "./i18n/index.ts";
+import { LIBRARY } from "./i18n/library.ts";
+import { DESIGN_MOCK } from "./mock/design.ts";
+import { AddBookScreen } from "./components/Contribute.tsx";
+import { BookScreen, HomeScreen, QuestionScreen, SimilarScreen } from "./components/screens.tsx";
+import { Footer, Header, MobileHeader } from "./components/ui.tsx";
 
 function safeDerive(session: Session) {
   try {
@@ -22,6 +19,10 @@ function safeDerive(session: Session) {
 }
 
 export default function App() {
+  const [lang, setLang] = useLang();
+  const t = STRINGS[lang];
+  const L = LIBRARY[lang];
+  const mock = DESIGN_MOCK[lang];
   const [session, setSession] = useState<Session | null>(() => {
     const saved = loadSession();
     return saved && safeDerive(saved) ? saved : null;
@@ -44,15 +45,18 @@ export default function App() {
   );
   const onUndo = useCallback(() => setSession((s) => (s ? undo(s) : s)), []);
   const onRestart = useCallback(() => setSession(null), []);
-  const onStart = useCallback((filmMemoryMode: boolean) => setSession(newSession({ filmMemoryMode })), []);
+  // Each game gets its own seed, so questions come in a different order from game to game.
+  const onStart = useCallback(
+    (filmMemoryMode: boolean) => setSession(newSession({ filmMemoryMode, seed: Math.floor(Math.random() * 2 ** 31) })),
+    [],
+  );
 
   // Move focus to the new heading whenever the screen or question changes (screen readers + keyboard).
-  const screenKey = state ? `${state.action.kind}:${session?.events.length}` : "start";
+  const kind = state ? state.action.kind : "start";
+  const screenKey = `${kind}:${session?.events.length ?? 0}`;
   useEffect(() => {
     headingRef.current?.focus({ preventScroll: true });
-    // If the reader has scrolled past the top of the stage, bring the new screen into view.
-    const stage = document.querySelector(".stage");
-    if (stage && stage.getBoundingClientRect().top < 0) stage.scrollIntoView({ block: "start" });
+    window.scrollTo({ top: 0 });
   }, [screenKey]);
 
   // Global keyboard shortcuts: 1–5 answers, U undo, Y/N on a guess.
@@ -81,17 +85,19 @@ export default function App() {
 
   let screen;
   if (!session || !state) {
-    screen = <StartScreen headingRef={headingRef} onStart={onStart} />;
+    screen = <HomeScreen headingRef={headingRef} onStart={onStart} t={t} L={L} lang={lang} />;
   } else {
     const a = state.action;
-    const common = { headingRef, state, onUndo, onRestart, canUndo: session.events.length > 0 };
+    const common = { headingRef, state, session, t, L, lang, onUndo, onRestart, canUndo: session.events.length > 0 };
     switch (a.kind) {
       case "ask":
-        screen = <QuestionScreen {...common} action={a} onAnswer={(answer) => dispatch({ type: "answer", questionId: a.question.id, answer })} />;
+        // Keyed by the question so the picked answer never carries over.
+        screen = <QuestionScreen key={a.question.id} {...common} action={a} onAnswer={(answer) => dispatch({ type: "answer", questionId: a.question.id, answer })} />;
         break;
       case "guess":
         screen = (
-          <GuessScreen
+          <BookScreen
+            key={a.book.id}
             {...common}
             action={a}
             onAccept={() => dispatch({ type: "accept", bookId: a.book.id })}
@@ -101,80 +107,43 @@ export default function App() {
         );
         break;
       case "shortlist":
-        screen = (
-          <ShortlistScreen
-            {...common}
-            action={a}
-            onPick={(bookId) => dispatch({ type: "accept", bookId })}
-            onExit={() => dispatch({ type: "exit" })}
-          />
-        );
+        screen = <SimilarScreen {...common} action={a} onPick={(bookId) => dispatch({ type: "accept", bookId })} onExit={() => dispatch({ type: "exit" })} />;
         break;
       case "found":
-        screen = <FoundScreen {...common} action={a} />;
+        screen = <BookScreen key={a.book.id} {...common} action={a} />;
         break;
       case "no_match":
-        screen = <NoMatchScreen {...common} action={a} />;
+        // Keyed by the event count so the form starts empty after Undo + a new miss.
+        screen = <AddBookScreen key={session.events.length} {...common} onPlayAgain={onRestart} />;
         break;
     }
   }
 
+  const notice =
+    ACTIVE_CATALOG.data_status === "production" ? null : ACTIVE_CATALOG.data_status === "machine_labelled_unreviewed" ? t.unreviewedData : t.devData;
+  const header = { L, lang, setLang, hours: mock.hours, onHome: onRestart, onStart: () => onStart(false) };
+
   return (
-    <div className="app">
-      <Backdrop />
-      <header className="masthead">
-        <button className="brand" onClick={onRestart} aria-label="Bookinator — start over">
-          <span className="brand-mark" aria-hidden="true">✦</span> Bookinator
-        </button>
-        <span className="tagline">Remember the story. Forget the title.</span>
-      </header>
-      <DataBanner catalog={ACTIVE_CATALOG} />
-      <main className={`layout ${session && state ? "playing" : "idle"}`}>
-        <section className="stage" aria-live="polite">
-          {screen}
-        </section>
-        {session && state && <History state={state} />}
-      </main>
-      <footer className="foot">
-        {ACTIVE_CATALOG.coverage?.titles_reachable
-          ? `${ACTIVE_CATALOG.coverage.titles_reachable} playable novels in ${ACTIVE_CATALOG.books.length} targets`
-          : `${ACTIVE_CATALOG.books.length} ${ACTIVE_CATALOG.coverage ? "playable" : "supported"} novels`}
-        {ACTIVE_CATALOG.coverage && ` (of ${ACTIVE_CATALOG.coverage.imported_source_records} imported records)`} · catalog{" "}
-        {ACTIVE_CATALOG.catalog_version} · runs entirely in your browser
-        {ACTIVE_CATALOG.credits && <span className="credits">{ACTIVE_CATALOG.credits}</span>}
-      </footer>
+    <div className={`app screen-${kind}`}>
+      <Header {...header} />
+      <MobileHeader {...header} />
+      <main aria-live="polite">{screen}</main>
+      <Footer L={L} address={mock.address}>
+        {notice && (
+          <p>
+            <b>{notice}.</b> <span lang="en">{ACTIVE_CATALOG.notice}</span>
+          </p>
+        )}
+        <p>
+          {t.footer(
+            ACTIVE_CATALOG.coverage?.titles_reachable ?? ACTIVE_CATALOG.books.length,
+            ACTIVE_CATALOG.coverage?.imported_source_records ?? null,
+            ACTIVE_CATALOG.catalog_version,
+            CATALOG_SOURCE === "remote" ? t.sourceRemote : t.sourceBundled,
+          )}
+        </p>
+        {ACTIVE_CATALOG.credits && <p lang="en">{ACTIVE_CATALOG.credits}</p>}
+      </Footer>
     </div>
   );
 }
-
-/** Purely decorative night-library backdrop: stars, drifting motes and a bookshelf silhouette. */
-function Backdrop() {
-  return (
-    <div className="backdrop" aria-hidden="true">
-      <div className="stars" />
-      <div className="stars stars-2" />
-      {Array.from({ length: 14 }, (_, i) => (
-        <span key={i} className="mote" style={{ ["--i" as string]: i, left: `${(i * 53) % 100}%` }} />
-      ))}
-      <svg className="shelves" viewBox="0 0 1200 160" preserveAspectRatio="none">
-        <path d={SHELF_PATH} />
-      </svg>
-    </div>
-  );
-}
-
-// Deterministic row of book spines for the skyline at the bottom of the page.
-const SHELF_PATH = (() => {
-  let d = "M0 160 L0 120 ";
-  let x = 0;
-  let seed = 7;
-  const rnd = () => ((seed = (seed * 9301 + 49297) % 233280) / 233280);
-  while (x < 1200) {
-    const w = 14 + Math.floor(rnd() * 22);
-    const h = 40 + Math.floor(rnd() * 70);
-    const lean = rnd() < 0.12 ? 8 : 0;
-    d += `L${x} ${160 - h} L${x + w - lean} ${160 - h - lean / 2} L${x + w} ${160} `;
-    x += w + 2;
-  }
-  return d + "L1200 160 Z";
-})();

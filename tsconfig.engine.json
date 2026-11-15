@@ -15,5 +15,5 @@
     "types": ["node"],
     "noEmit": true
   },
-  "include": ["src/engine", "src/data/*.ts", "scripts/*.ts", "tests"]
+  "include": ["src/engine", "src/community", "src/data/*.ts", "scripts/*.ts", "tests"]
 }

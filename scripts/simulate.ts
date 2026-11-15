@@ -84,6 +84,8 @@ export function playGame(
   crispTruth = false,
   /** Truth-fixture mode: cells with no vouched-for fact (0.5) are answered "Don't know". */
   unknownAsDontKnow = false,
+  /** Question-variety seed, as in the UI. Undefined = fixed order (used by the engine gate). */
+  questionSeed?: number,
 ): GameResult {
   const truth = new Map<number, boolean>();
   const factFor = (q: number) => {
@@ -117,7 +119,7 @@ export function playGame(
     return said ? (hedge ? "probably" : "yes") : hedge ? "probably_not" : "no";
   };
 
-  let session: Session = newSession({ filmMemoryMode });
+  let session: Session = newSession({ filmMemoryMode, ...(questionSeed === undefined ? {} : { seed: questionSeed }) });
   const wrongGuesses: number[] = [];
   for (let step = 0; step < 200; step++) {
     const st = deriveState(cc, config, session);
@@ -233,7 +235,12 @@ function main() {
   const film = args.film === "true";
   const crisp = args["crisp-truth"] === "true";
   const only = args.scenario && args.scenario !== "all" ? args.scenario.split(",") : null;
-  const config = makeConfig();
+  // --max-questions N: try another question cap without editing src/engine/config.ts
+  // --no-checkpoints: only confident guesses (no Akinator-style check-ins)
+  const config = makeConfig({
+    ...(args["max-questions"] ? { maxQuestions: Number(args["max-questions"]) } : {}),
+    ...(args["no-checkpoints"] === "true" ? { checkpointQuestions: [] } : {}),
+  });
   const catalog = JSON.parse(readFileSync(catalogPath, "utf8")) as Catalog;
   const cc = compileCatalog(catalog, config.channel, config.unknownPYes);
 
@@ -273,7 +280,8 @@ function main() {
     for (const b of targets) {
       for (let g = 0; g < games; g++) {
         const rng = mulberry32(hashSeed(seed, sc.name, cc.books[b].id, g));
-        results.push(playGame(cc, config, truthX, b, sc, rng, film, crisp, Boolean(args.truth)));
+        // Real games get a random question order (src/App.tsx); simulate the same.
+        results.push(playGame(cc, config, truthX, b, sc, rng, film, crisp, Boolean(args.truth), Math.floor(rng() * 2 ** 31)));
       }
     }
     const s = summarize(sc, results);
@@ -324,7 +332,7 @@ function main() {
   const clear = sum("clear");
   const half = sum("half");
   console.log("\nBrief's provisional targets (unvalidated):");
-  if (clear) console.log(`  clear  top-1 ≥ 95% within 18 Q: ${pct(clear.top1, clear.games)} → ${clear.top1 / clear.games >= 0.95 ? "meets" : "below"}`);
+  if (clear) console.log(`  clear  top-1 ≥ 95% within ${config.maxQuestions} Q: ${pct(clear.top1, clear.games)} → ${clear.top1 / clear.games >= 0.95 ? "meets" : "below"}`);
   if (half) {
     console.log(`  half   top-1 ≥ 80%: ${pct(half.top1, half.games)} → ${half.top1 / half.games >= 0.8 ? "meets" : "below"}`);
     console.log(`  half   found incl. shortlist ≥ 90%: ${pct(half.foundAnyRoute, half.games)} → ${half.foundAnyRoute / half.games >= 0.9 ? "meets" : "below"}`);

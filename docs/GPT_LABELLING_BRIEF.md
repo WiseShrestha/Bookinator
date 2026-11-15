@@ -1,3 +1,6 @@
+> **Superseded (15 Nov 2026):** use [`AI_LABELLING_PROMPT.md`](AI_LABELLING_PROMPT.md), one prompt for every AI and teammate,
+> merged with `scripts/import_ai_labels.ts`. This brief is kept for the record of how `gpt.txt` was made.
+
 # Brief for a second AI labeller (ChatGPT)
 
 Folio does not learn from games. It gets better when its books have more **firm, distinguishing answers**.

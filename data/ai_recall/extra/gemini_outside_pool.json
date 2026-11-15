@@ -1,0 +1,2787 @@
+{
+ "notice": "Gemini labels (CMU summary text, not reviewed) for books outside the 500-record research pool. Question ids already mapped to this project's bank (see ../gemini.txt). Not used by any build yet.",
+ "books": [
+  {
+   "book_id": "cmu:enwiki:1756",
+   "title": "An Enquiry Concerning Human Understanding",
+   "author": "David Hume",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:2080",
+   "title": "A Fire Upon the Deep",
+   "author": "Vernor Vinge",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:2950",
+   "title": "Anyone Can Whistle",
+   "author": "Arthur Laurents",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q26": 0.7,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4081",
+   "title": "Blade Runner 3: Replicant Night",
+   "author": "K. W. Jeter",
+   "answers": {
+    "q01": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q33": 0.3
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4082",
+   "title": "Blade Runner 2: The Edge of Human",
+   "author": "K. W. Jeter",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.7,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4331",
+   "title": "Book of Joshua",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4332",
+   "title": "Book of Ezra",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.3,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4376",
+   "title": "Book of Numbers",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4381",
+   "title": "Book of Ruth",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4382",
+   "title": "Book of Esther",
+   "author": "",
+   "answers": {
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4386",
+   "title": "Book of Job",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.7,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4449",
+   "title": "Book of Hosea",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.7,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4451",
+   "title": "Book of Jonah",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.7,
+    "q17": 0.9,
+    "q16": 0.7,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4452",
+   "title": "Book of Micah",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:4454",
+   "title": "Book of Haggai",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.3,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:6020",
+   "title": "Crash",
+   "author": "J. G. Ballard",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:6628",
+   "title": "Children of Dune",
+   "author": "Frank Herbert",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.3,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.9,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:6629",
+   "title": "Candide, ou l'Optimisme",
+   "author": "Voltaire",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:6630",
+   "title": "Chapterhouse Dune",
+   "author": "Frank Herbert",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:6921",
+   "title": "Carmilla",
+   "author": "Sheridan Le Fanu",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.9,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:8237",
+   "title": "Don Quixote",
+   "author": "Miguel de Cervantes",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:8547",
+   "title": "Deuteronomy",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:8567",
+   "title": "Dune Messiah",
+   "author": "Frank Herbert",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:8757",
+   "title": "Darwin's Dangerous Idea",
+   "author": "Daniel Dennett",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:9000",
+   "title": "Death of a Hero",
+   "author": "Richard Aldington",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:9662",
+   "title": "Exodus",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:10862",
+   "title": "The Metamorphosis",
+   "author": "",
+   "answers": {
+    "q02": 0.7,
+    "q05": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:11745",
+   "title": "Farmer Giles of Ham",
+   "author": "J. R. R. Tolkien",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.7,
+    "q17": 0.7,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:12253",
+   "title": "Gaudy Night",
+   "author": "Dorothy L. Sayers",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.9,
+    "q26": 0.9,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:12464",
+   "title": "Gylfaginning",
+   "author": "Snorri Sturluson",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:12653",
+   "title": "God Emperor of Dune",
+   "author": "Frank Herbert",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.7,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:12667",
+   "title": "Genesis",
+   "author": "",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.3,
+    "q05": 0.7,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:13535",
+   "title": "Heart of Darkness",
+   "author": "Joseph Conrad",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.7,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:13554",
+   "title": "Hamlet",
+   "author": "William Shakespeare",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.7,
+    "q05": 0.3,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.7,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:13871",
+   "title": "Heretics of Dune",
+   "author": "Frank Herbert",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.9,
+    "q05": 0.3,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:14311",
+   "title": "Adventures of Huckleberry Finn",
+   "author": "Mark Twain",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:15055",
+   "title": "Ivanhoe",
+   "author": "Walter Scott",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:15608",
+   "title": "Johnny Got His Gun",
+   "author": "Dalton Trumbo",
+   "answers": {
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:17414",
+   "title": "Icehenge",
+   "author": "Kim Stanley Robinson",
+   "answers": {
+    "q02": 0.7,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q27": 0.7,
+    "q33": 0.3
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:18187",
+   "title": "Leviticus",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.3,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:18560",
+   "title": "Leaf by Niggle",
+   "author": "J. R. R. Tolkien",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.7,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:18866",
+   "title": "Macbeth",
+   "author": "William Shakespeare",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.3,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.3,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:19002",
+   "title": "Microserfs",
+   "author": "Douglas Coupland",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:20361",
+   "title": "Moonfleet",
+   "author": "J. Meade Falkner",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:21861",
+   "title": "Cryptonomicon",
+   "author": "Neal Stephenson",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:22113",
+   "title": "No Logo",
+   "author": "Naomi Klein",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:22349",
+   "title": "Odyssey",
+   "author": "Nextext",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.9,
+    "q17": 0.9,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:22460",
+   "title": "Othello",
+   "author": "William Shakespeare",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:22808",
+   "title": "On War",
+   "author": "Carl von Clausewitz",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:23279",
+   "title": "The Three Stigmata of Palmer Eldritch",
+   "author": "Philip K. Dick",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.3,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.3
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:23280",
+   "title": "Time out of Joint",
+   "author": "Philip K. Dick",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:23281",
+   "title": "A Scanner Darkly",
+   "author": "Philip K. Dick",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.9,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:23285",
+   "title": "Radio Free Albemuth",
+   "author": "Philip K. Dick",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.7,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:24861",
+   "title": "Pale Fire",
+   "author": "Vladimir Vladimirovich Nabokov",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:24965",
+   "title": "Pacific Overtures",
+   "author": "Stephen Sondheim",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:25821",
+   "title": "Romeo and Juliet",
+   "author": "William Shakespeare",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:25830",
+   "title": "Rosencrantz & Guildenstern Are Dead",
+   "author": "Tom Stoppard",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.7,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:26052",
+   "title": "Ringworld",
+   "author": "Larry Niven",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:26436",
+   "title": "Rent",
+   "author": "Jonathan Larson",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:28833",
+   "title": "Sir Gawain and the Green Knight",
+   "author": "Pearl Poet",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.3,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:29414",
+   "title": "Stuart Little",
+   "author": "E. B. White",
+   "answers": {
+    "q02": 0.3,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.3,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:29821",
+   "title": "The Doors of Perception",
+   "author": "Aldous Huxley",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:29991",
+   "title": "The Shockwave Rider",
+   "author": "John Brunner",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.3,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.7,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:30292",
+   "title": "The Hobbit",
+   "author": "J. R. R. Tolkien",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:30706",
+   "title": "The Great Divorce",
+   "author": "C. S. Lewis",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.3,
+    "q05": 0.3,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:30757",
+   "title": "The Pit and the Pendulum",
+   "author": "Nancy Kilpatrick",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:30762",
+   "title": "The Cardinal of the Kremlin",
+   "author": "Tom Clancy",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:30763",
+   "title": "Debt of Honor",
+   "author": "Tom Clancy",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:30971",
+   "title": "Tunnel in the Sky",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:31283",
+   "title": "The Mismeasure of Man",
+   "author": "Stephen Jay Gould",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:31431",
+   "title": "The Book of the City of Ladies",
+   "author": "",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:31434",
+   "title": "The Sentinel",
+   "author": "Arthur C. Clarke",
+   "answers": {
+    "q05": 0.3,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:31435",
+   "title": "The Fountains of Paradise",
+   "author": "Arthur C. Clarke",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:31623",
+   "title": "Through the Looking-Glass",
+   "author": "Lewis Carroll",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:33651",
+   "title": "Waiting for Godot",
+   "author": "Samuel Beckett",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:33790",
+   "title": "The Wanderer",
+   "author": "Fritz Leiber",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.3,
+    "q25": 0.3,
+    "q26": 0.7,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:36218",
+   "title": "2010: Odyssey Two",
+   "author": "Arthur C. Clarke",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:37322",
+   "title": "Aeneid",
+   "author": "Virgil",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.7,
+    "q17": 0.9,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:37373",
+   "title": "Paradise Lost",
+   "author": "John Milton",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:37713",
+   "title": "The Merchant of Venice",
+   "author": "William Shakespeare",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:37737",
+   "title": "The Invisible Man",
+   "author": "H. G. Wells",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:38093",
+   "title": "Twenty Thousand Leagues Under the Sea",
+   "author": "Emanuel J Mickel",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:38114",
+   "title": "Keep the Aspidistra Flying",
+   "author": "George Orwell",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.3,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:38249",
+   "title": "Manon Lescaut",
+   "author": "Antoine François Prévost",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:38279",
+   "title": "Lions' Commentary on UNIX 6th Edition, with Source Code",
+   "author": "John Lions",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:38615",
+   "title": "The Myth of Sisyphus",
+   "author": "Albert Camus",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:39628",
+   "title": "Cymbeline",
+   "author": "William Shakespeare",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.3,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.9,
+    "q29": 0.9,
+    "q27": 0.3,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:40121",
+   "title": "Vanity Fair",
+   "author": "William Makepeace Thackeray",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:41522",
+   "title": "Northanger Abbey",
+   "author": "Jane Austen",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:41525",
+   "title": "Amadeus",
+   "author": "Peter Shaffer",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:42478",
+   "title": "The Rime of the Ancient Mariner",
+   "author": "Samuel Taylor Coleridge",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:42574",
+   "title": "A Crown of Swords",
+   "author": "Robert Jordan",
+   "answers": {
+    "q02": 0.9,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:42575",
+   "title": "Winter's Heart",
+   "author": "Robert Jordan",
+   "answers": {
+    "q02": 0.9,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:42673",
+   "title": "How Green Was My Valley",
+   "author": "Richard Llewellyn",
+   "answers": {
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:42725",
+   "title": "Lady Audley's Secret",
+   "author": "Mary Elizabeth Braddon",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.9,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:42863",
+   "title": "A Streetcar Named Desire",
+   "author": "Tennessee Williams",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44005",
+   "title": "The English Patient",
+   "author": "Michael Ondaatje",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.9,
+    "q29": 0.1,
+    "q27": 0.7,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44077",
+   "title": "Captains Courageous",
+   "author": "Rudyard Kipling",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44245",
+   "title": "Ramayana",
+   "author": "Valmiki",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q17": 0.9,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.9,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44447",
+   "title": "The Forge of God",
+   "author": "Greg Bear",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.7,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44449",
+   "title": "Blood Music",
+   "author": "Greg Bear",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44472",
+   "title": "The World According to Garp",
+   "author": "John Irving",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.9,
+    "q27": 0.3,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44524",
+   "title": "Mutiny on the Bounty",
+   "author": "James Norman Hall",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:44672",
+   "title": "The Mothman Prophecies",
+   "author": "John A. Keel",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.7,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45047",
+   "title": "The Memory of Earth",
+   "author": "Orson Scott Card",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.9,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45076",
+   "title": "Sixth Column",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45081",
+   "title": "The Puppet Masters",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.7,
+    "q27": 0.3,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45084",
+   "title": "Henry V",
+   "author": "William Shakespeare",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45227",
+   "title": "The Hunting of the Snark",
+   "author": "Lewis Carroll",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.7,
+    "q16": 0.9,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45232",
+   "title": "Jonathan Livingston Seagull",
+   "author": "Richard Bach",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45492",
+   "title": "I Am Legend",
+   "author": "Richard Matheson",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.7,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45903",
+   "title": "The Man in the High Castle",
+   "author": "Philip K. Dick",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.7,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45908",
+   "title": "Rocket Ship Galileo",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45912",
+   "title": "Space Cadet",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45918",
+   "title": "Between Planets",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45921",
+   "title": "Starman Jones",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.7,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:45927",
+   "title": "Podkayne of Mars",
+   "author": "Robert A. Heinlein",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.7,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:46064",
+   "title": "Story of O",
+   "author": "Pauline Réage",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.9,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:68857",
+   "title": "The Player of Games",
+   "author": "Iain Banks",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:68863",
+   "title": "Excession",
+   "author": "Iain Banks",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:68870",
+   "title": "Look to Windward",
+   "author": "Iain Banks",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:68871",
+   "title": "Use of Weapons",
+   "author": "Iain Banks",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:69868",
+   "title": "A Friend of the Earth",
+   "author": "T. Coraghessan Boyle",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:69919",
+   "title": "In Search of Lost Time",
+   "author": "Marcel Proust",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:69931",
+   "title": "Liza of Lambeth",
+   "author": "W. Somerset Maugham",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:70070",
+   "title": "The Weirdstone of Brisingamen",
+   "author": "Alan Garner",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.7,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:70153",
+   "title": "The Human Stain",
+   "author": "Philip Roth",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:70206",
+   "title": "Picnic at Hanging Rock",
+   "author": "Joan Lindsay",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.3,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:70258",
+   "title": "I, the Jury",
+   "author": "Mickey Spillane",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.9,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:70375",
+   "title": "Thinks ...",
+   "author": "David Lodge",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:70829",
+   "title": "The Adventures of Pinocchio",
+   "author": "Carlo Collodi",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q16": 0.7,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.7,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:70850",
+   "title": "Smith of Wootton Major",
+   "author": "J. R. R. Tolkien",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.1,
+    "q05": 0.3,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.7,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:71029",
+   "title": "The Tie That Binds",
+   "author": "Kent Haruf",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.9,
+    "q27": 0.3,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:71290",
+   "title": "England, England",
+   "author": "Julian Barnes",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.7,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:71479",
+   "title": "Feersum Endjinn",
+   "author": "Iain Banks",
+   "answers": {
+    "q01": 0.1,
+    "q05": 0.3,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:71480",
+   "title": "Against a Dark Background",
+   "author": "Iain Banks",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:71567",
+   "title": "Just Like That",
+   "author": "Lily Brett",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.3,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:71791",
+   "title": "Memoirs of a Fox-Hunting Man",
+   "author": "Siegfried Sassoon",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:72018",
+   "title": "The Beach",
+   "author": "Alex Garland",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.3,
+    "q27": 0.9,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:72084",
+   "title": "Murder Must Advertise",
+   "author": "Dorothy L. Sayers",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.9,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:72398",
+   "title": "The Man Who Would Be King",
+   "author": "Rudyard Kipling",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:73217",
+   "title": "A Vicious Circle",
+   "author": "Amanda Craig",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.7,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:73452",
+   "title": "The Emperor Jones",
+   "author": "Eugene O'Neill",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:73517",
+   "title": "The Go-Between",
+   "author": "L. P. Hartley",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.7,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:73530",
+   "title": "Mildred Pierce",
+   "author": "James M. Cain",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:74389",
+   "title": "The Hustler",
+   "author": "Walter Tevis",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:74881",
+   "title": "Letter from an Unknown Woman",
+   "author": "Stefan Zweig",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.3,
+    "q27": 0.1,
+    "q39": 0.3,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:74960",
+   "title": "Miss Lulu Bett",
+   "author": "Zona Gale",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.9,
+    "q29": 0.7,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:75214",
+   "title": "Flatland: A Romance of Many Dimensions",
+   "author": "Edwin Abbott Abbott",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:75702",
+   "title": "Sick Puppy",
+   "author": "Carl Hiaasen",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.3,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:76028",
+   "title": "The Prisoner of Zenda",
+   "author": "Anthony Hope",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:77748",
+   "title": "What Ever Happened to Baby Jane?",
+   "author": "",
+   "answers": {
+    "q01": 0.3,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.9,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:78016",
+   "title": "From Russia with Love",
+   "author": "Ian Fleming",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.9,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:78145",
+   "title": "The Tombs of Atuan",
+   "author": "Ursula K. Le Guin",
+   "answers": {
+    "q01": 0.9,
+    "q02": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.3,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:79131",
+   "title": "Seven Against Thebes",
+   "author": "Aeschylus",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.9,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:79498",
+   "title": "Tartarin de Tarascon",
+   "author": "Alphonse Daudet",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.1,
+    "q05": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.1,
+    "q27": 0.9,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:79532",
+   "title": "The Sandman: The Kindly Ones",
+   "author": "",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.9,
+    "q05": 0.9,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.1,
+    "q26": 0.1,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:79569",
+   "title": "SS-GB",
+   "author": "Len Deighton",
+   "answers": {
+    "q01": 0.1,
+    "q02": 0.3,
+    "q05": 0.1,
+    "q17": 0.1,
+    "q16": 0.1,
+    "q25": 0.9,
+    "q26": 0.3,
+    "q29": 0.1,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  },
+  {
+   "book_id": "cmu:enwiki:79578",
+   "title": "Finnegans Wake",
+   "author": "James Joyce",
+   "answers": {
+    "q01": 0.7,
+    "q02": 0.9,
+    "q05": 0.3,
+    "q17": 0.1,
+    "q16": 0.3,
+    "q25": 0.1,
+    "q26": 0.3,
+    "q29": 0.9,
+    "q27": 0.1,
+    "q39": 0.1,
+    "q33": 0.1
+   }
+  }
+ ]
+}
