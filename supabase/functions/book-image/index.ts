@@ -8,6 +8,8 @@ import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 const ALLOWED = [
   /^https:\/\/wiseshrestha\.github\.io$/,
   /^https:\/\/queso-gato1355\.github\.io$/,
+  // Vercel deployments of the fork (production and preview URLs)
+  /^https:\/\/[a-z0-9-]+\.vercel\.app$/,
   /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/,
 ];
 

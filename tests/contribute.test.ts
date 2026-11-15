@@ -74,7 +74,8 @@ describe("game session payload", () => {
 
   it("records a miss, the rejected guesses and a book the reader named afterwards", () => {
     let session = playTo(newSession(), () => "yes");
-    for (let i = 0; i < 5; i++) {
+    // Reject every guess until the engine gives up (check-ins and confident guesses alike).
+    for (let i = 0; i < 60; i++) {
       const st = deriveState(cc, config, session);
       if (st.action.kind === "guess") session = applyEvent(cc, config, session, { type: "reject", bookId: st.action.book.id }, st);
       else if (st.action.kind === "ask") session = playTo(session, () => "yes");

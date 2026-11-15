@@ -106,38 +106,49 @@ export function fetchBlurb(book: CatalogBook): Promise<BookBlurb | null> {
   });
 }
 
-const IMAGE_CACHE = "bookinator-image:";
+const PHOTO_CACHE = "bookinator-photo:";
+const PHOTO_TTL_MS = 7 * 24 * 3600 * 1000;
 
-export function fetchImage(book: CatalogBook): Promise<BookImage | null> {
-  return once(`image:${book.id}`, async () => {
-    if (!contributionsEnabled) return null;
+/**
+ * One Unsplash photo for a search phrase, through the `book-image` Edge Function (the key stays
+ * server-side). Cached in localStorage for a week: the Unsplash demo key allows only 50 requests an hour.
+ */
+export function fetchPhoto(query: string): Promise<BookImage | null> {
+  const q = query.trim().slice(0, 80);
+  return once(`photo:${q}`, async () => {
+    if (!contributionsEnabled || q.length < 2) return null;
     try {
-      const saved = window.sessionStorage.getItem(IMAGE_CACHE + book.id);
-      if (saved) return JSON.parse(saved) as BookImage;
+      const saved = JSON.parse(window.localStorage.getItem(PHOTO_CACHE + q) ?? "null") as { at: number; img: BookImage | null } | null;
+      if (saved && Date.now() - saved.at < PHOTO_TTL_MS) return saved.img;
     } catch {
       /* storage unavailable */
     }
-    const q = book.title_en.slice(0, 80);
     const data = (await getJson(`${SUPABASE_CONFIG.url}/functions/v1/book-image?q=${encodeURIComponent(q)}`)) as {
       image?: BookImage | null;
+      reason?: string;
     };
     const img = data.image;
     // Only Unsplash-hosted images and links are ever rendered.
-    if (
-      !img ||
-      !img.url.startsWith("https://images.unsplash.com/") ||
-      !img.photographer_url.startsWith("https://unsplash.com/") ||
-      !img.photo_url.startsWith("https://unsplash.com/")
-    ) {
-      return null;
+    const ok =
+      img &&
+      img.url.startsWith("https://images.unsplash.com/") &&
+      img.photographer_url.startsWith("https://unsplash.com/") &&
+      img.photo_url.startsWith("https://unsplash.com/");
+    // Remember "no photo" only when Unsplash really had none (not on a rate-limit or outage).
+    if (ok || data.reason === "no_result") {
+      try {
+        window.localStorage.setItem(PHOTO_CACHE + q, JSON.stringify({ at: Date.now(), img: ok ? img : null }));
+      } catch {
+        /* storage unavailable */
+      }
     }
-    try {
-      window.sessionStorage.setItem(IMAGE_CACHE + book.id, JSON.stringify(img));
-    } catch {
-      /* storage unavailable */
-    }
-    return img;
+    return ok ? img : null;
   });
+}
+
+/** A mood photo for a book: searched by its English title. */
+export function fetchImage(book: CatalogBook): Promise<BookImage | null> {
+  return fetchPhoto(book.title_en);
 }
 
 export interface LibraryLoan {

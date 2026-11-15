@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState, type FormEvent, type RefObject } 
 import {
   contributionsEnabled,
   ensureSignedIn,
+  errorKind,
   isSignedIn,
   searchBooksRemote,
   submitBook,
@@ -20,7 +21,9 @@ import type { Session, SessionState } from "../engine/session.ts";
 import { CC } from "../game.ts";
 import { bookTitles, type Lang, type Strings } from "../i18n/index.ts";
 import type { LibraryStrings } from "../i18n/library.ts";
-import { Button, Icon, UnsplashImage } from "./ui.tsx";
+import { fetchPhoto } from "../bookInfo.ts";
+import { LIBRARY } from "../i18n/library.ts";
+import { Button, Icon, UnsplashImage, useLoaded } from "./ui.tsx";
 
 // ---------------------------------------------------------------- sign-in + CAPTCHA
 
@@ -168,6 +171,7 @@ export function AddBookScreen({
   const [kinds, setKinds] = useState<number[]>([]);
   const [query, setQuery] = useState("");
   const [searched, setSearched] = useState<string | null>(null);
+  const [searchedRemote, setSearchedRemote] = useState<RemoteBookHit[]>([]);
   const [consent, setConsent] = useState(false);
   const [remote, setRemote] = useState<RemoteBookHit[]>([]);
   const [confirmDup, setConfirmDup] = useState(false);
@@ -228,8 +232,9 @@ export function AddBookScreen({
         });
       }
       setStatus({ kind: "done", msg: t.thanksExisting });
-    } catch {
-      setStatus({ kind: "error", msg: t.sendFailed });
+    } catch (err) {
+      const k = errorKind(err);
+      setStatus({ kind: "error", msg: k === "rate_limit" ? t.rateLimited : k === "invalid" ? t.invalidInput : t.sendFailed });
     }
   };
 
@@ -237,7 +242,7 @@ export function AddBookScreen({
     e.preventDefault();
     const cleanTitle = cleanText(title);
     const cleanAuthor = cleanText(author);
-    if (!cleanTitle || !cleanAuthor) {
+    if (!cleanTitle) {
       setStatus({ kind: "error", msg: t.needTitleAuthor });
       return;
     }
@@ -250,7 +255,7 @@ export function AddBookScreen({
       const sid = await sendSession();
       const res = await submitBook({
         title: cleanTitle,
-        author: cleanAuthor,
+        ...(cleanAuthor ? { author: cleanAuthor } : {}),
         ...(hangul(cleanTitle) ? { title_ko: cleanTitle } : {}),
         ...(sid ? { origin_session_id: sid } : {}),
         confirm_not_duplicate: confirmDup,
@@ -272,8 +277,9 @@ export function AddBookScreen({
         }
         setStatus({ kind: "done", msg: res.status === "duplicate_book" ? t.duplicateBook : t.duplicateSubmission });
       }
-    } catch {
-      setStatus({ kind: "error", msg: t.sendFailed });
+    } catch (err) {
+      const k = errorKind(err);
+      setStatus({ kind: "error", msg: k === "rate_limit" ? t.rateLimited : k === "invalid" ? t.invalidInput : t.sendFailed });
     }
   };
 
@@ -285,12 +291,24 @@ export function AddBookScreen({
     const byAuthor = searchLocal(CC.books, "", searched, 5).filter((h) => !byTitle.some((x) => x.book.id === h.book.id));
     return [...byTitle, ...byAuthor].slice(0, 5);
   }, [searched]);
+  const runSearch = () => {
+    const q = cleanText(query);
+    setSearched(q);
+    setSearchedRemote([]);
+    if (contributionsEnabled && q.length >= 2) {
+      searchBooksRemote(q, 5).then(
+        (hits) => setSearchedRemote(hits.filter((h) => !(h.kind === "book" && CC.bookIndex.has(h.id)))),
+        () => setSearchedRemote([]),
+      );
+    }
+  };
+  const nfPhoto = useLoaded(() => fetchPhoto(LIBRARY.en.nfImage), "not-found");
   const toggleKind = (i: number) => setKinds((k) => (k.includes(i) ? k.filter((x) => x !== i) : [...k, i]));
 
   return (
     <>
       <section className="nf-hero">
-        <UnsplashImage caption={L.nfImage} className="nf-photo" />
+        <UnsplashImage photo={nfPhoto} caption={L.nfImage} className="nf-photo" />
         <p className="eyebrow">{L.nfEyebrow}</p>
         <h1 ref={headingRef} tabIndex={-1}>{L.nfTitle}</h1>
         <p className="lead-sm">{reason === "all_rejected" ? t.allRejectedLine : L.nfLead}</p>
@@ -301,7 +319,7 @@ export function AddBookScreen({
           <span className="tile-icon"><Icon name="tileSearch" size={22} /></span>
           <h2>{L.searchTitle}</h2>
           <p className="muted">{L.searchLead}</p>
-          <form className="input-row" role="search" onSubmit={(e) => { e.preventDefault(); setSearched(query.trim()); }}>
+          <form className="input-row" role="search" onSubmit={(e) => { e.preventDefault(); runSearch(); }}>
             <label className="sr-only" htmlFor="nf-query">{L.searchPlaceholder}</label>
             <span className="field field-pill">
               <Icon name="field" />
@@ -311,16 +329,26 @@ export function AddBookScreen({
           </form>
           {searched !== null && (
             <div className="nf-results" aria-live="polite">
-              {found.length === 0 ? (
+              {found.length === 0 && searchedRemote.length === 0 ? (
                 <p className="hint">{L.searchNone}</p>
               ) : (
-                found.map(({ book }) => (
-                  <div key={book.id} className="dup-match">
-                    <span className="lb-cover" aria-hidden="true" />
-                    <span className="lb-info"><b>{bookTitles(book, lang).main}</b><span>{book.author}</span></span>
-                    <Button variant="secondary" arrow={false} onClick={() => pick({ kind: "local", book })} disabled={busy || done}>{L.thisIsIt}</Button>
-                  </div>
-                ))
+                <>
+                  {found.map(({ book }) => (
+                    <div key={book.id} className="dup-match">
+                      <span className="lb-cover" aria-hidden="true" />
+                      <span className="lb-info"><b>{bookTitles(book, lang).main}</b><span>{book.author}</span></span>
+                      <Button variant="secondary" arrow={false} onClick={() => pick({ kind: "local", book })} disabled={busy || done}>{L.thisIsIt}</Button>
+                    </div>
+                  ))}
+                  {searchedRemote.length > 0 && <p className="card-label">{L.searchOtherShelves}</p>}
+                  {searchedRemote.map((h) => (
+                    <div key={`${h.kind}:${h.id}`} className="dup-match">
+                      <span className="lb-cover" aria-hidden="true" />
+                      <span className="lb-info"><b>{(lang === "ko" && h.title_ko) || h.title}</b><span>{h.author}{h.kind === "submission" ? ` · ${t.submitted}` : ""}</span></span>
+                      <Button variant="secondary" arrow={false} onClick={() => pick({ kind: "remote", hit: h })} disabled={busy || done}>{L.thisIsIt}</Button>
+                    </div>
+                  ))}
+                </>
               )}
             </div>
           )}
@@ -340,8 +368,8 @@ export function AddBookScreen({
               <input id="bk-title" type="text" value={title} onChange={(e) => setTitle(e.target.value)} disabled={done} autoComplete="off" maxLength={300} required />
             </div>
             <div className="form-field">
-              <label htmlFor="bk-author">{t.author} <span aria-hidden="true">*</span></label>
-              <input id="bk-author" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} disabled={done} autoComplete="off" maxLength={200} placeholder={L.authorPlaceholder} required />
+              <label htmlFor="bk-author">{t.author}</label>
+              <input id="bk-author" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} disabled={done} autoComplete="off" maxLength={200} placeholder={L.authorPlaceholder} />
             </div>
           </div>
 
@@ -393,7 +421,7 @@ export function AddBookScreen({
               <Button onClick={onPlayAgain}>{t.playAgain}</Button>
             ) : (
               <button type="submit" className="btn btn-primary" disabled={!contributionsEnabled || !who.ready || busy}>
-                <span>{busy ? t.sending : L.submitRequest}</span>
+                <span>{busy ? t.sending : confirmDup ? L.submitAnyway : L.submitRequest}</span>
                 <Icon name="arrowRightWhite" />
               </button>
             )}

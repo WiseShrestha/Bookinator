@@ -68,6 +68,7 @@ function slug(s: string): string {
 
 export function submissionToBook(s: ApprovedSubmission): CatalogBook | { error: string } {
   if (!s.original_language) return { error: "original_language is missing (a reviewer can add it with an edit)" };
+  if (!s.author) return { error: "author is missing (a reviewer can add it with an edit)" };
   return {
     id: submissionBookId(s.id),
     title_en: s.title,

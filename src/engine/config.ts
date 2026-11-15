@@ -21,12 +21,28 @@ export interface EngineConfig {
   /** After this many rejected guesses, show the shortlist and out-of-catalog exit. */
   maxRejections: number;
   /**
+   * Akinator-style check-ins: after exactly this many answers, propose the most likely book even when the
+   * engine is not yet confident (shown as a tentative "could it be…?"). A "no" rejects it and the questions
+   * continue. Empty list = only confident guesses.
+   */
+  checkpointQuestions: number[];
+  /** A check-in needs the top book at least this probable … */
+  checkpointMinProbability: number;
+  /** … and at least this many times as probable as the runner-up. */
+  checkpointMinRatio: number;
+  /**
    * Answered questions required after a rejection before the next guess.
    * Not in the brief's pseudocode; added so a rejection is followed by "continue
    * questioning" rather than an instant second guess. Set to 0 to disable.
    */
   questionsAfterRejection: number;
   shortlistSize: number;
+  /**
+   * Question variety for games that carry a seed (the UI's games): pick at random among the `questionTopK`
+   * strongest questions scoring at least (1 - questionSpread) × the best. 0 / 1 = always the single best.
+   */
+  questionSpread: number;
+  questionTopK: number;
   /** Max questions asked per correlation group (brief: initially one). */
   maxPerGroup: number;
   /** Scores within this distance are treated as ties; ties go to the lower index. */
@@ -47,11 +63,18 @@ export const DEFAULT_CONFIG: EngineConfig = {
   minInformativeAnswers: 6,
   guessMinProbability: 0.8,
   guessMinRatio: 4,
-  maxQuestions: 18,
+  // Akinator-style long games. Simulated on the research shelf (seed 7, 4 games/book, 15 Nov 2026):
+  // cap 18 → clear memory first guess 23% / found 75%; cap 40 → 69% / 94% (avg 28 questions).
+  maxQuestions: 40,
   minScore: 0.01,
-  maxRejections: 2,
-  questionsAfterRejection: 1,
+  maxRejections: 4,
+  checkpointQuestions: [15, 25, 35],
+  checkpointMinProbability: 0.3,
+  checkpointMinRatio: 1.5,
+  questionsAfterRejection: 3,
   shortlistSize: 3,
+  questionSpread: 0.25,
+  questionTopK: 4,
   maxPerGroup: 1,
   tieEpsilon: 1e-12,
 };

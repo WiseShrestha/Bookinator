@@ -50,6 +50,12 @@ export async function ensureSignedIn(captchaToken?: string): Promise<void> {
   if (error) throw error;
 }
 
+/** Error codes raised by the submit_* functions (supabase/migrations). */
+export function errorKind(e: unknown): "rate_limit" | "blocked" | "invalid" | "other" {
+  const code = (e as { code?: string } | null)?.code;
+  return code === "53400" ? "rate_limit" : code === "42501" ? "blocked" : code === "22023" ? "invalid" : "other";
+}
+
 async function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T> {
   const c = await client();
   const { data, error } = await c.rpc(fn, args);
@@ -78,7 +84,8 @@ export function submitGameSession(p: SessionPayload): Promise<string> {
 
 export interface NewBook {
   title: string;
-  author: string;
+  /** Optional: readers may leave it blank. */
+  author?: string;
   title_ko?: string;
   origin_session_id?: string;
   confirm_not_duplicate?: boolean;

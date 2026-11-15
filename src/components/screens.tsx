@@ -2,7 +2,7 @@
 // guess), 04 Similar Books. 05 Not Found lives in Contribute.tsx. The engine decides everything; these
 // components only show its state.
 import { useState, type RefObject } from "react";
-import { fetchBlurb, fetchImage, fetchLibraryPopular, fetchPopular, titleCount, volumeBook, type LibraryLoan, type PopularBook } from "../bookInfo.ts";
+import { fetchBlurb, fetchImage, fetchLibraryPopular, fetchPhoto, fetchPopular, titleCount, volumeBook, type LibraryLoan, type PopularBook } from "../bookInfo.ts";
 import { ACTIVE_COLLECTION, COLLECTIONS, collectionHref, type CollectionId } from "../data/index.ts";
 import { matchingClues, type MatchingClue } from "../engine/explain.ts";
 import { catalogLinks } from "../engine/links.ts";
@@ -10,7 +10,7 @@ import { ANSWERS, type Answer, type CatalogBook } from "../engine/model.ts";
 import type { Action, Session, SessionState } from "../engine/session.ts";
 import { CC, CONFIG, LINK_OPTIONS } from "../game.ts";
 import { ANSWER_TEXT, bookTitles, questionText, type Lang, type Strings } from "../i18n/index.ts";
-import type { LibraryStrings } from "../i18n/library.ts";
+import { LIBRARY, type LibraryStrings } from "../i18n/library.ts";
 import { DESIGN_MOCK, type LeaderboardEntry } from "../mock/design.ts";
 import { Availability } from "./Availability.tsx";
 import { ShareAnswers } from "./Contribute.tsx";
@@ -48,6 +48,14 @@ function SectionHead({ eyebrow, title, lead, children }: { eyebrow: string; titl
 
 // ---------------------------------------------------------------- 01 · Home
 
+function CollectionCard({ item, query, L }: { item: (typeof DESIGN_MOCK)["ko"]["collection"][number]; query: string; L: LibraryStrings }) {
+  const photo = useLoaded(() => fetchPhoto(query), query);
+  return (
+    <BookCard title={item.title} author={item.author} description={item.description} badge={L.colBadge} genre={item.genre}
+      photo={photo} imageCaption={item.imageCaption} actionLabel={L.colMore} saveLabel={L.saveShelf} soonLabel={L.comingSoon} />
+  );
+}
+
 const TILE_ICONS: IconName[] = ["tileStart", "tileSearch", "tileRequest", "tileCard", "tileGuide"];
 
 function Leaderboard({ L, lang }: { L: LibraryStrings; lang: Lang }) {
@@ -63,7 +71,8 @@ function Leaderboard({ L, lang }: { L: LibraryStrings; lang: Lang }) {
   const entries = isLive ? liveEntries : DESIGN_MOCK[lang].leaderboard;
   const [top, ...rest] = entries;
   const topBook = isLive ? CC.books[CC.bookIndex.get(live![0].book_id)!] : null;
-  const photo = useLoaded(() => (topBook ? fetchImage(topBook) : Promise.resolve(null)), topBook?.id ?? "none");
+  const sampleQuery = DESIGN_MOCK.en.leaderboard[0].imageCaption ?? "";
+  const photo = useLoaded(() => (topBook ? fetchImage(topBook) : fetchPhoto(sampleQuery)), topBook?.id ?? "sample");
   return (
     <section className="section section-linen" id="leaderboard">
       <SectionHead eyebrow={L.lbEyebrow} title={L.lbTitle} lead={isLive ? L.lbLeadLive : L.lbLead}>
@@ -126,6 +135,8 @@ export function HomeScreen({ headingRef, onStart, t, L, lang }: { headingRef: He
   const books = [...CC.books].sort((a, b) => bookTitles(a, lang).main.localeCompare(bookTitles(b, lang).main, lang));
   const shelfName: Record<CollectionId, string> = { classic: t.classicShelf, research: t.researchShelf };
   const start = () => onStart(film);
+  // Photos are searched with the English phrase in both languages (Unsplash search works best in English).
+  const heroPhoto = useLoaded(() => fetchPhoto(LIBRARY.en.heroImage), "hero");
   return (
     <>
       <section className="hero">
@@ -133,36 +144,11 @@ export function HomeScreen({ headingRef, onStart, t, L, lang }: { headingRef: He
           <p className="eyebrow eyebrow-icon"><Icon name="eyebrow" size={20} />{L.heroEyebrow}</p>
           <h1 ref={headingRef} tabIndex={-1}>{L.heroTitle[0]}<br />{L.heroTitle[1]}</h1>
           <p className="lead">{L.heroLead}</p>
-          <div className="card hero-input">
-            <label htmlFor="hero-text">{L.heroLabel}</label>
-            <div className="input-row">
-              <span className="field field-pill">
-                <Icon name="field" size={20} />
-                <input id="hero-text" type="text" placeholder={L.heroPlaceholder} disabled aria-describedby="hero-soon" />
-              </span>
-              <Button onClick={start}>{L.heroSearch}</Button>
-            </div>
-            <div className="hint-row">
-              <Button variant="ghost" onClick={start}>{L.heroAskOnly}</Button>
-              <span className="hint">{L.heroHint}</span>
-            </div>
-            <p className="hint" id="hero-soon">{L.freeTextSoon}</p>
-            <div className="hero-options">
-              <nav className="shelf-switch" aria-label={t.collectionsLabel}>
-                {(Object.keys(COLLECTIONS) as CollectionId[]).map((id) => (
-                  <a key={id} href={collectionHref(id)} className="chip" aria-current={id === ACTIVE_COLLECTION ? "page" : undefined}>
-                    {shelfName[id]} · {t.booksCount(titleCount(COLLECTIONS[id].catalog))}
-                  </a>
-                ))}
-              </nav>
-              <label className="check">
-                <input type="checkbox" checked={film} onChange={(e) => setFilm(e.target.checked)} />
-                <span>{t.filmMode}</span>
-              </label>
-            </div>
+          <div className="hero-actions">
+            <Button className="btn-hero" onClick={start}>{L.startQuestions}</Button>
           </div>
         </div>
-        <UnsplashImage caption={L.heroImage} className="hero-photo" />
+        <UnsplashImage photo={heroPhoto} caption={L.heroImage} className="hero-photo" />
       </section>
 
       <section className="tiles">
@@ -202,10 +188,23 @@ export function HomeScreen({ headingRef, onStart, t, L, lang }: { headingRef: He
           <Button variant="ghost" disabled title={L.comingSoon}>{L.colAll}</Button>
         </SectionHead>
         <div className="card-grid">
-          {mock.collection.map((c) => (
-            <BookCard key={c.title} title={c.title} author={c.author} description={c.description} badge={L.colBadge} genre={c.genre}
-              imageCaption={c.imageCaption} actionLabel={L.colMore} saveLabel={L.saveShelf} soonLabel={L.comingSoon} />
+          {mock.collection.map((c, i) => (
+            <CollectionCard key={c.title} item={c} query={DESIGN_MOCK.en.collection[i].imageCaption} L={L} />
           ))}
+        </div>
+        <div className="shelf-options">
+          <h3>{L.shelfTitle}</h3>
+          <nav className="shelf-switch" aria-label={t.collectionsLabel}>
+            {(Object.keys(COLLECTIONS) as CollectionId[]).map((id) => (
+              <a key={id} href={collectionHref(id)} className="chip" aria-current={id === ACTIVE_COLLECTION ? "page" : undefined}>
+                {shelfName[id]} · {t.booksCount(titleCount(COLLECTIONS[id].catalog))}
+              </a>
+            ))}
+          </nav>
+          <label className="check">
+            <input type="checkbox" checked={film} onChange={(e) => setFilm(e.target.checked)} />
+            <span>{t.filmMode}</span>
+          </label>
         </div>
         <details className="shelf-list">
           <summary>{t.seeShelf(titleCount(CC.catalog))}</summary>
@@ -269,6 +268,7 @@ function AnswerHistory({ state, t, L, lang }: { state: SessionState; t: Strings;
 export function QuestionScreen(props: Common & { action: ActionOf<"ask">; onAnswer: (a: Answer) => void }) {
   const { action, headingRef, onAnswer, state, t, L, lang } = props;
   const [picked, setPicked] = useState<Answer | null>(null);
+  const questionPhoto = useLoaded(() => fetchPhoto(LIBRARY.en.questionImage), "question");
   const n = action.number;
   const max = CONFIG.maxQuestions;
   return (
@@ -288,7 +288,7 @@ export function QuestionScreen(props: Common & { action: ActionOf<"ask">; onAnsw
         </aside>
         <div className="question-col">
           <div className="card question-card">
-            <UnsplashImage className="question-photo" />
+            <UnsplashImage photo={questionPhoto} className="question-photo" />
             <div className="question-body">
               <p className="eyebrow">{L.questionEyebrow(n)}</p>
               <h1 ref={headingRef} tabIndex={-1}>{questionText(action.question, lang)}</h1>
@@ -385,6 +385,7 @@ export function BookScreen(props: BookScreenProps) {
   const [volume, setVolume] = useState<CatalogBook | null>(null);
   const series = action.book.volumes ? action.book : null;
   const book = volume ?? action.book;
+  const tentative = action.kind === "guess" && action.tentative === true;
   const guess = action.kind === "guess" ? (props as Extract<BookScreenProps, { onAccept: () => void }>) : null;
   const { main, alt } = bookTitles(book, lang);
   const blurb = useLoaded(() => fetchBlurb(book), book.id);
@@ -421,10 +422,10 @@ export function BookScreen(props: BookScreenProps) {
           <span className="banner-check"><Icon name="checkWhiteLg" size={24} /></span>
           <div>
             <h1 ref={headingRef} tabIndex={-1}>
-              {guess ? (series ? L.seriesBanner : state.rejected.size > 0 ? L.foundBannerAgain : L.foundBanner) : L.confirmedBanner}
+              {guess ? (tentative ? L.maybeBanner : series ? L.seriesBanner : state.rejected.size > 0 ? L.foundBannerAgain : L.foundBanner) : L.confirmedBanner}
               <span className="sr-only"> {main}</span>
             </h1>
-            <p>{guess ? L.foundSub(state.answers.length, titleCount(CC.catalog)) : t.foundAfter(state.answers.length, action.kind === "found" && action.via === "guess")}</p>
+            <p>{guess ? (tentative ? L.maybeSub(state.answers.length) : L.foundSub(state.answers.length, titleCount(CC.catalog))) : t.foundAfter(state.answers.length, action.kind === "found" && action.via === "guess")}</p>
           </div>
         </div>
         <div className="banner-actions">

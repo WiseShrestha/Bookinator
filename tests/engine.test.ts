@@ -323,13 +323,15 @@ describe("session flow", () => {
     assert.equal(st.p, null);
   });
 
-  it("stops at the 18-question cap with a shortlist", () => {
-    // 40 weak, uninformative-ish questions → never confident
-    const weak = Array.from({ length: 6 }, (_, b) => Array.from({ length: 40 }, (_, q) => ((b + q) % 2 ? 0.7 : 0.3)));
+  it("stops at the question cap (config.maxQuestions) with a shortlist", () => {
+    // More weak, uninformative-ish questions than the cap → never confident
+    const w0 = setup([[0.5]]);
+    const n = w0.config.maxQuestions + 20;
+    const weak = Array.from({ length: 6 }, (_, b) => Array.from({ length: n }, (_, q) => ((b + q) % 2 ? 0.7 : 0.3)));
     const w = setup(weak);
     const s = play(w.cc, w.config, () => "dont_know");
     const st = deriveState(w.cc, w.config, s);
-    assert.equal(st.answers.length, 18);
+    assert.equal(st.answers.length, w.config.maxQuestions);
     assert.ok(st.action.kind === "shortlist" && st.action.reason === "question_cap");
   });
 
@@ -438,5 +440,78 @@ describe("fixture catalog", () => {
 
   it("all answers are covered by ANSWERS order used in logL", () => {
     assert.deepEqual([...ANSWERS], ["yes", "probably", "dont_know", "probably_not", "no"]);
+  });
+});
+
+describe("Akinator-style check-ins", () => {
+  // Weak labels: the engine never reaches the confident-guess threshold on its own.
+  const weak = Array.from({ length: 5 }, (_, b) => Array.from({ length: 40 }, (_, q) => (((q + 1) * (b + 3)) % 5 < 2 ? 0.7 : 0.3)));
+  const opts = { checkpointQuestions: [8, 16], checkpointMinProbability: 0.2, checkpointMinRatio: 1.05, guessMinProbability: 0.999, questionsAfterRejection: 2 };
+  const truth = (q: number) => (weak[0][q] > 0.5 ? "yes" : "no") as Answer;
+
+  it("proposes the most likely book at a check-in, marked tentative", () => {
+    const w = setup(weak, {}, opts);
+    const st = deriveState(w.cc, w.config, play(w.cc, w.config, truth));
+    assert.equal(st.answers.length, 8);
+    assert.ok(st.action.kind === "guess" && st.action.tentative === true);
+    assert.equal(st.action.kind === "guess" && st.action.book.id, st.ranked.length && w.cc.books[st.ranked[0]].id);
+  });
+
+  it("keeps asking after a 'no', then checks in again later", () => {
+    const w = setup(weak, {}, opts);
+    let s = play(w.cc, w.config, truth);
+    let st = deriveState(w.cc, w.config, s);
+    assert.equal(st.action.kind, "guess");
+    s = applyEvent(w.cc, w.config, s, { type: "reject", bookId: (st.action as { book: { id: string } }).book.id }, st);
+    st = deriveState(w.cc, w.config, s);
+    assert.equal(st.action.kind, "ask"); // not another guess straight away
+    s = play(w.cc, w.config, truth, s);
+    st = deriveState(w.cc, w.config, s);
+    assert.ok(st.answers.length > 8, "questions continued after the rejected check-in");
+    if (st.action.kind === "guess") assert.ok(!st.rejected.has(st.action.bookIndex), "a rejected book is never proposed again");
+  });
+
+  it("no check-ins when the list is empty", () => {
+    const w = setup(weak, {}, { ...opts, checkpointQuestions: [] });
+    const st = deriveState(w.cc, w.config, play(w.cc, w.config, truth));
+    assert.notEqual(st.action.kind, "guess");
+  });
+});
+
+describe("question variety", () => {
+  const cat = COLLECTIONS.classic.catalog;
+  const config = makeConfig();
+  const cc = compileCatalog(cat, config.channel, config.unknownPYes);
+  const firstQuestions = (seed?: number) => {
+    let s = newSession(seed === undefined ? {} : { seed });
+    const ids: string[] = [];
+    for (let i = 0; i < 5; i++) {
+      const st = deriveState(cc, config, s);
+      if (st.action.kind !== "ask") break;
+      ids.push(st.action.question.id);
+      s = applyEvent(cc, config, s, { type: "answer", questionId: st.action.question.id, answer: "dont_know" }, st);
+    }
+    return ids.join(",");
+  };
+
+  it("without a seed the order is fixed (simulator gate, old saved games)", () => {
+    assert.equal(firstQuestions(), firstQuestions());
+  });
+
+  it("different seeds give different orders; the same seed replays exactly", () => {
+    const orders = new Set(Array.from({ length: 12 }, (_, i) => firstQuestions(1000 + i)));
+    assert.ok(orders.size > 1, "questions vary between games");
+    assert.equal(firstQuestions(42), firstQuestions(42));
+  });
+
+  it("Undo returns to the same question in a seeded game", () => {
+    let s = newSession({ seed: 7 });
+    const st0 = deriveState(cc, config, s);
+    assert.equal(st0.action.kind, "ask");
+    const q0 = (st0.action as { question: { id: string } }).question.id;
+    s = applyEvent(cc, config, s, { type: "answer", questionId: q0, answer: "yes" }, st0);
+    s = undo(s);
+    const back = deriveState(cc, config, s);
+    assert.equal((back.action as { question: { id: string } }).question.id, q0);
   });
 });

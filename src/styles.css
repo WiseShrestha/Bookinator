@@ -415,3 +415,10 @@ textarea:disabled, input:disabled { opacity: .7; }
 .volumes { list-style: decimal; padding-left: 22px; columns: 2 220px; column-gap: 32px; font-size: 16px; line-height: 1.7; }
 .volumes li { break-inside: avoid; }
 [hidden] { display: none !important; }
+
+/* home: one primary action; shelf choice lives with the shelf list */
+.hero-actions { display: flex; }
+.btn-hero { min-height: 60px; padding: 18px 36px; font-size: 18px; }
+.shelf-options { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 20px 24px; background: var(--white); border: 1px solid var(--putty); border-radius: 8px; }
+.shelf-options h3 { font-family: var(--sans); font-size: 15px; font-weight: 600; }
+@media (max-width: 760px) { .btn-hero { width: 100%; } }

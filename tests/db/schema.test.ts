@@ -60,6 +60,8 @@ before(async () => {
   await db.exec(read("supabase/migrations/20261114000000_community_contributions.sql"));
   await db.exec(read("supabase/migrations/20261115000000_input_hygiene_and_popular.sql"));
   await db.exec(read("supabase/migrations/20261115010000_feature_status_ai_recall.sql"));
+  await db.exec(read("supabase/migrations/20261115020000_optional_author.sql"));
+  await db.exec(read("supabase/migrations/20261115030000_question_cap_40.sql"));
   await db.query("insert into auth.users (id) values ($1), ($2), ($3)", [ADMIN, ALICE, BOB]);
   await db.query("insert into public.app_admins (user_id) values ($1)", [ADMIN]);
   await as(null, "service_role", async () => {
@@ -147,6 +149,14 @@ describe("book submissions and duplicate search", () => {
     const forced = await user(ALICE, () => rpc<{ status: string; flagged_possible_duplicates: boolean }>("submit_book", { kind: "new_book", title: "The Hobbit, or There and Back Again", author: "J.R.R. Tolkien", confirm_not_duplicate: true }));
     assert.equal(forced.status, "created");
     assert.equal(forced.flagged_possible_duplicates, true);
+  });
+
+  it("accepts a new book without an author, but never without a title", async () => {
+    const res = await user(ALICE, () => rpc<{ status: string; submission_id: string }>("submit_book", { kind: "new_book", title: "  Untitled memory of a lighthouse  ", author: "  " }));
+    assert.equal(res.status, "created");
+    const row = await db.query<{ title: string; author: string | null }>("select title, author from book_submissions where id = $1", [res.submission_id]);
+    assert.deepEqual(row.rows[0], { title: "Untitled memory of a lighthouse", author: null });
+    await assert.rejects(user(ALICE, () => rpc("submit_book", { kind: "new_book", title: " ", author: "Someone" })), /title/);
   });
 
   it("links a missed game's answers to the new submission as seed evidence", async () => {

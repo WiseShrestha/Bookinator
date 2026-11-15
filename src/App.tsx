@@ -45,7 +45,11 @@ export default function App() {
   );
   const onUndo = useCallback(() => setSession((s) => (s ? undo(s) : s)), []);
   const onRestart = useCallback(() => setSession(null), []);
-  const onStart = useCallback((filmMemoryMode: boolean) => setSession(newSession({ filmMemoryMode })), []);
+  // Each game gets its own seed, so questions come in a different order from game to game.
+  const onStart = useCallback(
+    (filmMemoryMode: boolean) => setSession(newSession({ filmMemoryMode, seed: Math.floor(Math.random() * 2 ** 31) })),
+    [],
+  );
 
   // Move focus to the new heading whenever the screen or question changes (screen readers + keyboard).
   const kind = state ? state.action.kind : "start";
