@@ -157,7 +157,7 @@ The validator checks:
 ## Research catalog (500 imported records → 388 targets, 488 titles)
 
 Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/). The **CMU /
-research catalog** ("Research shelf", 268 titles) is the **default**. The **10-book fixture** ("Classic shelf") is at
+research catalog** ("Research shelf", 488 titles, catalog v3) is the **default**. The **10-book fixture** ("Classic shelf") is at
 `?collection=classic`, `npm run dev:classic` or `VITE_CATALOG=classic`. Never report imported records as game coverage:
 
 | Measure (14 Nov 2026) | Count |

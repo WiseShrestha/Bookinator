@@ -72,7 +72,7 @@ When fixing, run `npm run verify` until green. Don't "fix" errors by deleting te
 ## Research catalog (500 imported records → 388 targets, 488 titles)
 
 Two catalogs ship, switchable on the start screen (live: https://wiseshrestha.github.io/Bookinator/). The **CMU /
-research catalog** ("Research shelf", 268 titles) is the **default**. The **10-book fixture** ("Classic shelf") is at
+research catalog** ("Research shelf", 488 titles, catalog v3) is the **default**. The **10-book fixture** ("Classic shelf") is at
 `?collection=classic`, `npm run dev:classic` or `VITE_CATALOG=classic`. Never report imported records as game coverage:
 
 | Measure (14 Nov 2026) | Count |
@@ -233,8 +233,8 @@ much of the rise from 20.4% / 73.3% (clear memory, v1).
 New requirement: Akinator-style reader contributions (new books after a miss, corrections, feature answers,
 question and cover proposals) stored in Supabase (project ref `jvfxqusmnfdvslrgbjyv`, MCP server in `.mcp.json`).
 Applied to the remote project on 15 Nov 2026: both migrations in `supabase/migrations/` and the `book-image` Edge
-Function (Unsplash proxy, `supabase/functions/`). Catalog releases in Supabase (checked 15 Nov 2026): `fixture-2026-11-14b`, `cmu-priority500-v1`, `-v2`, and **`cmu-priority500-v3`** (synced at commit `c20ee02`: 388 books, 116 questions, 31,188 features; reads back identical except 4 books whose `sources` keep one extra source from an earlier release, because books and their sources are shared across releases). Anonymous sign-ins are enabled. Still not done: `app_admins` rows. Not done yet (superseded): catalog `sync` (needs `SUPABASE_SERVICE_ROLE_KEY`),
-Anonymous sign-ins (off in the dashboard, so contributions fail until enabled), `app_admins` rows. Decided (14 Nov 2026): D1 Supabase anonymous sign-in + CAPTCHA,
+Function (Unsplash proxy, `supabase/functions/`). Catalog releases in Supabase (checked 15 Nov 2026): `fixture-2026-11-14b`, `cmu-priority500-v1`, `-v2`, and **`cmu-priority500-v3`** (synced at commit `c20ee02`: 388 books, 116 questions, 31,188 features; reads back identical except 4 books whose `sources` keep one extra source from an earlier release, because books and their sources are shared across releases). Anonymous sign-ins are enabled. Still not done: `app_admins` rows (maintainer account IDs needed).
+Decided (14 Nov 2026): D1 Supabase anonymous sign-in + CAPTCHA,
 D2 opt-in consent asked at the end of each game (send nothing on decline), D7 no cover uploads (Open Library cover
 links only). D3–D6 and D8–D13 are still open in the design doc — don't hard-code an answer to one of them.
 
